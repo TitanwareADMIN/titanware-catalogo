@@ -631,7 +631,8 @@ li.bad, li.bad strong { color: var(--off) !important; }
 .qty-bar .q-txt small { font-size: .7rem; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; font-weight: 700; }
 .qty-bar .q-txt strong { font-size: .9rem; font-weight: 600; }
 .q-pick { display: flex; align-items: center; gap: .4rem; }
-.q-pick > span { font-size: .82rem; color: var(--text-2); margin-right: .2rem; }
+.q-pick > span { display: grid; font-size: .82rem; color: var(--text-2); margin-right: .2rem; text-align: right; }
+.q-pick > span small { font-size: .68rem; color: var(--muted); }
 .q-pick button { display: grid; justify-items: center; min-width: 58px; padding: .4rem .7rem; border-radius: var(--radius-sm); cursor: pointer;
   background: var(--bg-2); border: 1px solid var(--line-2); color: var(--text); font: inherit; font-weight: 700; font-size: 1rem; line-height: 1.1; }
 .q-pick button small { font-size: .6rem; font-weight: 600; color: var(--muted); }

@@ -7,7 +7,13 @@
         "precio":  95013,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-msi-a520m-a-pro-ddr4-am4.webp"
+        "imagen":  "img/productos/mother-msi-a520m-a-pro-ddr4-am4.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR4"
+                  }
     },
     {
         "id":  "mother-asus-prime-a520m-k-ddr4-am4",
@@ -17,7 +23,13 @@
         "precio":  100878,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-asus-prime-a520m-k-ddr4-am4.webp"
+        "imagen":  "img/productos/mother-asus-prime-a520m-k-ddr4-am4.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR4"
+                  }
     },
     {
         "id":  "mother-gigabyte-a520m-k-v2-ddr4-am4-q-a320",
@@ -27,7 +39,13 @@
         "precio":  101096,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-gigabyte-a520m-k-v2-ddr4-am4-q-a320.webp"
+        "imagen":  "img/productos/mother-gigabyte-a520m-k-v2-ddr4-am4-q-a320.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR4"
+                  }
     },
     {
         "id":  "mother-asus-prime-a520m-k-csm-ddr4-am4",
@@ -37,7 +55,13 @@
         "precio":  116265,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-asus-prime-a520m-k-csm-ddr4-am4.webp"
+        "imagen":  "img/productos/mother-asus-prime-a520m-k-csm-ddr4-am4.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR4"
+                  }
     },
     {
         "id":  "mother-gigabyte-b550m-k-ddr4-am4",
@@ -47,7 +71,13 @@
         "precio":  142991,
         "destacado":  true,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-gigabyte-b550m-k-ddr4-am4.webp"
+        "imagen":  "img/productos/mother-gigabyte-b550m-k-ddr4-am4.webp",
+        "attrs":  {
+                      "m2":  2,
+                      "slots":  4,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR4"
+                  }
     },
     {
         "id":  "mother-msi-pro-b550m-b-ddr4-am4",
@@ -57,7 +87,13 @@
         "precio":  146326,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-msi-pro-b550m-b-ddr4-am4.webp"
+        "imagen":  "img/productos/mother-msi-pro-b550m-b-ddr4-am4.webp",
+        "attrs":  {
+                      "m2":  2,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR4"
+                  }
     },
     {
         "id":  "mother-msi-b550m-a-pro-ddr4-am4",
@@ -67,7 +103,13 @@
         "precio":  152764,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-msi-b550m-a-pro-ddr4-am4.webp"
+        "imagen":  "img/productos/mother-msi-b550m-a-pro-ddr4-am4.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR4"
+                  }
     },
     {
         "id":  "mother-asus-prime-b550m-k-argb-ddr4-am4",
@@ -77,7 +119,13 @@
         "precio":  171040,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-asus-prime-b550m-k-argb-ddr4-am4.webp"
+        "imagen":  "img/productos/mother-asus-prime-b550m-k-argb-ddr4-am4.webp",
+        "attrs":  {
+                      "m2":  2,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR4"
+                  }
     },
     {
         "id":  "mother-gigabyte-a620m-h-ddr5-am5",
@@ -87,7 +135,13 @@
         "precio":  141933,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-gigabyte-a620m-h-ddr5-am5.webp"
+        "imagen":  "img/productos/mother-gigabyte-a620m-h-ddr5-am5.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR5"
+                  }
     },
     {
         "id":  "mother-msi-pro-b840m-b-ddr5-am5",
@@ -97,7 +151,13 @@
         "precio":  165807,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-msi-pro-b840m-b-ddr5-am5.webp"
+        "imagen":  "img/productos/mother-msi-pro-b840m-b-ddr5-am5.webp",
+        "attrs":  {
+                      "m2":  2,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR5"
+                  }
     },
     {
         "id":  "mother-asus-pro-h410m-c2-csm-ddr4-s1200",
@@ -107,7 +167,13 @@
         "precio":  105742,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-asus-pro-h410m-c2-csm-ddr4-s1200.webp"
+        "imagen":  "img/productos/mother-asus-pro-h410m-c2-csm-ddr4-s1200.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR4"
+                  }
     },
     {
         "id":  "mother-msi-pro-h610m-b-ddr5-s1700",
@@ -117,7 +183,13 @@
         "precio":  121095,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-msi-pro-h610m-b-ddr5-s1700.webp"
+        "imagen":  "img/productos/mother-msi-pro-h610m-b-ddr5-s1700.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR5"
+                  }
     },
     {
         "id":  "mother-msi-pro-h610m-s-ddr4-s1700",
@@ -127,7 +199,13 @@
         "precio":  127742,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-msi-pro-h610m-s-ddr4-s1700.webp"
+        "imagen":  "img/productos/mother-msi-pro-h610m-s-ddr4-s1700.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR4"
+                  }
     },
     {
         "id":  "mother-asus-prime-h610m-f-d4-r2-0-ddr4-s1700",
@@ -137,7 +215,13 @@
         "precio":  129823,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-asus-prime-h610m-f-d4-r2-0-ddr4-s1700.webp"
+        "imagen":  "img/productos/mother-asus-prime-h610m-f-d4-r2-0-ddr4-s1700.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR4"
+                  }
     },
     {
         "id":  "mother-msi-pro-h610m-g-ddr5-s1700",
@@ -147,7 +231,13 @@
         "precio":  134447,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-msi-pro-h610m-g-ddr5-s1700.webp"
+        "imagen":  "img/productos/mother-msi-pro-h610m-g-ddr5-s1700.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR5"
+                  }
     },
     {
         "id":  "mother-gigabyte-h610m-k-ddr4-gen5-s1700",
@@ -157,7 +247,13 @@
         "precio":  134619,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-gigabyte-h610m-k-ddr4-gen5-s1700.webp"
+        "imagen":  "img/productos/mother-gigabyte-h610m-k-ddr4-gen5-s1700.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR4"
+                  }
     },
     {
         "id":  "mother-gigabyte-h610m-k-v2-ddr5-s1700",
@@ -167,7 +263,13 @@
         "precio":  135321,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-gigabyte-h610m-k-v2-ddr5-s1700.webp"
+        "imagen":  "img/productos/mother-gigabyte-h610m-k-v2-ddr5-s1700.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR5"
+                  }
     },
     {
         "id":  "mother-msi-pro-h610m-a-ddr4-s1700",
@@ -177,7 +279,13 @@
         "precio":  138092,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-msi-pro-h610m-a-ddr4-s1700.webp"
+        "imagen":  "img/productos/mother-msi-pro-h610m-a-ddr4-s1700.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR4"
+                  }
     },
     {
         "id":  "mother-asus-prime-h610m-k-ddr5-s1700",
@@ -187,7 +295,13 @@
         "precio":  139093,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-asus-prime-h610m-k-ddr5-s1700.webp"
+        "imagen":  "img/productos/mother-asus-prime-h610m-k-ddr5-s1700.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR5"
+                  }
     },
     {
         "id":  "mother-asus-prime-h610m-k-d4-ddr4-s1700",
@@ -197,7 +311,13 @@
         "precio":  146779,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-asus-prime-h610m-k-d4-ddr4-s1700.webp"
+        "imagen":  "img/productos/mother-asus-prime-h610m-k-d4-ddr4-s1700.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR4"
+                  }
     },
     {
         "id":  "mother-gigabyte-h610m-k-gen5-ddr5-s1700",
@@ -207,7 +327,13 @@
         "precio":  160413,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/mother-gigabyte-h610m-k-gen5-ddr5-s1700.webp"
+        "imagen":  "img/productos/mother-gigabyte-h610m-k-gen5-ddr5-s1700.webp",
+        "attrs":  {
+                      "m2":  1,
+                      "slots":  2,
+                      "formato":  "Micro-ATX",
+                      "ddr":  "DDR5"
+                  }
     },
     {
         "id":  "micro-amd-athlon-3000g-c-video-s-cooler-cpu-am4",
@@ -217,7 +343,13 @@
         "precio":  52187,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "socket":  "AM4",
+                      "tdp":  35,
+                      "cooler":  false,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-amd-3000g-athlon-c-video-c-cooler-cpu-am4",
@@ -228,7 +360,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "",
-        "caja":  "img/productos/cajas/micro-amd-3000g-athlon-c-video-c-cooler-cpu-am4.webp"
+        "caja":  "img/productos/cajas/micro-amd-3000g-athlon-c-video-c-cooler-cpu-am4.webp",
+        "attrs":  {
+                      "socket":  "AM4",
+                      "tdp":  35,
+                      "cooler":  true,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-amd-athlon-3000g-vega-3-box-am4",
@@ -239,7 +377,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "",
-        "caja":  "img/productos/cajas/micro-amd-athlon-3000g-vega-3-box-am4.webp"
+        "caja":  "img/productos/cajas/micro-amd-athlon-3000g-vega-3-box-am4.webp",
+        "attrs":  {
+                      "socket":  "AM4",
+                      "tdp":  35,
+                      "cooler":  true,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-amd-ryzen-3-3200g-c-video-s-cooler-cpu-am4",
@@ -249,7 +393,13 @@
         "precio":  97187,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "socket":  "AM4",
+                      "tdp":  65,
+                      "cooler":  false,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-amd-ryzen-3-3200g-c-video-c-cooler-cpu-am4",
@@ -260,7 +410,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "",
-        "caja":  "img/productos/cajas/micro-amd-ryzen-3-3200g-c-video-c-cooler-cpu-am4.webp"
+        "caja":  "img/productos/cajas/micro-amd-ryzen-3-3200g-c-video-c-cooler-cpu-am4.webp",
+        "attrs":  {
+                      "socket":  "AM4",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-amd-ryzen-5-3500x-s-video-s-cooler-cpu-am4",
@@ -270,7 +426,13 @@
         "precio":  115402,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "socket":  "AM4",
+                      "tdp":  65,
+                      "cooler":  false,
+                      "video":  false
+                  }
     },
     {
         "id":  "micro-amd-ryzen-3-3200g-c-video-c-cooler-amd-cpu-am4",
@@ -281,7 +443,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "",
-        "caja":  "img/productos/cajas/micro-amd-ryzen-3-3200g-c-video-c-cooler-amd-cpu-am4.webp"
+        "caja":  "img/productos/cajas/micro-amd-ryzen-3-3200g-c-video-c-cooler-amd-cpu-am4.webp",
+        "attrs":  {
+                      "socket":  "AM4",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-amd-ryzen-5-3500x-s-video-c-cooler-cpu-am4",
@@ -292,7 +460,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "",
-        "caja":  "img/productos/cajas/micro-amd-ryzen-5-3500x-s-video-c-cooler-cpu-am4.webp"
+        "caja":  "img/productos/cajas/micro-amd-ryzen-5-3500x-s-video-c-cooler-cpu-am4.webp",
+        "attrs":  {
+                      "socket":  "AM4",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  false
+                  }
     },
     {
         "id":  "micro-amd-ryzen-3-3200g-c-video-c-cooler-box-am4",
@@ -303,7 +477,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "",
-        "caja":  "img/productos/cajas/micro-amd-ryzen-3-3200g-c-video-c-cooler-box-am4.webp"
+        "caja":  "img/productos/cajas/micro-amd-ryzen-3-3200g-c-video-c-cooler-box-am4.webp",
+        "attrs":  {
+                      "socket":  "AM4",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-amd-ryzen-5-3400g-c-video-s-cooler-cpu-am4",
@@ -313,7 +493,13 @@
         "precio":  137425,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "socket":  "AM4",
+                      "tdp":  65,
+                      "cooler":  false,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-amd-ryzen-5-3400g-c-video-c-cooler-cpu-am4",
@@ -324,7 +510,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "",
-        "caja":  "img/productos/cajas/micro-amd-ryzen-5-3400g-c-video-c-cooler-cpu-am4.webp"
+        "caja":  "img/productos/cajas/micro-amd-ryzen-5-3400g-c-video-c-cooler-cpu-am4.webp",
+        "attrs":  {
+                      "socket":  "AM4",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-amd-ryzen-5-5600-s-video-c-cooler-am4",
@@ -334,7 +526,13 @@
         "precio":  250574,
         "destacado":  true,
         "stock":  "consultar",
-        "imagen":  "img/productos/amd-ryzen-5-5000-box.webp"
+        "imagen":  "img/productos/amd-ryzen-5-5000-box.webp",
+        "attrs":  {
+                      "socket":  "AM4",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  false
+                  }
     },
     {
         "id":  "micro-amd-ryzen-7-5700-s-video-c-cooler-am4",
@@ -344,7 +542,13 @@
         "precio":  303105,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/amd-ryzen-7-5000-box.webp"
+        "imagen":  "img/productos/amd-ryzen-7-5000-box.webp",
+        "attrs":  {
+                      "socket":  "AM4",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  false
+                  }
     },
     {
         "id":  "micro-amd-ryzen-5-5600gt-c-video-c-cooler-am4-simil-5600g",
@@ -354,7 +558,13 @@
         "precio":  324093,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/amd-ryzen-5-5000-box.webp"
+        "imagen":  "img/productos/amd-ryzen-5-5000-box.webp",
+        "attrs":  {
+                      "socket":  "AM4",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-amd-ryzen-7-5700g-c-video-c-cooler-am4-mejor-q-5600gt",
@@ -364,7 +574,13 @@
         "precio":  390183,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/amd-ryzen-7-5000-box.webp"
+        "imagen":  "img/productos/amd-ryzen-7-5000-box.webp",
+        "attrs":  {
+                      "socket":  "AM4",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-amd-ryzen-5-8400f-s-video-s-cooler-cpu-am5",
@@ -374,7 +590,13 @@
         "precio":  236923,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/amd-ryzen-8000-chip.webp"
+        "imagen":  "img/productos/amd-ryzen-8000-chip.webp",
+        "attrs":  {
+                      "socket":  "AM5",
+                      "tdp":  65,
+                      "cooler":  false,
+                      "video":  false
+                  }
     },
     {
         "id":  "micro-amd-ryzen-5-8500g-c-video-s-cooler-cpu-am5",
@@ -384,7 +606,13 @@
         "precio":  280128,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/amd-ryzen-5-8500g-box.webp"
+        "imagen":  "img/productos/amd-ryzen-5-8500g-box.webp",
+        "attrs":  {
+                      "socket":  "AM5",
+                      "tdp":  65,
+                      "cooler":  false,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-amd-ryzen-5-8500g-c-video-c-cooler-box-am5",
@@ -394,7 +622,13 @@
         "precio":  284050,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/amd-ryzen-5-8500g-box.webp"
+        "imagen":  "img/productos/amd-ryzen-5-8500g-box.webp",
+        "attrs":  {
+                      "socket":  "AM5",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-amd-ryzen-5-8400f-s-video-c-cooler-box-am5",
@@ -404,7 +638,13 @@
         "precio":  307420,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/amd-ryzen-8000-chip.webp"
+        "imagen":  "img/productos/amd-ryzen-8000-chip.webp",
+        "attrs":  {
+                      "socket":  "AM5",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  false
+                  }
     },
     {
         "id":  "micro-amd-ryzen-5-8600g-c-video-c-cooler-box-am5",
@@ -414,7 +654,13 @@
         "precio":  358800,
         "destacado":  true,
         "stock":  "consultar",
-        "imagen":  "img/productos/amd-ryzen-5-8600g-box.webp"
+        "imagen":  "img/productos/amd-ryzen-5-8600g-box.webp",
+        "attrs":  {
+                      "socket":  "AM5",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-amd-ryzen-5-7600x-c-video-s-cooler-cpu-am5",
@@ -424,7 +670,13 @@
         "precio":  390379,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/amd-ryzen-5-7600x-box.webp"
+        "imagen":  "img/productos/amd-ryzen-5-7600x-box.webp",
+        "attrs":  {
+                      "socket":  "AM5",
+                      "tdp":  105,
+                      "cooler":  false,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-intel-celeron-g5925-s1200-ideal-pc-oficina-q-g5905",
@@ -435,7 +687,12 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "",
-        "caja":  "img/productos/cajas/micro-intel-celeron-g5925-s1200-ideal-pc-oficina-q-g5905.webp"
+        "caja":  "img/productos/cajas/micro-intel-celeron-g5925-s1200-ideal-pc-oficina-q-g5905.webp",
+        "attrs":  {
+                      "socket":  "LGA 1200",
+                      "tdp":  58,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-intel-core-i3-10105f-s-video-c-cooler-box-s1200",
@@ -446,7 +703,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "",
-        "caja":  "img/productos/cajas/micro-intel-core-i3-10105f-s-video-c-cooler-box-s1200.webp"
+        "caja":  "img/productos/cajas/micro-intel-core-i3-10105f-s-video-c-cooler-box-s1200.webp",
+        "attrs":  {
+                      "socket":  "LGA 1200",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  false
+                  }
     },
     {
         "id":  "micro-intel-core-i3-13100f-s-video-c-cooler-box-s1700",
@@ -457,7 +720,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "img/productos/intel-core-13th-gen-chip.webp",
-        "caja":  "img/productos/cajas/micro-intel-core-i3-13100f-s-video-c-cooler-box-s1700.webp"
+        "caja":  "img/productos/cajas/micro-intel-core-i3-13100f-s-video-c-cooler-box-s1700.webp",
+        "attrs":  {
+                      "socket":  "LGA 1700",
+                      "tdp":  58,
+                      "cooler":  true,
+                      "video":  false
+                  }
     },
     {
         "id":  "micro-intel-pentium-g7400-s1700",
@@ -468,7 +737,12 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "",
-        "caja":  "img/productos/cajas/micro-intel-pentium-g7400-s1700.webp"
+        "caja":  "img/productos/cajas/micro-intel-pentium-g7400-s1700.webp",
+        "attrs":  {
+                      "socket":  "LGA 1700",
+                      "tdp":  46,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-intel-core-i3-12100f-s-video-c-cooler-box-s1700",
@@ -479,7 +753,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "",
-        "caja":  "img/productos/cajas/micro-intel-core-i3-12100f-s-video-c-cooler-box-s1700.webp"
+        "caja":  "img/productos/cajas/micro-intel-core-i3-12100f-s-video-c-cooler-box-s1700.webp",
+        "attrs":  {
+                      "socket":  "LGA 1700",
+                      "tdp":  58,
+                      "cooler":  true,
+                      "video":  false
+                  }
     },
     {
         "id":  "micro-intel-core-i3-14100f-s-video-c-cooler-box-s1700",
@@ -490,7 +770,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "img/productos/intel-core-13th-gen-chip.webp",
-        "caja":  "img/productos/cajas/micro-intel-core-i3-14100f-s-video-c-cooler-box-s1700.webp"
+        "caja":  "img/productos/cajas/micro-intel-core-i3-14100f-s-video-c-cooler-box-s1700.webp",
+        "attrs":  {
+                      "socket":  "LGA 1700",
+                      "tdp":  58,
+                      "cooler":  true,
+                      "video":  false
+                  }
     },
     {
         "id":  "micro-intel-core-i3-14100f-s-video-c-cooler-s1700",
@@ -501,7 +787,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "img/productos/intel-core-13th-gen-chip.webp",
-        "caja":  "img/productos/cajas/micro-intel-core-i3-14100f-s-video-c-cooler-s1700.webp"
+        "caja":  "img/productos/cajas/micro-intel-core-i3-14100f-s-video-c-cooler-s1700.webp",
+        "attrs":  {
+                      "socket":  "LGA 1700",
+                      "tdp":  58,
+                      "cooler":  true,
+                      "video":  false
+                  }
     },
     {
         "id":  "micro-intel-core-i3-12100-c-video-c-cooler-box-s1700",
@@ -512,7 +804,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "",
-        "caja":  "img/productos/cajas/micro-intel-core-i3-12100-c-video-c-cooler-box-s1700.webp"
+        "caja":  "img/productos/cajas/micro-intel-core-i3-12100-c-video-c-cooler-box-s1700.webp",
+        "attrs":  {
+                      "socket":  "LGA 1700",
+                      "tdp":  60,
+                      "cooler":  true,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-intel-core-i3-14100-c-video-c-cooler-box-s1700",
@@ -523,7 +821,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "img/productos/intel-core-13th-gen-chip.webp",
-        "caja":  "img/productos/cajas/micro-intel-core-i3-14100-c-video-c-cooler-box-s1700.webp"
+        "caja":  "img/productos/cajas/micro-intel-core-i3-14100-c-video-c-cooler-box-s1700.webp",
+        "attrs":  {
+                      "socket":  "LGA 1700",
+                      "tdp":  60,
+                      "cooler":  true,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-intel-core-i5-12400f-s-video-c-cooler-box-s1700",
@@ -534,7 +838,13 @@
         "destacado":  true,
         "stock":  "consultar",
         "imagen":  "",
-        "caja":  "img/productos/cajas/micro-intel-core-i5-12400f-s-video-c-cooler-box-s1700.webp"
+        "caja":  "img/productos/cajas/micro-intel-core-i5-12400f-s-video-c-cooler-box-s1700.webp",
+        "attrs":  {
+                      "socket":  "LGA 1700",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  false
+                  }
     },
     {
         "id":  "micro-intel-core-i5-14400f-s-video-s-cooler-s1700",
@@ -544,7 +854,13 @@
         "precio":  330901,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/intel-core-13th-gen-chip.webp"
+        "imagen":  "img/productos/intel-core-13th-gen-chip.webp",
+        "attrs":  {
+                      "socket":  "LGA 1700",
+                      "tdp":  65,
+                      "cooler":  false,
+                      "video":  false
+                  }
     },
     {
         "id":  "micro-intel-core-i5-12400f-s-video-c-cooler-s1700",
@@ -555,7 +871,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "",
-        "caja":  "img/productos/cajas/micro-intel-core-i5-12400f-s-video-c-cooler-s1700.webp"
+        "caja":  "img/productos/cajas/micro-intel-core-i5-12400f-s-video-c-cooler-s1700.webp",
+        "attrs":  {
+                      "socket":  "LGA 1700",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  false
+                  }
     },
     {
         "id":  "micro-intel-core-i5-14400f-tray-s-video-s-cooler-s1700",
@@ -565,7 +887,13 @@
         "precio":  343505,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/intel-core-13th-gen-chip.webp"
+        "imagen":  "img/productos/intel-core-13th-gen-chip.webp",
+        "attrs":  {
+                      "socket":  "LGA 1700",
+                      "tdp":  65,
+                      "cooler":  false,
+                      "video":  false
+                  }
     },
     {
         "id":  "micro-intel-core-i5-12400-c-video-c-cooler-box-s1700",
@@ -576,7 +904,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "",
-        "caja":  "img/productos/cajas/micro-intel-core-i5-12400-c-video-c-cooler-box-s1700.webp"
+        "caja":  "img/productos/cajas/micro-intel-core-i5-12400-c-video-c-cooler-box-s1700.webp",
+        "attrs":  {
+                      "socket":  "LGA 1700",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-intel-core-i5-12400-c-video-s-cooler-s1700",
@@ -586,7 +920,13 @@
         "precio":  392253,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "socket":  "LGA 1700",
+                      "tdp":  65,
+                      "cooler":  false,
+                      "video":  true
+                  }
     },
     {
         "id":  "micro-intel-core-i5-14400f-s-video-c-cooler-box-s1700",
@@ -597,7 +937,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "img/productos/intel-core-13th-gen-chip.webp",
-        "caja":  "img/productos/cajas/micro-intel-core-i5-14400f-s-video-c-cooler-box-s1700.webp"
+        "caja":  "img/productos/cajas/micro-intel-core-i5-14400f-s-video-c-cooler-box-s1700.webp",
+        "attrs":  {
+                      "socket":  "LGA 1700",
+                      "tdp":  65,
+                      "cooler":  true,
+                      "video":  false
+                  }
     },
     {
         "id":  "cpu-cooler-intel-performance-s1700",
@@ -607,7 +953,14 @@
         "precio":  15199,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "altura":  69,
+                      "sockets":  [
+                                      "LGA 1700"
+                                  ],
+                      "maxTdp":  65
+                  }
     },
     {
         "id":  "cpu-cooler-kelyx-potencia-maxima-95w-p-amd-intel",
@@ -618,7 +971,11 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "img/productos/cpu-cooler-kelyx-potencia-maxima-95w-p-amd-intel.webp",
-        "caja":  "img/productos/cajas/cpu-cooler-kelyx-potencia-maxima-95w-p-amd-intel.webp"
+        "caja":  "img/productos/cajas/cpu-cooler-kelyx-potencia-maxima-95w-p-amd-intel.webp",
+        "attrs":  {
+                      "altura":  133,
+                      "maxTdp":  95
+                  }
     },
     {
         "id":  "cpu-cooler-raptor-cryo-rgb-potencia-maxima-95w-p-amd-intel",
@@ -629,7 +986,11 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "img/productos/cpu-cooler-raptor-cryo-rgb-potencia-maxima-95w-p-amd-intel.webp",
-        "caja":  "img/productos/cajas/cpu-cooler-raptor-cryo-rgb-potencia-maxima-95w-p-amd-intel.webp"
+        "caja":  "img/productos/cajas/cpu-cooler-raptor-cryo-rgb-potencia-maxima-95w-p-amd-intel.webp",
+        "attrs":  {
+                      "altura":  133,
+                      "maxTdp":  95
+                  }
     },
     {
         "id":  "cpu-cooler-evolabs-cryo-4h-argb",
@@ -639,7 +1000,18 @@
         "precio":  33810,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-evolabs-cryo-4h-argb.webp"
+        "imagen":  "img/productos/cpu-cooler-evolabs-cryo-4h-argb.webp",
+        "attrs":  {
+                      "altura":  135,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "maxTdp":  145
+                  }
     },
     {
         "id":  "cpu-cooler-coolermaster-hyper-212-spectrum-v3-rgb",
@@ -649,7 +1021,17 @@
         "precio":  36857,
         "destacado":  true,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-coolermaster-hyper-212-spectrum-v3-rgb.webp"
+        "imagen":  "img/productos/cpu-cooler-coolermaster-hyper-212-spectrum-v3-rgb.webp",
+        "attrs":  {
+                      "altura":  152,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ]
+                  }
     },
     {
         "id":  "cpu-cooler-evolabs-cryo-pro-4h-argb",
@@ -659,7 +1041,18 @@
         "precio":  43355,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-evolabs-cryo-pro-4h-argb.webp"
+        "imagen":  "img/productos/cpu-cooler-evolabs-cryo-pro-4h-argb.webp",
+        "attrs":  {
+                      "altura":  156,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "maxTdp":  180
+                  }
     },
     {
         "id":  "cpu-cooler-msi-mag-corefrozr-aa13-black-am4-am5-s1700-s1851",
@@ -669,7 +1062,17 @@
         "precio":  47840,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-msi-mag-corefrozr-aa13-black-am4-am5-s1700-s1851.webp"
+        "imagen":  "img/productos/cpu-cooler-msi-mag-corefrozr-aa13-black-am4-am5-s1700-s1851.webp",
+        "attrs":  {
+                      "altura":  152,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "maxTdp":  240
+                  }
     },
     {
         "id":  "cpu-cooler-thermaltake-ux200-se-argb-white-cl-p116-al12sw-a",
@@ -679,7 +1082,18 @@
         "precio":  52900,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-thermaltake-ux200-se-argb-white-cl-p116-al12sw-a.webp"
+        "imagen":  "img/productos/cpu-cooler-thermaltake-ux200-se-argb-white-cl-p116-al12sw-a.webp",
+        "attrs":  {
+                      "altura":  156.2,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "maxTdp":  170
+                  }
     },
     {
         "id":  "cpu-cooler-thermaltake-ux200-se-argb-cl-p105-al12sw-a",
@@ -689,7 +1103,18 @@
         "precio":  54127,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-thermaltake-ux200-se-argb-cl-p105-al12sw-a.webp"
+        "imagen":  "img/productos/cpu-cooler-thermaltake-ux200-se-argb-cl-p105-al12sw-a.webp",
+        "attrs":  {
+                      "altura":  156.2,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "maxTdp":  170
+                  }
     },
     {
         "id":  "cpu-cooler-thermaltake-ux500-argb-sync",
@@ -699,7 +1124,18 @@
         "precio":  56396,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-thermaltake-ux500-argb-sync.webp"
+        "imagen":  "img/productos/cpu-cooler-thermaltake-ux500-argb-sync.webp",
+        "attrs":  {
+                      "altura":  158,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "maxTdp":  260
+                  }
     },
     {
         "id":  "cpu-cooler-thermaltake-ux500-argb-sync-white",
@@ -709,7 +1145,18 @@
         "precio":  56396,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-thermaltake-ux500-argb-sync-white.webp"
+        "imagen":  "img/productos/cpu-cooler-thermaltake-ux500-argb-sync-white.webp",
+        "attrs":  {
+                      "altura":  158,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "maxTdp":  260
+                  }
     },
     {
         "id":  "cpu-cooler-adata-xpg-maestro-plus-42sa-argb",
@@ -719,7 +1166,18 @@
         "precio":  57776,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-adata-xpg-maestro-plus-42sa-argb.webp"
+        "imagen":  "img/productos/cpu-cooler-adata-xpg-maestro-plus-42sa-argb.webp",
+        "attrs":  {
+                      "altura":  156,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "maxTdp":  220
+                  }
     },
     {
         "id":  "cpu-cooler-coolermaster-hyper-212-3dhp-black",
@@ -729,7 +1187,17 @@
         "precio":  63859,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-coolermaster-hyper-212-3dhp-black.webp"
+        "imagen":  "img/productos/cpu-cooler-coolermaster-hyper-212-3dhp-black.webp",
+        "attrs":  {
+                      "altura":  158,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ]
+                  }
     },
     {
         "id":  "cpu-cooler-thermaltake-astria-200-argb-cl-p119-al12sw-a",
@@ -739,7 +1207,18 @@
         "precio":  74267,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-thermaltake-astria-200-argb-cl-p119-al12sw-a.webp"
+        "imagen":  "img/productos/cpu-cooler-thermaltake-astria-200-argb-cl-p119-al12sw-a.webp",
+        "attrs":  {
+                      "altura":  160,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "maxTdp":  210
+                  }
     },
     {
         "id":  "cpu-cooler-thermaltake-astria-200-argb-white-cl-p137-al12sw-a",
@@ -749,7 +1228,18 @@
         "precio":  75428,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-thermaltake-astria-200-argb-white-cl-p137-al12sw-a.webp"
+        "imagen":  "img/productos/cpu-cooler-thermaltake-astria-200-argb-white-cl-p137-al12sw-a.webp",
+        "attrs":  {
+                      "altura":  160,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "maxTdp":  210
+                  }
     },
     {
         "id":  "cpu-cooler-adata-xpg-maestro-plus-62da-argb",
@@ -759,7 +1249,18 @@
         "precio":  100763,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-adata-xpg-maestro-plus-62da-argb.webp"
+        "imagen":  "img/productos/cpu-cooler-adata-xpg-maestro-plus-62da-argb.webp",
+        "attrs":  {
+                      "altura":  160,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "maxTdp":  250
+                  }
     },
     {
         "id":  "cpu-cooler-thermaltake-astria-400-argb-cl-p120-ca12sw-a",
@@ -769,7 +1270,18 @@
         "precio":  104132,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-thermaltake-astria-400-argb-cl-p120-ca12sw-a.webp"
+        "imagen":  "img/productos/cpu-cooler-thermaltake-astria-400-argb-cl-p120-ca12sw-a.webp",
+        "attrs":  {
+                      "altura":  160,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "maxTdp":  230
+                  }
     },
     {
         "id":  "cpu-cooler-thermaltake-astria-400-argb-white-cl-p138-ca12sw-a",
@@ -779,7 +1291,18 @@
         "precio":  106639,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-thermaltake-astria-400-argb-white-cl-p138-ca12sw-a.webp"
+        "imagen":  "img/productos/cpu-cooler-thermaltake-astria-400-argb-white-cl-p138-ca12sw-a.webp",
+        "attrs":  {
+                      "altura":  160,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "maxTdp":  230
+                  }
     },
     {
         "id":  "cpu-cooler-thermaltake-astria-600-argb-white-cl-p139-ca12sw-a",
@@ -789,7 +1312,18 @@
         "precio":  135275,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-thermaltake-astria-600-argb-white-cl-p139-ca12sw-a.webp"
+        "imagen":  "img/productos/cpu-cooler-thermaltake-astria-600-argb-white-cl-p139-ca12sw-a.webp",
+        "attrs":  {
+                      "altura":  160,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "maxTdp":  265
+                  }
     },
     {
         "id":  "cpu-cooler-coolermaster-hyper-212-rgb-black-edition-s1700",
@@ -799,7 +1333,16 @@
         "precio":  139030,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-coolermaster-hyper-212-rgb-black-edition-s1700.webp"
+        "imagen":  "img/productos/cpu-cooler-coolermaster-hyper-212-rgb-black-edition-s1700.webp",
+        "attrs":  {
+                      "altura":  158.8,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700"
+                                  ]
+                  }
     },
     {
         "id":  "cpu-cooler-coolermaster-hyper-612-apex-black-map-t6pn-225pk-r1",
@@ -809,7 +1352,17 @@
         "precio":  139602,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-coolermaster-hyper-612-apex-black-map-t6pn-225pk-r1.webp"
+        "imagen":  "img/productos/cpu-cooler-coolermaster-hyper-612-apex-black-map-t6pn-225pk-r1.webp",
+        "attrs":  {
+                      "altura":  159,
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ]
+                  }
     },
     {
         "id":  "cpu-cooler-coolermaster-hyper-212-black-edition-silent-fan",
@@ -819,7 +1372,13 @@
         "precio":  140075,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-coolermaster-hyper-212-black-edition-silent-fan.webp"
+        "imagen":  "img/productos/cpu-cooler-coolermaster-hyper-212-black-edition-silent-fan.webp",
+        "attrs":  {
+                      "altura":  158.8,
+                      "sockets":  [
+                                      "AM4"
+                                  ]
+                  }
     },
     {
         "id":  "cpu-cooler-coolermaster-masterair-ma620m",
@@ -829,7 +1388,14 @@
         "precio":  304498,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-coolermaster-masterair-ma620m.webp"
+        "imagen":  "img/productos/cpu-cooler-coolermaster-masterair-ma620m.webp",
+        "attrs":  {
+                      "altura":  165,
+                      "sockets":  [
+                                      "AM4",
+                                      "LGA 1200"
+                                  ]
+                  }
     },
     {
         "id":  "memoria-sodimm-4gb-ddr3-1600-hiksemi-hiker",
@@ -1546,7 +2112,12 @@
         "precio":  76371,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/placa-de-video-geforce-gt-210-1gb-msi-n210-md1g-d3-low-profile.webp"
+        "imagen":  "img/productos/placa-de-video-geforce-gt-210-1gb-msi-n210-md1g-d3-low-profile.webp",
+        "attrs":  {
+                      "tdp":  31,
+                      "lowProfile":  true,
+                      "largo":  145
+                  }
     },
     {
         "id":  "placa-de-video-geforce-gt-210-1gb-ddr3-vga-hdmi-dvi-bulk",
@@ -1556,7 +2127,10 @@
         "precio":  90850,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "tdp":  31
+                  }
     },
     {
         "id":  "placa-de-video-geforce-gt-710-2gb-msi-lp",
@@ -1566,7 +2140,13 @@
         "precio":  139702,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/placa-de-video-geforce-gt-710-2gb-msi-lp.webp"
+        "imagen":  "img/productos/placa-de-video-geforce-gt-710-2gb-msi-lp.webp",
+        "attrs":  {
+                      "tdp":  19,
+                      "psuRec":  300,
+                      "lowProfile":  true,
+                      "largo":  146
+                  }
     },
     {
         "id":  "placa-de-video-geforce-gt-1030-4gb-msi-4dg4-low-profile",
@@ -1577,7 +2157,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "img/productos/placa-de-video-geforce-gt-1030-4gb-msi-4dg4-low-profile.webp",
-        "caja":  "img/productos/cajas/placa-de-video-geforce-gt-1030-4gb-msi-4dg4-low-profile.webp"
+        "caja":  "img/productos/cajas/placa-de-video-geforce-gt-1030-4gb-msi-4dg4-low-profile.webp",
+        "attrs":  {
+                      "tdp":  20,
+                      "psuRec":  300,
+                      "lowProfile":  true,
+                      "largo":  150
+                  }
     },
     {
         "id":  "placa-de-video-geforce-gt-1030-2gb-ddr4-gigabyte-low-profile",
@@ -1587,7 +2173,13 @@
         "precio":  249032,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/placa-de-video-geforce-gt-1030-2gb-ddr4-gigabyte-low-profile.webp"
+        "imagen":  "img/productos/placa-de-video-geforce-gt-1030-2gb-ddr4-gigabyte-low-profile.webp",
+        "attrs":  {
+                      "tdp":  20,
+                      "psuRec":  300,
+                      "lowProfile":  true,
+                      "largo":  150
+                  }
     },
     {
         "id":  "placa-de-video-geforce-rtx-3050-6gb-msi-ventus-2x-oc",
@@ -1598,7 +2190,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "img/productos/placa-de-video-geforce-rtx-3050-6gb-msi-ventus-2x-oc.webp",
-        "caja":  "img/productos/cajas/placa-de-video-geforce-rtx-3050-6gb-msi-ventus-2x-oc.webp"
+        "caja":  "img/productos/cajas/placa-de-video-geforce-rtx-3050-6gb-msi-ventus-2x-oc.webp",
+        "attrs":  {
+                      "tdp":  70,
+                      "psuRec":  300,
+                      "lowProfile":  false,
+                      "largo":  189
+                  }
     },
     {
         "id":  "placa-de-video-geforce-rtx-3050-6gb-msi-lp-oc",
@@ -1609,7 +2207,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "img/productos/placa-de-video-geforce-rtx-3050-6gb-msi-lp-oc.webp",
-        "caja":  "img/productos/cajas/placa-de-video-geforce-rtx-3050-6gb-msi-lp-oc.webp"
+        "caja":  "img/productos/cajas/placa-de-video-geforce-rtx-3050-6gb-msi-lp-oc.webp",
+        "attrs":  {
+                      "tdp":  70,
+                      "psuRec":  300,
+                      "lowProfile":  true,
+                      "largo":  174
+                  }
     },
     {
         "id":  "placa-de-video-geforce-rtx-3050-6gb-zotac-twin-edge-oc",
@@ -1619,7 +2223,13 @@
         "precio":  573528,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "tdp":  70,
+                      "psuRec":  450,
+                      "lowProfile":  false,
+                      "largo":  162
+                  }
     },
     {
         "id":  "placa-de-video-geforce-rtx-3050-6gb-asus-dual-oc",
@@ -1630,7 +2240,13 @@
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "img/productos/placa-de-video-geforce-rtx-3050-6gb-asus-dual-oc.webp",
-        "caja":  "img/productos/cajas/placa-de-video-geforce-rtx-3050-6gb-asus-dual-oc.webp"
+        "caja":  "img/productos/cajas/placa-de-video-geforce-rtx-3050-6gb-asus-dual-oc.webp",
+        "attrs":  {
+                      "tdp":  70,
+                      "psuRec":  450,
+                      "lowProfile":  false,
+                      "largo":  201
+                  }
     },
     {
         "id":  "placa-de-video-geforce-rtx-5050-8gb-gigabyte-low-profile-oc",
@@ -1640,7 +2256,13 @@
         "precio":  791775,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/placa-de-video-geforce-rtx-5050-8gb-gigabyte-low-profile-oc.webp"
+        "imagen":  "img/productos/placa-de-video-geforce-rtx-5050-8gb-gigabyte-low-profile-oc.webp",
+        "attrs":  {
+                      "tdp":  130,
+                      "psuRec":  550,
+                      "lowProfile":  true,
+                      "largo":  182
+                  }
     },
     {
         "id":  "placa-de-video-geforce-rtx-5050-8gb-gigabyte-windforce-v2-oc",
@@ -1650,7 +2272,13 @@
         "precio":  804091,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/placa-de-video-geforce-rtx-5050-8gb-gigabyte-windforce-v2-oc.webp"
+        "imagen":  "img/productos/placa-de-video-geforce-rtx-5050-8gb-gigabyte-windforce-v2-oc.webp",
+        "attrs":  {
+                      "tdp":  130,
+                      "psuRec":  550,
+                      "lowProfile":  false,
+                      "largo":  201
+                  }
     },
     {
         "id":  "placa-de-video-radeon-rx-7600-8gb-gigabyte-gaming-oc",
@@ -1660,7 +2288,13 @@
         "precio":  835762,
         "destacado":  true,
         "stock":  "consultar",
-        "imagen":  "img/productos/placa-de-video-radeon-rx-7600-8gb-gigabyte-gaming-oc.webp"
+        "imagen":  "img/productos/placa-de-video-radeon-rx-7600-8gb-gigabyte-gaming-oc.webp",
+        "attrs":  {
+                      "tdp":  165,
+                      "psuRec":  550,
+                      "lowProfile":  false,
+                      "largo":  282
+                  }
     },
     {
         "id":  "placa-de-video-geforce-rtx-5050-8gb-msi-ventus-2x-oc",
@@ -1671,7 +2305,13 @@
         "destacado":  true,
         "stock":  "consultar",
         "imagen":  "img/productos/placa-de-video-geforce-rtx-5050-8gb-msi-ventus-2x-oc.webp",
-        "caja":  "img/productos/cajas/placa-de-video-geforce-rtx-5050-8gb-msi-ventus-2x-oc.webp"
+        "caja":  "img/productos/cajas/placa-de-video-geforce-rtx-5050-8gb-msi-ventus-2x-oc.webp",
+        "attrs":  {
+                      "tdp":  130,
+                      "psuRec":  550,
+                      "lowProfile":  false,
+                      "largo":  197
+                  }
     },
     {
         "id":  "placa-de-video-geforce-rtx-5050-8gb-zotac-twin-edge-oc",
@@ -1681,7 +2321,13 @@
         "precio":  886719,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "tdp":  130,
+                      "psuRec":  550,
+                      "lowProfile":  false,
+                      "largo":  221
+                  }
     },
     {
         "id":  "placa-de-video-geforce-rtx-5050-8gb-gigabyte-gaming-oc-3x",
@@ -1691,7 +2337,13 @@
         "precio":  905107,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/placa-de-video-geforce-rtx-5050-8gb-gigabyte-gaming-oc-3x.webp"
+        "imagen":  "img/productos/placa-de-video-geforce-rtx-5050-8gb-gigabyte-gaming-oc-3x.webp",
+        "attrs":  {
+                      "tdp":  130,
+                      "psuRec":  550,
+                      "lowProfile":  false,
+                      "largo":  280
+                  }
     },
     {
         "id":  "placa-de-video-geforce-rtx-5050-8gb-asus-dual-oc-edition",
@@ -2004,7 +2656,11 @@
         "precio":  25875,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "Micro-ATX"
+                  }
     },
     {
         "id":  "gabinete-gamer-aureox-skoll-arx-200g",
@@ -2014,7 +2670,13 @@
         "precio":  38836,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "ATX",
+                      "maxGpu":  280,
+                      "maxCooler":  160
+                  }
     },
     {
         "id":  "gabinete-sentey-h30-black-vidro-lateral-y-frontal",
@@ -2024,7 +2686,13 @@
         "precio":  41295,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-sentey-h30-black-vidro-lateral-y-frontal.webp"
+        "imagen":  "img/productos/gabinete-sentey-h30-black-vidro-lateral-y-frontal.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "Micro-ATX",
+                      "maxGpu":  350,
+                      "maxCooler":  165
+                  }
     },
     {
         "id":  "gabinete-sentey-h30-white-vidro-lateral-y-frontal",
@@ -2034,7 +2702,13 @@
         "precio":  43600,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-sentey-h30-white-vidro-lateral-y-frontal.webp"
+        "imagen":  "img/productos/gabinete-sentey-h30-white-vidro-lateral-y-frontal.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "Micro-ATX",
+                      "maxGpu":  350,
+                      "maxCooler":  165
+                  }
     },
     {
         "id":  "gabinete-kit-c-teclado-c-mouse",
@@ -2044,7 +2718,11 @@
         "precio":  43988,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "ATX"
+                  }
     },
     {
         "id":  "gabinete-kit-performance-mate-c-fuente-500w",
@@ -2054,7 +2732,11 @@
         "precio":  44369,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "fuente":  500,
+                      "formato":  "ATX"
+                  }
     },
     {
         "id":  "gabinete-kit-gamer-c-fuente-600w-rgb-teclado-mouse-y-parlantes-aurus",
@@ -2064,7 +2746,11 @@
         "precio":  46897,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "fuente":  600,
+                      "formato":  "ATX"
+                  }
     },
     {
         "id":  "gabinete-raptor-blaze-force-tg-fan-rgb",
@@ -2074,7 +2760,13 @@
         "precio":  47357,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-raptor-blaze-force-tg-fan-rgb.webp"
+        "imagen":  "img/productos/gabinete-raptor-blaze-force-tg-fan-rgb.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "ATX",
+                      "maxGpu":  300,
+                      "maxCooler":  155
+                  }
     },
     {
         "id":  "gabinete-gamer-aureox-vanth-205g",
@@ -2084,7 +2776,13 @@
         "precio":  47886,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "ATX",
+                      "maxGpu":  310,
+                      "maxCooler":  159
+                  }
     },
     {
         "id":  "gabinete-teros-te-1036s-mid-tower-c-fuente-250w",
@@ -2094,7 +2792,11 @@
         "precio":  50863,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-teros-te-1036s-mid-tower-c-fuente-250w.webp"
+        "imagen":  "img/productos/gabinete-teros-te-1036s-mid-tower-c-fuente-250w.webp",
+        "attrs":  {
+                      "fuente":  250,
+                      "formato":  "ATX"
+                  }
     },
     {
         "id":  "gabinete-kit-con-teclado-mouse-y-parlante",
@@ -2104,7 +2806,11 @@
         "precio":  52900,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "ATX"
+                  }
     },
     {
         "id":  "gabinete-evolabs-streak-tg-2fan-frgb",
@@ -2114,7 +2820,13 @@
         "precio":  53624,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-evolabs-streak-tg-2fan-frgb.webp"
+        "imagen":  "img/productos/gabinete-evolabs-streak-tg-2fan-frgb.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "ATX",
+                      "maxGpu":  330,
+                      "maxCooler":  160
+                  }
     },
     {
         "id":  "gabinete-sentey-t5-black-tg-lateral-y-frontal-3fan-argb",
@@ -2124,7 +2836,13 @@
         "precio":  55055,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-sentey-t5-black-tg-lateral-y-frontal-3fan-argb.webp"
+        "imagen":  "img/productos/gabinete-sentey-t5-black-tg-lateral-y-frontal-3fan-argb.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "Micro-ATX",
+                      "maxGpu":  290,
+                      "maxCooler":  160
+                  }
     },
     {
         "id":  "gabinete-raptor-thunder-strike-tg-1fan-rgb-blanco",
@@ -2134,7 +2852,13 @@
         "precio":  55062,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-raptor-thunder-strike-tg-1fan-rgb-blanco.webp"
+        "imagen":  "img/productos/gabinete-raptor-thunder-strike-tg-1fan-rgb-blanco.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "Micro-ATX",
+                      "maxGpu":  380,
+                      "maxCooler":  165
+                  }
     },
     {
         "id":  "gabinete-raptor-thunder-strike-tg-1fan-rgb-negro",
@@ -2144,7 +2868,13 @@
         "precio":  55062,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-raptor-thunder-strike-tg-1fan-rgb-negro.webp"
+        "imagen":  "img/productos/gabinete-raptor-thunder-strike-tg-1fan-rgb-negro.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "Micro-ATX",
+                      "maxGpu":  380,
+                      "maxCooler":  165
+                  }
     },
     {
         "id":  "gabinete-kit-c-teclado-c-mouse-c-auricular-gamer",
@@ -2154,7 +2884,11 @@
         "precio":  55545,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "ATX"
+                  }
     },
     {
         "id":  "gabinete-gamer-aureox-pictor-arx-370g-4-coolers",
@@ -2164,7 +2898,12 @@
         "precio":  55959,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "ATX",
+                      "maxGpu":  285
+                  }
     },
     {
         "id":  "gabinete-evolabs-sophystix-tg-3fan-frgb",
@@ -2174,7 +2913,13 @@
         "precio":  58409,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-evolabs-sophystix-tg-3fan-frgb.webp"
+        "imagen":  "img/productos/gabinete-evolabs-sophystix-tg-3fan-frgb.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "ATX",
+                      "maxGpu":  315,
+                      "maxCooler":  154
+                  }
     },
     {
         "id":  "gabinete-raptor-infinity-mesh-tg-4fan-rgb",
@@ -2184,7 +2929,13 @@
         "precio":  61951,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-raptor-infinity-mesh-tg-4fan-rgb.webp"
+        "imagen":  "img/productos/gabinete-raptor-infinity-mesh-tg-4fan-rgb.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "Micro-ATX",
+                      "maxGpu":  310,
+                      "maxCooler":  165
+                  }
     },
     {
         "id":  "gabinete-raptor-blaze-force-v2-tg-3fan-rgb",
@@ -2194,7 +2945,13 @@
         "precio":  63146,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-raptor-blaze-force-v2-tg-3fan-rgb.webp"
+        "imagen":  "img/productos/gabinete-raptor-blaze-force-v2-tg-3fan-rgb.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "ATX",
+                      "maxGpu":  300,
+                      "maxCooler":  155
+                  }
     },
     {
         "id":  "gabinete-gamer-raidmax-meshian-x609m-tg",
@@ -2204,7 +2961,13 @@
         "precio":  64779,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-gamer-raidmax-meshian-x609m-tg.webp"
+        "imagen":  "img/productos/gabinete-gamer-raidmax-meshian-x609m-tg.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "Micro-ATX",
+                      "maxGpu":  340,
+                      "maxCooler":  165
+                  }
     },
     {
         "id":  "gabinete-evolabs-artist-tg-2fan-argb",
@@ -2214,7 +2977,13 @@
         "precio":  65492,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-evolabs-artist-tg-2fan-argb.webp"
+        "imagen":  "img/productos/gabinete-evolabs-artist-tg-2fan-argb.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "Micro-ATX",
+                      "maxGpu":  350,
+                      "maxCooler":  166
+                  }
     },
     {
         "id":  "gabinete-arkham-vorus-tg-4fan-argb",
@@ -2224,7 +2993,13 @@
         "precio":  66757,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "ATX",
+                      "maxGpu":  295,
+                      "maxCooler":  158
+                  }
     },
     {
         "id":  "gabinete-performance-slim-kit-5836-fuente-600w-teclado-mouse",
@@ -2234,7 +3009,11 @@
         "precio":  71875,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "fuente":  600,
+                      "formato":  "Micro-ATX"
+                  }
     },
     {
         "id":  "gabinete-evolabs-duality-tg-4fan-argb",
@@ -2244,7 +3023,13 @@
         "precio":  75452,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-evolabs-duality-tg-4fan-argb.webp"
+        "imagen":  "img/productos/gabinete-evolabs-duality-tg-4fan-argb.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "ATX",
+                      "maxGpu":  345,
+                      "maxCooler":  160
+                  }
     },
     {
         "id":  "gabinete-adata-xpg-valor-air-black",
@@ -2254,7 +3039,13 @@
         "precio":  80557,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-adata-xpg-valor-air-black.webp"
+        "imagen":  "img/productos/gabinete-adata-xpg-valor-air-black.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "ATX",
+                      "maxGpu":  305,
+                      "maxCooler":  166
+                  }
     },
     {
         "id":  "gabinete-adata-xpg-lander-500-tg-4fan-argb",
@@ -2264,7 +3055,13 @@
         "precio":  82006,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-adata-xpg-lander-500-tg-4fan-argb.webp"
+        "imagen":  "img/productos/gabinete-adata-xpg-lander-500-tg-4fan-argb.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "ATX",
+                      "maxGpu":  340,
+                      "maxCooler":  160
+                  }
     },
     {
         "id":  "gabinete-adata-xpg-valor-air-4fan-white",
@@ -2274,7 +3071,13 @@
         "precio":  82110,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  ""
+        "imagen":  "",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "ATX",
+                      "maxGpu":  305,
+                      "maxCooler":  166
+                  }
     },
     {
         "id":  "gabinete-thermaltake-s100-tg-snow-white",
@@ -2284,7 +3087,13 @@
         "precio":  86514,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-thermaltake-s100-tg-snow-white.webp"
+        "imagen":  "img/productos/gabinete-thermaltake-s100-tg-snow-white.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "Micro-ATX",
+                      "maxGpu":  330,
+                      "maxCooler":  165
+                  }
     },
     {
         "id":  "gabinete-thermaltake-versa-h16-tg-3fan-argb-snow-white",
@@ -2294,6 +3103,12 @@
         "precio":  88780,
         "destacado":  false,
         "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-thermaltake-versa-h16-tg-3fan-argb-snow-white.webp"
+        "imagen":  "img/productos/gabinete-thermaltake-versa-h16-tg-3fan-argb-snow-white.webp",
+        "attrs":  {
+                      "fuente":  0,
+                      "formato":  "Micro-ATX",
+                      "maxGpu":  330,
+                      "maxCooler":  175
+                  }
     }
 ]

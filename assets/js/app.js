@@ -466,8 +466,8 @@
         <span class="mini">${TW.thumb(p)}</span>
         <div class="q-txt"><small>Elegiste</small><strong>${esc(p.titulo)}</strong></div>
         <div class="q-pick" role="group" aria-label="Cantidad">
-          <span>¿Cuántas?</span>
-          ${Array.from({ length: step.maxQty }, (_, k) => k + 1).map((n) => `<button type="button" data-qset="${step.key}|${esc(p.id)}|${n}" aria-pressed="${c.qty === n}">${n}${n === 2 ? "<small>Dual channel</small>" : ""}</button>`).join("")}
+          <span>¿Cuántas?${firstOf("mobo") && firstOf("mobo").attrs.slots ? `<small>Tu mother tiene ${firstOf("mobo").attrs.slots} slots</small>` : ""}</span>
+          ${Array.from({ length: TW.maxQty(step.key, B.sel, data.byId) }, (_, k) => k + 1).map((n) => `<button type="button" data-qset="${step.key}|${esc(p.id)}|${n}" aria-pressed="${c.qty === n}">${n}${n === 2 || n === 4 ? "<small>Dual channel</small>" : ""}</button>`).join("")}
         </div>
         <button class="btn" type="button" data-goto="${i + 1}">Siguiente paso ${U.arrow}</button>
       </div>`;

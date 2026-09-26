@@ -261,13 +261,13 @@
   // Formulario de producto (nuevo o edición)
   const ATTR_FIELDS = {
     "Procesadores": [["socket", "Socket", "sel", TW.SOCKETS], ["plataforma", "Marca", "sel", ["AMD", "Intel"]], ["video", "Tiene video integrado", "bool"], ["cooler", "Trae cooler", "bool"], ["tdp", "Consumo (W)", "num"]],
-    "Motherboards": [["socket", "Socket", "sel", TW.SOCKETS], ["ddr", "Memoria", "sel", ["DDR4", "DDR5", "DDR3"]], ["formato", "Formato", "sel", ["Micro-ATX", "ATX"]]],
+    "Motherboards": [["socket", "Socket", "sel", TW.SOCKETS], ["ddr", "Memoria", "sel", ["DDR4", "DDR5", "DDR3"]], ["formato", "Formato", "sel", ["Micro-ATX", "ATX", "Mini-ITX"]], ["slots", "Slots de memoria", "sel", ["2", "4"]], ["m2", "Slots M.2", "num"]],
     "Memorias RAM": [["ddr", "Tipo", "sel", ["DDR4", "DDR5", "DDR3"]], ["sodimm", "Es de notebook (SODIMM)", "bool"], ["gb", "Capacidad (GB)", "num"]],
-    "Almacenamientos": [["tipo", "Tipo", "sel", ["SSD", "HDD"]], ["interfaz", "Conexión", "sel", ["M.2 NVMe", "SATA", "Externo"]], ["gb", "Capacidad (GB)", "num"]],
-    "Placas de video": [["tdp", "Consumo (W)", "num"], ["gb", "Memoria (GB)", "num"]],
+    "Almacenamientos": [["tipo", "Tipo", "sel", ["SSD", "HDD"]], ["interfaz", "Conexión", "sel", ["M.2 NVMe", "M.2 SATA", "SATA", "Externo"]], ["gb", "Capacidad (GB)", "num"]],
+    "Placas de video": [["tdp", "Consumo (W)", "num"], ["gb", "Memoria (GB)", "num"], ["largo", "Largo (mm)", "num"], ["psuRec", "Fuente recomendada (W)", "num"]],
     "Fuentes de poder": [["watts", "Potencia (W)", "num"]],
-    "Gabinetes": [["fuente", "Fuente incluida (W, 0 = no trae)", "num"], ["formato", "Formato máximo de mother", "sel", ["ATX", "Micro-ATX"]]],
-    "Coolers": [["maxTdp", "Soporta hasta (W, 0 = sin límite)", "num"]],
+    "Gabinetes": [["fuente", "Fuente incluida (W, 0 = no trae)", "num"], ["formato", "Formato máximo de mother", "sel", ["ATX", "Micro-ATX", "Mini-ITX"]], ["maxGpu", "Placa de video hasta (mm)", "num"], ["maxCooler", "Cooler hasta (mm de alto)", "num"]],
+    "Coolers": [["maxTdp", "Soporta hasta (W, 0 = sin límite)", "num"], ["altura", "Altura (mm)", "num"]],
   };
 
   function productForm(d) {
@@ -364,7 +364,7 @@
         const v = p.attrs[k], overridden = d.attrs && k in d.attrs;
         const mark = overridden && auto.attrs[k] !== v ? ' <span class="tag warn">corregido</span>' : "";
         if (type === "bool") return `<label class="check"><input type="checkbox" data-attr="${k}"${overridden ? ' data-touched="1"' : ""}${v ? " checked" : ""}> ${label}${mark}</label>`;
-        if (type === "sel") return `<label class="fld">${label}${mark}<select data-attr="${k}"${overridden ? ' data-touched="1"' : ""}><option value="">—</option>${opts.map((o) => `<option${o === v ? " selected" : ""}>${o}</option>`).join("")}</select></label>`;
+        if (type === "sel") return `<label class="fld">${label}${mark}<select data-attr="${k}"${overridden ? ' data-touched="1"' : ""}><option value="">—</option>${opts.map((o) => `<option${String(o) === String(v) ? " selected" : ""}>${o}</option>`).join("")}</select></label>`;
         return `<label class="fld">${label}${mark}<input type="number" min="0" data-attr="${k}"${overridden ? ' data-touched="1"' : ""} value="${v ?? ""}"></label>`;
       }).join("")}</div>` : ""}`;
   }
@@ -505,7 +505,7 @@
           <span class="slot-txt"><small>${esc(label)}</small>${p ? esc(p.titulo) : `<em>Elegir ${esc(step.label.toLowerCase())}…</em>`}</span>
           <b>${p ? (p.precio ? TW.money(p.precio * (cur.qty || 1)) : "Consultar") : ""}</b>
         </button>
-        ${p && step.maxQty ? `<label class="slot-qty">Cant.<input class="inp" type="number" min="1" max="${step.maxQty}" value="${cur.qty}" data-slotqty="${step.key}|${idx}"></label>` : ""}
+        ${p && step.maxQty ? `<label class="slot-qty">Cant.<input class="inp" type="number" min="1" max="${TW.maxQty(step.key, pcSel, data.byId)}" value="${cur.qty}" data-slotqty="${step.key}|${idx}"></label>` : ""}
         ${p ? `<button type="button" class="ibtn danger" data-slotclear="${step.key}|${idx}" aria-label="Quitar">${U.trash}</button>` : ""}
         ${picker}
       </div>`;
@@ -746,7 +746,7 @@
     if (t.id === "slotQ" && pcPick) { pcPick.q = t.value; renderSlots(); return; }
     if (t.dataset.slotqty) {
       const [key, idx] = t.dataset.slotqty.split("|"); const c = pcSel[key][Number(idx)];
-      if (c) c.qty = Math.max(1, Math.min(TW.stepOf(key).maxQty || 1, Number(t.value) || 1));
+      if (c) c.qty = Math.max(1, Math.min(TW.maxQty(key, pcSel, built().byId), Number(t.value) || 1));
       return;
     }
   });

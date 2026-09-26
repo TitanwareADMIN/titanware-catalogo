@@ -249,7 +249,7 @@
       a.gb = gb;
     } else if (cat === "Almacenamientos") {
       a.tipo = /\bSSD\b/.test(N) ? "SSD" : "HDD";
-      a.interfaz = /EXTERNO/.test(N) ? "Externo" : /NVME/.test(N) ? "M.2 NVMe" : "SATA";
+      a.interfaz = /EXTERNO/.test(N) ? "Externo" : /NVME/.test(N) ? "M.2 NVMe" : /\bM\.?2\b/.test(N) ? "M.2 SATA" : "SATA";
       a.gb = gb;
     } else if (cat === "Placas de video") {
       a.tdp = gpuTdp(N);
@@ -294,7 +294,7 @@
       marca,
       categoria: String(d.categoria || "Otros").trim(),
       sub: String(d.sub || "").trim(),
-      specs: (given.length ? given : autoSpecs(N, d.categoria)).concat(notes),
+      specs: (given.length ? given : autoSpecs(N, d.categoria).concat(d.categoria === "Motherboards" && d.attrs && d.attrs.slots ? [`${d.attrs.slots} slots de memoria`] : [])).concat(notes),
       attrs: Object.assign(computeAttrs(N, d.categoria), d.attrs || {}),
       precio, stock, oferta, precioLista: oferta ? lista : null,
       descuento: oferta && lista ? Math.round((1 - off / lista) * 100) : 0,
@@ -360,7 +360,7 @@
     { key: "cpu", cat: "Procesadores", label: "Procesador", tip: "Elegí tu procesador: define la potencia de tu PC." },
     { key: "mobo", cat: "Motherboards", label: "Motherboard", tip: "Solo te mostramos las mothers con el mismo socket que tu procesador." },
     { key: "cooler", cat: "Coolers", label: "Cooler", tip: "Te mostramos los coolers compatibles con tu procesador. Si ya trae uno, este paso es opcional." },
-    { key: "ram", cat: "Memorias RAM", label: "Memoria RAM", tip: "Mostramos las memorias del tipo que soporta tu mother (DDR4 o DDR5). Elegí cuántas llevás: con 2 usás dual channel.", maxQty: 2 },
+    { key: "ram", cat: "Memorias RAM", label: "Memoria RAM", tip: "Mostramos las memorias del tipo que soporta tu mother (DDR4 o DDR5). Elegí cuántas llevás según los slots de tu mother: con 2 o 4 usás dual channel.", maxQty: 2 },
     { key: "storage", cat: "Almacenamientos", label: "Almacenamiento", tip: "Elegí hasta 2 discos. Un SSD hace que todo arranque mucho más rápido.", multi: 2 },
     { key: "gpu", cat: "Placas de video", label: "Placa de video", tip: "Necesaria para jugar. Si tu procesador tiene video integrado, es opcional." },
     { key: "psu", cat: "Fuentes de poder", label: "Fuente", tip: "Te mostramos las fuentes con potencia suficiente para tu configuración." },
@@ -377,7 +377,8 @@
     const cpu = first(sel, "cpu", byId), gpu = first(sel, "gpu", byId);
     const est = Math.round((cpu ? cpu.attrs.tdp * 1.4 : 90) + (gpu ? gpu.attrs.tdp : 0) + 60);
     const min = Math.ceil((est * 1.25) / 50) * 50;
-    const rec = Math.max(min, gpu ? 550 : 450);
+    // Recomendada: la del fabricante de la placa de video si la informa, con un piso de 550 W (450 W sin placa)
+    const rec = Math.max(min, gpu ? Math.max(550, Number(gpu.attrs.psuRec) || 0) : 450);
     return { est, min, rec };
   };
 
@@ -387,6 +388,17 @@
     if (key === "cooler") return !cpu || !cpu.attrs.cooler;
     if (key === "psu") return !(gab && gab.attrs.fuente >= TW.power(sel, byId).min);
     return true;
+  };
+
+  // Cantidad máxima de un componente: las memorias dependen de los slots de la mother (2 si no se sabe)
+  TW.maxQty = function (key, sel, byId) {
+    const step = TW.stepOf(key);
+    if (!step || !step.maxQty) return 1;
+    if (key === "ram") {
+      const mobo = first(sel, "mobo", byId);
+      return Math.max(1, Math.min(4, (mobo && Number(mobo.attrs.slots)) || step.maxQty));
+    }
+    return step.maxQty;
   };
 
   // null si el producto es compatible con lo elegido; si no, el motivo
@@ -408,11 +420,30 @@
         if (want && p.attrs.ddr && p.attrs.ddr !== want) return `Es ${p.attrs.ddr} (tu mother usa ${want})`;
         return null;
       }
-      case "storage":
-        return p.attrs.interfaz === "Externo" ? "Es un disco externo" : null;
-      case "case":
-        if (mobo && mobo.attrs.formato === "ATX" && p.attrs.formato === "Micro-ATX") return "Es Micro-ATX y tu mother es ATX";
+      case "storage": {
+        if (p.attrs.interfaz === "Externo") return "Es un disco externo";
+        // Discos M.2: la mother tiene que tener slots M.2 libres
+        const m2 = mobo ? mobo.attrs.m2 : undefined;
+        if (/^M.2/.test(p.attrs.interfaz || "") && m2 != null && m2 !== "") {
+          const used = (sel.storage || []).filter((c) => c.id !== p.id && byId[c.id] && /^M.2/.test(byId[c.id].attrs.interfaz || "")).length;
+          if (Number(m2) === 0) return "Tu mother no tiene slot M.2";
+          if (used >= Number(m2)) return `Tu mother tiene ${m2} slot${Number(m2) === 1 ? "" : "s"} M.2 y ya ${used === 1 ? "está ocupado" : "están ocupados"}`;
+        }
         return null;
+      }
+      case "gpu": {
+        const gab = first(sel, "case", byId);
+        if (gab && gab.attrs.maxGpu && p.attrs.largo && p.attrs.largo > gab.attrs.maxGpu) return `Mide ${p.attrs.largo} mm y en tu gabinete entran hasta ${gab.attrs.maxGpu} mm`;
+        return null;
+      }
+      case "case": {
+        if (mobo && mobo.attrs.formato === "ATX" && p.attrs.formato === "Micro-ATX") return "Es Micro-ATX y tu mother es ATX";
+        if (mobo && mobo.attrs.formato && mobo.attrs.formato !== "Mini-ITX" && p.attrs.formato === "Mini-ITX") return `Es Mini-ITX y tu mother es ${mobo.attrs.formato}`;
+        const gpu = first(sel, "gpu", byId), cool = first(sel, "cooler", byId);
+        if (gpu && gpu.attrs.largo && p.attrs.maxGpu && gpu.attrs.largo > p.attrs.maxGpu) return `Tu placa de video mide ${gpu.attrs.largo} mm y entran hasta ${p.attrs.maxGpu} mm`;
+        if (cool && cool.attrs.altura && p.attrs.maxCooler && cool.attrs.altura > p.attrs.maxCooler) return `Tu cooler mide ${cool.attrs.altura} mm de alto y entran hasta ${p.attrs.maxCooler} mm`;
+        return null;
+      }
       case "psu": {
         const { min } = TW.power(sel, byId);
         return p.attrs.watts && p.attrs.watts < min ? `${p.attrs.watts} W no alcanza (mínimo ${min} W)` : null;
@@ -420,6 +451,7 @@
       case "cooler":
         if (cpu && p.attrs.sockets && p.attrs.sockets.length && !p.attrs.sockets.includes(cpu.attrs.socket)) return `No es compatible con ${cpu.attrs.socket}`;
         if (cpu && p.attrs.maxTdp && p.attrs.maxTdp < cpu.attrs.tdp) return `Soporta ${p.attrs.maxTdp} W y tu procesador necesita ${cpu.attrs.tdp} W`;
+        { const gab = first(sel, "case", byId); if (gab && gab.attrs.maxCooler && p.attrs.altura && p.attrs.altura > gab.attrs.maxCooler) return `Mide ${p.attrs.altura} mm de alto y en tu gabinete entran hasta ${gab.attrs.maxCooler} mm`; }
         return null;
       default:
         return null;
@@ -457,6 +489,9 @@
         if (!ok && p) removed.push(p.titulo);
         return ok;
       });
+      // Si la nueva mother tiene menos slots, se ajusta la cantidad de memorias
+      const max = TW.maxQty(step.key, sel, byId);
+      for (const c of sel[step.key]) if (c.qty > max) c.qty = max;
     }
     return removed;
   };
