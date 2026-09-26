@@ -332,11 +332,12 @@
     const canSkip = step && !TW.isRequired(step.key, B.sel, data.byId);
     const tiles = STEPS.map((s, i) => {
       const items = chosen(s.key), p = items[0] && data.byId[items[0].id];
+      const stock = s.key === "cooler" && usingStock();
       const qty = items.reduce((t, c) => t + c.qty, 0);
-      return `<button class="bz-tile${p ? " done" : ""}" type="button" data-goto="${i}"${B.step === i ? ' aria-current="step"' : ""} title="${esc(p ? p.titulo : s.label)}">
+      return `<button class="bz-tile${p || stock ? " done" : ""}" type="button" data-goto="${i}"${B.step === i ? ' aria-current="step"' : ""} title="${esc(p ? p.titulo : stock ? "Cooler incluido con el procesador" : s.label)}">
         <span class="ico">${p && (p.imagen || p.caja) ? TW.thumb(p) : TW.ICONS[s.cat]}</span>
         <span class="lbl">${esc(s.label)}</span>
-        ${p ? `<i class="ok">${U.check}</i>` : ""}${qty > 1 ? `<i class="n">x${qty}</i>` : ""}
+        ${p || stock ? `<i class="ok">${U.check}</i>` : ""}${qty > 1 ? `<i class="n">x${qty}</i>` : ""}
       </button>`;
     }).join("");
     return `
@@ -356,6 +357,9 @@
   function refreshPanel() { const s = $("#bSide"); if (s) s.innerHTML = panelHtml(); }
 
   const firstOf = (key) => chosen(key)[0] && data.byId[chosen(key)[0].id];
+  // Cooler que viene en la caja del procesador (se puede elegir como opción en el paso del cooler)
+  const stockCooler = () => { const cpu = firstOf("cpu"); return cpu && cpu.attrs.cooler ? cpu : null; };
+  const usingStock = () => !!(B.sel.coolerStock && stockCooler() && !chosen("cooler").length);
 
   // Chequeos de compatibilidad, uno por uno: ok · wait (falta elegir) · bad
   function compatChecks() {
@@ -422,7 +426,18 @@
     const picked = new Set(chosen(step.key).map((c) => c.id));
     const rec = TW.power(B.sel, data.byId).rec;
     const isRec = (p) => step.key === "psu" && p.attrs.watts >= rec && /80 PLUS/i.test(p.nombre);
-    grid.innerHTML = opts.length ? opts.map((p) => `
+    const cpuBox = step.key === "cooler" && stockCooler();
+    const stockCard = cpuBox ? `
+      <button class="bz-opt stock${usingStock() ? " sel" : ""}" type="button" data-stockcooler>
+        <span class="bz-rec">${U.check} Sin costo</span>
+        <span class="bz-img">${TW.thumb(cpuBox)}</span>
+        <span class="bz-info">
+          <span class="bz-name">Cooler incluido con el procesador</span>
+          <span class="bz-spec">Viene en la caja del ${esc(cpuBox.titulo)}</span>
+          <span class="bz-foot"><span class="bz-price">$ 0</span><span class="bz-ok">${U.check} ${usingStock() ? "Elegido" : "Incluido"}</span></span>
+        </span>
+      </button>` : "";
+    grid.innerHTML = stockCard + (opts.length ? opts.map((p) => `
       <button class="bz-opt${picked.has(p.id) ? " sel" : ""}" type="button" data-pick="${esc(p.id)}">
         ${p.oferta ? `<span class="bz-off">Oferta${p.descuento ? ` -${p.descuento}%` : ""}</span>` : isRec(p) ? `<span class="bz-rec">${U.bolt} Recomendada</span>` : ""}
         <span class="bz-img">${TW.thumb(p)}</span>
@@ -435,7 +450,7 @@
           </span>
         </span>
       </button>`).join("")
-      : `<div class="b-empty">${B.q ? "No hay resultados para tu búsqueda." : "No hay opciones compatibles con lo que elegiste antes."} <br>Consultanos por WhatsApp y te ayudamos.</div>`;
+      : `<div class="b-empty">${B.q ? "No hay resultados para tu búsqueda." : "No hay opciones compatibles con lo que elegiste antes."} <br>Consultanos por WhatsApp y te ayudamos.</div>`);
     renderQtyBar();
   }
 
@@ -473,6 +488,7 @@
         <div>
           ${lines.length ? `<ul class="comp-list">${lines.map((l) => `
             <li><span class="mini">${TW.thumb(l.p)}</span><span><small>${esc(l.step.label)}</small>${l.qty > 1 ? `${l.qty}x ` : ""}${esc(l.p.titulo)}</span><span class="p">${l.p.precio ? TW.money(l.p.precio * l.qty) : "Consultar"}</span></li>`).join("")}
+            ${usingStock() ? `<li><span class="mini">${TW.ICONS.Coolers}</span><span><small>Cooler</small>Incluido con el procesador</span><span class="p">$ 0</span></li>` : ""}
           </ul>` : `<div class="b-empty">Todavía no elegiste componentes.</div>`}
           <div class="modal-price" style="margin-top:1.25rem"><span style="color:var(--muted)">Total · ~${pw.est} W</span><span class="price" style="font-size:1.6rem">${TW.money(total)}</span></div>
           <div class="bz-actions">
@@ -498,7 +514,8 @@
       const prevQty = list[0] && list[0].id === id ? list[0].qty : 1;
       B.sel[step.key] = [{ id, qty: prevQty }];
     }
-    if (step.key === "cpu") B.sel.plataforma = p.attrs.plataforma || "";
+    if (step.key === "cpu") { B.sel.plataforma = p.attrs.plataforma || ""; if (!p.attrs.cooler) B.sel.coolerStock = false; }
+    if (step.key === "cooler") B.sel.coolerStock = false;
     const removed = TW.pruneBuild(B.sel, data.byId);
     if (removed.length) toast(`Quitamos ${removed.join(", ")} porque ya no era compatible.`);
     // Avanza solo en pasos de una única elección; en memorias primero se elige la cantidad
@@ -513,6 +530,7 @@
     const lines = TW.buildLines(B.sel, data.byId), total = TW.linesTotal(lines);
     return `Hola ${NEG.nombre}! Armé esta PC en la web y quería consultarles:\n\n` +
       lines.map((l) => `• ${l.step.label}: ${l.qty > 1 ? l.qty + "x " : ""}${l.p.titulo} — ${l.p.precio ? TW.money(l.p.precio * l.qty) : "consultar"}`).join("\n") +
+      (usingStock() ? "\n• Cooler: incluido con el procesador" : "") +
       `\n\nTotal estimado: ${TW.money(total)}\n¿Tienen stock de todo?`;
   }
 
@@ -623,6 +641,10 @@
       if ((x = el("[data-brand]"))) { B.brand = B.brand === x.dataset.brand ? "" : x.dataset.brand; $$("[data-brand]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.brand === B.brand)); renderOptions(); return; }
       if ((x = el("[data-goto]"))) { B.step = Number(x.dataset.goto); B.q = ""; saveBuild(); renderBuilder(); scrollTo({ top: $("#builder").offsetTop - 130, behavior: "smooth" }); return; }
       if ((x = el("[data-pick]"))) { pick(x.dataset.pick); return; }
+      if ((x = el("[data-stockcooler]"))) {
+        B.sel.cooler = []; B.sel.coolerStock = true; B.step++; B.q = "";
+        saveBuild(); renderBuilder(); scrollTo({ top: $("#builder").offsetTop - 130, behavior: "smooth" }); return;
+      }
       if ((x = el("[data-skip]"))) { B.sel[x.dataset.skip] = []; B.step++; B.q = ""; saveBuild(); renderBuilder(); return; }
       if ((x = el("[data-qset]"))) {
         const [key, id, n] = x.dataset.qset.split("|");
@@ -636,7 +658,7 @@
       }
       if ((x = el("[data-addbuild]"))) {
         const lines = TW.buildLines(B.sel, data.byId);
-        TW.cart.add({ type: "armado", nombre: `PC armada a medida (${B.sel.plataforma})`, comps: lines.map((l) => ({ id: l.p.id, qty: l.qty })) });
+        TW.cart.add({ type: "armado", nombre: `PC armada a medida (${B.sel.plataforma})`, comps: lines.map((l) => ({ id: l.p.id, qty: l.qty })), ...(usingStock() ? { coolerStock: true } : {}) });
         toast("Tu PC se agregó al carrito", true); return;
       }
       if ((x = el("[data-wabuild]"))) { window.open(TW.waLink(buildMessage()), "_blank", "noopener"); return; }

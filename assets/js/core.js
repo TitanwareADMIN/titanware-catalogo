@@ -537,7 +537,9 @@
       const lines = (item.comps || []).filter((c) => data.byId[c.id]).map((c) => ({ p: data.byId[c.id], qty: c.qty || 1 }));
       if (!lines.length) return null;
       const gab = lines.find((l) => l.p.categoria === "Gabinetes" && l.p.imagen);
-      return { item, titulo: item.nombre || "PC armada a medida", unit: TW.linesTotal(lines), detalle: lines.map((l) => `${l.qty > 1 ? l.qty + "x " : ""}${l.p.titulo}`), thumb: gab ? `<img src="${esc(gab.p.imagen)}" alt="">` : null };
+      const detalle = lines.map((l) => `${l.qty > 1 ? l.qty + "x " : ""}${l.p.titulo}`);
+      if (item.coolerStock) detalle.push("Cooler incluido con el procesador");
+      return { item, titulo: item.nombre || "PC armada a medida", unit: TW.linesTotal(lines), detalle, thumb: gab ? `<img src="${esc(gab.p.imagen)}" alt="">` : null };
     }
     return null;
   };
