@@ -28,6 +28,7 @@
     "Fuentes de poder": svg('<path d="M8 16h48v32H8z"/><circle cx="26" cy="32" r="10"/><path d="M26 22v20M16 32h20M44 24h6M44 30h6M44 40l4-6h-4l4-6"/>'),
     "Coolers": svg('<path d="M10 10h44v44H10z"/><circle cx="32" cy="32" r="4"/><path d="M32 28c-2-8 4-14 10-12-2 6-6 10-10 12zM36 32c8-2 14 4 12 10-6-2-10-6-12-10zM32 36c2 8-4 14-10 12 2-6 6-10 10-12zM28 32c-8 2-14-4-12-10 6 2 10 6 12 10z"/>'),
     "Gabinetes": svg('<path d="M18 6h28v52H18z"/><path d="M24 14h16M24 20h16"/><circle cx="32" cy="38" r="8"/>'),
+    "Periféricos": svg('<rect x="20" y="8" width="24" height="40" rx="12"/><path d="M32 8v14M20 22h24M32 48v8"/>'),
     "default": svg('<path d="M10 14h44v30H10zM24 50h16M32 44v6"/>'),
   };
   const ui = (d, extra = "") => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ${extra}>${d}</svg>`;
@@ -78,7 +79,7 @@
   TW.productPrice = (p) => p.oferta && p.precioLista
     ? `<span class="price-off"><s>${TW.money(p.precioLista)}</s>${TW.priceHtml(p.precio)}</span>` : TW.priceHtml(p.precio);
   TW.offerTag = (p) => (p.oferta ? `<span class="offer-tag">${p.descuento ? `-${p.descuento}%` : "Oferta"}<small>OFERTA</small></span>` : "");
-  TW.STOCK = { disponible: "Disponible", consultar: "Consultar", "sin stock": "Sin stock" };
+  TW.STOCK = { disponible: "En stock", "sin stock": "Sin stock" };
 
   /* ---------- Lectura de nombres ---------- */
   const BRANDS = ["COOLERMASTER", "COOLER MASTER", "THERMALTAKE", "ARKHAM", "ADATA", "XPG", "ASUS", "MSI", "GIGABYTE", "ZOTAC", "KINGSTON", "CORSAIR",
@@ -262,6 +263,8 @@
     } else if (cat === "Coolers") {
       a.sockets = sockets.length ? sockets : []; // vacío = universal
       a.maxTdp = Number((N.match(/\b(\d+)W\b/) || [])[1]) || 0; // 0 = sin límite conocido
+      a.tipo = /WATER\s?COOL|\bAIO\b|LIQUID/.test(N) ? "Watercooler" : "Aire";
+      if (a.tipo === "Watercooler") a.radiador = Number((N.match(/\b(120|240|280|360|420)\s?MM\b|\b[A-Z]*(120|240|280|360|420)\b/) || []).slice(1).find(Boolean)) || 0;
     }
     return a;
   }
@@ -286,7 +289,7 @@
     const off = Number(String(d.precioOferta ?? "").replace(/[^\d]/g, "")) || null;
     const oferta = !!(off && (!lista || off < lista));
     const precio = oferta ? off : lista;
-    const stock = /^sin/i.test(d.stock || "") ? "sin stock" : /^disp/i.test(d.stock || "") ? "disponible" : "consultar";
+    const stock = /^sin/i.test(d.stock || "") ? "sin stock" : "disponible";
     return {
       id: d.id || TW.slug(raw),
       nombre: raw,
@@ -301,6 +304,9 @@
       destacado: d.destacado === true || /^(si|sí|true|1|x)$/i.test(String(d.destacado || "")),
       imagen: String(d.imagen || "").trim(),
       caja: String(d.caja || "").trim(),
+      desc: String(d.desc || "").trim(),
+      // Tabla de especificaciones: [["Socket", "AM4"], ...] o texto "Socket: AM4 | Chipset: A520"
+      ficha: (Array.isArray(d.ficha) ? d.ficha : String(d.ficha || "").split("|").map((r) => r.split(/:\s*/))).map(([k, ...v]) => [String(k || "").trim(), v.join(": ").trim()]).filter(([k, v]) => k && v),
     };
   };
 
@@ -360,8 +366,8 @@
     { key: "cpu", cat: "Procesadores", label: "Procesador", tip: "Elegí tu procesador: define la potencia de tu PC." },
     { key: "mobo", cat: "Motherboards", label: "Motherboard", tip: "Solo te mostramos las mothers con el mismo socket que tu procesador." },
     { key: "cooler", cat: "Coolers", label: "Cooler", tip: "Te mostramos los coolers compatibles con tu procesador. Si ya trae uno, este paso es opcional." },
-    { key: "ram", cat: "Memorias RAM", label: "Memoria RAM", tip: "Mostramos las memorias del tipo que soporta tu mother (DDR4 o DDR5). Elegí cuántas llevás según los slots de tu mother: con 2 o 4 usás dual channel.", maxQty: 2 },
-    { key: "storage", cat: "Almacenamientos", label: "Almacenamiento", tip: "Elegí hasta 2 discos. Un SSD hace que todo arranque mucho más rápido.", multi: 2 },
+    { key: "ram", cat: "Memorias RAM", label: "Memoria RAM", tip: "Mostramos las memorias que soporta tu mother. Tocá una y elegí cuántas: con 2 o 4 módulos usás dual channel. Podés combinar distintas hasta llenar los slots.", slots: true },
+    { key: "storage", cat: "Almacenamientos", label: "Almacenamiento", tip: "Sumá todos los discos que quieras hasta llenar los puertos de tu mother. Un SSD hace que todo arranque mucho más rápido.", slots: true },
     { key: "gpu", cat: "Placas de video", label: "Placa de video", tip: "Necesaria para jugar. Si tu procesador tiene video integrado, es opcional." },
     { key: "psu", cat: "Fuentes de poder", label: "Fuente", tip: "Te mostramos las fuentes con potencia suficiente para tu configuración." },
     { key: "case", cat: "Gabinetes", label: "Gabinete", tip: "El último paso: elegí dónde va todo. Algunos gabinetes ya incluyen fuente, teclado o mouse." },
@@ -390,15 +396,34 @@
     return true;
   };
 
-  // Cantidad máxima de un componente: las memorias dependen de los slots de la mother (2 si no se sabe)
+  /* ---------- Slots de la mother (memorias y discos) ---------- */
+  // Módulos que ocupa una memoria (un kit 2x8GB ocupa 2 slots)
+  TW.modules = (p) => Math.max(1, Number(p && p.attrs.modulos) || (/\b2\s?X\s?\d+\s?GB\b|\(2X/i.test(p ? p.nombre : "") ? 2 : 1));
+  const isM2 = (p) => /^M.2/.test(p.attrs.interfaz || "");
+  // Capacidad de la mother: slots de RAM, slots M.2 y puertos SATA (si no se sabe: 2 RAM, 1 M.2, 4 SATA)
+  TW.capacity = function (sel, byId) {
+    const mobo = first(sel, "mobo", byId), n = (v, d) => (v === 0 || v ? Number(v) : d);
+    return { ram: n(mobo && mobo.attrs.slots, mobo ? 2 : 4), m2: n(mobo && mobo.attrs.m2, 1), sata: n(mobo && mobo.attrs.sata, 4) };
+  };
+  // Lo que ya está ocupado con lo elegido
+  TW.usage = function (sel, byId) {
+    const u = { ram: 0, m2: 0, sata: 0 };
+    for (const c of sel.ram || []) if (byId[c.id]) u.ram += (c.qty || 1) * TW.modules(byId[c.id]);
+    for (const c of sel.storage || []) { const p = byId[c.id]; if (p) u[isM2(p) ? "m2" : "sata"] += c.qty || 1; }
+    return u;
+  };
+  TW.slotOf = (key, p) => (key === "ram" ? "ram" : isM2(p) ? "m2" : "sata");
+  // Cuántas unidades más de este producto entran en la mother
+  TW.room = function (key, p, sel, byId) {
+    const cap = TW.capacity(sel, byId), used = TW.usage(sel, byId), slot = TW.slotOf(key, p);
+    return Math.max(0, Math.floor((cap[slot] - used[slot]) / (key === "ram" ? TW.modules(p) : 1)));
+  };
+  // Cantidad máxima de un componente (la usa el panel para las PCs armadas)
   TW.maxQty = function (key, sel, byId) {
-    const step = TW.stepOf(key);
-    if (!step || !step.maxQty) return 1;
-    if (key === "ram") {
-      const mobo = first(sel, "mobo", byId);
-      return Math.max(1, Math.min(4, (mobo && Number(mobo.attrs.slots)) || step.maxQty));
-    }
-    return step.maxQty;
+    const cap = TW.capacity(sel, byId);
+    if (key === "ram") return Math.max(1, Math.min(8, cap.ram));
+    if (key === "storage") return Math.max(1, cap.m2 + cap.sata);
+    return 1;
   };
 
   // null si el producto es compatible con lo elegido; si no, el motivo
@@ -416,19 +441,15 @@
         return null;
       case "ram": {
         if (p.attrs.sodimm) return "Es de notebook (SODIMM)";
-        const want = mobo ? mobo.attrs.ddr : cpu ? ({ AM5: "DDR5", AM4: "DDR4", "LGA 1200": "DDR4" }[cpu.attrs.socket] || "") : "";
+        const want = mobo ? mobo.attrs.ddr : cpu ? ({ AM5: "DDR5", AM4: "DDR4", "LGA 1200": "DDR4", "LGA 1851": "DDR5" }[cpu.attrs.socket] || "") : "";
         if (want && p.attrs.ddr && p.attrs.ddr !== want) return `Es ${p.attrs.ddr} (tu mother usa ${want})`;
+        const slots = TW.capacity(sel, byId).ram;
+        if (mobo && TW.modules(p) > slots) return `Es un kit de ${TW.modules(p)} módulos y tu mother tiene ${slots} slots`;
         return null;
       }
       case "storage": {
         if (p.attrs.interfaz === "Externo") return "Es un disco externo";
-        // Discos M.2: la mother tiene que tener slots M.2 libres
-        const m2 = mobo ? mobo.attrs.m2 : undefined;
-        if (/^M.2/.test(p.attrs.interfaz || "") && m2 != null && m2 !== "") {
-          const used = (sel.storage || []).filter((c) => c.id !== p.id && byId[c.id] && /^M.2/.test(byId[c.id].attrs.interfaz || "")).length;
-          if (Number(m2) === 0) return "Tu mother no tiene slot M.2";
-          if (used >= Number(m2)) return `Tu mother tiene ${m2} slot${Number(m2) === 1 ? "" : "s"} M.2 y ya ${used === 1 ? "está ocupado" : "están ocupados"}`;
-        }
+        if (mobo && isM2(p) && TW.capacity(sel, byId).m2 === 0) return "Tu mother no tiene slot M.2";
         return null;
       }
       case "gpu": {
@@ -442,6 +463,8 @@
         const gpu = first(sel, "gpu", byId), cool = first(sel, "cooler", byId);
         if (gpu && gpu.attrs.largo && p.attrs.maxGpu && gpu.attrs.largo > p.attrs.maxGpu) return `Tu placa de video mide ${gpu.attrs.largo} mm y entran hasta ${p.attrs.maxGpu} mm`;
         if (cool && cool.attrs.altura && p.attrs.maxCooler && cool.attrs.altura > p.attrs.maxCooler) return `Tu cooler mide ${cool.attrs.altura} mm de alto y entran hasta ${p.attrs.maxCooler} mm`;
+        if (cool && cool.attrs.radiador && p.attrs.radiador != null && p.attrs.radiador !== "" && cool.attrs.radiador > Number(p.attrs.radiador))
+          return Number(p.attrs.radiador) ? `Tu watercooler es de ${cool.attrs.radiador} mm y entran radiadores de hasta ${p.attrs.radiador} mm` : "No tiene lugar para el radiador de tu watercooler";
         return null;
       }
       case "psu": {
@@ -451,7 +474,9 @@
       case "cooler":
         if (cpu && p.attrs.sockets && p.attrs.sockets.length && !p.attrs.sockets.includes(cpu.attrs.socket)) return `No es compatible con ${cpu.attrs.socket}`;
         if (cpu && p.attrs.maxTdp && p.attrs.maxTdp < cpu.attrs.tdp) return `Soporta ${p.attrs.maxTdp} W y tu procesador necesita ${cpu.attrs.tdp} W`;
-        { const gab = first(sel, "case", byId); if (gab && gab.attrs.maxCooler && p.attrs.altura && p.attrs.altura > gab.attrs.maxCooler) return `Mide ${p.attrs.altura} mm de alto y en tu gabinete entran hasta ${gab.attrs.maxCooler} mm`; }
+        { const gab = first(sel, "case", byId);
+          if (gab && gab.attrs.maxCooler && p.attrs.altura && p.attrs.altura > gab.attrs.maxCooler) return `Mide ${p.attrs.altura} mm de alto y en tu gabinete entran hasta ${gab.attrs.maxCooler} mm`;
+          if (gab && p.attrs.radiador && gab.attrs.radiador != null && gab.attrs.radiador !== "" && p.attrs.radiador > Number(gab.attrs.radiador)) return `Radiador de ${p.attrs.radiador} mm: en tu gabinete entran hasta ${gab.attrs.radiador || 0} mm`; }
         return null;
       default:
         return null;
@@ -476,6 +501,11 @@
       }
       if ((sel[step.key] || []).some((c) => !byId[c.id])) issues.push({ key: step.key, level: "aviso", msg: `${step.label}: un componente ya no está en el catálogo` });
     }
+    // Más memorias o discos de los que entran en la mother
+    const cap = TW.capacity(sel, byId), used = TW.usage(sel, byId);
+    if (used.ram > cap.ram) issues.push({ key: "ram", level: "error", msg: `Memoria RAM: son ${used.ram} módulos y tu mother tiene ${cap.ram} slots` });
+    if (used.m2 > cap.m2) issues.push({ key: "storage", level: "error", msg: `Almacenamiento: son ${used.m2} discos M.2 y tu mother tiene ${cap.m2} slot${cap.m2 === 1 ? "" : "s"} M.2` });
+    if (used.sata > cap.sata) issues.push({ key: "storage", level: "error", msg: `Almacenamiento: son ${used.sata} discos SATA y tu mother tiene ${cap.sata} puertos SATA` });
     return issues;
   };
 
@@ -489,10 +519,19 @@
         if (!ok && p) removed.push(p.titulo);
         return ok;
       });
-      // Si la nueva mother tiene menos slots, se ajusta la cantidad de memorias
-      const max = TW.maxQty(step.key, sel, byId);
-      for (const c of sel[step.key]) if (c.qty > max) c.qty = max;
     }
+    // Si la nueva mother tiene menos slots, se sacan memorias o discos desde el último elegido
+    const cap = TW.capacity(sel, byId);
+    const trim = (key, slot) => {
+      const list = sel[key];
+      for (let i = list.length - 1; i >= 0 && TW.usage(sel, byId)[slot] > cap[slot]; i--) {
+        const p = byId[list[i].id];
+        if (TW.slotOf(key, p) !== slot) continue;
+        while (list[i].qty > 1 && TW.usage(sel, byId)[slot] > cap[slot]) list[i].qty--;
+        if (TW.usage(sel, byId)[slot] > cap[slot]) { removed.push(p.titulo); list.splice(i, 1); }
+      }
+    };
+    trim("ram", "ram"); trim("storage", "m2"); trim("storage", "sata");
     return removed;
   };
 
@@ -574,6 +613,7 @@
       const gab = lines.find((l) => l.p.categoria === "Gabinetes" && l.p.imagen);
       const detalle = lines.map((l) => `${l.qty > 1 ? l.qty + "x " : ""}${l.p.titulo}`);
       if (item.coolerStock) detalle.push("Cooler incluido con el procesador");
+      if (item.gpuInt) detalle.push("Video integrado del procesador");
       return { item, titulo: item.nombre || "PC armada a medida", unit: TW.linesTotal(lines), detalle, thumb: gab ? `<img src="${esc(gab.p.imagen)}" alt="">` : null };
     }
     return null;

@@ -251,7 +251,7 @@
         <td><input class="inp price-in offer-in${p.oferta ? " on" : ""}" type="number" min="0" step="1" value="${d.precioOferta ?? ""}" data-f="precioOferta" placeholder="—" aria-label="Precio de oferta" title="Precio de oferta: dejalo vacío si no está en oferta"></td>
         <td style="text-align:center"><input type="checkbox" data-f="destacado"${d.destacado ? " checked" : ""} aria-label="Destacado" style="accent-color:var(--violet);width:17px;height:17px"></td>
         <td><select class="inp stock-in" data-f="stock" aria-label="Stock">
-          ${["consultar", "disponible", "sin stock"].map((s) => `<option value="${s}"${(d.stock || "consultar") === s ? " selected" : ""}>${TW.STOCK[s]}</option>`).join("")}
+          ${["disponible", "sin stock"].map((s) => `<option value="${s}"${(/^sin/i.test(d.stock || "") ? "sin stock" : "disponible") === s ? " selected" : ""}>${TW.STOCK[s]}</option>`).join("")}
         </select></td>
         <td><div class="acts"><button class="ibtn" type="button" data-editprod="${esc(d.id)}" aria-label="Editar">${U.edit}</button><button class="ibtn danger" type="button" data-delprod="${esc(d.id)}" aria-label="Eliminar">${U.trash}</button></div></td>
       </tr>`;
@@ -261,18 +261,18 @@
   // Formulario de producto (nuevo o edición)
   const ATTR_FIELDS = {
     "Procesadores": [["socket", "Socket", "sel", TW.SOCKETS], ["plataforma", "Marca", "sel", ["AMD", "Intel"]], ["video", "Tiene video integrado", "bool"], ["cooler", "Trae cooler", "bool"], ["tdp", "Consumo (W)", "num"]],
-    "Motherboards": [["socket", "Socket", "sel", TW.SOCKETS], ["ddr", "Memoria", "sel", ["DDR4", "DDR5", "DDR3"]], ["formato", "Formato", "sel", ["Micro-ATX", "ATX", "Mini-ITX"]], ["slots", "Slots de memoria", "sel", ["2", "4"]], ["m2", "Slots M.2", "num"]],
-    "Memorias RAM": [["ddr", "Tipo", "sel", ["DDR4", "DDR5", "DDR3"]], ["sodimm", "Es de notebook (SODIMM)", "bool"], ["gb", "Capacidad (GB)", "num"]],
+    "Motherboards": [["socket", "Socket", "sel", TW.SOCKETS], ["ddr", "Memoria", "sel", ["DDR4", "DDR5", "DDR3"]], ["formato", "Formato", "sel", ["Micro-ATX", "ATX", "Mini-ITX"]], ["slots", "Slots de memoria", "sel", ["1", "2", "4"]], ["m2", "Slots M.2", "num"], ["sata", "Puertos SATA", "num"]],
+    "Memorias RAM": [["ddr", "Tipo", "sel", ["DDR4", "DDR5", "DDR3"]], ["sodimm", "Es de notebook (SODIMM)", "bool"], ["gb", "Capacidad total (GB)", "num"], ["modulos", "Módulos que trae (2 = kit)", "sel", ["1", "2"]]],
     "Almacenamientos": [["tipo", "Tipo", "sel", ["SSD", "HDD"]], ["interfaz", "Conexión", "sel", ["M.2 NVMe", "M.2 SATA", "SATA", "Externo"]], ["gb", "Capacidad (GB)", "num"]],
     "Placas de video": [["tdp", "Consumo (W)", "num"], ["gb", "Memoria (GB)", "num"], ["largo", "Largo (mm)", "num"], ["psuRec", "Fuente recomendada (W)", "num"]],
     "Fuentes de poder": [["watts", "Potencia (W)", "num"]],
-    "Gabinetes": [["fuente", "Fuente incluida (W, 0 = no trae)", "num"], ["formato", "Formato máximo de mother", "sel", ["ATX", "Micro-ATX", "Mini-ITX"]], ["maxGpu", "Placa de video hasta (mm)", "num"], ["maxCooler", "Cooler hasta (mm de alto)", "num"]],
-    "Coolers": [["maxTdp", "Soporta hasta (W, 0 = sin límite)", "num"], ["altura", "Altura (mm)", "num"]],
+    "Gabinetes": [["fuente", "Fuente incluida (W, 0 = no trae)", "num"], ["formato", "Formato máximo de mother", "sel", ["ATX", "Micro-ATX", "Mini-ITX"]], ["maxGpu", "Placa de video hasta (mm)", "num"], ["maxCooler", "Cooler hasta (mm de alto)", "num"], ["radiador", "Radiador hasta (mm)", "num"]],
+    "Coolers": [["tipo", "Tipo", "sel", ["Aire", "Watercooler"]], ["sockets", "Sockets (separados por coma, vacío = todos)", "list"], ["maxTdp", "Soporta hasta (W, 0 = sin límite)", "num"], ["altura", "Altura (mm, aire)", "num"], ["radiador", "Radiador (mm, watercooler)", "num"]],
   };
 
   function productForm(d) {
     const isNew = !d;
-    d = d || { nombre: "", categoria: "", sub: "", precio: "", destacado: false, stock: "consultar", imagen: "" };
+    d = d || { nombre: "", categoria: "", sub: "", precio: "", destacado: false, stock: "disponible", imagen: "" };
     const cats = [...new Set([...CFG.categorias, ...S.cat.map((p) => p.categoria)])];
     const subs = [...new Set(S.cat.filter((p) => p.categoria === d.categoria && p.sub).map((p) => p.sub))];
     const dlg = $("#dlg");
@@ -294,7 +294,7 @@
             </label>
             <label class="fld">Precio (vacío = “Consultar precio”)<input name="precio" type="number" min="0" step="1" value="${d.precio ?? ""}"></label>
             <label class="fld">Precio de oferta <span class="hint" style="display:inline">(opcional: menor al precio, muestra el cartel de oferta)</span><input name="precioOferta" type="number" min="0" step="1" value="${d.precioOferta ?? ""}" placeholder="Sin oferta"></label>
-            <label class="fld">Stock<select name="stock">${["consultar", "disponible", "sin stock"].map((s) => `<option value="${s}"${(d.stock || "consultar") === s ? " selected" : ""}>${TW.STOCK[s]}</option>`).join("")}</select></label>
+            <label class="fld">Stock<select name="stock">${["disponible", "sin stock"].map((s) => `<option value="${s}"${(/^sin/i.test(d.stock || "") ? "sin stock" : "disponible") === s ? " selected" : ""}>${TW.STOCK[s]}</option>`).join("")}</select></label>
             <label class="check full"><input type="checkbox" name="destacado"${d.destacado ? " checked" : ""}> Mostrar como destacado (aparece primero y en el inicio)</label>
             <div class="fld full">Foto (opcional: si no hay, se muestra el logo de la marca)
               <div class="img-box"><span class="mini" id="imgPrev"></span>
@@ -314,6 +314,8 @@
             </div>
             <label class="fld">Marca <span class="hint" style="display:inline">(vacío = automática)</span><input name="marca" value="${esc(d.marca || "")}" placeholder="Automática"></label>
             <label class="fld">Características <span class="hint" style="display:inline">(una por línea · vacío = automáticas)</span><textarea name="specs" placeholder="Automáticas">${esc((d.specs || []).join("\n"))}</textarea></label>
+            <label class="fld full">Descripción <span class="hint" style="display:inline">(se ve al abrir el producto)</span><textarea name="desc" rows="4" placeholder="Qué es, para qué sirve y sus puntos fuertes">${esc(d.desc || "")}</textarea></label>
+            <label class="fld full">Especificaciones <span class="hint" style="display:inline">(una por línea: “Campo: valor”)</span><textarea name="ficha" rows="6" placeholder="Socket: AM4&#10;Chipset: AMD B550&#10;Formato: Micro-ATX">${esc((d.ficha || []).map(([k, v]) => `${k}: ${v}`).join("\n"))}</textarea></label>
           </div>
           <div class="detect" id="detect"></div>
         </div>
@@ -336,11 +338,16 @@
     };
     const marca = String(fd.get("marca") || "").trim(); if (marca) d.marca = marca;
     const specs = String(fd.get("specs") || "").split("\n").map((s) => s.trim()).filter(Boolean); if (specs.length) d.specs = specs;
+    const desc = String(fd.get("desc") || "").trim(); if (desc) d.desc = desc;
+    // Ficha técnica: una fila por línea, "Campo: valor"
+    const ficha = String(fd.get("ficha") || "").split("\n").map((l) => l.split(/:\s*/)).map(([k, ...v]) => [k.trim(), v.join(": ").trim()]).filter(([k, v]) => k && v);
+    if (ficha.length) d.ficha = ficha;
     const attrs = {};
     $$("[data-attr]", f).forEach((el) => {
       if (!el.dataset.touched) return;
       const k = el.dataset.attr;
-      attrs[k] = el.type === "checkbox" ? el.checked : el.type === "number" ? Number(el.value) || 0 : el.value;
+      attrs[k] = el.type === "checkbox" ? el.checked : el.type === "number" ? Number(el.value) || 0
+        : el.dataset.kind === "list" ? el.value.split(",").map((s) => s.trim()).filter(Boolean) : el.value;
     });
     if (Object.keys(attrs).length) d.attrs = attrs;
     return d;
@@ -365,6 +372,7 @@
         const mark = overridden && auto.attrs[k] !== v ? ' <span class="tag warn">corregido</span>' : "";
         if (type === "bool") return `<label class="check"><input type="checkbox" data-attr="${k}"${overridden ? ' data-touched="1"' : ""}${v ? " checked" : ""}> ${label}${mark}</label>`;
         if (type === "sel") return `<label class="fld">${label}${mark}<select data-attr="${k}"${overridden ? ' data-touched="1"' : ""}><option value="">—</option>${opts.map((o) => `<option${String(o) === String(v) ? " selected" : ""}>${o}</option>`).join("")}</select></label>`;
+        if (type === "list") return `<label class="fld">${label}${mark}<input data-attr="${k}" data-kind="list"${overridden ? ' data-touched="1"' : ""} value="${esc((v || []).join(", "))}" placeholder="AM4, AM5, LGA 1700"></label>`;
         return `<label class="fld">${label}${mark}<input type="number" min="0" data-attr="${k}"${overridden ? ' data-touched="1"' : ""} value="${v ?? ""}"></label>`;
       }).join("")}</div>` : ""}`;
   }
@@ -377,7 +385,9 @@
       const i = S.cat.findIndex((x) => x.id === editing);
       const prev = S.cat[i];
       if (prev.attrs && !d.attrs) d.attrs = prev.attrs;
-      S.cat[i] = { id: prev.id, ...d };
+      // Se conservan los datos que el formulario no edita (ej. el nombre original de la lista de precios)
+      const keep = Object.fromEntries(Object.entries(prev).filter(([k]) => !["precioOferta", "marca", "specs", "desc", "ficha"].includes(k)));
+      S.cat[i] = { ...keep, ...d, id: prev.id };
       S.changedIds.add(prev.id);
     } else {
       const id = uniqueId(TW.slug(d.nombre), new Set(S.cat.map((x) => x.id)));
@@ -632,7 +642,7 @@
       if (!n.on) continue;
       if (!n.categoria) { toast(`Elegí la categoría de “${n.nombre}” o destildalo.`, false); return; }
       const id = uniqueId(TW.slug(n.nombre), taken); taken.add(id);
-      S.cat.push({ id, nombre: n.nombre, categoria: n.categoria, sub: n.sub, precio: n.precio, destacado: false, stock: "consultar", imagen: "" });
+      S.cat.push({ id, nombre: n.nombre, categoria: n.categoria, sub: n.sub, precio: n.precio, destacado: false, stock: "disponible", imagen: "" });
       S.changedIds.add(id); nN++;
     }
     const del = new Set();

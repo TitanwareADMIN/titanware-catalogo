@@ -9,6 +9,7 @@ window.TW_CONFIG = {
     whatsapp: "5491166811031",
     whatsappVisible: "+54 9 11 6681-1031",
     instagram: "titanwareok",
+    facebook: "https://www.facebook.com/marketplace/profile/61587365600129/",
     ubicacion: "San Francisco Solano, Buenos Aires",
   },
 
@@ -20,7 +21,7 @@ window.TW_CONFIG = {
   },
 
   // Categorías del catálogo, en el orden en que se muestran
-  categorias: ["Motherboards", "Procesadores", "Coolers", "Memorias RAM", "Almacenamientos", "Fuentes de poder", "Placas de video", "Gabinetes"],
+  categorias: ["Motherboards", "Procesadores", "Coolers", "Memorias RAM", "Almacenamientos", "Fuentes de poder", "Placas de video", "Gabinetes", "Periféricos"],
 
   // Categorías de las PCs armadas
   categoriasPC: ["Gamer", "Hogar / Oficina", "Workstation"],
