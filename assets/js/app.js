@@ -415,7 +415,7 @@
       <span class="bz-info">
         <span class="bz-name">${esc(name)}</span>
         <span class="bz-spec">${esc(spec)}</span>
-        <span class="bz-foot"><span class="bz-price">$ 0</span><span class="bz-ok">${U.check} ${on ? "Elegido" : "Compatible"}</span></span>
+        <span class="bz-foot"><span class="bz-price">$ 0</span><span class="bz-ok">${U.check} ${on ? "Seleccionado" : "Compatible"}</span></span>
       </span>
     </button>`;
 
@@ -441,6 +441,9 @@
       .filter((p) => words.every((w) => norm(p.titulo + " " + p.marca + " " + p.specs.join(" ")).includes(w)));
     const sorters = { "precio-asc": (a, b) => (a.precio || 1e12) - (b.precio || 1e12), "precio-desc": (a, b) => (b.precio || 0) - (a.precio || 0), az: (a, b) => a.titulo.localeCompare(b.titulo) };
     opts.sort(sorters[B.sort] || sorters["precio-asc"]);
+    // Lo que ya está seleccionado va primero, para encontrarlo y cambiarlo fácil
+    const picked = new Set(chosen(step.key).map((c) => c.id));
+    opts = [...opts.filter((p) => picked.has(p.id)), ...opts.filter((p) => !picked.has(p.id))];
     const count = $("#optCount");
     if (count) count.textContent = `${opts.length} ${opts.length === 1 ? "opción compatible" : "opciones compatibles"}`;
     const qtyOf = Object.fromEntries(chosen(step.key).map((c) => [c.id, c.qty]));
@@ -476,15 +479,16 @@
         <div class="bz-opt sel" role="group" aria-label="${esc(p.titulo)}">${head}${info(`
           <span class="bz-foot">${price}<span class="bz-step">
             <span class="qty"><button type="button" data-sq="${step.key}|${esc(p.id)}|-1" aria-label="Uno menos">${U.minus}</button><span>${q}</span><button type="button" data-sq="${step.key}|${esc(p.id)}|1" aria-label="Uno más"${more ? "" : " disabled"}>${U.plus}</button></span>
-            <span class="bz-ok">${U.check} Elegido</span></span></span>`)}
+            <span class="bz-ok">${U.check} Seleccionado</span></span></span>`)}
         </div>`;
       }
       return `
         <button class="bz-opt${q ? " sel" : ""}" type="button" data-pick="${esc(p.id)}">${head}${info(`
-          <span class="bz-foot">${price}<span class="bz-ok">${U.check} ${q ? (step.slots ? `Elegido${q > 1 ? ` x${q}` : ""}` : "Elegido") : "Compatible"}</span></span>`)}
+          <span class="bz-foot">${price}<span class="bz-ok">${U.check} ${q ? (step.slots ? `Seleccionado${q > 1 ? ` x${q}` : ""}` : "Seleccionado") : "Compatible"}</span></span>`)}
         </button>`;
     };
-    grid.innerHTML = free + (opts.length ? opts.map(card).join("")
+    const sel = opts.filter((p) => picked.has(p.id)), rest = opts.filter((p) => !picked.has(p.id));
+    grid.innerHTML = sel.map(card).join("") + free + (opts.length ? rest.map(card).join("")
       : `<div class="b-empty">${B.q ? "No hay resultados para tu búsqueda." : "No hay opciones compatibles con lo que elegiste antes."} <br>Consultanos por WhatsApp y te ayudamos.</div>`);
     renderSlotBar();
   }
