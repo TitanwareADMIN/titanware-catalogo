@@ -849,3 +849,9 @@ li.bad, li.bad strong { color: var(--off) !important; }
   body.building footer { padding-bottom: 8rem; }
   body.building .wa-float { bottom: 8rem; }
 }
+/* Contador dentro de la tarjeta elegida (memorias y discos) */
+.bz-opt[role="group"] { cursor: default; }
+.bz-step { display: inline-flex; align-items: center; gap: .5rem; }
+.bz-step .qty { background: var(--bg-2); }
+.bz-foot { flex-wrap: wrap; }
+@media (max-width: 640px) { .bz-step .bz-ok { display: none; } }

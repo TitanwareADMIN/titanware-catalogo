@@ -469,6 +469,16 @@
           <span class="bz-qty"><span class="q-lbl">¿Cuántas llevás?</span><span class="q-opts">${qtyChoices(p)}</span></span>
           <button class="linkish q-cancel" type="button" data-askclose>Cancelar</button>`)}
         </div>`;
+      // Memorias y discos elegidos: contador − n + dentro de la tarjeta (como en CompraGamer)
+      if (step.slots && q) {
+        const more = B.replace ? false : TW.room(step.key, p, B.sel, data.byId) > 0;
+        return `
+        <div class="bz-opt sel" role="group" aria-label="${esc(p.titulo)}">${head}${info(`
+          <span class="bz-foot">${price}<span class="bz-step">
+            <span class="qty"><button type="button" data-sq="${step.key}|${esc(p.id)}|-1" aria-label="Uno menos">${U.minus}</button><span>${q}</span><button type="button" data-sq="${step.key}|${esc(p.id)}|1" aria-label="Uno más"${more ? "" : " disabled"}>${U.plus}</button></span>
+            <span class="bz-ok">${U.check} Elegido</span></span></span>`)}
+        </div>`;
+      }
       return `
         <button class="bz-opt${q ? " sel" : ""}" type="button" data-pick="${esc(p.id)}">${head}${info(`
           <span class="bz-foot">${price}<span class="bz-ok">${U.check} ${q ? (step.slots ? `Elegido${q > 1 ? ` x${q}` : ""}` : "Elegido") : "Compatible"}</span></span>`)}
@@ -574,7 +584,7 @@
     if (step.key === "cpu") {
       B.sel.plataforma = p.attrs.plataforma || "";
       if (!p.attrs.cooler) B.sel.coolerStock = false;
-      if (!p.attrs.video) B.sel.gpuInt = false;
+      if (!p.attrs.video) { B.sel.gpuInt = false; toast("Este procesador no tiene gráficos integrados: vas a necesitar una placa de video."); }
     }
     if (step.key === "cooler") B.sel.coolerStock = false;
     if (step.key === "gpu") B.sel.gpuInt = false;
