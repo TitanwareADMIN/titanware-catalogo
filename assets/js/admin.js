@@ -224,7 +224,7 @@
     return `
       <div class="bar">
         <label class="hsearch">${U.search}<input id="fq" type="search" placeholder="Buscar producto…" value="${esc(S.f.q)}" autocomplete="off"></label>
-        <div class="select"><select id="fcat"><option value="">Todas las categorías</option><option value="__oferta"${S.f.cat === "__oferta" ? " selected" : ""}>★ En oferta</option>${cats.map((c) => `<option${c === S.f.cat ? " selected" : ""}>${esc(c)}</option>`).join("")}</select></div>
+        <div class="select"><select id="fcat"><option value="">Todas las categorías</option><option value="__oferta"${S.f.cat === "__oferta" ? " selected" : ""}>★ En oferta</option><option value="__sinfoto"${S.f.cat === "__sinfoto" ? " selected" : ""}>Sin foto (no se ven en la tienda)</option>${cats.map((c) => `<option${c === S.f.cat ? " selected" : ""}>${esc(c)}</option>`).join("")}</select></div>
         <span class="count" id="fcount"></span>
         <span class="grow"></span>
         <button class="btn" type="button" data-newprod>${U.plus} Agregar producto</button>
@@ -239,13 +239,13 @@
   function renderProductRows() {
     const rows = $("#prodRows"); if (!rows) return;
     const words = norm(S.f.q).split(/\s+/).filter(Boolean);
-    const list = S.cat.filter((d) => (!S.f.cat || (S.f.cat === "__oferta" ? d.precioOferta : d.categoria === S.f.cat)) && words.every((w) => norm(`${d.nombre} ${d.sub}`).includes(w)));
+    const list = S.cat.filter((d) => (!S.f.cat || (S.f.cat === "__oferta" ? d.precioOferta : S.f.cat === "__sinfoto" ? !(d.imagen || d.caja) : d.categoria === S.f.cat)) && words.every((w) => norm(`${d.nombre} ${d.sub}`).includes(w)));
     $("#fcount").textContent = `${list.length} de ${S.cat.length}`;
     rows.innerHTML = list.map((d) => {
       const p = TW.buildProduct(d);
       return `<tr data-id="${esc(d.id)}"${S.changedIds.has(d.id) ? ' class="changed"' : ""}>
         <td><span class="mini">${TW.thumb(p)}</span></td>
-        <td class="name"><strong>${esc(p.titulo)}</strong><small>${esc(d.nombre)}</small></td>
+        <td class="name"><strong>${esc(p.titulo)}</strong><small>${esc(d.nombre)}${d.imagen || d.caja ? "" : ' · <b style="color:var(--warn)">Sin foto: no se ve en la tienda</b>'}</small></td>
         <td><span style="white-space:nowrap">${esc(d.categoria)}</span><br><small style="color:var(--muted)">${esc(d.sub || "")}</small></td>
         <td><input class="inp price-in" type="number" min="0" step="1" value="${d.precio ?? ""}" data-f="precio" placeholder="Consultar" aria-label="Precio"></td>
         <td><input class="inp price-in offer-in${p.oferta ? " on" : ""}" type="number" min="0" step="1" value="${d.precioOferta ?? ""}" data-f="precioOferta" placeholder="—" aria-label="Precio de oferta" title="Precio de oferta: dejalo vacío si no está en oferta"></td>

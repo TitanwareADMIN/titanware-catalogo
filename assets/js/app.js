@@ -785,6 +785,8 @@
       console.error(err);
       $("main").insertAdjacentHTML("afterbegin", `<div class="wrap"><div class="empty" style="margin:2rem 0"><strong>No pudimos cargar los productos</strong>Probá recargar la página o escribinos por WhatsApp.</div></div>`);
     }
+    // Los productos sin foto no se muestran en la tienda (siguen en el catálogo para las PCs armadas y el admin)
+    data.products = data.products.filter((p) => p.imagen || p.caja);
     TW.pruneBuild(B.sel, data.byId);
     if (data.products.some((p) => p.oferta))
       $('#mainnav a[href="#/catalogo"]').insertAdjacentHTML("afterend", `<a class="offer-link" href="#/catalogo/Ofertas" data-route="catalogo" data-cat="Ofertas">Ofertas</a>`);
