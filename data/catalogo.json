@@ -7162,7 +7162,7 @@
     },
     {
         "id":  "fuente-550w-gigabyte-white-gp-p550ss-ice-80-plus-silver",
-        "nombre":  "Gigabyte GP-P550SS ICE 550W 80 Plus Silver",
+        "nombre":  "Gigabyte GP-P550SS ICE 550W 80 Plus Silver Blanca",
         "categoria":  "Fuentes de poder",
         "sub":  "Fuentes de poder",
         "precio":  90348,
@@ -42625,8 +42625,8 @@
                   }
     },
     {
-        "id":  "gigabyte-gp-p650ss-ice-650w-80-plus-silver",
-        "nombre":  "Gigabyte GP-P650SS ICE 650W 80 Plus Silver",
+        "id":  "gigabyte-gp-p650ss-ice-650w-80-plus-silver-blanca",
+        "nombre":  "Gigabyte GP-P650SS ICE 650W 80 Plus Silver Blanca",
         "origen":  "Fuente Gigabyte 650W 80 Plus Silver Plus Blanca",
         "marca":  "Gigabyte",
         "categoria":  "Fuentes de poder",
@@ -42670,7 +42670,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/gigabyte-gp-p650ss-ice-650w-80-plus-silver.webp",
+        "imagen":  "img/productos/gigabyte-gp-p650ss-ice-650w-80-plus-silver-blanca.webp",
         "attrs":  {
                       "watts":  650,
                       "cert":  "80 Plus Silver",
@@ -59265,8 +59265,8 @@
                   }
     },
     {
-        "id":  "teclado-mecanico-raptor-fireclaw-m68",
-        "nombre":  "Teclado Mecánico Raptor Fireclaw M68",
+        "id":  "teclado-mecanico-raptor-fireclaw-m68-switch-rojo-outemu",
+        "nombre":  "Teclado Mecánico Raptor Fireclaw M68 Switch Rojo Outemu",
         "origen":  "TECLADO MECANICO RAPTOR FIRECLAW M68 SWITCH RED OUTEMU",
         "marca":  "Raptor Gaming",
         "categoria":  "Periféricos",
@@ -59314,7 +59314,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m68.webp",
+        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m68-switch-rojo-outemu.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -59422,8 +59422,8 @@
                   }
     },
     {
-        "id":  "teclado-mecanico-raptor-fireclaw-m87",
-        "nombre":  "Teclado Mecánico Raptor Fireclaw M87",
+        "id":  "teclado-mecanico-raptor-fireclaw-m87-switch-rojo-outemu",
+        "nombre":  "Teclado Mecánico Raptor Fireclaw M87 Switch Rojo Outemu",
         "origen":  "TECLADO MECANICO RAPTOR FIRECLAW M87 RETROILUMINADO SWITCH RED OUTEMU",
         "marca":  "Raptor Gaming",
         "categoria":  "Periféricos",
@@ -59471,14 +59471,14 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m87.webp",
+        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m87-switch-rojo-outemu.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
     },
     {
-        "id":  "teclado-mecanico-raptor-fireclaw-m68-blanco",
-        "nombre":  "Teclado Mecánico Raptor Fireclaw M68 Blanco",
+        "id":  "teclado-mecanico-raptor-fireclaw-m68-blanco-switch-rojo-outemu",
+        "nombre":  "Teclado Mecánico Raptor Fireclaw M68 Blanco Switch Rojo Outemu",
         "origen":  "TECLADO RAPTOR FIRECLAW M68 MECANICO RETROILUMINADO SWITCH RED OUTEMU WHITE",
         "marca":  "Raptor Gaming",
         "categoria":  "Periféricos",
@@ -59526,7 +59526,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m68-blanco.webp",
+        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m68-blanco-switch-rojo-outemu.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -59579,8 +59579,8 @@
                   }
     },
     {
-        "id":  "teclado-mecanico-raptor-fireclaw-m104",
-        "nombre":  "Teclado Mecánico Raptor Fireclaw M104",
+        "id":  "teclado-mecanico-raptor-fireclaw-m104-switch-rojo-outemu",
+        "nombre":  "Teclado Mecánico Raptor Fireclaw M104 Switch Rojo Outemu",
         "origen":  "TECLADO MECANICO RAPTOR FIRECLAW M104 RETROILUMINADO SWITCH RED OUTEMU",
         "marca":  "Raptor Gaming",
         "categoria":  "Periféricos",
@@ -59628,7 +59628,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m104.webp",
+        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m104-switch-rojo-outemu.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -59732,8 +59732,8 @@
                   }
     },
     {
-        "id":  "teclado-mecanico-raptor-fireclaw-m104-blanco",
-        "nombre":  "Teclado Mecánico Raptor Fireclaw M104 Blanco",
+        "id":  "teclado-mecanico-raptor-fireclaw-m104-blanco-switch-rojo-outemu",
+        "nombre":  "Teclado Mecánico Raptor Fireclaw M104 Blanco Switch Rojo Outemu",
         "origen":  "TECLADO MECANICO RAPTOR FIRECLAW M104 WHITE RETROILUMINADO SWITCH RED OUTEMU",
         "marca":  "Raptor Gaming",
         "categoria":  "Periféricos",
@@ -59781,7 +59781,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m104-blanco.webp",
+        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m104-blanco-switch-rojo-outemu.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -59842,8 +59842,8 @@
                   }
     },
     {
-        "id":  "teclado-mecanico-raptor-fireclaw-m68-wireless",
-        "nombre":  "Teclado Mecánico Raptor Fireclaw M68 Wireless",
+        "id":  "teclado-mecanico-raptor-fireclaw-m68-wireless-switch-rojo-outemu",
+        "nombre":  "Teclado Mecánico Raptor Fireclaw M68 Wireless Switch Rojo Outemu",
         "origen":  "TECLADO WIRELESS RAPTOR FIRECLAW M68 MECANICO SWITCH RED OUTEMU",
         "marca":  "Raptor Gaming",
         "categoria":  "Periféricos",
@@ -59891,14 +59891,14 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m68-wireless.webp",
+        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m68-wireless-switch-rojo-outemu.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
     },
     {
-        "id":  "teclado-gamer-mecanico-redragon-horus-k622-tkl-negro",
-        "nombre":  "Teclado Gamer Mecánico Redragon Horus K622 TKL Negro",
+        "id":  "teclado-gamer-mecanico-redragon-horus-k622-tkl-negro-switch-rojo",
+        "nombre":  "Teclado Gamer Mecánico Redragon Horus K622 TKL Negro Switch Rojo",
         "origen":  "Teclado Gamer Redragon K622 Horus TKL Negro Switch Red",
         "marca":  "Redragon",
         "categoria":  "Periféricos",
@@ -59942,7 +59942,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-horus-k622-tkl-negro.webp",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-horus-k622-tkl-negro-switch-rojo.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -60634,8 +60634,8 @@
                   }
     },
     {
-        "id":  "teclado-gamer-mecanico-aula-f75-negro-degrade-switch-reaper",
-        "nombre":  "Teclado Gamer Mecánico AULA F75 Negro Degradé Switch Reaper",
+        "id":  "teclado-gamer-mecanico-aula-f75-negro-degrade-switch-rojo",
+        "nombre":  "Teclado Gamer Mecánico AULA F75 Negro Degradé Switch Rojo",
         "origen":  "Teclado Gamer Aula F75 Negro Degradé Rgb Sw Red",
         "marca":  "AULA",
         "categoria":  "Periféricos",
@@ -60679,7 +60679,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/teclado-gamer-mecanico-aula-f75-negro-degrade-switch-reaper.webp",
+        "imagen":  "img/productos/teclado-gamer-mecanico-aula-f75-negro-degrade-switch-rojo.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -61528,8 +61528,8 @@
                   }
     },
     {
-        "id":  "teclado-gamer-mecanico-redragon-fizz-k617-rgb-gris-y-blanco",
-        "nombre":  "Teclado Gamer Mecánico Redragon Fizz K617 RGB Gris y Blanco",
+        "id":  "teclado-gamer-mecanico-redragon-fizz-k617-rgb-gris-y-blanco-switch-roj",
+        "nombre":  "Teclado Gamer Mecánico Redragon Fizz K617 RGB Gris y Blanco Switch Rojo",
         "origen":  "Teclado Gamer Redragon K617 Fizz Rgb Gris Blanco Switch Rojo",
         "marca":  "Redragon",
         "categoria":  "Periféricos",
@@ -61569,7 +61569,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-fizz-k617-rgb-gris-y-blanco.webp",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-fizz-k617-rgb-gris-y-blanco-switch-roj.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -63449,7 +63449,7 @@
                   }
     },
     {
-        "id":  "teclado-gamer-mecanico-aula-f75-negro-degrade-switch-reaper-2",
+        "id":  "teclado-gamer-mecanico-aula-f75-negro-degrade-switch-reaper",
         "nombre":  "Teclado Gamer Mecánico Aula F75 Negro Degradé Switch Reaper",
         "origen":  "TECLADO MECANICO AULA F75 BLACK DEGRADE WIRELESS 75% RGB SWITCH REAPER",
         "marca":  "Aula",
@@ -63498,7 +63498,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/teclado-gamer-mecanico-aula-f75-negro-degrade-switch-reaper-2.webp",
+        "imagen":  "img/productos/teclado-gamer-mecanico-aula-f75-negro-degrade-switch-reaper.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -65222,7 +65222,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-ducky-one-3-mini-60-blanco-switch-rojo.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -65393,8 +65393,8 @@
                   }
     },
     {
-        "id":  "teclado-gamer-mecanico-ducky-one-2-pro-mini-60-negro-switch-plateado",
-        "nombre":  "Teclado Gamer Mecánico Ducky One 2 Pro Mini 60 Negro Switch Plateado",
+        "id":  "teclado-gamer-mecanico-ducky-one-2-pro-mini-60-negro-switch-rojo",
+        "nombre":  "Teclado Gamer Mecánico Ducky One 2 Pro Mini 60 Negro Switch Rojo",
         "origen":  "Teclado Gamer Ducky One 2 Pro Mini 60 Mecánico Negro Rgb Usb-c Sw Rojo",
         "marca":  "Ducky",
         "categoria":  "Periféricos",
@@ -65442,7 +65442,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-ducky-one-2-pro-mini-60-negro-switch-rojo.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -65768,7 +65768,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-hyperx-alloy-origins-core-tkl-switch-rojo-ingle.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -65933,7 +65933,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-ducky-one-3-mini-60-negro-switch-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -66738,7 +66738,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-asus-rog-strix-scope-ii-96-wireless-switch-nx.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -67663,8 +67663,8 @@
                   }
     },
     {
-        "id":  "teclado-gamer-mecanico-aula-l99-purpura-semitransparente-inalambrico-9",
-        "nombre":  "Teclado Gamer Mecánico Aula L99 Púrpura Semitransparente Inalámbrico 98%",
+        "id":  "teclado-gamer-mecanico-aula-l99-purpura-y-blanco-semitransparente-inal",
+        "nombre":  "Teclado Gamer Mecánico Aula L99 Púrpura y Blanco Semitransparente Inalámbrico 98%",
         "origen":  "TECLADO MECANICO AULA L99 SEMI TRANSPARENT PURPLE-WHITE WIRELESS 98% RGB SWITCH",
         "marca":  "Aula",
         "categoria":  "Periféricos",
@@ -67712,7 +67712,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/teclado-gamer-mecanico-aula-l99-purpura-semitransparente-inalambrico-9.webp",
+        "imagen":  "img/productos/teclado-gamer-mecanico-aula-l99-purpura-y-blanco-semitransparente-inal.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -71198,7 +71198,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-logitech-zone-300-graphite.webp",
         "attrs":  {
 
                   }
@@ -71233,7 +71233,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-logitech-g321-lightspeed-inalambrico.webp",
         "attrs":  {
 
                   }
@@ -73101,7 +73101,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-logitech-g-pro-x-2-magenta.webp",
         "attrs":  {
 
                   }
