@@ -24349,7 +24349,7 @@
         "stock":  "disponible",
         "specs":  [
                       "Radiador 240mm",
-                      "Sockets AM4/AM5/LGA1700/1851",
+                      "Sockets AM4/AM5/LGA1200/1700/1851",
                       "Serie MAG Coreliquid"
                   ],
         "desc":  "Watercooler de 240 mm de la serie MAG Coreliquid E de MSI. Buena opción de gama media/alta.",
@@ -24364,7 +24364,7 @@
                       ],
                       [
                           "Sockets",
-                          "AM4, AM5, LGA 1700, LGA 1851"
+                          "AM4, AM5, LGA 1200, LGA 1700, LGA 1851"
                       ]
                   ],
         "destacado":  false,
@@ -24374,6 +24374,78 @@
                       "sockets":  [
                                       "AM4",
                                       "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "radiador":  240
+                  }
+    },
+    {
+        "id":  "msi-mag-coreliquid-e240-white",
+        "nombre":  "MSI MAG Coreliquid E240 White",
+        "origen":  "WATERCOOLER 240MM MSI MAG CORELIQUID E240 WHITE",
+        "marca":  "MSI",
+        "categoria":  "Coolers",
+        "sub":  "Watercoolers",
+        "precio":  205565,
+        "stock":  "disponible",
+        "specs":  [
+                      "Radiador 240 mm",
+                      "Color blanco con ARGB",
+                      "Cabezal giratorio"
+                  ],
+        "desc":  "Watercooler AIO de 240 mm de la serie MAG Coreliquid E de MSI, en su versión blanca. Tiene bloque con placa fría de cobre ampliada y cabezal que se puede girar para dejar el logo derecho en cualquier orientación, más dos ventiladores ARGB de 120 mm. Es compatible con los sockets actuales de AMD e Intel, ideal para armados en blanco de gama media y alta.",
+        "ficha":  [
+                      [
+                          "Tipo",
+                          "Watercooler AIO"
+                      ],
+                      [
+                          "Radiador",
+                          "240 mm (277 x 119,2 x 27 mm), aluminio"
+                      ],
+                      [
+                          "Ventiladores",
+                          "2 x 120 mm ARGB, PWM, rodamiento FDB"
+                      ],
+                      [
+                          "Flujo de aire",
+                          "25,5 a 75,04 CFM"
+                      ],
+                      [
+                          "Bomba",
+                          "3000 RPM ± 10%, 20 dBA prom."
+                      ],
+                      [
+                          "Placa fría",
+                          "Cobre"
+                      ],
+                      [
+                          "Sockets Intel",
+                          "LGA 1150/1151/1155/1156/1200/1700/1851"
+                      ],
+                      [
+                          "Sockets AMD",
+                          "AM5 / AM4"
+                      ],
+                      [
+                          "Iluminación",
+                          "ARGB (conector 3 pines 5 V)"
+                      ],
+                      [
+                          "Color",
+                          "Blanco"
+                      ]
+                  ],
+        "destacado":  false,
+        "imagen":  "img/productos/msi-mag-coreliquid-e240-white.webp",
+        "attrs":  {
+                      "tipo":  "Watercooler",
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
                                       "LGA 1700",
                                       "LGA 1851"
                                   ],
@@ -24382,7 +24454,7 @@
     },
     {
         "id":  "asus-liquid-prime-lc-360-argb",
-        "nombre":  "ASUS Liquid Prime LC 360 ARGB",
+        "nombre":  "ASUS Prime LC 360 ARGB",
         "origen":  "WATERCOOLER 360MM ASUS PRIME LC 360 ARGB",
         "marca":  "ASUS",
         "categoria":  "Coolers",
@@ -24411,6 +24483,81 @@
                   ],
         "destacado":  false,
         "imagen":  "img/productos/asus-liquid-prime-lc-360-argb.webp",
+        "attrs":  {
+                      "tipo":  "Watercooler",
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "radiador":  360
+                  }
+    },
+    {
+        "id":  "asus-prime-lc-360-argb-white-edition",
+        "nombre":  "ASUS Prime LC 360 ARGB White Edition",
+        "origen":  "WATERCOOLER 360MM ASUS PRIME LC 360 ARGB WHITE EDITION",
+        "marca":  "ASUS",
+        "categoria":  "Coolers",
+        "sub":  "Watercoolers",
+        "precio":  207744,
+        "stock":  "disponible",
+        "specs":  [
+                      "Radiador 360 mm",
+                      "Color blanco con ARGB",
+                      "Garantía de 6 años"
+                  ],
+        "desc":  "Watercooler AIO de 360 mm de la línea Prime de ASUS en edición blanca. Trae tres ventiladores ARGB integrados de 120 mm, tubos mallados de 400 mm y pasta térmica preaplicada, con control de iluminación por Aura Sync. Pensado para procesadores de gama alta en armados blancos, con 6 años de garantía.",
+        "ficha":  [
+                      [
+                          "Tipo",
+                          "Watercooler AIO"
+                      ],
+                      [
+                          "Radiador",
+                          "360 mm (394 x 120 x 27 mm), aluminio"
+                      ],
+                      [
+                          "Ventiladores",
+                          "3 x 120 mm ARGB integrados, 600-2200 RPM"
+                      ],
+                      [
+                          "Flujo / presión",
+                          "75,7 CFM / 3,2 mmH2O"
+                      ],
+                      [
+                          "Ruido",
+                          "34 dB(A)"
+                      ],
+                      [
+                          "Bloque",
+                          "65,1 x 60,58 x 68,5 mm, placa de cobre"
+                      ],
+                      [
+                          "Tubos",
+                          "Goma mallada, 400 mm"
+                      ],
+                      [
+                          "Sockets",
+                          "LGA 1851/1700/1200/115x, AM5/AM4"
+                      ],
+                      [
+                          "Iluminación",
+                          "ARGB, Aura Sync"
+                      ],
+                      [
+                          "Color",
+                          "Blanco"
+                      ],
+                      [
+                          "Garantía",
+                          "6 años"
+                      ]
+                  ],
+        "destacado":  false,
+        "imagen":  "img/productos/asus-prime-lc-360-argb-white-edition.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -24538,7 +24685,7 @@
                       ],
                       [
                           "Radiador",
-                          "240 x 120 x 26,6 mm"
+                          "240 mm (277 x 120 x 27 mm)"
                       ],
                       [
                           "Ventiladores",
@@ -24551,6 +24698,81 @@
                   ],
         "destacado":  false,
         "imagen":  "img/productos/asus-tuf-gaming-lc-iii-240-argb.webp",
+        "attrs":  {
+                      "tipo":  "Watercooler",
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "radiador":  240
+                  }
+    },
+    {
+        "id":  "asus-tuf-gaming-lc-iii-240-argb-white-edition",
+        "nombre":  "ASUS TUF Gaming LC III 240 ARGB White Edition",
+        "origen":  "WATERCOOLER 240MM ASUS TUF GAMING LC III 240 ARGB WHITE",
+        "marca":  "ASUS",
+        "categoria":  "Coolers",
+        "sub":  "Watercoolers",
+        "precio":  207744,
+        "stock":  "disponible",
+        "specs":  [
+                      "Radiador 240 mm",
+                      "Color blanco con ARGB",
+                      "Garantía de 6 años"
+                  ],
+        "desc":  "Watercooler AIO de 240 mm de la línea TUF Gaming de ASUS en edición blanca. Suma dos ventiladores ARGB de 120 mm que llegan a 2600 RPM, tubos mallados de 400 mm y compatibilidad con Aura Sync. Es una buena opción para procesadores de gama media y alta en un armado en blanco, con 6 años de garantía.",
+        "ficha":  [
+                      [
+                          "Tipo",
+                          "Watercooler AIO"
+                      ],
+                      [
+                          "Radiador",
+                          "240 mm (277 x 120 x 27 mm), aluminio"
+                      ],
+                      [
+                          "Ventiladores",
+                          "2 x 120 mm ARGB (MF-12), 650-2600 RPM"
+                      ],
+                      [
+                          "Flujo / presión",
+                          "90,78 CFM / 3,82 mmH2O"
+                      ],
+                      [
+                          "Ruido",
+                          "37,4 dB(A)"
+                      ],
+                      [
+                          "Bloque",
+                          "80,9 x 77 x 67,1 mm, placa de cobre"
+                      ],
+                      [
+                          "Tubos",
+                          "Goma mallada, 400 mm"
+                      ],
+                      [
+                          "Sockets",
+                          "LGA 1851/1700/1200, AM5/AM4"
+                      ],
+                      [
+                          "Iluminación",
+                          "ARGB, Aura Sync"
+                      ],
+                      [
+                          "Color",
+                          "Blanco"
+                      ],
+                      [
+                          "Garantía",
+                          "6 años"
+                      ]
+                  ],
+        "destacado":  false,
+        "imagen":  "img/productos/asus-tuf-gaming-lc-iii-240-argb-white-edition.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -24665,7 +24887,7 @@
         "stock":  "disponible",
         "specs":  [
                       "Radiador 240mm",
-                      "Sockets AM4/AM5/LGA1700/1851",
+                      "Sockets AM4/AM5/LGA1200/1700/1851",
                       "Serie MAG Coreliquid"
                   ],
         "desc":  "Watercooler de 240 mm de la serie MAG Coreliquid I de MSI.",
@@ -24680,7 +24902,7 @@
                       ],
                       [
                           "Sockets",
-                          "AM4, AM5, LGA 1700, LGA 1851"
+                          "AM4, AM5, LGA 1200, LGA 1700, LGA 1851"
                       ]
                   ],
         "destacado":  false,
@@ -24690,6 +24912,78 @@
                       "sockets":  [
                                       "AM4",
                                       "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "radiador":  240
+                  }
+    },
+    {
+        "id":  "msi-mag-coreliquid-i240-white",
+        "nombre":  "MSI MAG Coreliquid I240 White",
+        "origen":  "WATERCOOLER 240MM MSI MAG CORELIQUID I240 WHITE",
+        "marca":  "MSI",
+        "categoria":  "Coolers",
+        "sub":  "Watercoolers",
+        "precio":  231906,
+        "stock":  "disponible",
+        "specs":  [
+                      "Radiador 240 mm",
+                      "Color blanco con ARGB Gen2",
+                      "Bloque Infinity Mirror"
+                  ],
+        "desc":  "Watercooler AIO de 240 mm de la serie MAG Coreliquid I de MSI, en color blanco. Su bloque tiene diseño con efecto espejo infinito e iluminación ARGB Gen2, y viene con dos ventiladores de 120 mm con los cables ya conectados para simplificar el armado. Soporta los sockets actuales de AMD e Intel y apunta a equipos de gama media y alta con estética clara.",
+        "ficha":  [
+                      [
+                          "Tipo",
+                          "Watercooler AIO"
+                      ],
+                      [
+                          "Radiador",
+                          "240 mm (277 x 119,2 x 27 mm), aluminio"
+                      ],
+                      [
+                          "Ventiladores",
+                          "2 x 120 mm ARGB Gen2, PWM, rodamiento LDB"
+                      ],
+                      [
+                          "Flujo / ruido",
+                          "70,7 CFM / 32,8 dBA"
+                      ],
+                      [
+                          "Bomba",
+                          "3400 RPM ± 10%, 20 dBA prom."
+                      ],
+                      [
+                          "Tubos",
+                          "EPDM, 400 mm"
+                      ],
+                      [
+                          "Placa fría",
+                          "Cobre"
+                      ],
+                      [
+                          "Sockets Intel",
+                          "LGA 1150/1151/1155/1156/1200/1700/1851"
+                      ],
+                      [
+                          "Sockets AMD",
+                          "AM5 / AM4"
+                      ],
+                      [
+                          "Color",
+                          "Blanco"
+                      ]
+                  ],
+        "destacado":  false,
+        "imagen":  "img/productos/msi-mag-coreliquid-i240-white.webp",
+        "attrs":  {
+                      "tipo":  "Watercooler",
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
                                       "LGA 1700",
                                       "LGA 1851"
                                   ],
@@ -25401,6 +25695,81 @@
                   }
     },
     {
+        "id":  "cooler-master-masterliquid-240-atmos-ii-vrm-fan-argb",
+        "nombre":  "Cooler Master MasterLiquid 240 Atmos II VRM Fan ARGB",
+        "origen":  "WATERCOOLER 240MM COOLERMASTER MASTERLIQUID ML240 ATMOS II VRM FAN ARGB",
+        "marca":  "Cooler Master",
+        "categoria":  "Coolers",
+        "sub":  "Watercoolers",
+        "precio":  335893,
+        "stock":  "disponible",
+        "specs":  [
+                      "Radiador 240 mm",
+                      "Ventilador extra para VRM",
+                      "Ventiladores SickleFlow Edge ARGB"
+                  ],
+        "desc":  "Watercooler AIO de 240 mm de la serie Atmos II de Cooler Master, en la versión con ventilador VRM integrado en la tapa de la bomba. Ese ventilador extra refresca la zona de fases y componentes alrededor del socket, algo útil en placas exigidas o gabinetes con poco flujo. Suma bomba de doble cámara, ventiladores SickleFlow Edge ARGB de hasta 2500 RPM con un solo cable y 6 años de garantía.",
+        "ficha":  [
+                      [
+                          "Tipo",
+                          "Watercooler AIO"
+                      ],
+                      [
+                          "Radiador",
+                          "240 mm (277 x 119,2 x 27 mm), aluminio"
+                      ],
+                      [
+                          "Ventiladores",
+                          "2 x 120 mm ARGB Gen2, 690-2500 RPM"
+                      ],
+                      [
+                          "Flujo / ruido",
+                          "141,4 CFM / 36 dB(A)"
+                      ],
+                      [
+                          "Bomba",
+                          "3400 ± 300 RPM, ARGB Gen2"
+                      ],
+                      [
+                          "Ventilador VRM",
+                          "450-4000 RPM, 9,3 CFM, PWM"
+                      ],
+                      [
+                          "Tubos",
+                          "350 mm"
+                      ],
+                      [
+                          "Sockets",
+                          "LGA 1851/1700/1200/115x, AM5/AM4"
+                      ],
+                      [
+                          "Color",
+                          "Negro"
+                      ],
+                      [
+                          "Part number",
+                          "MLX-D24M-A25SZ-V1 (según región)"
+                      ],
+                      [
+                          "Garantía",
+                          "6 años"
+                      ]
+                  ],
+        "destacado":  false,
+        "imagen":  "img/productos/cooler-master-masterliquid-240-atmos-ii-vrm-fan-argb.webp",
+        "attrs":  {
+                      "tipo":  "Watercooler",
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "radiador":  240
+                  }
+    },
+    {
         "id":  "thermaltake-th240-v2-ultra-ex-argb-sync-white",
         "nombre":  "Thermaltake TH240 V2 Ultra EX ARGB Sync White",
         "origen":  "WATERCOOLER 240MM THERMALTAKE TH240 V2 ULTRA EX ARGB SYNC AIO WHITE CL-W425-PL12SW-A",
@@ -25576,6 +25945,77 @@
                   ],
         "destacado":  false,
         "imagen":  "img/productos/cooler-master-masterliquid-ml360-atmos-ii-vrm-fan-argb.webp",
+        "attrs":  {
+                      "tipo":  "Watercooler",
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "radiador":  360
+                  }
+    },
+    {
+        "id":  "cooler-master-masterliquid-360-atmos-ii-argb",
+        "nombre":  "Cooler Master MasterLiquid 360 Atmos II ARGB",
+        "origen":  "WATERCOOLER 360MM COOLERMASTER MASTERLIQUID ML360 ATMOS II ARGB MLX-D36M-A25SZ-R1",
+        "marca":  "Cooler Master",
+        "categoria":  "Coolers",
+        "sub":  "Watercoolers",
+        "precio":  382062,
+        "stock":  "disponible",
+        "specs":  [
+                      "Radiador 360 mm",
+                      "3 ventiladores SickleFlow Edge ARGB",
+                      "Garantía de 6 años"
+                  ],
+        "desc":  "Watercooler AIO de 360 mm de la serie Atmos II de Cooler Master, en su versión base sin ventilador VRM. Tiene bomba de doble cámara que dirige el líquido a los puntos más calientes del procesador, carcasa reforzada y tres ventiladores SickleFlow Edge ARGB de hasta 2500 RPM unidos en un solo cable. Es ideal para procesadores de gama alta y admite kits de tapa opcionales (LCD, Pixel LED o VRM Fan).",
+        "ficha":  [
+                      [
+                          "Tipo",
+                          "Watercooler AIO"
+                      ],
+                      [
+                          "Radiador",
+                          "360 mm (394 x 119,2 x 27 mm), aluminio"
+                      ],
+                      [
+                          "Ventiladores",
+                          "3 x 120 mm ARGB Gen2, 690-2500 RPM"
+                      ],
+                      [
+                          "Flujo / ruido",
+                          "190 CFM / 38,5 dB(A)"
+                      ],
+                      [
+                          "Bomba",
+                          "3400 ± 300 RPM, ARGB Gen2"
+                      ],
+                      [
+                          "Tubos",
+                          "400 mm"
+                      ],
+                      [
+                          "Sockets",
+                          "LGA 1851/1700/1200/115x, AM5/AM4"
+                      ],
+                      [
+                          "Color",
+                          "Negro"
+                      ],
+                      [
+                          "Part number",
+                          "MLX-D36M-A25SZ-R1"
+                      ],
+                      [
+                          "Garantía",
+                          "6 años"
+                      ]
+                  ],
+        "destacado":  false,
+        "imagen":  "img/productos/cooler-master-masterliquid-360-atmos-ii-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -26045,6 +26485,81 @@
                   ],
         "destacado":  false,
         "imagen":  "img/productos/asus-rog-strix-lc-iii-360.webp",
+        "attrs":  {
+                      "tipo":  "Watercooler",
+                      "sockets":  [
+                                      "AM4",
+                                      "AM5",
+                                      "LGA 1200",
+                                      "LGA 1700",
+                                      "LGA 1851"
+                                  ],
+                      "radiador":  360
+                  }
+    },
+    {
+        "id":  "asus-rog-strix-lc-iii-360-argb",
+        "nombre":  "ASUS ROG Strix LC III 360 ARGB",
+        "origen":  "WATERCOOLER 360MM ASUS ROG STRIX LC III 360 ARGB",
+        "marca":  "ASUS",
+        "categoria":  "Coolers",
+        "sub":  "Watercoolers",
+        "precio":  527586,
+        "stock":  "disponible",
+        "specs":  [
+                      "Radiador 360 mm",
+                      "Ventiladores ROG AF-12S ARGB",
+                      "Bomba Asetek 7ª gen V2"
+                  ],
+        "desc":  "Watercooler AIO de 360 mm de la línea ROG Strix de ASUS, en la versión con ventiladores ARGB. Usa bomba Asetek de 7ª generación V2, bloque con tapa giratoria e iluminación Aura Sync, y tres ventiladores ROG Strix AF-12S ARGB con modo 0 RPM. Está pensado para procesadores de gama alta que necesitan mucha capacidad de disipación.",
+        "ficha":  [
+                      [
+                          "Tipo",
+                          "Watercooler AIO"
+                      ],
+                      [
+                          "Radiador",
+                          "360 mm (394 x 121 x 27 mm), aluminio"
+                      ],
+                      [
+                          "Ventiladores",
+                          "3 x ROG Strix AF-12S ARGB 120 mm, 800-2200 RPM, 0 RPM"
+                      ],
+                      [
+                          "Flujo / presión",
+                          "70,38 CFM / 3,92 mmH2O"
+                      ],
+                      [
+                          "Ruido",
+                          "36 dB(A)"
+                      ],
+                      [
+                          "Bomba",
+                          "Asetek 7ª gen V2, 800-2800 RPM"
+                      ],
+                      [
+                          "Bloque",
+                          "72 x 72 x 61 mm, placa de cobre"
+                      ],
+                      [
+                          "Tubos",
+                          "Goma mallada, 400 mm"
+                      ],
+                      [
+                          "Sockets",
+                          "LGA 1851/1700/1200/115x, AM5/AM4"
+                      ],
+                      [
+                          "Iluminación",
+                          "ARGB, Aura Sync"
+                      ],
+                      [
+                          "Garantía",
+                          "6 años"
+                      ]
+                  ],
+        "destacado":  false,
+        "imagen":  "img/productos/asus-rog-strix-lc-iii-360-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -57994,6 +58509,69 @@
                   }
     },
     {
+        "id":  "mouse-gamer-logitech-g-pro-2-lightspeed-inalambrico-blanco",
+        "nombre":  "Mouse Gamer Logitech G Pro 2 Lightspeed Inalámbrico Blanco",
+        "origen":  "MOUSE GAMER WIRELESS LOGITECH G PRO 2 LIGHTSPEED WHITE 910-007301",
+        "marca":  "Logitech",
+        "categoria":  "Periféricos",
+        "sub":  "Mouse",
+        "precio":  199128,
+        "stock":  "disponible",
+        "specs":  [
+                      "Sensor HERO 2 de 44000 DPI",
+                      "Inalámbrico Lightspeed",
+                      "Color blanco"
+                  ],
+        "desc":  "Versión blanca del Logitech G Pro 2 Lightspeed, un mouse inalámbrico ambidiestro pensado para el juego competitivo. Tiene sensor HERO 2 de hasta 44000 DPI, conexión Lightspeed de baja latencia y botones laterales magnéticos que se pueden poner o sacar de cada lado para usarlo con cualquier mano. Pesa unos 80 g e incluye iluminación Lightsync RGB configurable desde G HUB.",
+        "ficha":  [
+                      [
+                          "Conexión",
+                          "Inalámbrico Lightspeed 2,4 GHz"
+                      ],
+                      [
+                          "Sensor",
+                          "HERO 2"
+                      ],
+                      [
+                          "Resolución",
+                          "Hasta 44000 DPI"
+                      ],
+                      [
+                          "Diseño",
+                          "Ambidiestro, botones laterales magnéticos intercambiables"
+                      ],
+                      [
+                          "Iluminación",
+                          "Lightsync RGB"
+                      ],
+                      [
+                          "Peso",
+                          "≈80 g"
+                      ],
+                      [
+                          "Batería",
+                          "Hasta 95 h (sin RGB)"
+                      ],
+                      [
+                          "Software",
+                          "Logitech G HUB"
+                      ],
+                      [
+                          "Color",
+                          "Blanco"
+                      ],
+                      [
+                          "Part number",
+                          "910-007301"
+                      ]
+                  ],
+        "destacado":  false,
+        "imagen":  "img/productos/mouse-gamer-logitech-g-pro-2-lightspeed-inalambrico-blanco.webp",
+        "attrs":  {
+                      "conexion":  "Inalámbrico"
+                  }
+    },
+    {
         "id":  "mouse-gamer-corsair-sabre-v2-pro-ultralight-blanco",
         "nombre":  "Mouse Gamer Corsair Sabre V2 Pro Ultralight Blanco",
         "origen":  "MOUSE GAMER WIRELESS CORSAIR SABRE V2 PRO ULTRALIGHT WHITE CH-931G001-WW",
@@ -60809,7 +61387,7 @@
     },
     {
         "id":  "teclado-gamer-mecanico-redragon-kumara-k552-negro-switch-red",
-        "nombre":  "Teclado Gamer Mecánico Redragon Kumara K552 Negro Switch Red",
+        "nombre":  "Teclado Gamer Mecánico Redragon Kumara K552 Rainbow Negro Switch Red",
         "origen":  "Teclado Gamer Mecánico Redragon K552 Kumara Rainbow Switch Red",
         "marca":  "Redragon",
         "categoria":  "Periféricos",
@@ -60854,6 +61432,69 @@
                   ],
         "destacado":  false,
         "imagen":  "img/productos/teclado-gamer-mecanico-redragon-kumara-k552-negro-switch-red.webp",
+        "attrs":  {
+                      "conexion":  "Cableado"
+                  }
+    },
+    {
+        "id":  "teclado-gamer-mecanico-redragon-kumara-k552-rgb-negro-switch-red-espanol",
+        "nombre":  "Teclado Gamer Mecánico Redragon Kumara K552 RGB Negro Switch Red Español",
+        "origen":  "TECLADO GAMER REDRAGON KUMARA K552 RGB BLACK - SWITCH RED ESPAÑOL",
+        "marca":  "Redragon",
+        "categoria":  "Periféricos",
+        "sub":  "Teclados",
+        "precio":  71987,
+        "stock":  "disponible",
+        "specs":  [
+                      "Formato TKL (87 teclas) en español",
+                      "Switch Outemu Red lineal",
+                      "RGB por tecla"
+                  ],
+        "desc":  "El Redragon Kumara K552 RGB es la versión con iluminación RGB por tecla del clásico mecánico TKL de Redragon. Usa switches Red de pulsación lineal y silenciosa, estructura con placa metálica y teclas antisalpicaduras, en distribución española. Es un teclado compacto, resistente y económico, muy elegido para empezar con los mecánicos.",
+        "ficha":  [
+                      [
+                          "Tipo",
+                          "Mecánico TKL"
+                      ],
+                      [
+                          "Teclas",
+                          "87"
+                      ],
+                      [
+                          "Switch",
+                          "Outemu Red (lineal)"
+                      ],
+                      [
+                          "Iluminación",
+                          "RGB por tecla"
+                      ],
+                      [
+                          "Conexión",
+                          "USB con cable"
+                      ],
+                      [
+                          "Anti-ghosting",
+                          "Sí"
+                      ],
+                      [
+                          "Estructura",
+                          "Placa metálica + ABS"
+                      ],
+                      [
+                          "Distribución",
+                          "Español"
+                      ],
+                      [
+                          "Color",
+                          "Negro"
+                      ],
+                      [
+                          "Modelo",
+                          "K552RGB"
+                      ]
+                  ],
+        "destacado":  false,
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-kumara-k552-rgb-negro-switch-red-espanol.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -62330,7 +62971,7 @@
     },
     {
         "id":  "teclado-gamer-magnetico-aula-win68-he-max-negro-gris-amarillo-switch-g",
-        "nombre":  "Teclado Gamer Magnético AULA WIN68 HE Max Negro/Gris/Amarillo Switch Greywood",
+        "nombre":  "Teclado Gamer Magnético AULA WIN68 HE Max Negro/Gris/Amarillo Switch Wing Chun",
         "origen":  "Teclado Gamer Aula WIN68HE MAX Negro Gris Amarillo Sw Greywood",
         "marca":  "AULA",
         "categoria":  "Periféricos",
@@ -62338,27 +62979,35 @@
         "precio":  77063,
         "stock":  "disponible",
         "specs":  [
-                      "Formato 60% con switches Hall Effect",
-                      "Polling de 8000 Hz, 0,3 ms de latencia",
-                      "Actuación ajustable 0,01-3,3 mm"
+                      "Formato 65% (68 teclas) con switches Hall Effect",
+                      "Polling de 8000 Hz",
+                      "Precisión de 0,02 mm"
                   ],
-        "desc":  "El AULA WIN68 HE Max es un teclado mecánico magnético (Hall Effect) de formato compacto 60%, con sensores Hall que permiten ajustar la sensibilidad de cada tecla mediante software. Tiene polling de 8000 Hz y una respuesta de apenas 0,3 ms, ideal para juegos competitivos. Este colorway combina negro, gris y amarillo con switches Greywood.",
+        "desc":  "El AULA WIN68 HE Max es un teclado magnético Hall Effect de formato 65% con 68 teclas, en la combinación negro, gris y amarillo. Viene con switches magnéticos Wing Chun con una precisión de 0,02 mm, que permiten ajustar el punto de actuación y usar funciones como Rapid Trigger, DKS y SOCD. Con polling de 8000 Hz, hot-swap e iluminación RGB, es una opción muy competitiva para shooters y juegos de ritmo.",
         "ficha":  [
                       [
                           "Tipo",
-                          "Magnético (Hall Effect), 60%"
+                          "Magnético (Hall Effect), 65%"
+                      ],
+                      [
+                          "Teclas",
+                          "68"
                       ],
                       [
                           "Switch",
-                          "Greywood (magnético, 32 gf)"
+                          "AULA Wing Chun magnético (36 gf, recorrido 3,4 mm)"
                       ],
                       [
-                          "Punto de actuación",
-                          "Ajustable, 0,01 a 3,3 mm"
+                          "Precisión",
+                          "0,02 mm"
+                      ],
+                      [
+                          "Funciones",
+                          "Rapid Trigger, DKS, SOCD, Toggle"
                       ],
                       [
                           "Polling",
-                          "8000 Hz, 0,3 ms"
+                          "8000 Hz"
                       ],
                       [
                           "Conexión",
@@ -62370,7 +63019,11 @@
                       ],
                       [
                           "Hot-swap",
-                          "Sí, zócalos magnéticos"
+                          "Sí"
+                      ],
+                      [
+                          "Color",
+                          "Negro / gris / amarillo"
                       ]
                   ],
         "destacado":  false,
@@ -62428,7 +63081,7 @@
     },
     {
         "id":  "teclado-gamer-logitech-g213-prodigy",
-        "nombre":  "Teclado Gamer Logitech G213 Prodigy",
+        "nombre":  "Teclado Gamer Logitech G213 Prodigy Español (España)",
         "origen":  "TECLADO LOGITECH G213 PRODIGY GAMING 920-008086 ESPAÑOL",
         "marca":  "Logitech",
         "categoria":  "Periféricos",
@@ -62465,10 +63118,77 @@
                       [
                           "Resistencia a líquidos",
                           "Sí"
+                      ],
+                      [
+                          "Distribución",
+                          "Español de España"
+                      ],
+                      [
+                          "Part number",
+                          "920-008086"
                       ]
                   ],
         "destacado":  false,
         "imagen":  "img/productos/teclado-gamer-logitech-g213-prodigy.webp",
+        "attrs":  {
+                      "conexion":  "Cableado"
+                  }
+    },
+    {
+        "id":  "teclado-gamer-logitech-g213-prodigy-espanol-latinoamerica",
+        "nombre":  "Teclado Gamer Logitech G213 Prodigy Español Latinoamérica",
+        "origen":  "TECLADO GAMER LOGITECH G213 PRODIGY 920-008084",
+        "marca":  "Logitech",
+        "categoria":  "Periféricos",
+        "sub":  "Teclados",
+        "precio":  84042,
+        "stock":  "disponible",
+        "specs":  [
+                      "Teclas Mech-Dome",
+                      "RGB Lightsync de 5 zonas",
+                      "Distribución español latinoamericano"
+                  ],
+        "desc":  "El Logitech G213 Prodigy es un teclado gamer de membrana con teclas Mech-Dome, que dan una respuesta táctil parecida a un mecánico con un sonido casi silencioso. Tiene iluminación RGB Lightsync en 5 zonas, controles multimedia dedicados, reposamuñecas integrado y resistencia a salpicaduras de hasta 60 ml. Esta versión 920-008084 es la de distribución en español latinoamericano, la que vende Logitech en Argentina.",
+        "ficha":  [
+                      [
+                          "Tipo",
+                          "Membrana (Mech-Dome)"
+                      ],
+                      [
+                          "Recorrido / fuerza",
+                          "4 mm / 50 g"
+                      ],
+                      [
+                          "Iluminación",
+                          "RGB Lightsync, 5 zonas"
+                      ],
+                      [
+                          "Teclas multimedia",
+                          "Controles dedicados"
+                      ],
+                      [
+                          "Reposamuñecas",
+                          "Integrado"
+                      ],
+                      [
+                          "Resistencia a líquidos",
+                          "Sí, hasta 60 ml"
+                      ],
+                      [
+                          "Conexión",
+                          "USB con cable"
+                      ],
+                      [
+                          "Distribución",
+                          "Español latinoamericano"
+                      ],
+                      [
+                          "Part number",
+                          "920-008084"
+                      ]
+                  ],
+        "destacado":  false,
+        "imagen":  "img/productos/teclado-gamer-logitech-g213-prodigy-espanol-latinoamerica.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -65205,6 +65925,65 @@
                   ],
         "destacado":  false,
         "imagen":  "img/productos/teclado-gamer-mecanico-ducky-one-3-mini-60-blanco-switch-rojo.webp",
+        "attrs":  {
+                      "conexion":  "Cableado"
+                  }
+    },
+    {
+        "id":  "teclado-gamer-mecanico-ducky-one-3-mini-60-negro-switch-rojo",
+        "nombre":  "Teclado Gamer Mecánico Ducky One 3 Mini 60 Negro Switch Rojo",
+        "origen":  "Teclado Gamer Ducky One 3 Mini 60 Mecánico Negro Rgb Usb-c Sw Rojo",
+        "marca":  "Ducky",
+        "categoria":  "Periféricos",
+        "sub":  "Teclados",
+        "precio":  173903,
+        "stock":  "disponible",
+        "specs":  [
+                      "Formato 60% con Cherry MX Red hot-swap",
+                      "Keycaps PBT doble inyección",
+                      "RGB por tecla, color negro"
+                  ],
+        "desc":  "El Ducky One 3 Mini en color negro es un teclado mecánico compacto de formato 60%, con switches Cherry MX Red lineales en zócalos hot-swap Kailh, así que se pueden cambiar sin soldar. Usa la construcción Quack Mechanics de Ducky, con capas de silicona y espuma que mejoran el sonido, keycaps PBT de doble inyección y cable USB-C desmontable. Es una opción premium para quien busca un teclado chico, silencioso y rápido para jugar.",
+        "ficha":  [
+                      [
+                          "Tipo",
+                          "Mecánico 60%"
+                      ],
+                      [
+                          "Switch",
+                          "Cherry MX Red (lineal), hot-swap"
+                      ],
+                      [
+                          "Zócalos",
+                          "Kailh hot-swap"
+                      ],
+                      [
+                          "Keycaps",
+                          "PBT doble inyección"
+                      ],
+                      [
+                          "Iluminación",
+                          "RGB por tecla"
+                      ],
+                      [
+                          "Conexión",
+                          "USB-C con cable, desmontable"
+                      ],
+                      [
+                          "Anti-ghosting",
+                          "N-key rollover"
+                      ],
+                      [
+                          "Amortiguación",
+                          "Silicona + espuma (Quack Mechanics)"
+                      ],
+                      [
+                          "Color",
+                          "Negro"
+                      ]
+                  ],
+        "destacado":  false,
+        "imagen":  "img/productos/teclado-gamer-mecanico-ducky-one-3-mini-60-negro-switch-rojo.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -70432,6 +71211,73 @@
                   }
     },
     {
+        "id":  "auriculares-gamer-razer-blackshark-v2-x-for-playstation-negro",
+        "nombre":  "Auricular Gamer Razer BlackShark V2 X for PlayStation Negro",
+        "origen":  "AURICULAR GAMER RAZER BLACKSHARK V2 X PC/PS5/SWITCH/XBOX RZ04-03241000-R3UA",
+        "marca":  "Razer",
+        "categoria":  "Periféricos",
+        "sub":  "Auriculares y micrófonos",
+        "precio":  141004,
+        "stock":  "disponible",
+        "specs":  [
+                      "Licencia oficial PlayStation",
+                      "Drivers TriForce de 50 mm",
+                      "Micrófono cardioide HyperClear"
+                  ],
+        "desc":  "Versión con licencia oficial de PlayStation de los Razer BlackShark V2 X, auriculares gamer con cable pensados para esports. Tienen drivers TriForce de 50 mm, micrófono cardioide HyperClear flexible y copas cerradas con almohadillas de espuma viscoelástica que aíslan bien el ruido. Pesan unos 240 g y, por su conector de 3,5 mm, también funcionan en PC, Xbox, Switch y celulares.",
+        "ficha":  [
+                      [
+                          "Conexión",
+                          "3,5 mm con cable"
+                      ],
+                      [
+                          "Tipo",
+                          "Over-ear cerrado"
+                      ],
+                      [
+                          "Drivers",
+                          "Razer TriForce 50 mm"
+                      ],
+                      [
+                          "Respuesta en frecuencia",
+                          "12 Hz - 28 kHz"
+                      ],
+                      [
+                          "Micrófono",
+                          "Cardioide HyperClear, flexible"
+                      ],
+                      [
+                          "Controles",
+                          "Rueda de volumen en el auricular"
+                      ],
+                      [
+                          "Peso",
+                          "≈240 g"
+                      ],
+                      [
+                          "Cable",
+                          "1,3 m"
+                      ],
+                      [
+                          "Compatibilidad",
+                          "PS5, PS4, PC, Xbox, Switch, móviles"
+                      ],
+                      [
+                          "Color",
+                          "Negro"
+                      ],
+                      [
+                          "Part number",
+                          "RZ04-03241000-R3UA"
+                      ]
+                  ],
+        "destacado":  false,
+        "imagen":  "img/productos/auriculares-gamer-razer-blackshark-v2-x-for-playstation-negro.webp",
+        "attrs":  {
+                      "conexion":  "Cableado"
+                  }
+    },
+    {
         "id":  "auricular-gamer-logitech-g335-blanco",
         "nombre":  "Auricular Gamer Logitech G335 Blanco",
         "origen":  "Auricular Gamer Logitech G335 Blanco",
@@ -71757,7 +72603,7 @@
     },
     {
         "id":  "auricular-corsair-hs80-rgb-wireless-white",
-        "nombre":  "Auricular Corsair HS80 RGB Wireless White",
+        "nombre":  "Auricular Corsair HS80 RGB USB White",
         "origen":  "AURICULAR CORSAIR HS80 RGB 7.1 WHITE CA-9011238-NA",
         "marca":  "Corsair",
         "categoria":  "Periféricos",
@@ -71765,19 +72611,86 @@
         "precio":  270086,
         "stock":  "disponible",
         "specs":  [
-                      "Audio espacial Dolby Atmos",
-                      "Inalámbrico 2.4GHz",
-                      "Micrófono desmontable con reducción de ruido"
+                      "Con cable USB de 1,8 m",
+                      "Sonido Dolby Audio 7.1",
+                      "Micrófono omnidireccional fijo"
                   ],
-        "desc":  "Auricular gamer premium de Corsair, inalámbrico, con audio espacial Dolby Atmos y micrófono desmontable con reducción de ruido, en color blanco.",
+        "desc":  "Auricular gamer Corsair HS80 RGB en su versión USB con cable, en color blanco. Tiene drivers de neodimio de 50 mm, sonido envolvente Dolby Audio 7.1 y micrófono omnidireccional fijo que se silencia al levantarlo, con iluminación RGB configurable desde iCUE. Al ir por cable no necesita batería, ideal para quien juega siempre en la PC.",
         "ficha":  [
                       [
                           "Conexión",
-                          "Inalámbrico 2.4GHz"
+                          "USB con cable (1,8 m)"
                       ],
                       [
                           "Tipo",
                           "Over-ear cerrado"
+                      ],
+                      [
+                          "Drivers",
+                          "50 mm, neodimio"
+                      ],
+                      [
+                          "Sonido",
+                          "Dolby Audio 7.1"
+                      ],
+                      [
+                          "Micrófono",
+                          "Omnidireccional, fijo (no desmontable), mute al levantarlo"
+                      ],
+                      [
+                          "Iluminación",
+                          "RGB, iCUE"
+                      ],
+                      [
+                          "Color",
+                          "Blanco"
+                      ],
+                      [
+                          "Part number",
+                          "CA-9011238-NA"
+                      ]
+                  ],
+        "destacado":  false,
+        "imagen":  "img/productos/auricular-corsair-hs80-rgb-wireless-white.webp",
+        "attrs":  {
+                      "conexion":  "Cableado"
+                  }
+    },
+    {
+        "id":  "auriculares-corsair-hs80-rgb-wireless-blanco",
+        "nombre":  "Auricular Corsair HS80 RGB Wireless Blanco",
+        "origen":  "AURICULAR CORSAIR HS80 RGB WIRELESS PREMIUM AUDIO ESPACIAL BLANCO CA-9011236-NA",
+        "marca":  "Corsair",
+        "categoria":  "Periféricos",
+        "sub":  "Auriculares y micrófonos",
+        "precio":  372012,
+        "stock":  "disponible",
+        "specs":  [
+                      "Inalámbrico, hasta 20 h de batería",
+                      "Audio espacial Dolby Atmos",
+                      "Drivers de 50 mm"
+                  ],
+        "desc":  "Auriculares gamer inalámbricos Corsair HS80 RGB Wireless en color blanco, con drivers de neodimio de 50 mm y audio espacial Dolby Atmos. Tienen micrófono omnidireccional fijo que se silencia al levantarlo, iluminación RGB configurable desde iCUE y hasta 20 horas de batería. Funcionan en PC, Mac y PlayStation, con un alcance inalámbrico de hasta 18 m.",
+        "ficha":  [
+                      [
+                          "Conexión",
+                          "Inalámbrico 2,4 GHz (Slipstream)"
+                      ],
+                      [
+                          "Tipo",
+                          "Over-ear cerrado"
+                      ],
+                      [
+                          "Drivers",
+                          "50 mm"
+                      ],
+                      [
+                          "Respuesta en frecuencia",
+                          "20 Hz - 40 kHz"
+                      ],
+                      [
+                          "Sensibilidad",
+                          "116 dB (±3 dB)"
                       ],
                       [
                           "Audio espacial",
@@ -71785,21 +72698,33 @@
                       ],
                       [
                           "Micrófono",
-                          "Desmontable, reducción de ruido"
+                          "Omnidireccional, fijo (no desmontable), mute al levantarlo"
                       ],
                       [
                           "Batería",
-                          "Hasta ~20 h"
+                          "Hasta 20 h"
+                      ],
+                      [
+                          "Alcance",
+                          "Hasta 18 m (60 ft)"
+                      ],
+                      [
+                          "Compatibilidad",
+                          "PC, Mac, PlayStation 4/5"
                       ],
                       [
                           "Color",
                           "Blanco"
+                      ],
+                      [
+                          "Part number",
+                          "CA-9011236-NA"
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/auricular-corsair-hs80-rgb-wireless-white.webp",
+        "imagen":  "img/productos/auriculares-corsair-hs80-rgb-wireless-blanco.webp",
         "attrs":  {
-
+                      "conexion":  "Inalámbrico"
                   }
     },
     {
@@ -72918,7 +73843,7 @@
     },
     {
         "id":  "auricular-logitech-g-pro-x-2-lightspeed-inalambrico",
-        "nombre":  "Auricular Logitech G Pro X 2 Lightspeed Inalámbrico",
+        "nombre":  "Auricular Logitech G Pro X 2 Lightspeed Inalámbrico Negro",
         "origen":  "AURICULAR LOGITECH PRO X 2 WIRELESS LIGHTSPEED 981-001262",
         "marca":  "Logitech",
         "categoria":  "Periféricos",
@@ -72951,12 +73876,87 @@
                       [
                           "Batería",
                           "Hasta ~50 h"
+                      ],
+                      [
+                          "Color",
+                          "Negro"
+                      ],
+                      [
+                          "Part number",
+                          "981-001262"
                       ]
                   ],
         "destacado":  false,
         "imagen":  "img/productos/auricular-logitech-g-pro-x-2-lightspeed-inalambrico.webp",
         "attrs":  {
 
+                  }
+    },
+    {
+        "id":  "auriculares-logitech-g-pro-x-2-lightspeed-inalambrico-blanco",
+        "nombre":  "Auricular Logitech G Pro X 2 Lightspeed Inalámbrico Blanco",
+        "origen":  "AURICULAR LOGITECH PRO X 2 WIRELESS WHITE 981-001268",
+        "marca":  "Logitech",
+        "categoria":  "Periféricos",
+        "sub":  "Auriculares y micrófonos",
+        "precio":  685982,
+        "stock":  "disponible",
+        "specs":  [
+                      "Lightspeed, Bluetooth y 3,5 mm",
+                      "Drivers de grafeno de 50 mm",
+                      "Hasta 50 h de batería"
+                  ],
+        "desc":  "Versión blanca de los Logitech G Pro X 2 Lightspeed, auriculares gamer de gama alta pensados para esports. Usan drivers de grafeno de 50 mm, se conectan por Lightspeed 2,4 GHz, Bluetooth o cable de 3,5 mm y ofrecen hasta 50 horas de batería. El micrófono es desmontable y compatible con los filtros de voz Blue VO!CE desde G HUB, y la construcción combina aluminio y acero con almohadillas de espuma viscoelástica.",
+        "ficha":  [
+                      [
+                          "Conexión",
+                          "Lightspeed 2,4 GHz, Bluetooth y 3,5 mm"
+                      ],
+                      [
+                          "Tipo",
+                          "Over-ear cerrado"
+                      ],
+                      [
+                          "Drivers",
+                          "Grafeno 50 mm"
+                      ],
+                      [
+                          "Sonido",
+                          "DTS Headphone:X 2.0"
+                      ],
+                      [
+                          "Micrófono",
+                          "Desmontable, Blue VO!CE"
+                      ],
+                      [
+                          "Batería",
+                          "Hasta 50 h"
+                      ],
+                      [
+                          "Alcance",
+                          "Hasta 30 m"
+                      ],
+                      [
+                          "Carga",
+                          "USB-C"
+                      ],
+                      [
+                          "Peso",
+                          "≈345 g"
+                      ],
+                      [
+                          "Color",
+                          "Blanco"
+                      ],
+                      [
+                          "Part number",
+                          "981-001268"
+                      ]
+                  ],
+        "destacado":  false,
+        "imagen":  "img/productos/auriculares-logitech-g-pro-x-2-lightspeed-inalambrico-blanco.webp",
+        "attrs":  {
+                      "conexion":  "Inalámbrico"
                   }
     },
     {
@@ -73500,6 +74500,73 @@
         "imagen":  "img/productos/microfono-trust-emita-plus-gxt252.webp",
         "attrs":  {
 
+                  }
+    },
+    {
+        "id":  "microfono-trust-gxt-252-emita",
+        "nombre":  "Micrófono Trust GXT 252 Emita",
+        "origen":  "MICROFONO TRUST EMITA USB GXT252",
+        "marca":  "Trust",
+        "categoria":  "Periféricos",
+        "sub":  "Auriculares y micrófonos",
+        "precio":  289074,
+        "stock":  "disponible",
+        "specs":  [
+                      "Condensador USB cardioide",
+                      "Soporte de mesa, araña y filtro antipop",
+                      "Incluye valija de aluminio"
+                  ],
+        "desc":  "El Trust GXT 252 Emita es un micrófono de estudio USB de condensador con patrón cardioide, pensado para streaming, podcasts, locuciones y grabación de instrumentos acústicos. Se conecta directo a la PC sin drivers y graba a 16 bit / 48 kHz. Viene muy completo: soporte de mesa metálico, montura antivibración tipo araña, filtro antipop doble, cable USB desmontable de 1,8 m y valija de aluminio para guardarlo.",
+        "ficha":  [
+                      [
+                          "Tipo",
+                          "Condensador"
+                      ],
+                      [
+                          "Patrón",
+                          "Cardioide"
+                      ],
+                      [
+                          "Conexión",
+                          "USB (cable desmontable de 1,8 m)"
+                      ],
+                      [
+                          "Respuesta en frecuencia",
+                          "18 Hz - 21 kHz"
+                      ],
+                      [
+                          "Sensibilidad",
+                          "-35 dB"
+                      ],
+                      [
+                          "Impedancia",
+                          "200 Ω"
+                      ],
+                      [
+                          "Presión sonora máx.",
+                          "135 dB"
+                      ],
+                      [
+                          "Muestreo",
+                          "16 bit, 48 kHz"
+                      ],
+                      [
+                          "Incluye",
+                          "Soporte de mesa metálico, araña, filtro antipop, valija de aluminio"
+                      ],
+                      [
+                          "Compatibilidad",
+                          "PC, Mac, PS4, PS5"
+                      ],
+                      [
+                          "Artículo Trust",
+                          "21753"
+                      ]
+                  ],
+        "destacado":  false,
+        "imagen":  "img/productos/microfono-trust-gxt-252-emita.webp",
+        "attrs":  {
+                      "conexion":  "USB"
                   }
     },
     {
