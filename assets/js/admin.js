@@ -510,7 +510,7 @@
       let picker = "";
       if (open) {
         const words = norm(pcPick.q).split(/\s+/).filter(Boolean);
-        const list = data.products.filter((x) => x.categoria === step.cat && (pcPick.all || !TW.incompatibility(step.key, x, pcSel, data.byId))
+        const list = data.products.filter((x) => x.categoria === step.cat && (!step.sub || x.sub === step.sub) && (pcPick.all || !TW.incompatibility(step.key, x, pcSel, data.byId))
           && words.every((w) => norm(`${x.titulo} ${x.marca}`).includes(w))).sort((a, b) => (a.precio || 1e12) - (b.precio || 1e12));
         picker = `<div class="picker">
           <div class="picker-bar"><input class="inp" id="slotQ" placeholder="Buscar ${esc(step.label.toLowerCase())}…" value="${esc(pcPick.q)}" autocomplete="off">
@@ -523,7 +523,7 @@
       }
       return `<div class="slot2${p ? " done" : ""}${open ? " open" : ""}">
         <button type="button" class="slot-row" data-slotpick="${step.key}|${idx}">
-          <span class="mini">${p ? TW.thumb(p) : TW.ICONS[step.cat]}</span>
+          <span class="mini">${p ? TW.thumb(p) : TW.ICONS[step.icon || step.cat]}</span>
           <span class="slot-txt"><small>${esc(label)}</small>${p ? esc(p.titulo) : `<em>Elegir ${esc(step.label.toLowerCase())}…</em>`}</span>
           <b>${p ? (p.precio ? TW.money(p.precio * (cur.qty || 1)) : "Consultar") : ""}</b>
         </button>
@@ -552,7 +552,7 @@
     pcSel[key] = arr.filter(Boolean);
     if (key === "cpu") { const p = built().byId[id]; pcSel.plataforma = p ? p.attrs.plataforma : ""; }
     // Pasa solo al siguiente componente vacío
-    const next = TW.STEPS.find((s) => !(pcSel[s.key] || []).length);
+    const next = TW.STEPS.find((s) => !s.opcional && !(pcSel[s.key] || []).length);
     pcPick = id && next ? { key: next.key, idx: 0, q: "", all: false } : null;
     renderSlots();
   }

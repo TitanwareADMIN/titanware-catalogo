@@ -29,6 +29,11 @@
     "Coolers": svg('<path d="M10 10h44v44H10z"/><circle cx="32" cy="32" r="4"/><path d="M32 28c-2-8 4-14 10-12-2 6-6 10-10 12zM36 32c8-2 14 4 12 10-6-2-10-6-12-10zM32 36c2 8-4 14-10 12 2-6 6-10 10-12zM28 32c-8 2-14-4-12-10 6 2 10 6 12 10z"/>'),
     "Gabinetes": svg('<path d="M18 6h28v52H18z"/><path d="M24 14h16M24 20h16"/><circle cx="32" cy="38" r="8"/>'),
     "Periféricos": svg('<rect x="20" y="8" width="24" height="40" rx="12"/><path d="M32 8v14M20 22h24M32 48v8"/>'),
+    // Pasos de periféricos del armador
+    "Mouse": svg('<rect x="20" y="8" width="24" height="44" rx="12"/><path d="M32 8v14M20 24h24"/>'),
+    "Teclados": svg('<rect x="6" y="18" width="52" height="28" rx="4"/><path d="M13 26h4M21 26h4M29 26h4M37 26h4M45 26h4M13 33h4M21 33h4M29 33h4M37 33h4M45 33h4M20 40h24"/>'),
+    "Auriculares y micrófonos": svg('<path d="M12 42v-8a20 20 0 0 1 40 0v8"/><rect x="8" y="38" width="10" height="16" rx="3"/><rect x="46" y="38" width="10" height="16" rx="3"/>'),
+    "Mousepads": svg('<rect x="6" y="14" width="52" height="36" rx="6"/><rect x="34" y="21" width="12" height="20" rx="6"/><path d="M40 21v6"/>'),
     "default": svg('<path d="M10 14h44v30H10zM24 50h16M32 44v6"/>'),
   };
   const ui = (d, extra = "") => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ${extra}>${d}</svg>`;
@@ -370,11 +375,18 @@
     { key: "storage", cat: "Almacenamientos", label: "Almacenamiento", tip: "Sumá todos los discos que quieras hasta llenar los puertos de tu mother. Un SSD hace que todo arranque mucho más rápido.", slots: true },
     { key: "gpu", cat: "Placas de video", label: "Placa de video", tip: "Necesaria para jugar. Si tu procesador tiene video integrado, es opcional." },
     { key: "psu", cat: "Fuentes de poder", label: "Fuente", tip: "Te mostramos las fuentes con potencia suficiente para tu configuración." },
-    { key: "case", cat: "Gabinetes", label: "Gabinete", tip: "El último paso: elegí dónde va todo. Algunos gabinetes ya incluyen fuente, teclado o mouse." },
+    { key: "case", cat: "Gabinetes", label: "Gabinete", tip: "Elegí dónde va todo. Algunos gabinetes ya incluyen fuente, teclado o mouse." },
+    // Periféricos: opcionales, uno por tipo (subcategoría de "Periféricos")
+    { key: "mouse", cat: "Periféricos", sub: "Mouse", icon: "Mouse", label: "Mouse", tip: "Opcional: sumá un mouse a tu PC o salteá el paso.", opcional: true },
+    { key: "keyboard", cat: "Periféricos", sub: "Teclados", icon: "Teclados", label: "Teclado", tip: "Opcional: sumá un teclado, o un kit de teclado y mouse.", opcional: true },
+    { key: "audio", cat: "Periféricos", sub: "Auriculares y micrófonos", icon: "Auriculares y micrófonos", label: "Auriculares", titulo: "Elegí tus auriculares o micrófono", tip: "Opcional: auriculares o micrófono para jugar, estudiar o hacer videollamadas.", opcional: true },
+    { key: "pad", cat: "Periféricos", sub: "Mousepads", icon: "Mousepads", label: "Mousepad", tip: "Opcional: el último detalle para tu escritorio.", opcional: true },
   ];
   TW.stepOf = (key) => TW.STEPS.find((s) => s.key === key);
+  // Paso del armador al que pertenece un producto (los periféricos se separan por subcategoría)
+  TW.stepForProduct = (p) => TW.STEPS.find((s) => s.cat === p.categoria && (!s.sub || s.sub === p.sub)) || null;
   TW.stepForCategory = (cat) => TW.STEPS.find((s) => s.cat === cat);
-  TW.emptyBuild = () => ({ plataforma: "", cpu: [], mobo: [], ram: [], storage: [], gpu: [], case: [], psu: [], cooler: [] });
+  TW.emptyBuild = () => Object.fromEntries([["plataforma", ""], ...TW.STEPS.map((s) => [s.key, []])]);
 
   const first = (sel, key, byId) => (sel[key] && sel[key][0] ? byId[sel[key][0].id] : null);
 
@@ -390,6 +402,7 @@
 
   TW.isRequired = function (key, sel, byId) {
     const cpu = first(sel, "cpu", byId), gab = first(sel, "case", byId);
+    if (TW.stepOf(key)?.opcional) return false;
     if (key === "gpu") return !cpu || !cpu.attrs.video;
     if (key === "cooler") return !cpu || !cpu.attrs.cooler;
     if (key === "psu") return !(gab && gab.attrs.fuente >= TW.power(sel, byId).min);
@@ -485,7 +498,7 @@
 
   TW.options = function (key, sel, data) {
     const step = TW.stepOf(key);
-    return data.products.filter((p) => p.categoria === step.cat && !TW.incompatibility(key, p, sel, data.byId));
+    return data.products.filter((p) => p.categoria === step.cat && (!step.sub || p.sub === step.sub) && !TW.incompatibility(key, p, sel, data.byId));
   };
 
   // Revisa una configuración completa: faltantes e incompatibilidades
@@ -547,7 +560,7 @@
     const sel = TW.emptyBuild();
     for (const c of comps || []) {
       const p = byId[c.id];
-      const step = p && TW.stepForCategory(p.categoria);
+      const step = p && TW.stepForProduct(p);
       if (step) sel[step.key].push({ id: c.id, qty: c.qty || 1 });
     }
     const cpu = first(sel, "cpu", byId);

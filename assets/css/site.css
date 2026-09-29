@@ -929,6 +929,31 @@ dialog.auth-dlg { width: min(440px, 100% - 2rem); }
 .chk input { flex: none; width: 17px; height: 17px; margin: .05rem 0 0; accent-color: var(--violet); }
 .auth-err { margin: 0; padding: .6rem .8rem; border-radius: var(--radius-sm); font-size: .85rem; color: #ffb3bc; background: rgba(224, 113, 127, .1); border: 1px solid rgba(224, 113, 127, .35); }
 .auth-err[hidden] { display: none; }
+/* Armador: preguntas rápidas de cada paso */
+.bz-quick { display: flex; flex-wrap: wrap; gap: .7rem 1.6rem; margin: 0 0 1rem; padding: .85rem 1rem; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); }
+.bz-quick[hidden] { display: none; }
+.bz-qg { display: flex; align-items: center; flex-wrap: wrap; gap: .35rem; }
+.bz-qg > span { font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-right: .3rem; }
+.bz-q { display: inline-flex; align-items: center; gap: .35rem; border: 1px solid var(--line-2); background: var(--bg-2); color: var(--text-2); border-radius: 999px; padding: .38rem .8rem; font-size: .82rem; font-weight: 600; cursor: pointer; transition: border-color .15s, background .15s, color .15s; }
+.bz-q small { font-size: .72rem; font-weight: 600; color: var(--muted); }
+.bz-q:hover { border-color: var(--violet); color: var(--text); }
+.bz-q[aria-pressed="true"] { background: var(--violet); border-color: var(--violet); color: #fff; }
+.bz-q[aria-pressed="true"] small { color: rgba(255, 255, 255, .8); }
+@media (max-width: 640px) { .bz-quick { gap: .6rem; padding: .7rem; } .bz-qg { width: 100%; } }
+/* Zoom de la foto en la ficha del producto */
+.modal .thumb.zoomable { cursor: zoom-in; }
+.modal .thumb.zoomable img.prod { transition: transform .25s ease-out; will-change: transform; }
+.modal .thumb.zooming img.prod { transform: scale(1.6); transition: transform .15s ease-out; }
+.modal .thumb img.box { transition: opacity .2s; }
+.modal .thumb.zooming img.box, .modal .thumb.zooming .zoom-hint, .modal .thumb.zooming .offer-tag { opacity: 0; }
+.zoom-hint { position: absolute; left: .75rem; top: .75rem; z-index: 2; width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; cursor: pointer;
+  background: rgba(13, 13, 20, .8); border: 1px solid var(--line-2); color: var(--text-2); transition: opacity .2s, color .15s, border-color .15s; }
+.zoom-hint:hover { color: #fff; border-color: var(--violet); }
+.zoom-hint svg { width: 16px; height: 16px; }
+dialog.zoom { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; border: 0; border-radius: 0; background: rgba(5, 5, 9, .97); box-shadow: none; cursor: zoom-out; }
+dialog.zoom[open] { display: grid; place-items: center; animation: none; }
+dialog.zoom img { width: 100%; height: 100%; max-width: 1100px; object-fit: contain; padding: 3.5rem 1rem 1.5rem; cursor: default; }
+dialog.zoom .close { position: fixed; top: 1rem; right: 1rem; z-index: 2; }
 /* Miniaturas: la foto queda fija al recuadro y entra entera en cualquier navegador y zoom
    (antes su alto dependía de cómo cada navegador calcula la grilla y en algunos se cortaba abajo) */
 .bz-img, .mini { position: relative; }

@@ -103,7 +103,7 @@
     m.innerHTML = `
       <button class="close" type="button" aria-label="Cerrar" data-close>${U.close}</button>
       <div class="modal">
-        <div class="thumb">${TW.thumb(p, true)}${TW.offerTag(p)}</div>
+        <div class="thumb${p.imagen || p.caja ? " zoomable" : ""}">${TW.thumb(p, true)}${TW.offerTag(p)}${p.imagen || p.caja ? `<button class="zoom-hint" type="button" data-zoomfull aria-label="Ver foto en pantalla completa">${U.search}</button>` : ""}</div>
         <div class="modal-body">
           <div class="meta"><span>${esc(p.marca)} · ${esc(p.categoria)}${p.sub ? ` · ${esc(p.sub)}` : ""}</span></div>
           <h2 id="mTitle">${esc(p.titulo)}</h2>
@@ -251,7 +251,7 @@
           <h2 id="mTitle">${esc(pc.nombre)}</h2>
           ${pc.descripcion ? `<p style="margin:0;color:var(--text-2);font-size:.92rem">${esc(pc.descripcion)}</p>` : ""}
           <ul class="comp-list">${lines.map((l) => `
-            <li><span class="mini">${TW.thumb(l.p)}</span><span><small>${esc(TW.stepForCategory(l.p.categoria)?.label || l.p.categoria)}</small>${l.qty > 1 ? `${l.qty}x ` : ""}${esc(l.p.titulo)}</span></li>`).join("")}
+            <li><span class="mini">${TW.thumb(l.p)}</span><span><small>${esc(TW.stepForProduct(l.p)?.label || l.p.categoria)}</small>${l.qty > 1 ? `${l.qty}x ` : ""}${esc(l.p.titulo)}</span></li>`).join("")}
           </ul>
           <div class="modal-price">${TW.priceHtml(price)}<span class="stock disponible">En stock</span></div>
           <div class="modal-actions">
@@ -286,6 +286,110 @@
   const BKEY = "tw_build_v1";
   let B = { sel: TW.emptyBuild(), step: 0, q: "", sort: "precio-asc", ask: null };
   try { const saved = JSON.parse(localStorage.getItem(BKEY)); if (saved && saved.sel) B = { ...B, ...saved, q: "", ask: null }; } catch {}
+  B.sel = { ...TW.emptyBuild(), ...B.sel }; // armados guardados antes de sumar pasos nuevos (periféricos)
+  B.qf = {}; // respuestas a las preguntas rápidas de cada paso (no se guardan)
+
+  /* ---------- Preguntas rápidas de cada paso (filtran las opciones) ----------
+     val(p) devuelve la respuesta que le corresponde al producto (o null). La pregunta
+     solo aparece si entre las opciones compatibles hay más de una respuesta posible. */
+  const txt = (p) => `${p.titulo} ${p.nombre}`;
+  const colorOf = (p) => (/blanc|white|snow|\bice\b/i.test(txt(p)) ? "Blanco" : "Negro u otros");
+  // Periféricos: se mira el nombre y la ficha (conexión, tipo, tamaño…)
+  const full = (p) => `${txt(p)} ${(p.ficha || []).map((f) => f.join(" ")).join(" ")}`;
+  // Solo los renglones de la ficha cuyo nombre coincide (así "resiste 60 ml" no pasa por un teclado 60%)
+  const row = (p, re) => (p.ficha || []).filter((f) => re.test(f[0])).map((f) => f[1]).join(" ");
+  const conOf = (p) => (/inal[aá]mbric|wireless|lightspeed|bluetooth|2[.,]4 ?g/i.test(`${txt(p)} ${p.origen || ""} ${p.attrs.conexion || ""} ${row(p, /conex/i)}`) ? "Inalámbrico" : "Con cable");
+  const kbType = (p) => {
+    const n = `${txt(p)} ${p.origen || ""}`, tipo = row(p, /^tipo|switch/i);
+    if (/teclado y mouse|\bkit\b|combo|\bmk\d{3}|\+ ?m\d{2}/i.test(n)) return "Kit teclado + mouse";
+    if (/magn[eé]tic|hall ?effect|efecto hall/i.test(n) || /\bHE\b/.test(n)) return "Magnético";
+    if (/mec[aá]nic/i.test(n)) return "Mecánico";
+    if (/membrana/i.test(n)) return "Membrana";
+    if (/magn[eé]tic|hall/i.test(tipo)) return "Magnético";
+    if (/mec[aá]nic|switch/i.test(tipo) && !/membrana|rubber|dome/i.test(tipo)) return "Mecánico";
+    return "Membrana";
+  };
+  const kbSize = (p) => {
+    const t = `${txt(p)} ${row(p, /tama|format|layout|distrib|teclas/i)}`;
+    if (/mx (keys|mechanical) mini/i.test(t)) return "75%";
+    if (/\b6[5-8] ?%|win ?68|hero ?68|\b68\b/i.test(t)) return "65%";
+    if (/60 ?%|mini ?60|win ?60|\bmini\b|\b60\b|\b61\b/i.test(t)) return "60%";
+    if (/\b75 ?%|\bx ?75\b|\b75\b|\b8[1-4] teclas/i.test(t)) return "75%";
+    if (/\btkl\b|tenkeyless|\b80 ?%|\b87\b/i.test(t)) return "TKL (80%)";
+    if (/\b9[6-9] ?%|\b9[6-9]\b|x ?98/i.test(t)) return "96-99%";
+    if (/complet|num[eé]ric|\b10[4-9]\b|full ?size/i.test(t)) return "Completo";
+    return null;
+  };
+  const GAMER = /gamer|gaming|\bg\d{3}\b|\bg ?pro\b|razer|hyperx|redragon|pulsefire|superlight|rog\b|tuf\b|corsair|steelseries|astro|quantum|blackshark|kraken|barracuda/i;
+  const QUICK = {
+    cpu: [
+      { id: "sk", q: "Socket", val: (p) => p.attrs.socket || null },
+      { id: "vid", q: "Video integrado", val: (p) => (p.attrs.video ? "Con video" : "Sin video"), order: ["Con video", "Sin video"] },
+      { id: "cool", q: "Cooler", val: (p) => (p.attrs.cooler ? "Trae cooler" : "Sin cooler"), order: ["Trae cooler", "Sin cooler"] },
+    ],
+    mobo: [
+      { id: "fmt", q: "Formato", val: (p) => p.attrs.formato || null, order: ["ATX", "Micro-ATX", "Mini-ITX"] },
+      { id: "ddr", q: "Memoria", val: (p) => p.attrs.ddr || null },
+      { id: "wifi", q: "Wi-Fi", val: (p) => (p.attrs.wifi === true ? "Con Wi-Fi" : p.attrs.wifi === false ? "Sin Wi-Fi" : null), order: ["Con Wi-Fi", "Sin Wi-Fi"] },
+      { id: "chip", q: "Chipset", val: (p) => ((txt(p).match(/\b([ABHXZ]\d{3})[A-Z]?\b/) || [])[1] || null) },
+    ],
+    cooler: [
+      { id: "tipo", q: "Tipo", val: (p) => (p.attrs.tipo === "Watercooler" ? "Watercooler" : p.attrs.tipo ? "Cooler de aire" : null), order: ["Cooler de aire", "Watercooler"] },
+      { id: "rad", q: "Radiador", val: (p) => (p.attrs.radiador ? `${p.attrs.radiador} mm` : null) },
+      { id: "col", q: "Color", val: colorOf, order: ["Negro u otros", "Blanco"] },
+    ],
+    ram: [
+      { id: "gb", q: "Capacidad", val: (p) => (p.attrs.gb ? `${p.attrs.gb} GB` : null) },
+      { id: "mhz", q: "Velocidad", val: (p) => (p.attrs.mhz ? `${p.attrs.mhz} MHz` : null) },
+    ],
+    storage: [
+      { id: "tipo", q: "Tipo de disco", order: ["SSD M.2", "SSD SATA", "Disco rígido (HDD)", "Disco externo"],
+        val: (p) => { const a = p.attrs; if (a.interfaz === "Externo") return "Disco externo"; if (a.tipo === "HDD") return "Disco rígido (HDD)"; if (/M\.2/.test(a.interfaz || "")) return "SSD M.2"; return a.tipo === "SSD" ? "SSD SATA" : null; } },
+      { id: "gb", q: "Capacidad", order: ["Hasta 256 GB", "480 a 512 GB", "1 TB", "2 TB", "4 TB o más"],
+        val: (p) => { const g = p.attrs.gb; if (!g) return null; return g <= 256 ? "Hasta 256 GB" : g < 900 ? "480 a 512 GB" : g < 1900 ? "1 TB" : g < 3500 ? "2 TB" : "4 TB o más"; } },
+    ],
+    gpu: [
+      { id: "chip", q: "Marca del chip", val: (p) => (["NVIDIA", "AMD", "Intel"].includes(p.sub) ? p.sub : null), order: ["NVIDIA", "AMD", "Intel"] },
+      { id: "gb", q: "Memoria", val: (p) => (p.attrs.gb ? `${p.attrs.gb} GB` : null) },
+    ],
+    psu: [
+      { id: "w", q: "Potencia", order: ["Hasta 600 W", "650 a 750 W", "800 a 1000 W", "Más de 1000 W"],
+        val: (p) => { const w = p.attrs.watts; if (!w) return null; return w <= 600 ? "Hasta 600 W" : w <= 750 ? "650 a 750 W" : w <= 1000 ? "800 a 1000 W" : "Más de 1000 W"; } },
+      { id: "cert", q: "Certificación", val: (p) => ((p.attrs.cert || "").replace(/^80 Plus ?/i, "") || null), order: ["White", "Bronze", "Silver", "Gold", "Platinum", "Titanium"] },
+      { id: "mod", q: "Cables", val: (p) => ({ Full: "Full modular", Semi: "Semi modular", No: "No modular" })[p.attrs.modular] || null, order: ["Full modular", "Semi modular", "No modular"] },
+    ],
+    case: [
+      { id: "fmt", q: "Mother que entra", val: (p) => ({ ATX: "Hasta ATX", "Micro-ATX": "Hasta Micro-ATX", "Mini-ITX": "Solo Mini-ITX" })[p.attrs.formato] || null, order: ["Hasta ATX", "Hasta Micro-ATX", "Solo Mini-ITX"] },
+      { id: "col", q: "Color", val: colorOf, order: ["Negro u otros", "Blanco"] },
+      { id: "psu", q: "Fuente", val: (p) => (p.attrs.fuente > 0 ? "Trae fuente" : "Sin fuente"), order: ["Sin fuente", "Trae fuente"] },
+    ],
+    mouse: [
+      { id: "con", q: "Conexión", val: conOf, order: ["Con cable", "Inalámbrico"] },
+      { id: "uso", q: "Uso", val: (p) => (GAMER.test(full(p)) ? "Gamer" : "Oficina y hogar"), order: ["Gamer", "Oficina y hogar"] },
+      { id: "col", q: "Color", val: colorOf, order: ["Negro u otros", "Blanco"] },
+    ],
+    keyboard: [
+      { id: "tipo", q: "Tipo", val: kbType, order: ["Mecánico", "Magnético", "Membrana", "Kit teclado + mouse"] },
+      { id: "con", q: "Conexión", val: conOf, order: ["Con cable", "Inalámbrico"] },
+      { id: "tam", q: "Tamaño", val: kbSize, order: ["Completo", "96-99%", "TKL (80%)", "75%", "65%", "60%"] },
+      { id: "idi", q: "Idioma", val: (p) => { const t = `${txt(p)} ${p.origen || ""} ${row(p, /idioma|layout|distrib|teclas/i)}`; return /espa[nñ]ol|spanish|\bsp\b|latam/i.test(t) ? "Español" : /ingl[eé]s|english|\bus\b/i.test(t) ? "Inglés" : null; }, order: ["Español", "Inglés"] },
+    ],
+    audio: [
+      { id: "tipo", q: "Tipo", val: (p) => (/^micr[oó]fono/i.test(p.titulo) ? "Micrófono" : "Auriculares"), order: ["Auriculares", "Micrófono"] },
+      { id: "con", q: "Conexión", val: conOf, order: ["Con cable", "Inalámbrico"] },
+      { id: "uso", q: "Uso", val: (p) => (GAMER.test(full(p)) ? "Gamer" : "Oficina y hogar"), order: ["Gamer", "Oficina y hogar"] },
+      { id: "col", q: "Color", val: colorOf, order: ["Negro u otros", "Blanco"] },
+    ],
+    pad: [
+      { id: "tam", q: "Tamaño", order: ["Chico", "Mediano", "Grande", "Extra grande"],
+        val: (p) => { const t = `${txt(p)} ${row(p, /tama|medida|dimens/i)}`; if (/xxl|deskpad|extra ?larg|\bxl\b|gigante|9\d{2} ?x|8\d{2} ?x/i.test(t)) return "Extra grande"; if (/\blarg[oe]?\b|large|\bl\b|4[5-9]\d ?x/i.test(t)) return "Grande"; if (/medi[ao]n|medium|\bm\b|3[2-9]\d ?x/i.test(t)) return "Mediano"; if (/small|chico|\bs\b|2\d{2} ?x/i.test(t)) return "Chico"; return null; } },
+      { id: "rgb", q: "Iluminación", val: (p) => (/rgb|chroma|lightsync/i.test(full(p)) ? "Con RGB" : "Sin luces"), order: ["Sin luces", "Con RGB"] },
+    ],
+  };
+  const qOrder = (g, labels) => labels.sort((a, b) => {
+    if (g.order) return (g.order.indexOf(a) + 1 || 99) - (g.order.indexOf(b) + 1 || 99);
+    return (parseFloat(a) - parseFloat(b)) || a.localeCompare(b);
+  });
   const saveBuild = () => { try { localStorage.setItem(BKEY, JSON.stringify({ sel: B.sel, step: B.step, sort: B.sort })); } catch {} };
   const STEPS = TW.STEPS;
   const chosen = (key) => (B.sel[key] || []).filter((c) => data.byId[c.id]);
@@ -331,7 +435,7 @@
       const items = chosen(s.key), p = items[0] && data.byId[items[0].id];
       const stock = s.key === "cooler" && usingStock(), igpu = s.key === "gpu" && usingIgpu();
       const qty = items.reduce((t, c) => t + c.qty, 0);
-      const ico = p && (p.imagen || p.caja) ? TW.thumb(p) : stock ? `<img class="prod" src="${stockImg(stockCooler())}" alt="">` : TW.ICONS[s.cat];
+      const ico = p && (p.imagen || p.caja) ? TW.thumb(p) : stock ? `<img class="prod" src="${stockImg(stockCooler())}" alt="">` : TW.ICONS[s.icon || s.cat];
       const title = p ? items.map((c) => data.byId[c.id].titulo).join(" + ") : stock ? "Cooler incluido con el procesador" : igpu ? "Video integrado del procesador" : s.label;
       return `<button class="bz-tile${p || stock || igpu ? " done" : ""}" type="button" data-goto="${i}"${B.step === i ? ' aria-current="step"' : ""} title="${esc(title)}">
         <span class="ico">${ico}</span>
@@ -386,7 +490,7 @@
     return `
       <div class="bz-head">
         <div class="bz-title">
-          <h2>${i > 0 ? `<button class="bz-back" type="button" data-goto="${i - 1}" aria-label="Paso anterior">${U.back}</button>` : ""}Elegí tu ${esc(step.label.charAt(0).toLowerCase() + step.label.slice(1))}${req ? "" : " <small>(opcional)</small>"}</h2>
+          <h2>${i > 0 ? `<button class="bz-back" type="button" data-goto="${i - 1}" aria-label="Paso anterior">${U.back}</button>` : ""}${esc(step.titulo || "Elegí tu " + step.label.charAt(0).toLowerCase() + step.label.slice(1))}${req ? "" : " <small>(opcional)</small>"}</h2>
           <p>${esc(step.tip)}</p>
         </div>
         <div class="bz-next" id="bNext">${nextBtn("lg")}</div>
@@ -403,6 +507,7 @@
         </select></div>
         <span class="bz-count" id="optCount"></span>
       </div>
+      <div class="bz-quick" id="quickBar" hidden></div>
       ${note ? `<div class="b-note">${U.bolt}<span>${esc(note)}</span></div>` : ""}
       ${step.slots ? `<div id="slotBar"></div>` : ""}
       <div class="bz-grid" id="optGrid"></div>`;
@@ -450,6 +555,23 @@
     let opts = TW.options(step.key, B.sel, data)
       .filter((p) => step.key !== "cpu" || !B.brand || p.attrs.plataforma === B.brand)
       .filter((p) => words.every((w) => norm(p.titulo + " " + p.marca + " " + p.specs.join(" ")).includes(w)));
+    // Preguntas rápidas: cada una cuenta lo que queda aplicando las demás respuestas
+    const groups = QUICK[step.key] || [], ans = (B.qf[step.key] = B.qf[step.key] || {});
+    const inSel = new Set(chosen(step.key).map((c) => c.id));
+    const pass = (p, skip) => groups.every((g) => g.id === skip || !ans[g.id] || g.val(p) === ans[g.id]);
+    for (const g of groups) if (ans[g.id] && !opts.some((p) => g.val(p) === ans[g.id])) delete ans[g.id];
+    const quick = groups.map((g) => {
+      const n = {};
+      for (const p of opts) if (pass(p, g.id)) { const v = g.val(p); if (v) n[v] = (n[v] || 0) + 1; }
+      const labels = qOrder(g, Object.keys(n));
+      if (labels.length < 2 && !ans[g.id]) return "";
+      return `<div class="bz-qg" role="group" aria-label="${esc(g.q)}"><span>${esc(g.q)}</span>
+        <button class="bz-q" type="button" data-qf="${g.id}|" aria-pressed="${!ans[g.id]}">Todos</button>
+        ${labels.map((l) => `<button class="bz-q" type="button" data-qf="${g.id}|${esc(l)}" aria-pressed="${ans[g.id] === l}">${esc(l)}<small>${n[l]}</small></button>`).join("")}</div>`;
+    }).join("");
+    const qb = $("#quickBar");
+    if (qb) { qb.innerHTML = quick; qb.hidden = !quick; }
+    opts = opts.filter((p) => inSel.has(p.id) || pass(p));
     const sorters = { "precio-asc": (a, b) => (a.precio || 1e12) - (b.precio || 1e12), "precio-desc": (a, b) => (b.precio || 0) - (a.precio || 0), az: (a, b) => a.titulo.localeCompare(b.titulo) };
     opts.sort(sorters[B.sort] || sorters["precio-asc"]);
     // Lo que ya está seleccionado va primero, para encontrarlo y cambiarlo fácil
@@ -786,6 +908,11 @@
       if ((x = el("#reset"))) { Object.assign(cat, { q: "", sub: "", brand: "" }); $("#q").value = ""; location.hash = "#/catalogo"; renderCatalog(); return; }
 
       // Armador
+      if ((x = el("[data-qf]"))) {
+        const [g, v] = x.dataset.qf.split("|"), key = STEPS[B.step].key, ans = (B.qf[key] = B.qf[key] || {});
+        if (!v || ans[g] === v) delete ans[g]; else ans[g] = v;
+        renderOptions(); return;
+      }
       if ((x = el("[data-brand]"))) { B.brand = B.brand === x.dataset.brand ? "" : x.dataset.brand; $$("[data-brand]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.brand === B.brand)); renderOptions(); return; }
       if ((x = el("[data-goto]"))) { B.step = Number(x.dataset.goto); B.q = ""; B.ask = null; saveBuild(); renderBuilder(); scrollTo({ top: $("#builder").offsetTop - 130, behavior: "smooth" }); return; }
       if ((x = el("[data-qty]"))) { const [id, n] = x.dataset.qty.split("|"); if (data.byId[id]) addQty(data.byId[id], Number(n)); return; }
@@ -817,7 +944,7 @@
         B.ask = null; afterChange(); saveBuild(); renderOptions(); refreshPanel(); return;
       }
       if ((x = el("[data-reset]"))) {
-        if (confirm("¿Rehacer el armado? Se borran todos los componentes elegidos.")) { B.sel = TW.emptyBuild(); B.step = 0; B.brand = ""; B.ask = null; saveBuild(); renderBuilder(); }
+        if (confirm("¿Rehacer el armado? Se borran todos los componentes elegidos.")) { B.sel = TW.emptyBuild(); B.step = 0; B.brand = ""; B.ask = null; B.qf = {}; saveBuild(); renderBuilder(); }
         return;
       }
       if ((x = el("[data-addbuild]"))) {
@@ -835,6 +962,30 @@
       // Cerrar diálogos
       if ((x = el("[data-close]"))) { x.closest("dialog")?.close(); return; }
       if (t.tagName === "DIALOG") t.close(); // click en el fondo
+    });
+
+    // Zoom de la foto en la ficha: con mouse, la foto se agranda y sigue al puntero;
+    // tocándola (o con clic) se abre a pantalla completa, donde en el celular se agranda con dos dedos
+    const fine = matchMedia("(hover: hover) and (pointer: fine)");
+    const zoomOff = (th) => { th.classList.remove("zooming"); th.querySelector("img.prod")?.style.removeProperty("transform-origin"); };
+    $("#modal").addEventListener("pointermove", (e) => {
+      const th = e.target.closest(".thumb.zoomable");
+      $$("#modal .thumb.zooming").forEach((x) => x !== th && zoomOff(x));
+      if (!th || !fine.matches || e.pointerType !== "mouse" || e.target.closest(".zoom-hint")) { if (th) zoomOff(th); return; }
+      const img = th.querySelector("img.prod"); if (!img) return;
+      const r = th.getBoundingClientRect();
+      const x = Math.min(100, Math.max(0, ((e.clientX - r.left - img.offsetLeft) / img.offsetWidth) * 100));
+      const y = Math.min(100, Math.max(0, ((e.clientY - r.top - img.offsetTop) / img.offsetHeight) * 100));
+      img.style.transformOrigin = `${x}% ${y}%`;
+      th.classList.add("zooming");
+    });
+    $("#modal").addEventListener("pointerleave", () => $$("#modal .thumb.zooming").forEach(zoomOff));
+    $("#modal").addEventListener("click", (e) => {
+      const th = e.target.closest(".thumb.zoomable"); if (!th) return;
+      const img = th.querySelector("img.prod"); if (!img) return;
+      const z = $("#zoomDlg");
+      z.innerHTML = `<button class="close" type="button" aria-label="Cerrar" data-close>${U.close}</button><img src="${esc(img.getAttribute("src"))}" alt="${esc(img.alt)}">`;
+      z.showModal();
     });
 
     // Buscador y orden del armador (sin redibujar todo) · nota del pedido
