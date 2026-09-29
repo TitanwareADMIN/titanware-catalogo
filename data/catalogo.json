@@ -1619,7 +1619,7 @@
         "precio":  133776,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/micro-amd-ryzen-5-3500x-s-video-c-cooler-cpu-am4.webp",
         "caja":  "img/productos/cajas/micro-amd-ryzen-5-3500x-s-video-c-cooler-cpu-am4.webp",
         "attrs":  {
                       "socket":  "AM4",
@@ -1681,7 +1681,7 @@
         "precio":  109620,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/micro-amd-ryzen-3-3200g-c-video-c-cooler-box-am4.webp",
         "caja":  "img/productos/cajas/micro-amd-ryzen-3-3200g-c-video-c-cooler-box-am4.webp",
         "attrs":  {
                       "socket":  "AM4",
@@ -3944,7 +3944,7 @@
         "precio":  130356,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/memoria-sodimm-8gb-ddr4-3200-patriot-signature.webp",
         "origen":  "MEMORIA SODIMM 8GB DDR4 3200 PATRIOT SIGNATURE",
         "marca":  "Patriot",
         "specs":  [
@@ -6006,7 +6006,7 @@
         "precio":  255012,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/hd-hdd-1tb-seagate-skyhawk-sata-iii-3-5.webp",
         "origen":  "HD HDD 1TB SEAGATE SKYHAWK SATA III 3.5\"",
         "marca":  "Seagate",
         "specs":  [
@@ -6127,7 +6127,7 @@
         "precio":  349704,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/hd-hdd-2tb-seagate-skyhawk-sata-iii-3-5.webp",
         "origen":  "HD HDD 2TB SEAGATE SKYHAWK SATA III 3.5\" VIDEOVIGILANCIA DVR NVR",
         "marca":  "Seagate",
         "specs":  [
@@ -6668,7 +6668,7 @@
         "precio":  602376,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/placa-de-video-geforce-rtx-3050-6gb-zotac-twin-edge-oc.webp",
         "attrs":  {
                       "tdp":  70,
                       "psuRec":  450,
@@ -7048,7 +7048,7 @@
         "precio":  931319,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/placa-de-video-geforce-rtx-5050-8gb-zotac-twin-edge-oc.webp",
         "attrs":  {
                       "tdp":  130,
                       "psuRec":  550,
@@ -9675,7 +9675,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asrock-b550m-phantom-gaming-4-ddr4-am4.webp",
         "attrs":  {
                       "socket":  "AM4",
                       "ddr":  "DDR4",
@@ -9821,7 +9821,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b550m-k-wifi6e-ddr4-am4.webp",
         "attrs":  {
                       "socket":  "AM4",
                       "ddr":  "DDR4",
@@ -9894,7 +9894,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b550m-ds3h-ac-r2-ddr4-am4.webp",
         "attrs":  {
                       "socket":  "AM4",
                       "ddr":  "DDR4",
@@ -10125,7 +10125,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b840m-h-ddr5-am5.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -10202,7 +10202,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b850m-d3hp-ddr5-am5.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -10510,7 +10510,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b650m-d3hp-ddr5-am5.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -10587,7 +10587,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b840m-d2h-ddr5-am5.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -10972,7 +10972,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b840m-d3hp-ddr5-am5.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -11049,7 +11049,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b840m-gaming-p-wifi6e-ddr5-am5.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -11203,7 +11203,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b840m-eagle-wifi6-ddr5-am5.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -11588,7 +11588,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b650m-d3hp-ax-ddr5-am5.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -11665,7 +11665,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b840m-ds3h-ddr5-am5.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -11742,7 +11742,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asrock-b850m-x-ddr5-am5.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -11896,7 +11896,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b650m-gaming-plus-wifi-ddr5-am5.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -12358,7 +12358,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b850m-gaming-x-wifi6-ddr5-am5.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -12666,7 +12666,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b840m-gaming-x-wifi6e-ddr5-am5.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -12820,7 +12820,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b840m-aorus-elite-wifi6e.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -13051,7 +13051,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-x870m-aorus-elite-wifi7.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -13128,7 +13128,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b850m-eagle-wifi6e.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -13590,7 +13590,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-b850m-aorus-elite-wifi6e.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -14052,7 +14052,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-x870-eagle-wifi7.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "ddr":  "DDR5",
@@ -19449,7 +19449,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/amd-ryzen-5-3400g-con-video-y-cooler-box-am4.webp",
         "attrs":  {
                       "socket":  "AM4",
                       "plataforma":  "AMD",
@@ -19510,7 +19510,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/amd-ryzen-5-4500-sin-video-con-cooler-box-am4.webp",
         "attrs":  {
                       "socket":  "AM4",
                       "plataforma":  "AMD",
@@ -19571,7 +19571,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/amd-ryzen-5-5000-box.webp",
+        "imagen":  "img/productos/amd-ryzen-5-5500-sin-video-con-cooler-box-am4.webp",
         "attrs":  {
                       "socket":  "AM4",
                       "plataforma":  "AMD",
@@ -19632,7 +19632,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/amd-ryzen-5-5000-box.webp",
+        "imagen":  "img/productos/amd-ryzen-5-5600t-sin-video-con-cooler-box-am4.webp",
         "attrs":  {
                       "socket":  "AM4",
                       "plataforma":  "AMD",
@@ -19693,7 +19693,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/amd-ryzen-5-5000-box.webp",
+        "imagen":  "img/productos/amd-ryzen-5-5600ge-con-video-y-cooler-box-am4.webp",
         "attrs":  {
                       "socket":  "AM4",
                       "plataforma":  "AMD",
@@ -19754,7 +19754,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/amd-ryzen-5-5000-box.webp",
+        "imagen":  "img/productos/amd-ryzen-5-5600x-sin-video-con-cooler-box-am4.webp",
         "attrs":  {
                       "socket":  "AM4",
                       "plataforma":  "AMD",
@@ -19815,7 +19815,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/amd-ryzen-7-5000-box.webp",
+        "imagen":  "img/productos/amd-ryzen-7-5700x-sin-video-oem-cooler-am4.webp",
         "attrs":  {
                       "socket":  "AM4",
                       "plataforma":  "AMD",
@@ -19876,7 +19876,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "img/productos/amd-ryzen-7-5000-box.webp",
+        "imagen":  "img/productos/amd-ryzen-9-5900xt-sin-cooler-sin-video-am4.webp",
         "attrs":  {
                       "socket":  "AM4",
                       "plataforma":  "AMD",
@@ -20181,7 +20181,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/amd-ryzen-5-7600-con-video-y-cooler-box-am5.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "plataforma":  "AMD",
@@ -20730,7 +20730,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/amd-ryzen-7-7700x3d-con-video-sin-cooler-am5.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "plataforma":  "AMD",
@@ -20852,7 +20852,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/amd-ryzen-9-7900-con-video-y-cooler-am5.webp",
         "attrs":  {
                       "socket":  "AM5",
                       "plataforma":  "AMD",
@@ -24183,7 +24183,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-mag-coreliquid-a12-240-argb-black.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -24269,7 +24269,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-mag-coreliquid-a13-240.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -24315,7 +24315,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-mag-coreliquid-a13-240-white.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -24548,7 +24548,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-gaming-240-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "radiador":  240
@@ -24584,7 +24584,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-gaming-240-ice-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "radiador":  240
@@ -24792,7 +24792,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-gaming-360-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "radiador":  360
@@ -24937,7 +24937,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-nautilus-240-rs-argb-white.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -24979,7 +24979,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-mag-coreliquid-a15-240.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25021,7 +25021,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-mag-coreliquid-e240.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25157,7 +25157,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-nautilus-240-rs.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25295,7 +25295,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-nautilus-240-rs-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25337,7 +25337,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-mag-coreliquid-i240.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25383,7 +25383,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asrock-challenger-360-digital-white.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "radiador":  360
@@ -25419,7 +25419,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-mag-coreliquid-c240.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25592,7 +25592,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-nautilus-360-rs-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25634,7 +25634,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-mag-coreliquid-e360.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25688,7 +25688,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-icue-link-titan-240-rx-rgb-white.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25738,7 +25738,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-icue-link-titan-240-rx-rgb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25811,7 +25811,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-nautilus-rs-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25860,7 +25860,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-nautilus-240-rs-lcd-white.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25906,7 +25906,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-nautilus-240-rs-lcd.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25948,7 +25948,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-mag-coreliquid-e360-white.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25994,7 +25994,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-nautilus-360-rs-argb-white.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -26377,7 +26377,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-icue-link-titan-360-rx-rgb-white.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -26470,7 +26470,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-aorus-waterforce-x-ii-240.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -26783,7 +26783,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-icue-link-titan-360-rx-rgb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -27126,7 +27126,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-amd-stock-95w.webp",
         "attrs":  {
                       "tipo":  "Aire",
                       "sockets":  [
@@ -27501,7 +27501,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/patriot-viper-elite-2-8gb-ddr4-3200mhz-red-black.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  8,
@@ -27713,7 +27713,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-vengeance-8gb-ddr4-3200mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  8,
@@ -27763,7 +27763,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-valueram-kvr-8gb-ddr4-3200mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  8,
@@ -27971,7 +27971,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-value-8gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  8,
@@ -28021,7 +28021,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-16gb-ddr4-3200mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -28071,7 +28071,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-8gb-ddr4-3200mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  8,
@@ -28553,7 +28553,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/patriot-viper-elite-2-16gb-ddr4-3200mhz-red-black.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -28707,7 +28707,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/lexar-16gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -29077,7 +29077,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-valueram-kvr-16gb-ddr4-3200mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -29127,7 +29127,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-valueram-16gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -29181,7 +29181,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/g-skill-trident-z-royal-16gb-2x8gb-ddr4-3600mhz-gold.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -29551,7 +29551,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/lexar-32gb-ddr4-3200mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  32,
@@ -29709,7 +29709,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-value-32gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  32,
@@ -29929,7 +29929,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-valueram-kvr-32gb-ddr4-3200mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  32,
@@ -29979,7 +29979,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-32gb-ddr4-3200mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  32,
@@ -30029,7 +30029,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-valueram-kvr-32gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  32,
@@ -30141,7 +30141,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-fury-renegade-rgb-32gb-ddr4-3600mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  32,
@@ -30195,7 +30195,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-fury-renegade-32gb-ddr4-3600mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  32,
@@ -30503,7 +30503,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-value-8gb-ddr5-5600mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  8,
@@ -30719,7 +30719,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-16gb-ddr5-4800mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -30769,7 +30769,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-8gb-ddr5-5600mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  8,
@@ -30823,7 +30823,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-valueram-8gb-ddr5-5600mhz-kcp556us6-8.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  8,
@@ -30873,7 +30873,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-valueram-kvr-8gb-ddr5-5600mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  8,
@@ -31027,7 +31027,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/patriot-signature-line-16gb-ddr5-5600mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -31077,7 +31077,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/patriot-signature-line-16gb-ddr5-5200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -31339,7 +31339,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-fury-beast-rgb-16gb-ddr5-6400mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -31857,7 +31857,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-valueram-kvr-16gb-ddr5-5600mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -31919,7 +31919,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/patriot-viper-elite-5-rgb-white-16gb-ddr5-6000mhz-expo.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -31969,7 +31969,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-valueram-kvr-16gb-ddr5-5600mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -32197,7 +32197,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-fury-beast-rgb-expo-16gb-ddr5-6400mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -32309,7 +32309,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/patriot-viper-elite-5-ultra-rgb-16gb-ddr5-6000mhz-expo.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -32567,7 +32567,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/patriot-viper-venom-32gb-2x16gb-ddr5-6400mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  32,
@@ -32675,7 +32675,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kingston-valueram-kvr-32gb-ddr5-5600mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  32,
@@ -32905,7 +32905,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-m-2-nvme-250gb-western-digital-wd-sn350-green-pcie-gen3.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -33025,7 +33025,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-a400-240gb-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -33265,7 +33265,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-lexar-nm610pro-500gb-m-2-nvme-pcie-gen3.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -33306,7 +33306,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-fury-renegade-1tb-m-2-nvme-pcie-gen4.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -33346,7 +33346,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-wd-green-sn3000-500gb-m-2-nvme-pcie-gen4.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -33386,7 +33386,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-patriot-p400-lite-500gb-m-2-nvme-pcie-gen4.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -33626,7 +33626,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-patriot-burst-elite-960gb-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -33667,7 +33667,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-dc600m-2tb-sata-iii-2-5-servidor.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -33707,7 +33707,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-team-group-mp44l-500gb-m-2-nvme-pcie-gen4.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -33747,7 +33747,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-sandisk-plus-500gb-m-2-nvme-pcie-gen3.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -33788,7 +33788,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-wd-black-sn7100-500gb-m-2-nvme-pcie-gen4.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -33989,7 +33989,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-kc3000-512gb-m-2-nvme-pcie-gen4.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -34030,7 +34030,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-wd-black-sn770m-500gb-m-2-nvme-pcie-gen4-2230.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -34150,7 +34150,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-a400-960gb-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -34190,7 +34190,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-nv3-1tb-m-2-nvme-pcie-gen4.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -34230,7 +34230,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-wd-green-sn3000-1tb-m-2-nvme-pcie-gen4.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -34356,7 +34356,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-patriot-p300-1tb-m-2-nvme-pcie-gen3-2100mb-s.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -34401,7 +34401,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-kc600-512gb-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -34441,7 +34441,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-crucial-bx500-2tb-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -34526,7 +34526,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-patriot-p410-1tb-m-2-nvme-pcie-gen4-5000mb-s.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -34566,7 +34566,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-sandisk-plus-1tb-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -34606,7 +34606,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-lexar-nq780-1tb-m-2-nvme-pcie-gen4.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -34736,7 +34736,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-wd-black-sn7100-1tb-m-2-nvme-pcie-gen4-7250mb-s.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -34777,7 +34777,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-fury-renegade-g5-1tb-m-2-nvme-pcie-gen5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -34867,7 +34867,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-wd-blue-sn5100-1tb-m-2-nvme-pcie-gen4-7100mb-s.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -34952,7 +34952,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-kc3000-1tb-m-2-nvme-pcie-gen4-7000mb-s.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -35032,7 +35032,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-wd-blue-sa510-2tb-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -35072,7 +35072,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-externo-patriot-pdp31-2tb-m-2-2230.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "Externo",
@@ -35113,7 +35113,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-kc600-1tb-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -35153,7 +35153,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-nv3-2tb-m-2-nvme-pcie-gen4.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -35198,7 +35198,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-externo-kingston-xs2000-2tb-usb-3-2-gen2x2-gris.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "Externo",
@@ -35243,7 +35243,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-externo-kingston-xs1000-1tb-usb-3-2-rojo.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "Externo",
@@ -35288,7 +35288,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-patriot-p410-2tb-m-2-nvme-pcie-gen4-5000mb-s.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -35328,7 +35328,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-wd-green-sn3000-2tb-m-2-nvme-pcie-gen4.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -35458,7 +35458,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-wd-black-sn8100-1tb-m-2-nvme-pcie-gen5-14900mb-s.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -35498,7 +35498,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-externo-kingston-xs1000-1tb-usb-3-2.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "Externo",
@@ -35543,7 +35543,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-sandisk-wd-black-optimus-gx-pro-8100-1tb-m-2-nvme-pcie-gen5-14900m.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -35588,7 +35588,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-wd-black-sn850x-1tb-m-2-nvme-pcie-gen4-7300mb-s.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -35633,7 +35633,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-kc3000-2tb-m-2-nvme-pcie-gen4-7000mb-s.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -35808,7 +35808,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-fury-renegade-2tb-m-2-nvme-pcie-gen4-7300mb-s.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -35853,7 +35853,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-dc600m-480gb-sata-iii-2-5-servidor.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -35898,7 +35898,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-kc600-2tb-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -35943,7 +35943,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-kc3000-4tb-m-2-nvme-pcie-gen4-7000mb-s.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -35984,7 +35984,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-dc600m-960gb-sata-iii-2-5-servidor.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -36029,7 +36029,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-dc600m-1-92tb-sata-iii-2-5-servidor.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -36074,7 +36074,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-kingston-dc600m-3-84tb-sata-iii-2-5-servidor.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -36159,7 +36159,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/disco-externo-seagate-expansion-1tb-usb.webp",
         "attrs":  {
                       "tipo":  "HDD",
                       "interfaz":  "Externo",
@@ -36199,7 +36199,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hdd-externo-seagate-portable-drive-1tb-usb-3-0.webp",
         "attrs":  {
                       "tipo":  "HDD",
                       "interfaz":  "Externo",
@@ -36239,7 +36239,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/disco-externo-seagate-expansion-2tb-usb.webp",
         "attrs":  {
                       "tipo":  "HDD",
                       "interfaz":  "Externo",
@@ -36324,7 +36324,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/disco-externo-seagate-expansion-4tb-usb.webp",
         "attrs":  {
                       "tipo":  "HDD",
                       "interfaz":  "Externo",
@@ -36364,7 +36364,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hdd-externo-seagate-portable-4tb-usb-3-0.webp",
         "attrs":  {
                       "tipo":  "HDD",
                       "interfaz":  "Externo",
@@ -36404,7 +36404,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hdd-wd-blue-4tb-sata-iii-3-5.webp",
         "attrs":  {
                       "tipo":  "HDD",
                       "interfaz":  "SATA",
@@ -36449,7 +36449,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/disco-externo-wd-my-passport-4tb-usb-3-2-rojo.webp",
         "attrs":  {
                       "tipo":  "HDD",
                       "interfaz":  "Externo",
@@ -36489,7 +36489,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hdd-externo-seagate-portable-5tb-usb.webp",
         "attrs":  {
                       "tipo":  "HDD",
                       "interfaz":  "Externo",
@@ -36530,7 +36530,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hdd-wd-purple-4tb-sata-iii-3-5-videovigilancia.webp",
         "attrs":  {
                       "tipo":  "HDD",
                       "interfaz":  "SATA",
@@ -36571,7 +36571,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hdd-seagate-ironwolf-4tb-sata-iii-3-5-nas.webp",
         "attrs":  {
                       "tipo":  "HDD",
                       "interfaz":  "SATA",
@@ -36611,7 +36611,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hdd-externo-wd-elements-4tb-usb-3-0.webp",
         "attrs":  {
                       "tipo":  "HDD",
                       "interfaz":  "Externo",
@@ -36652,7 +36652,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hdd-wd-purple-8tb-sata-iii-3-5.webp",
         "attrs":  {
                       "tipo":  "HDD",
                       "interfaz":  "SATA",
@@ -36693,7 +36693,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hdd-wd-purple-10tb-sata-iii-3-5.webp",
         "attrs":  {
                       "tipo":  "HDD",
                       "interfaz":  "SATA",
@@ -36991,7 +36991,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/arktek-geforce-rtx-3050-8gb-twin-fan.webp",
         "attrs":  {
                       "tdp":  115,
                       "psuRec":  450,
@@ -37049,7 +37049,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-radeon-rx-9050-gaming-oc-8gb.webp",
         "attrs":  {
                       "tdp":  92,
                       "psuRec":  450,
@@ -37316,7 +37316,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5050-8gb-windforce-oc.webp",
         "attrs":  {
                       "tdp":  130,
                       "psuRec":  550,
@@ -37382,7 +37382,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asrock-radeon-rx-9060-xt-steel-legend-oc-8gb.webp",
         "attrs":  {
                       "tdp":  160,
                       "largo":  298,
@@ -37449,7 +37449,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5050-8gb-shadow-2x-oc.webp",
         "attrs":  {
                       "tdp":  130,
                       "psuRec":  550,
@@ -37511,7 +37511,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/palit-geforce-rtx-5060-8gb-white-oc.webp",
         "attrs":  {
                       "tdp":  145,
                       "psuRec":  550,
@@ -37573,7 +37573,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5060-8gb-ventus-3x-oc.webp",
         "attrs":  {
                       "tdp":  145,
                       "psuRec":  550,
@@ -37635,7 +37635,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-radeon-rx-9060-xt-gaming-oc-8gb.webp",
         "attrs":  {
                       "tdp":  160,
                       "psuRec":  550,
@@ -37697,7 +37697,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5050-8gb-gaming-oc.webp",
         "attrs":  {
                       "tdp":  130,
                       "psuRec":  550,
@@ -37759,7 +37759,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/palit-geforce-rtx-3060-12gb-infinity-2-oc.webp",
         "attrs":  {
                       "tdp":  170,
                       "psuRec":  550,
@@ -37821,7 +37821,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5060-8gb-gaming-oc.webp",
         "attrs":  {
                       "tdp":  145,
                       "psuRec":  550,
@@ -37883,7 +37883,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5060-8gb-windforce-max-oc.webp",
         "attrs":  {
                       "tdp":  145,
                       "psuRec":  550,
@@ -37945,7 +37945,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5060-8gb-windforce-max-oc-v2.webp",
         "attrs":  {
                       "tdp":  145,
                       "psuRec":  550,
@@ -38007,7 +38007,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5060-8gb-eagle-oc-ice.webp",
         "attrs":  {
                       "tdp":  145,
                       "psuRec":  550,
@@ -38069,7 +38069,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-3060-12gb-windforce-oc.webp",
         "attrs":  {
                       "tdp":  170,
                       "psuRec":  550,
@@ -38131,7 +38131,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-3060-12gb-ventus-2x-oc.webp",
         "attrs":  {
                       "tdp":  170,
                       "psuRec":  550,
@@ -38193,7 +38193,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5060-ti-8gb-windforce-max-oc.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -38255,7 +38255,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-dual-geforce-rtx-5060-8gb-oc-evo.webp",
         "attrs":  {
                       "tdp":  145,
                       "psuRec":  550,
@@ -38317,7 +38317,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5060-8gb-ventus-2x-oc.webp",
         "attrs":  {
                       "tdp":  145,
                       "psuRec":  550,
@@ -38379,7 +38379,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5060-8gb-shadow-2x-oc.webp",
         "attrs":  {
                       "tdp":  145,
                       "psuRec":  550,
@@ -38441,7 +38441,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-dual-geforce-rtx-3060-12gb-v2-oc-edition.webp",
         "attrs":  {
                       "tdp":  170,
                       "psuRec":  550,
@@ -38503,7 +38503,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5060-ti-8gb-ventus-2x-oc-plus.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -38565,7 +38565,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-dual-geforce-rtx-5060-8gb-oc-edition.webp",
         "attrs":  {
                       "tdp":  145,
                       "psuRec":  550,
@@ -38627,7 +38627,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-dual-geforce-rtx-5060-8gb.webp",
         "attrs":  {
                       "tdp":  145,
                       "psuRec":  550,
@@ -38689,7 +38689,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-dual-radeon-rx-9060-xt-16gb.webp",
         "attrs":  {
                       "tdp":  150,
                       "psuRec":  550,
@@ -38751,7 +38751,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5060-ti-8gb-shadow-2x-plus.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -38813,7 +38813,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5060-8gb-eagle-max-oc-3x.webp",
         "attrs":  {
                       "tdp":  145,
                       "psuRec":  550,
@@ -38875,7 +38875,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5060-ti-8gb-shadow-2x-oc-plus.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -38937,7 +38937,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/zotac-gaming-geforce-rtx-5060-ti-8gb-twin-edge-white-oc.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -38999,7 +38999,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5060-8gb-gaming-oc.webp",
         "attrs":  {
                       "tdp":  145,
                       "psuRec":  550,
@@ -39061,7 +39061,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5060-8gb-eagle-max-oc.webp",
         "attrs":  {
                       "tdp":  145,
                       "psuRec":  550,
@@ -39123,7 +39123,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-dual-geforce-rtx-5060-ti-8gb-oc-edition.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -39185,7 +39185,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5060-ti-8gb-windforce-oc.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -39247,7 +39247,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5060-ti-8gb-eagle-oc.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -39309,7 +39309,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asrock-radeon-rx-9060-xt-challenger-oc-16gb.webp",
         "attrs":  {
                       "tdp":  150,
                       "psuRec":  550,
@@ -39371,7 +39371,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5060-ti-8gb-eagle-max-oc.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -39433,7 +39433,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5060-ti-8gb-eagle-oc-ice.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -39495,7 +39495,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5060-ti-8gb-ventus-2x-oc-white.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -39557,7 +39557,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5060-ti-8gb-gaming-oc-3x.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -39619,7 +39619,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-prime-geforce-rtx-5060-ti-8gb-oc-edition-3x.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -39685,7 +39685,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5060-ti-8gb-gaming-trio-oc-white.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -39747,7 +39747,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5060-ti-8gb-gaming-oc.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -39809,7 +39809,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-tuf-gaming-geforce-rtx-5060-8gb-oc-edition.webp",
         "attrs":  {
                       "tdp":  145,
                       "psuRec":  550,
@@ -39871,7 +39871,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5060-ti-8gb-gaming-trio-oc.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -39937,7 +39937,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5060-ti-8gb-aero-oc.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -39999,7 +39999,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5060-8gb-ventus-2x-oc-white.webp",
         "attrs":  {
                       "tdp":  145,
                       "psuRec":  550,
@@ -40061,7 +40061,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/sapphire-pulse-radeon-rx-9060-xt-16gb.webp",
         "attrs":  {
                       "tdp":  150,
                       "psuRec":  550,
@@ -40123,7 +40123,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-t1-geforce-rtx-5060-ti-8gb-oc-edition.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -40181,7 +40181,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-prime-radeon-rx-9070-gre-12gb-oc-edition.webp",
         "attrs":  {
                       "tdp":  220,
                       "psuRec":  650,
@@ -40243,7 +40243,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-tuf-gaming-geforce-rtx-5060-ti-8gb-oc.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -40301,7 +40301,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-radeon-rx-9070-16gb-gaming.webp",
         "attrs":  {
                       "tdp":  220,
                       "psuRec":  650,
@@ -40359,7 +40359,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-radeon-rx-9070-16gb-gaming-oc.webp",
         "attrs":  {
                       "tdp":  220,
                       "psuRec":  650,
@@ -40421,7 +40421,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-dual-geforce-rtx-5060-ti-16gb-oc-edition-evo.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -40483,7 +40483,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5060-ti-16gb-shadow-2x-oc-plus.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -40545,7 +40545,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5060-ti-16gb-ventus-2x-oc-plus.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -40611,7 +40611,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5070-12gb-eagle-oc-ice-sff.webp",
         "attrs":  {
                       "tdp":  250,
                       "psuRec":  650,
@@ -40673,7 +40673,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-prime-geforce-rtx-5070-12gb-oc-edition.webp",
         "attrs":  {
                       "tdp":  250,
                       "psuRec":  650,
@@ -40735,7 +40735,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5070-12gb-windforce-oc-sff.webp",
         "attrs":  {
                       "tdp":  250,
                       "psuRec":  650,
@@ -40797,7 +40797,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5070-12gb-eagle-oc-sff.webp",
         "attrs":  {
                       "tdp":  250,
                       "psuRec":  650,
@@ -40859,7 +40859,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5070-12gb-eagle-oc-sff-3x.webp",
         "attrs":  {
                       "tdp":  250,
                       "psuRec":  650,
@@ -40921,7 +40921,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-dual-geforce-rtx-5070-12gb-oc-edition.webp",
         "attrs":  {
                       "tdp":  250,
                       "psuRec":  650,
@@ -40983,7 +40983,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5070-12gb-world-of-warcraft-midnight-edition-oc.webp",
         "attrs":  {
                       "tdp":  250,
                       "psuRec":  650,
@@ -41045,7 +41045,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-prime-geforce-rtx-5060-ti-16gb-oc-edition.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -41103,7 +41103,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-prime-radeon-rx-9070-xt-16gb-oc-edition.webp",
         "attrs":  {
                       "tdp":  304,
                       "psuRec":  750,
@@ -41165,7 +41165,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5070-12gb-gaming-oc.webp",
         "attrs":  {
                       "tdp":  250,
                       "psuRec":  650,
@@ -41227,7 +41227,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5070-12gb-shadow-3x-oc.webp",
         "attrs":  {
                       "tdp":  250,
                       "psuRec":  650,
@@ -41289,7 +41289,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5070-12gb-ventus-3x-oc.webp",
         "attrs":  {
                       "tdp":  250,
                       "psuRec":  650,
@@ -41351,7 +41351,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-dual-geforce-rtx-5060-ti-16gb-oc-edition.webp",
         "attrs":  {
                       "tdp":  180,
                       "psuRec":  600,
@@ -41417,7 +41417,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5070-12gb-aero-oc.webp",
         "attrs":  {
                       "tdp":  250,
                       "psuRec":  650,
@@ -41475,7 +41475,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-t1-geforce-rtx-5070-12gb-oc-edition.webp",
         "attrs":  {
                       "tdp":  250,
                       "psuRec":  650,
@@ -41533,7 +41533,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/sapphire-pulse-radeon-rx-9070-xt-16gb.webp",
         "attrs":  {
                       "tdp":  304,
                       "psuRec":  750,
@@ -41595,7 +41595,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5070-12gb-master.webp",
         "attrs":  {
                       "tdp":  250,
                       "psuRec":  650,
@@ -41657,7 +41657,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-rog-strix-geforce-rtx-5070-12gb-gaming-oc-edition.webp",
         "attrs":  {
                       "tdp":  250,
                       "psuRec":  650,
@@ -41715,7 +41715,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-aorus-radeon-rx-9070-xt-16gb-elite-oc.webp",
         "attrs":  {
                       "tdp":  304,
                       "psuRec":  750,
@@ -41777,7 +41777,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5070-ti-16gb-frieren-edition-oc.webp",
         "attrs":  {
                       "tdp":  300,
                       "psuRec":  750,
@@ -41839,7 +41839,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5070-ti-16gb-ventus-3x-oc.webp",
         "attrs":  {
                       "tdp":  300,
                       "psuRec":  750,
@@ -41901,7 +41901,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-prime-geforce-rtx-5070-ti-16gb-oc-edition.webp",
         "attrs":  {
                       "tdp":  300,
                       "psuRec":  750,
@@ -41963,7 +41963,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5070-ti-16gb-windforce-oc-sff.webp",
         "attrs":  {
                       "tdp":  300,
                       "psuRec":  750,
@@ -42025,7 +42025,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5070-ti-16gb-gaming-oc.webp",
         "attrs":  {
                       "tdp":  300,
                       "psuRec":  750,
@@ -42091,7 +42091,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-geforce-rtx-5070-ti-16gb-aero-oc.webp",
         "attrs":  {
                       "tdp":  300,
                       "psuRec":  750,
@@ -42153,7 +42153,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5070-ti-16gb-shadow-3x-oc.webp",
         "attrs":  {
                       "tdp":  300,
                       "psuRec":  750,
@@ -42215,7 +42215,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5070-ti-16gb-mlg-edition-oc.webp",
         "attrs":  {
                       "tdp":  300,
                       "psuRec":  750,
@@ -42277,7 +42277,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5080-16gb-inspire-3x-oc.webp",
         "attrs":  {
                       "tdp":  360,
                       "psuRec":  850,
@@ -42339,7 +42339,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5080-16gb-gaming-trio-oc.webp",
         "attrs":  {
                       "tdp":  360,
                       "psuRec":  850,
@@ -42401,7 +42401,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-aorus-geforce-rtx-5080-16gb-infinity-wood-edition.webp",
         "attrs":  {
                       "tdp":  360,
                       "psuRec":  850,
@@ -42463,7 +42463,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/zotac-gaming-geforce-rtx-5080-16gb-solid-oc.webp",
         "attrs":  {
                       "tdp":  360,
                       "psuRec":  850,
@@ -42525,7 +42525,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-rog-astral-geforce-rtx-5080-16gb-oc-edition.webp",
         "attrs":  {
                       "tdp":  360,
                       "psuRec":  850,
@@ -42587,7 +42587,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-tuf-gaming-geforce-rtx-5080-16gb-oc.webp",
         "attrs":  {
                       "tdp":  360,
                       "psuRec":  850,
@@ -42649,7 +42649,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-geforce-rtx-5090-32gb-lightning-z.webp",
         "attrs":  {
                       "tdp":  575,
                       "psuRec":  1000,
@@ -43108,7 +43108,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-mag-550w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  550,
                       "cert":  "80 Plus Bronze",
@@ -43305,7 +43305,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-gp-p650ss-ice-650w-80-plus-silver.webp",
         "attrs":  {
                       "watts":  650,
                       "cert":  "80 Plus Silver",
@@ -43417,7 +43417,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-gp-p650ss-650w-80-plus-silver-negra.webp",
         "attrs":  {
                       "watts":  650,
                       "cert":  "80 Plus Silver",
@@ -43572,7 +43572,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-mag-a650gn-ii-650w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  650,
                       "cert":  "80 Plus Gold",
@@ -43722,7 +43722,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-gp-p650g-pg5-650w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  650,
                       "cert":  "80 Plus Gold",
@@ -43794,7 +43794,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-gp-p650g-650w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  650,
                       "cert":  "80 Plus Gold",
@@ -43921,7 +43921,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-750w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Bronze",
@@ -44109,7 +44109,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-gp-p750bs-750w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Bronze",
@@ -44439,7 +44439,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-prime-750b-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Bronze",
@@ -44686,7 +44686,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-cx750-750w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Bronze",
@@ -44986,7 +44986,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-mag-a750bn-750w-80-plus-bronze-pcie5.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Bronze",
@@ -45134,7 +45134,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-prime-750b-blanca-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Bronze",
@@ -45226,7 +45226,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-pg5-750w-80-plus-gold-modular.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -45277,7 +45277,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-pg5-v2-750w-80-plus-gold-modular.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -45415,7 +45415,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-gp-ud850gm-pg5-850w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  850,
                       "cert":  "80 Plus Gold",
@@ -45466,7 +45466,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-gp-ud750gm-pg5-v2-750w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -45660,7 +45660,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-prime-ap-750g-750w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -45757,7 +45757,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-pg5-v2-850w-80-plus-gold-modular.webp",
         "attrs":  {
                       "watts":  850,
                       "cert":  "80 Plus Gold",
@@ -45803,7 +45803,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-tuf-gaming-750w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -45854,7 +45854,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-tuf-gaming-750w-gold-evo-80-plus-gold-full-modular-pcie-5-1-atx-3.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -45950,7 +45950,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-tuf-gaming-750g-750w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -46152,7 +46152,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-gp-ud850gm-pg5-v2-850w-80-plus-gold-full-modular.webp",
         "attrs":  {
                       "watts":  850,
                       "cert":  "80 Plus Gold",
@@ -46300,7 +46300,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-prime-ap-850g-850w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  850,
                       "cert":  "80 Plus Gold",
@@ -46461,7 +46461,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-gp-ud1000gm-pg5-v2-1000w-80-plus-gold-full-modular.webp",
         "attrs":  {
                       "watts":  1000,
                       "cert":  "80 Plus Gold",
@@ -46512,7 +46512,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-gp-ud850gm-pg5w-850w-80-plus-gold-blanca.webp",
         "attrs":  {
                       "watts":  850,
                       "cert":  "80 Plus Gold",
@@ -46618,7 +46618,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-gp-ud1000gm-pg5-v2-ice-1000w-80-plus-gold-full-modular.webp",
         "attrs":  {
                       "watts":  1000,
                       "cert":  "80 Plus Gold",
@@ -46664,7 +46664,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-tuf-gaming-850g-850w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  850,
                       "cert":  "80 Plus Gold",
@@ -46719,7 +46719,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-rm850e-2025-850w-cybenetics-gold-full-modular-pcie-5-1-atx-3-1.webp",
         "attrs":  {
                       "watts":  850,
                       "cert":  "80 Plus Gold",
@@ -46765,7 +46765,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-tuf-gaming-1000w-gold-evo-80-plus-gold.webp",
         "attrs":  {
                       "watts":  1000,
                       "cert":  "80 Plus Gold",
@@ -47009,7 +47009,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-rm850x-shift-850w-80-plus-gold-atx-3-0.webp",
         "attrs":  {
                       "watts":  850,
                       "cert":  "80 Plus Gold",
@@ -47147,7 +47147,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-tuf-gaming-1000g-1000w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  1000,
                       "cert":  "80 Plus Gold",
@@ -47337,7 +47337,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-tuf-gaming-1000p-1000w-80-plus-platinum-full-modular.webp",
         "attrs":  {
                       "watts":  1000,
                       "cert":  "80 Plus Platinum",
@@ -47383,7 +47383,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-tuf-gaming-1200g-gold-evo-1200w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  1200,
                       "cert":  "80 Plus Gold",
@@ -47434,7 +47434,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-rog-strix-750g-aura-gaming-750w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -47526,7 +47526,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-tuf-gaming-1200w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  1200,
                       "cert":  "80 Plus Gold",
@@ -47581,7 +47581,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-rm1200x-shift-1200w-80-plus-gold-atx-3-0-full-modular.webp",
         "attrs":  {
                       "watts":  1200,
                       "cert":  "80 Plus Gold",
@@ -47678,7 +47678,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-rog-strix-1000p-equalizer-1000w-80-plus-platinum-full-modular.webp",
         "attrs":  {
                       "watts":  1000,
                       "cert":  "80 Plus Platinum",
@@ -47729,7 +47729,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-rog-strix-1000w-blanca-80-plus-platinum.webp",
         "attrs":  {
                       "watts":  1000,
                       "cert":  "80 Plus Platinum",
@@ -47821,7 +47821,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-rog-strix-1200w-80-plus-platinum.webp",
         "attrs":  {
                       "watts":  1200,
                       "cert":  "80 Plus Platinum",
@@ -47872,7 +47872,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-hx1000i-1000w-cybenetics-platinum-full-modular.webp",
         "attrs":  {
                       "watts":  1000,
                       "cert":  "80 Plus Platinum",
@@ -47978,7 +47978,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-rog-thor-1000p-iii-1000w-80-plus-platinum.webp",
         "attrs":  {
                       "watts":  1000,
                       "cert":  "80 Plus Platinum",
@@ -48084,7 +48084,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-rog-thor-1200p-iii-blanca-80-plus-platinum.webp",
         "attrs":  {
                       "watts":  1200,
                       "cert":  "80 Plus Platinum",
@@ -48135,7 +48135,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-rog-thor-1600t-iii-1600w-80-plus-titanium.webp",
         "attrs":  {
                       "watts":  1600,
                       "cert":  "80 Plus Titanium",
@@ -49241,7 +49241,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-c102-glass-ice.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -49301,7 +49301,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-mag-forge-m100a-rgb.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -50013,7 +50013,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-c102-glass-black.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -50280,7 +50280,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/msi-mag-forge-321r-airflow.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -51091,7 +51091,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-a31-plus-tg-argb-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -51450,7 +51450,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-3200d-rs-3fan-argb-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -51964,7 +51964,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gigabyte-c103-glass-fuente-650w-p650g-pg5-80-plus-gold.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  650,
@@ -52023,7 +52023,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-3500x-tg-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -52224,7 +52224,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-3500x-rs-r-argb-3-fan-negro.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -52286,7 +52286,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-frame-4000d-rs-argb-3-fan-blanco.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -52346,7 +52346,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-frame-4000d-rs-3fan-tg-black.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -52406,7 +52406,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-frame-4000d-rs-3fan-tg-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -52458,7 +52458,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-proart-pa401-wood-edition-metal-panel-3fan.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -52730,7 +52730,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-frame-4000d-rs-argb-3fan-tg-black.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -52998,7 +52998,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-frame-4000d-wood-rs-white-4fan.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -53058,7 +53058,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-2500x-rgb-icue-link-white.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -53117,7 +53117,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-2500x-tg-dual-chamber.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -53398,7 +53398,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-2500x-rgb-icue-link-black.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -53567,7 +53567,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-air-5400-rs-r-argb-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -53627,7 +53627,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-rog-strix-helios-gx601-rgb-negro.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -53686,7 +53686,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-air-5400-rs-r-argb-black.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -53746,7 +53746,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-icue-7000x-rgb-tg-full-tower-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -53802,7 +53802,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-rog-strix-helios-gx601-rgb-blanco.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -53857,7 +53857,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-frame-4000d-lcd-rs-performance-blanco.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -53912,7 +53912,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-frame-4000d-lcd-rs-performance-negro.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -53967,7 +53967,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/corsair-icue-link-9000d-rgb-airflow-tg-super-tower-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -54021,7 +54021,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-rog-strix-hyperion-gr701.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -54076,7 +54076,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/asus-rog-strix-hyperion-gr701-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
