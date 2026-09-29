@@ -4252,7 +4252,7 @@
         "precio":  146880,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/memoria-8gb-ddr4-3200-arkham-black-rgb.webp",
         "origen":  "MEMORIA 8GB DDR4 3200 ARKHAM BLACK RGB",
         "marca":  "Arkham",
         "specs":  [
@@ -4310,7 +4310,7 @@
         "precio":  146880,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/memoria-8gb-ddr4-3200-c-disipador-termico-starmemory.webp",
         "origen":  "MEMORIA 8GB DDR4 3200 C/DISIPADOR TERMICO STARMEMORY",
         "marca":  "StarMemory",
         "specs":  [
@@ -7233,7 +7233,7 @@
         "precio":  19792,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/fuente-500w-lnz-bx550-ss.webp",
         "origen":  "FUENTE 500W LNZ BX550-SS",
         "marca":  "LNZ",
         "specs":  [
@@ -7272,7 +7272,7 @@
         "precio":  23746,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/fuente-500w-lnz-xs550-ce.webp",
         "origen":  "FUENTE 500W LNZ XS550-CE",
         "marca":  "LNZ",
         "specs":  [
@@ -7311,7 +7311,7 @@
         "precio":  24194,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/fuente-500w-sfx-atx-20-4-sata.webp",
         "origen":  "FUENTE 500W SFX ATX 20+4 SATA",
         "marca":  "Genérico",
         "specs":  [
@@ -7348,7 +7348,7 @@
         "precio":  26232,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/fuente-aureox-arxe-500w.webp",
         "origen":  "FUENTE AUREOX ARXE 500W",
         "marca":  "Aureox",
         "specs":  [
@@ -7387,7 +7387,7 @@
         "precio":  31642,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/fuente-550w-performance-sata-4-cable-power.webp",
         "origen":  "FUENTE 550W PERFORMANCE SATA *4 CABLE POWER",
         "marca":  "Genérico",
         "specs":  [
@@ -7424,7 +7424,7 @@
         "precio":  46248,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/fuente-aureox-arxgp-500w.webp",
         "origen":  "FUENTE AUREOX ARXGP 500W",
         "marca":  "Aureox",
         "specs":  [
@@ -7463,7 +7463,7 @@
         "precio":  48552,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/fuente-600w-aureox-arxgp-600w.webp",
         "origen":  "FUENTE 600W AUREOX ARXGP-600W",
         "marca":  "Aureox",
         "specs":  [
@@ -7542,7 +7542,7 @@
         "precio":  65747,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/fuente-500w-evolabs-power-series.webp",
         "origen":  "Fuente Evolabs Power 500W",
         "marca":  "Evolabs",
         "specs":  [
@@ -7618,7 +7618,7 @@
         "precio":  74795,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/fuente-600w-evolabs-power-series.webp",
         "origen":  "Fuente Evolabs Power 600W",
         "marca":  "Evolabs",
         "specs":  [
@@ -7805,7 +7805,7 @@
         "precio":  93088,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/fuente-650w-evolabs-supreme-series-80-plus-bronze.webp",
         "origen":  "FUENTE 650W EVOLABS SUPREME SERIES 80 PLUS BRONZE",
         "marca":  "Evolabs",
         "specs":  [
@@ -7983,7 +7983,7 @@
         "precio":  112982,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/fuente-750w-evolabs-supreme-series-80-plus-silver.webp",
         "origen":  "FUENTE 750W EVOLABS SUPREME SERIES 80 PLUS SILVER",
         "marca":  "Evolabs",
         "specs":  [
@@ -8297,7 +8297,7 @@
         "precio":  27000,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/gabinete-nova-cm-04q1-micro-atx-p-mother-a520m-b550m-h510m-a620m.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -8334,7 +8334,7 @@
         "precio":  40788,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/gabinete-gamer-aureox-skoll-arx-200g.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -8483,7 +8483,7 @@
         "precio":  45900,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/gabinete-kit-c-teclado-c-mouse.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -8520,7 +8520,7 @@
         "precio":  46601,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/gabinete-kit-performance-mate-c-fuente-500w.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  500,
@@ -8553,7 +8553,7 @@
         "precio":  48936,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/gabinete-kit-gamer-c-fuente-600w-rgb-teclado-mouse-y-parlantes-aurus.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  600,
@@ -8638,7 +8638,7 @@
         "precio":  50295,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/gabinete-gamer-aureox-vanth-205g.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -8699,7 +8699,7 @@
         "precio":  55200,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/gabinete-kit-con-teclado-mouse-y-parlante.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -8936,7 +8936,7 @@
         "precio":  57960,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/gabinete-kit-c-teclado-c-mouse-c-auricular-gamer.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -9283,7 +9283,7 @@
         "precio":  75504,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/gabinete-performance-slim-kit-5836-fuente-600w-teclado-mouse.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  600,
@@ -23528,7 +23528,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-gamma-500-rainbow-argb.webp",
         "attrs":  {
                       "tipo":  "Aire"
                   }
@@ -23571,7 +23571,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-sigma-540.webp",
         "attrs":  {
                       "tipo":  "Aire",
                       "maxTdp":  200,
@@ -23616,7 +23616,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/evolabs-cryo-4h-frgb.webp",
         "attrs":  {
                       "tipo":  "Aire",
                       "sockets":  [
@@ -23672,7 +23672,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-hyper-212-pro-argb.webp",
         "attrs":  {
                       "tipo":  "Aire",
                       "sockets":  [
@@ -23731,7 +23731,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-dt621-black.webp",
         "attrs":  {
                       "tipo":  "Aire",
                       "sockets":  [
@@ -23779,7 +23779,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/evolabs-watercooler-cryogene-120-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "maxTdp":  200,
@@ -23816,7 +23816,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/raptor-aqua-core-240.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "radiador":  240
@@ -23856,7 +23856,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-iceberg-120-rainbow.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "maxTdp":  125,
@@ -23897,7 +23897,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-iceberg-240-rainbow.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "maxTdp":  180,
@@ -23938,7 +23938,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/solarmax-wc-b360-argb-negro.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "radiador":  360
@@ -23978,7 +23978,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterliquid-ml240-core-ii-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -24021,7 +24021,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/raptor-aqua-core-360.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "radiador":  360
@@ -24061,7 +24061,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-icechill-240-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "maxTdp":  180,
@@ -24102,7 +24102,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/raptor-aqua-pro-240-display.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "radiador":  240
@@ -24142,7 +24142,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/evolabs-watercooler-cryogene-pro-240-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "maxTdp":  250,
@@ -24229,7 +24229,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/raptor-aqua-pro-360-display.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "radiador":  360
@@ -24412,7 +24412,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-la240-argb-sync.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -24458,7 +24458,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterliquid-core-nex-digital-240-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -24505,7 +24505,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterliquid-ml240-core-ii-argb-white.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -24624,7 +24624,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-la360-argb-sync.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -24709,7 +24709,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-icechill-360.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "radiador":  360
@@ -24749,7 +24749,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterliquid-core-nex-digital-240-argb-white.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -24832,7 +24832,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterliquid-ml360-core-ii-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -24883,7 +24883,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-la360-s-argb-sync.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25106,7 +25106,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterliquid-ml360-core-ii-argb-white.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25250,7 +25250,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/evolabs-watercooler-cryogene-supreme-240-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "maxTdp":  250,
@@ -25465,7 +25465,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-th360-aio-argb-sync-snow-edition.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -25507,7 +25507,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/formula-v-oasis-l360-argb-blanco.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "radiador":  360
@@ -25547,7 +25547,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/evolabs-watercooler-cryogene-supreme-360-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "maxTdp":  300,
@@ -26040,7 +26040,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterliquid-ml240-atmos-ii-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -26095,7 +26095,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-th240-v2-ultra-ex-argb-sync-white.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -26228,7 +26228,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterliquid-ml360-atmos-ii-vrm-fan-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -26275,7 +26275,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterliquid-ml360-atmos-ii-white.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -26326,7 +26326,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-th360-v2-ultra-ex-argb-sync.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -26423,7 +26423,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-th360-v2-ultra-ex-argb-sync-white.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -26517,7 +26517,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterliquid-ml240-atmos-ii-lcd-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -26564,7 +26564,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterliquid-ml240-atmos-ii-pixel-led.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -26611,7 +26611,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterliquid-ml360-atmos-ii-lcd-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -26658,7 +26658,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterliquid-ml360-atmos-ii-pixel-led.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -26868,7 +26868,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterliquid-ml360-ion-argb.webp",
         "attrs":  {
                       "tipo":  "Watercooler",
                       "sockets":  [
@@ -27181,7 +27181,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/x-micro-value-8gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  8,
@@ -27235,7 +27235,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/x-micro-heatsink-black-8gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  8,
@@ -27289,7 +27289,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/memoria-8gb-ddr4-3200mhz-oem.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  8,
@@ -27343,7 +27343,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/aimerican-telekinesis-rgb-8gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  8,
@@ -27393,7 +27393,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hiksemi-hiker-8gb-ddr4-3200mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  8,
@@ -27447,7 +27447,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/raptor-value-8gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  8,
@@ -27555,7 +27555,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/aimerican-telekinesis-heatsink-negro-8gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  8,
@@ -27605,7 +27605,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hiksemi-armor-8gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  8,
@@ -27817,7 +27817,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/memox-16gb-ddr4-3200mhz-oem.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -27871,7 +27871,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/raptor-value-16gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -27921,7 +27921,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/value-tech-16gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -28125,7 +28125,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/x-micro-value-16gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -28175,7 +28175,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hiksemi-hiker-16gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -28225,7 +28225,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hiksemi-armor-16gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -28279,7 +28279,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/macrovip-max-16gb-ddr4-3200mhz-con-disipador.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -28333,7 +28333,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/x-micro-heatsink-black-16gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -28387,7 +28387,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hiksemi-future-16gb-ddr4-3200mhz-con-disipador.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -28441,7 +28441,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hiksemi-armor-16gb-ddr4-3200mhz-con-disipador.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -28499,7 +28499,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hiksemi-sword-rgb-16gb-ddr4-3200mhz-con-disipador.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -28607,7 +28607,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hiksemi-armor-white-16gb-ddr4-3200mhz-con-disipador.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -28657,7 +28657,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-16gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -28757,7 +28757,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-premier-16gb-ddr4-3200mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -28811,7 +28811,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-gammix-d35-16gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -29027,7 +29027,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-value-16gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  16,
@@ -29343,7 +29343,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-32gb-ddr4-3200mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  32,
@@ -29393,7 +29393,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/memox-32gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  32,
@@ -29501,7 +29501,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-32gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  32,
@@ -29659,7 +29659,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-premier-32gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  32,
@@ -29821,7 +29821,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hiksemi-hiker-tray-32gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  32,
@@ -29879,7 +29879,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hiksemi-future-rgb-32gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  32,
@@ -30299,7 +30299,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-8gb-ddr5-5600mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  8,
@@ -30349,7 +30349,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-premier-8gb-ddr5-5600mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  8,
@@ -30399,7 +30399,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/hiksemi-hiker-8gb-ddr5-5600mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  8,
@@ -30553,7 +30553,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-8gb-ddr5-4800mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  8,
@@ -30611,7 +30611,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-lancer-blade-rgb-8gb-ddr5-5600mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  8,
@@ -30977,7 +30977,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/memox-16gb-ddr5-4800mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -31185,7 +31185,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/memox-16gb-ddr5-5600mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -31235,7 +31235,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-16gb-ddr5-5600mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -31285,7 +31285,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/memox-16gb-ddr5-5600mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -31389,7 +31389,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-16gb-ddr5-5600mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -31447,7 +31447,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-lancer-blade-rgb-16gb-ddr5-5600mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -31509,7 +31509,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-armax-rgb-black-16gb-ddr5-5600mhz-cl46-expo.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -31571,7 +31571,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-novakey-rgb-black-16gb-ddr5-5600mhz-cl46-expo.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -31625,7 +31625,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/netac-shadow-ii-16gb-ddr5-6000mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -31745,7 +31745,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-novakey-rgb-black-16gb-ddr5-6000mhz-cl48-expo.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -31807,7 +31807,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-armax-rgb-black-16gb-ddr5-6000mhz-cl36-expo.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -32413,7 +32413,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-32gb-ddr5-5600mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  32,
@@ -32463,7 +32463,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/memox-32gb-ddr5-5600mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  32,
@@ -32825,7 +32825,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-120gb-x-micro-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -32865,7 +32865,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-120gb-aimerican-immortality-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -32945,7 +32945,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-240gb-x-micro-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -32985,7 +32985,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-adata-legend-710-256gb-m-2-nvme-pcie-gen3.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -33065,7 +33065,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-480gb-aimerican-immortality-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -33105,7 +33105,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-480gb-x-micro-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -33145,7 +33145,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-adata-legend-710-512gb-m-2-nvme-pcie-gen3.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -33185,7 +33185,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-aimerican-agility-512gb-m-2-nvme.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -33225,7 +33225,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-g3-memox-oem-512gb-m-2-nvme-pcie-gen3.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -33426,7 +33426,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-memox-512gb-m-2-nvme-pcie-gen3.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -33466,7 +33466,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-hiksemi-wave-960gb-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -33506,7 +33506,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-1tb-aimerican-immortality-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -33546,7 +33546,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-netac-sa500-960gb-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -33586,7 +33586,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-1tb-x-micro-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -33828,7 +33828,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-memox-960gb-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -33868,7 +33868,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-adata-su630-960gb-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -33908,7 +33908,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-adata-legend-710-1tb-m-2-nvme-pcie-gen3.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -33948,7 +33948,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-aimerican-agility-1tb-m-2-nvme.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -34070,7 +34070,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-hiksemi-wave-1tb-m-2-nvme-pcie-gen3.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -34110,7 +34110,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-hiksemi-wave-1tb-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -34270,7 +34270,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-adata-su650-1tb-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -34311,7 +34311,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-hiksemi-v300x-1tb-sata-iii-2-5-videovigilancia.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -34481,7 +34481,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-hiksemi-wave-2tb-sata-iii-2-5.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "SATA",
@@ -34646,7 +34646,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-adata-legend-700-1tb-m-2-nvme-pcie-gen3.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -34691,7 +34691,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-adata-legend-860-1tb-m-2-nvme-pcie-gen4-6000mb-s.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -34822,7 +34822,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-adata-xpg-gammix-s70-blade-1tb-m-2-nvme-pcie-gen4-7400mb-s.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -34907,7 +34907,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-externo-hiksemi-shield-1tb-usb-c-3-2.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "Externo",
@@ -34992,7 +34992,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-externo-adata-sc750-1tb-usb-c-3-2-gen2.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "Externo",
@@ -35373,7 +35373,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-hiksemi-wave-pro-2tb-m-2-nvme-pcie-gen3-3445mb-s.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -35413,7 +35413,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-adata-legend-710-2tb-m-2-nvme-pcie-gen3.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -35678,7 +35678,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-adata-legend-900-2tb-m-2-nvme-pcie-gen4-7000mb-s.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -35718,7 +35718,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-externo-hiksemi-shield-2tb-usb-c-3-2.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "Externo",
@@ -35763,7 +35763,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/ssd-adata-xpg-gammix-s70-blade-2tb-m-2-nvme-pcie-gen4-7400mb-s.webp",
         "attrs":  {
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
@@ -36119,7 +36119,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/disco-externo-adata-hv300-1tb-usb-3-2-negro.webp",
         "attrs":  {
                       "tipo":  "HDD",
                       "interfaz":  "Externo",
@@ -36284,7 +36284,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/disco-externo-adata-hv300-2tb-usb-3-2-negro.webp",
         "attrs":  {
                       "tipo":  "HDD",
                       "interfaz":  "Externo",
@@ -42690,7 +42690,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/lnz-sx-550-ts-550w.webp",
         "attrs":  {
                       "watts":  550,
                       "formato":  "ATX"
@@ -42730,7 +42730,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/x-micro-550w-oem.webp",
         "attrs":  {
                       "watts":  550,
                       "modular":  "No",
@@ -42770,7 +42770,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/lnz-zx-750-gz-750w.webp",
         "attrs":  {
                       "watts":  750,
                       "formato":  "ATX"
@@ -42805,7 +42805,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/sentey-epp500-gt-500w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  500,
                       "cert":  "80 Plus Bronze",
@@ -42841,7 +42841,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/raptor-volt-500w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  500,
                       "cert":  "80 Plus Bronze",
@@ -42882,7 +42882,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/x-micro-600w-80-plus-smart-white.webp",
         "attrs":  {
                       "watts":  600,
                       "cert":  "80 Plus",
@@ -42918,7 +42918,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/aureox-arxgu-550w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  550,
                       "cert":  "80 Plus Bronze",
@@ -42954,7 +42954,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/sentey-epp600-gt-600w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  600,
                       "cert":  "80 Plus Bronze",
@@ -42995,7 +42995,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/x-micro-700w-80-plus-smart-white.webp",
         "attrs":  {
                       "watts":  700,
                       "cert":  "80 Plus",
@@ -43036,7 +43036,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/raptor-volt-500w-80-plus-silver-blanco.webp",
         "attrs":  {
                       "watts":  500,
                       "cert":  "80 Plus Silver",
@@ -43072,7 +43072,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/x-micro-600w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  600,
                       "cert":  "80 Plus Bronze",
@@ -43144,7 +43144,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/aerocool-kcas-700w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  700,
                       "cert":  "80 Plus Bronze",
@@ -43180,7 +43180,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/x-micro-700w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  700,
                       "cert":  "80 Plus Bronze",
@@ -43216,7 +43216,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/evolabs-power-650w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  650,
                       "cert":  "80 Plus Bronze",
@@ -43252,7 +43252,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/formula-v-600w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  600,
                       "cert":  "80 Plus Bronze",
@@ -43363,7 +43363,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-smart-700w-80-plus-white.webp",
         "attrs":  {
                       "watts":  700,
                       "cert":  "80 Plus White",
@@ -43459,7 +43459,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/aerocool-cylon-700w-rgb-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  700,
                       "cert":  "80 Plus Bronze",
@@ -43495,7 +43495,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-vp-700-700w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  700,
                       "cert":  "80 Plus Bronze",
@@ -43536,7 +43536,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-vp-600-rgb-600w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  600,
                       "cert":  "80 Plus Bronze",
@@ -43608,7 +43608,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-gp-850-850w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  850,
                       "cert":  "80 Plus Bronze",
@@ -43649,7 +43649,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-gx-550-550w-modular-80-plus-gold.webp",
         "attrs":  {
                       "watts":  550,
                       "cert":  "80 Plus Gold",
@@ -43686,7 +43686,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-mwe-650w-v3-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  650,
                       "cert":  "80 Plus Bronze",
@@ -43758,7 +43758,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-smart-bx3-650w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  650,
                       "cert":  "80 Plus Bronze",
@@ -43966,7 +43966,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/xpg-kyber-650w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  650,
                       "cert":  "80 Plus Gold",
@@ -44017,7 +44017,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-mwe-gold-v3-650w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  650,
                       "cert":  "80 Plus Gold",
@@ -44063,7 +44063,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-gx-650-650w-80-plus-gold-modular.webp",
         "attrs":  {
                       "watts":  650,
                       "cert":  "80 Plus Gold",
@@ -44155,7 +44155,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teros-te-7175-750w-80-plus-gold-full-modular.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -44201,7 +44201,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-g-gold-v2-650w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  650,
                       "cert":  "80 Plus Gold",
@@ -44247,7 +44247,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-mwe-v3-750w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Bronze",
@@ -44297,7 +44297,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-smart-bx1-rgb-750w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Bronze",
@@ -44347,7 +44347,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-smart-bm2-750w-80-plus-bronze-modular.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Bronze",
@@ -44393,7 +44393,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-smart-bx3-750w-80-plus-bronze.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Bronze",
@@ -44494,7 +44494,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/raptor-volt-800w-blanca-80-plus-gold-full-modular-pcie-5-1.webp",
         "attrs":  {
                       "watts":  800,
                       "cert":  "80 Plus Gold",
@@ -44549,7 +44549,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/raptor-volt-800w-80-plus-gold-full-modular-pcie-5-1.webp",
         "attrs":  {
                       "watts":  800,
                       "cert":  "80 Plus Gold",
@@ -44595,7 +44595,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/aerocool-dorado-850w-rgb-80-plus-gold.webp",
         "attrs":  {
                       "watts":  850,
                       "cert":  "80 Plus Gold",
@@ -44732,7 +44732,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-gx-750-750w-80-plus-gold-modular.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -44783,7 +44783,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-toughpower-gf-a3-750w-80-plus-gold-full-modular-pcie-5-1.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -44829,7 +44829,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/xpg-kyber-750w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -44880,7 +44880,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-mwe-gold-v3-750w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -44935,7 +44935,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/raptor-volt-1000w-blanca-80-plus-gold-full-modular-pcie-5-1.webp",
         "attrs":  {
                       "watts":  1000,
                       "cert":  "80 Plus Gold",
@@ -45037,7 +45037,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-core-reactor-ii-ve-750w-80-plus-gold-full-modular-atx-3-0.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -45083,7 +45083,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/sentey-gsp1050-gm-1050w-80-plus-gold-full-modular.webp",
         "attrs":  {
                       "watts":  1050,
                       "cert":  "80 Plus Gold",
@@ -45180,7 +45180,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-gx-850-850w-80-plus-gold-modular.webp",
         "attrs":  {
                       "watts":  850,
                       "cert":  "80 Plus Gold",
@@ -45323,7 +45323,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/xpg-kyber-850w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  850,
                       "cert":  "80 Plus Gold",
@@ -45517,7 +45517,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-toughpower-gt-750-analog-snow-white-80-plus-gold.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -45614,7 +45614,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-toughpower-gt-750w-80-plus-gold-full-modular.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -45706,7 +45706,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-gx2-750w-80-plus-gold-full-modular.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -45904,7 +45904,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-core-reactor-ii-ve-850w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  850,
                       "cert":  "80 Plus Gold",
@@ -45996,7 +45996,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-gx-1050-1050w-80-plus-platinum-modular.webp",
         "attrs":  {
                       "watts":  1050,
                       "cert":  "80 Plus Platinum",
@@ -46047,7 +46047,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-mwe-gold-v3-850w-80-plus-gold-full-modular.webp",
         "attrs":  {
                       "watts":  850,
                       "cert":  "80 Plus Gold",
@@ -46203,7 +46203,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-gx-1050-rgb-smart-pro-1050w-80-plus-gold-modular.webp",
         "attrs":  {
                       "watts":  1050,
                       "cert":  "80 Plus Gold",
@@ -46254,7 +46254,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teros-te-1328g-1000w-80-plus-gold-full-modular-atx-3-1.webp",
         "attrs":  {
                       "watts":  1000,
                       "cert":  "80 Plus Gold",
@@ -46351,7 +46351,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-toughpower-gf-a3-1050w-80-plus-gold-full-modular-pcie-5-0.webp",
         "attrs":  {
                       "watts":  1050,
                       "cert":  "80 Plus Gold",
@@ -46811,7 +46811,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-elite-gold-1200-1200w-80-plus-gold-full-modular.webp",
         "attrs":  {
                       "watts":  1200,
                       "cert":  "80 Plus Gold",
@@ -46862,7 +46862,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-core-reactor-ii-1000w-80-plus-gold-modular-atx-3-1.webp",
         "attrs":  {
                       "watts":  1000,
                       "cert":  "80 Plus Gold",
@@ -46908,7 +46908,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-toughpower-gf-a3-1200w-80-plus-gold-full-modular.webp",
         "attrs":  {
                       "watts":  1200,
                       "cert":  "80 Plus Gold",
@@ -46954,7 +46954,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-gx-1250-1250w-80-plus-platinum-modular.webp",
         "attrs":  {
                       "watts":  1250,
                       "cert":  "80 Plus Platinum",
@@ -47055,7 +47055,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-gx3-1250w-80-plus-gold-full-modular.webp",
         "attrs":  {
                       "watts":  1250,
                       "cert":  "80 Plus Gold",
@@ -47101,7 +47101,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-gx-1300-1300w-80-plus-platinum-modular.webp",
         "attrs":  {
                       "watts":  1300,
                       "cert":  "80 Plus Platinum",
@@ -47194,7 +47194,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-v850-sfx-gold-850w-80-plus-gold-modular.webp",
         "attrs":  {
                       "watts":  850,
                       "cert":  "80 Plus Gold",
@@ -47240,7 +47240,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-gx3-1050w-80-plus-gold-full-modular.webp",
         "attrs":  {
                       "watts":  1050,
                       "cert":  "80 Plus Gold",
@@ -47480,7 +47480,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-core-reactor-ii-1200w-80-plus-gold.webp",
         "attrs":  {
                       "watts":  1200,
                       "cert":  "80 Plus Gold",
@@ -47775,7 +47775,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-cybercore-ii-1300-80-plus-platinum.webp",
         "attrs":  {
                       "watts":  1300,
                       "cert":  "80 Plus Platinum",
@@ -48173,7 +48173,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/x-micro-axis-g1-3-fan-fixed-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -48211,7 +48211,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/nova-kit-con-fuente-500w-lnz-teclado-y-mouse-usb-lnz.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  500,
@@ -48308,7 +48308,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/nova-kit-con-fuente-500w-teclado-mouse-y-auricular.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  500,
@@ -48425,7 +48425,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/raptor-sentinel-tg-4fan-rgb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -48485,7 +48485,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/aureox-rhea-arx-400g.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -48597,7 +48597,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/sentey-hunter-4-argb-fan-vidrio-templado-blanco.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -48653,7 +48653,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/brb-blz-30-kit-con-fuente-550w-teclado-y-mouse.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  550,
@@ -48692,7 +48692,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/x-micro-kit-mid-tower-con-fuente-550w-teclado-y-mouse.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  550,
@@ -48753,7 +48753,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-nova-n6.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -48813,7 +48813,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/sentey-zeus-5-argb-fan-vidrio-templado-negro.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -48873,7 +48873,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/sentey-zeus-5-argb-fan-vidrio-templado-blanco.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -48997,7 +48997,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-elite-302-3-fan-argb.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -49057,7 +49057,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-storm-2-ab-tg-6fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -49117,7 +49117,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-elite-350-4-fan-argb-blanco.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -49177,7 +49177,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-elite-350-4-fan-argb-negro.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -49357,7 +49357,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-starlight-2-ab-6fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -49421,7 +49421,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-elite-302-tg-3fan-argb-white.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -49481,7 +49481,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/evolabs-primacy-white-tg-3fan-argb.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -49536,7 +49536,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-valor-air-plus-4fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -49603,7 +49603,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-view-170-tg-argb-snow-white.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -49655,7 +49655,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/evolabs-luma-tg-panoramico-3fan-argb.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -49710,7 +49710,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-elite-301-3-fan-argb.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -49885,7 +49885,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-view-170-tg-argb-3fan.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -49949,7 +49949,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/evolabs-progression-white-tg-4fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -50069,7 +50069,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-versa-h16-tg-3fan-argb.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -50112,7 +50112,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/evolabs-luma-x-tg-panoramico-4fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -50161,7 +50161,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/evolabs-luma-dark-tg-panoramico-6fan.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -50224,7 +50224,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-aero-mini-tg-4fan-argb.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -50407,7 +50407,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-prism-3fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -50587,7 +50587,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-elite-681-4-fan-argb-negro.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -50631,7 +50631,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/raptor-nova-prime-fuente-500w-80-plus-bronze.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  500,
@@ -50676,7 +50676,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/raptor-sentinel-4fan-rgb-fuente-500w-80-plus-bronze.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  500,
@@ -50736,7 +50736,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/xpg-valor-air-pro-tg-4fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -50792,7 +50792,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-elite-502-tg-3fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -50852,7 +50852,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-f46-bk-4fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -50912,7 +50912,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/xpg-lander-501-tg-4fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -50972,7 +50972,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/evolabs-synergy-4fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -51028,7 +51028,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/x-micro-invictus-core-5-lcd-3-fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -51151,7 +51151,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/sentey-a40-7-argb-fan-vidrio-templado.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -51215,7 +51215,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-view-270-plus-tg-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -51275,7 +51275,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-view-270-plus-tg-argb-snow-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -51331,7 +51331,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/x-micro-invictus-core-5-lcd-3-fan-argb-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -51390,7 +51390,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/gamemax-vista-ab-6-fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -51509,7 +51509,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-elite-600-4-fan-argb-blanco.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -51569,7 +51569,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/xpg-starker-air-btf-4fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -51681,7 +51681,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-ceres-300-tg-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -51737,7 +51737,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-ceres-300-tg-argb-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -51793,7 +51793,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/x-micro-invictus-pro-9-16-lcd-4-fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -51852,7 +51852,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-view-380-tg-argb-snow-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -51908,7 +51908,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-elite-600-4-fan-argb-negro.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -52077,7 +52077,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/x-micro-invictus-pro-9-16-lcd-4-fan-argb-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -52124,7 +52124,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/arkham-boreal-blanco-tg-panoramico-5fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -52169,7 +52169,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-versa-h16-tg-3-fan-argb-fuente-650w-80-plus-bronze.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  650,
@@ -52504,7 +52504,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/x-micro-invictus-ultra-9-16-lcd-5-fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -52557,7 +52557,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-view-390-air-tg-curvo-snow-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -52615,7 +52615,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-divider-370-tg-argb-blanco.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -52671,7 +52671,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/xpg-invader-x-negro-tg-5fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -52782,7 +52782,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-view-380-xl-tg-argb-snow-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -52837,7 +52837,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-view-380-tg-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -52881,7 +52881,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-h390-tg-argb-fuente-750w-80-plus-bronze.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  750,
@@ -52938,7 +52938,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-the-tower-600-tg-light-year-green.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -53176,7 +53176,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterframe-500-mesh-3fan-argb.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -53232,7 +53232,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-the-tower-300-black.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -53283,7 +53283,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-the-tower-300-tg-snow-white.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -53338,7 +53338,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/thermaltake-the-tower-600-tg-black.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -53453,7 +53453,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterframe-600-tg-4fan-silver.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -53508,7 +53508,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/cooler-master-masterframe-600-tg-4fan-black.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -62933,7 +62933,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-magnetico-aula-mini60-he-pro-blanco-switch-mistcloud.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -62976,7 +62976,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-magnetico-aula-mini60-he-negro-switch-stormrise.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -63027,7 +63027,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-magnetico-aula-win68-he-max-negro-gris-amarillo-switch-g.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -63074,7 +63074,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-magnetico-aula-win68-he-negro-switch-greywood.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -63121,7 +63121,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-logitech-g213-prodigy.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -63172,7 +63172,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-aula-f75-comic-negro-switch-reaper.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -63219,7 +63219,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-logitech-g413-se.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -63262,7 +63262,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-magnetico-aula-win60-he-max-gris-oscuro-gris-claro-amari.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -63517,7 +63517,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-ucal-pro-k673-blanco-y-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -63568,7 +63568,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-eisa-max-k686-blanco-y-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -63670,7 +63670,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-aula-f75-azul-blanco-azul-oscuro-switch-reaper.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -63721,7 +63721,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-aula-f75-azul-degrade-switch-reaper.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -63772,7 +63772,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-aula-f75-azul-blanco-purpura-switch-reaper.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -63858,7 +63858,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-eisa-pro-k686.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -64023,7 +64023,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-thermaltake-tt-esports-neptune-pro-switch-azul.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -64408,7 +64408,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-corsair-k70-core-rgb-switch-rojo-ingles.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -64463,7 +64463,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-razer-ornata-v3-rgb-espanol.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -64895,7 +64895,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-magnetico-redragon-eisa-k686-he-espanol.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -65641,7 +65641,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-asus-rog-falchion-ace-hfx-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -65696,7 +65696,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-asus-tuf-gaming-k3-gen-ii-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -66132,7 +66132,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-ducky-one-3-tkl-80-negro-switch-rojo.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -66187,7 +66187,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-ducky-one-2-pro-mini-60-blanco-switch-plateado.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -66297,7 +66297,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-hyperx-alloy-rise-75-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -66458,7 +66458,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-razer-huntsman-mini-switch-purpura-espanol.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -66623,7 +66623,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-ducky-one-3-mini-60-blanco-switch-plateado.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -66678,7 +66678,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-razer-blackwidow-v3-tenkeyless.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -66890,7 +66890,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-ducky-one-3-blanco-switch-plateado.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -66992,7 +66992,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-ducky-one-3-mini-rgb-hotswap-cherry-mx-red.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -67153,7 +67153,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-razer-blackwidow-v4-75-phantom-white-edition.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -67318,7 +67318,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-razer-huntsman-v3-x-tkl-espanol.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -67428,7 +67428,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-razer-blackwidow-v4-x-switch-amarillo-espanol.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -67483,7 +67483,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-corsair-k70-rgb-pro-mini-wireless-switch-cherry-mx.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -67589,7 +67589,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-ducky-one-3-blanco-switch-rojo.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -67750,7 +67750,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-mecanico-coolermaster-sk-622-inalambrico-switch-azul-bajo-perf.webp",
         "attrs":  {
                       "conexion":  "Cableado / Bluetooth"
                   }
@@ -67805,7 +67805,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-ducky-one-3-tkl-80-blanco-switch-rojo.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -67860,7 +67860,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-ducky-one-3-tkl-80-blanco-switch-plateado.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -68025,7 +68025,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-corsair-k65-plus-wireless-75-rgb-switch-mlx-red-ingles.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -68131,7 +68131,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-razer-blackwidow-v4-x-switch-verde-minecraft-ed.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -68292,7 +68292,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-asus-rog-azoth-m701-blanco-con-pantalla-oled.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -68457,7 +68457,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-corsair-vanguard-96-lcd-switch-mlx-plasma-ingles.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -68677,7 +68677,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-asus-rog-azoth-m701-negro-con-pantalla-oled.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -68732,7 +68732,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-logitech-g512-x-75-rgb-negro-ingles.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -68842,7 +68842,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-razer-huntsman-v3-pro-tkl-ingles.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -68948,7 +68948,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/combo-teclado-mouse-y-mousepad-msi-gaming-gear-frieren-edition.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -69003,7 +69003,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-corsair-vanguard-pro-96-hall-effect-ingles.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -69168,7 +69168,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-corsair-k100-rgb-negro-switch-optomecanico.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -69219,7 +69219,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/combo-logitech-teclado-mx-keys-s-y-mouse-mx-master-4.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
                   }
@@ -69274,7 +69274,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-corsair-vanguard-air-99-low-profile-rgb-negro-inalambric.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -69317,7 +69317,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auriculares-genius-hs-04su.webp",
         "attrs":  {
 
                   }
@@ -69356,7 +69356,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-qbox-h039-usb-3-5mm-y-3-pines.webp",
         "attrs":  {
 
                   }
@@ -69395,7 +69395,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auriculares-genius-hs-05a.webp",
         "attrs":  {
 
                   }
@@ -69438,7 +69438,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-redragon-ares-h120.webp",
         "attrs":  {
 
                   }
@@ -69524,7 +69524,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-aula-s605-negro-rgb.webp",
         "attrs":  {
 
                   }
@@ -69567,7 +69567,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-redragon-cronus-h211-rgb-blanco.webp",
         "attrs":  {
 
                   }
@@ -69653,7 +69653,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-raptor-shadow-core-rgb-7-1.webp",
         "attrs":  {
 
                   }
@@ -69696,7 +69696,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-redragon-cronus-h211-rgb.webp",
         "attrs":  {
 
                   }
@@ -69735,7 +69735,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-redragon-hylas-h260.webp",
         "attrs":  {
 
                   }
@@ -69774,7 +69774,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-genius-hs-g600v.webp",
         "attrs":  {
 
                   }
@@ -69817,7 +69817,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-genius-gx-gaming-hs-g710v-black.webp",
         "attrs":  {
 
                   }
@@ -69942,7 +69942,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-jbl-quantum-50c-blanco.webp",
         "attrs":  {
 
                   }
@@ -69985,7 +69985,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-jbl-quantum-50c-negro.webp",
         "attrs":  {
 
                   }
@@ -70067,7 +70067,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-aula-s6-azul-y-blanco-inalambrico.webp",
         "attrs":  {
 
                   }
@@ -70106,7 +70106,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-aula-s6-blanco-ultraligero-inalambrico.webp",
         "attrs":  {
 
                   }
@@ -70188,7 +70188,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auriculares-logitech-h390.webp",
         "attrs":  {
 
                   }
@@ -70278,7 +70278,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-redragon-lamia-2-rgb-h320-blanco.webp",
         "attrs":  {
 
                   }
@@ -70321,7 +70321,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auriculares-thermaltake-gaming-shock-pro-rgb.webp",
         "attrs":  {
 
                   }
@@ -70364,7 +70364,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-jbl-quantum-100m2-blanco.webp",
         "attrs":  {
 
                   }
@@ -70407,7 +70407,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-level-up-anubis-3-en-1-rgb.webp",
         "attrs":  {
 
                   }
