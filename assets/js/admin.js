@@ -985,7 +985,7 @@
         <button class="btn ghost sm" type="button" data-csv="todos"${F.users.length ? "" : " disabled"}>Descargar todos</button>
       </div>
       <div class="tbl-wrap"><table class="tbl">
-        <thead><tr><th>Cliente</th><th>Teléfono</th><th>Ofertas por mail</th><th>Pedidos</th><th>Registrado</th></tr></thead>
+        <thead><tr><th>Cliente</th><th>Teléfono</th><th>Ofertas por mail</th><th>Pedidos</th><th>Registrado</th><th></th></tr></thead>
         <tbody id="userRows"></tbody>
       </table></div>
       <p class="hint" style="margin-top:.75rem">Los archivos se abren con Excel. Para mandar promociones usá solo <strong>“mails para ofertas”</strong>: son los clientes que aceptaron recibirlas.</p>`;
@@ -1006,8 +1006,9 @@
         <td>${u.ofertas ? '<span class="tag ok">Sí</span>' : '<span class="muted">No</span>'}</td>
         <td>${n ? `<button class="linkish lk" type="button" data-uorders="${esc(u.email || "")}">${n} ${n === 1 ? "pedido" : "pedidos"}</button>` : '<span class="muted">—</span>'}</td>
         <td class="nowrap">${fdate(u.fecha)}</td>
+        <td><div class="acts"><button class="ibtn danger" type="button" data-udel="${esc(u.uid)}" aria-label="Borrar los datos de ${esc(u.nombre || u.email || "")}" title="Borrar sus datos">${U.trash}</button></div></td>
       </tr>`;
-    }).join("") || `<tr><td colspan="5"><div class="empty-mini">${S.fb.users.length ? "No hay clientes con esa búsqueda." : "Todavía no se registró ningún cliente."}</div></td></tr>`;
+    }).join("") || `<tr><td colspan="6"><div class="empty-mini">${S.fb.users.length ? "No hay clientes con esa búsqueda." : "Todavía no se registró ningún cliente."}</div></td></tr>`;
   }
 
   // Planilla para Excel (separada con punto y coma, como la usa Excel en castellano)
@@ -1081,6 +1082,12 @@
       const o = S.fb.orders.find((y) => y.id === x.dataset.odel);
       if (!o || !confirm(`¿Eliminar el pedido N° ${o.codigo} de ${o.nombre || o.email}? El cliente tampoco lo va a ver en su cuenta.`)) return;
       try { await A.admin.removeOrder(o.id); S.fb.orders = S.fb.orders.filter((y) => y !== o); render(); toast("Pedido eliminado"); } catch (ex) { toast(ex.message, false); }
+      return;
+    }
+    if ((x = el("[data-udel]"))) {
+      const u = S.fb.users.find((y) => y.uid === x.dataset.udel);
+      if (!u || !confirm(`¿Borrar los datos de ${u.nombre || u.email}? Deja de aparecer en Clientes y en el Excel de ofertas. Sus pedidos quedan en la pestaña Pedidos.`)) return;
+      try { await A.admin.removeUser(u.uid); S.fb.users = S.fb.users.filter((y) => y !== u); render(); toast("Datos del cliente borrados"); } catch (ex) { toast(ex.message, false); }
       return;
     }
     if ((x = el("[data-admdel]"))) {

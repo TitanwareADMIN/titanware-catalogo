@@ -20,14 +20,17 @@
   const ESTADO = { nuevo: "Recibido", respondido: "Respondido", vendido: "Concretado", cancelado: "Cancelado" };
   const fdate = (d) => d.toLocaleDateString("es-AR", { day: "2-digit", month: "2-digit", year: "numeric" });
 
+  const IN_APP = () => /Instagram|FBAN|FBAV|FB_IAB|FBIOS|Line\/|TikTok|musical_ly|Snapchat/i.test(navigator.userAgent || "");
+  const IN_APP_MSG = "Estás en el navegador de Instagram o Facebook, y ahí Google no deja ingresar. Tocá los tres puntitos (···) → <b>Abrir en el navegador</b>, o ingresá con tu mail y contraseña.";
+
   let booted = !A.enabled;
   let orders = null, ordersFor = "", ordersErr = "";
 
   /* ---------- Botón del header ---------- */
   function header() {
     const box = $("#acct"); if (!box) return;
-    box.hidden = !A.enabled;
-    if (!A.enabled) return;
+    box.hidden = !A.enabled || A.failed;
+    if (box.hidden) return;
     const u = A.user, btn = $("#acctBtn");
     $("#acctName").textContent = u ? A.firstName() : "Ingresar";
     btn.classList.toggle("in", !!u);
@@ -77,6 +80,7 @@
         <button class="linkish back" type="button" data-close>Ahora no</button>
       </form>`;
     const reg = mode === "registro";
+    const inApp = IN_APP();
     return `
       ${top(reg ? "Creá tu cuenta" : "Ingresá a tu cuenta", note ? esc(note) : reg ? "Guardá tus pedidos y tus datos para comprar más rápido." : "Mirá tus pedidos y comprá más rápido.")}
       <div class="auth-tabs" role="tablist">
@@ -84,6 +88,7 @@
         <button type="button" role="tab" aria-selected="${reg}" data-auth="registro">Crear cuenta</button>
       </div>
       <button class="gbtn" type="button" data-google>${ICON.google} Continuar con Google</button>
+      ${inApp ? `<p class="auth-inapp">${U.warn}<span>${IN_APP_MSG}</span></p>` : ""}
       <div class="auth-or"><span>o con tu mail</span></div>
       ${reg ? `
       <form id="authReg" class="auth-form" novalidate>
@@ -105,7 +110,7 @@
       <p class="auth-fine">${U.shield} Usamos tus datos solo para tus pedidos en ${esc(NEG.nombre)}. No los compartimos con nadie.</p>`;
   }
 
-  function showErr(form, msg) { const p = form && form.querySelector(".auth-err"); if (p) { p.textContent = msg; p.hidden = !msg; } }
+  function showErr(form, msg) { const p = form && form.querySelector(".auth-err"); if (p) { p.innerHTML = msg === IN_APP_MSG ? msg : esc(msg); p.hidden = !msg; } }
   function busy(form, on) {
     const b = form.querySelector("[type=submit]"); if (!b) return;
     if (on) { b.dataset.label = b.textContent; b.textContent = "Un momento…"; } else if (b.dataset.label) b.textContent = b.dataset.label;
@@ -121,6 +126,8 @@
 
   async function google() {
     const form = $("#modal .auth-form");
+    // Google no deja ingresar desde el navegador interno de Instagram / Facebook
+    if (IN_APP()) { showErr(form, IN_APP_MSG); return; }
     try { const r = await A.loginGoogle(); welcome(r && r.nuevo); }
     catch (e) { if (!e.silent) showErr(form, e.message); }
   }

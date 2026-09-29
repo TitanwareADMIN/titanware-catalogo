@@ -79,6 +79,8 @@
     "auth/configuration-not-found": "El ingreso no está activado en Firebase (Authentication → Comenzar).",
     "auth/account-exists-with-different-credential": "Ese mail ya está registrado con otro método. Ingresá con tu mail y contraseña.",
     "auth/requires-recent-login": "Por seguridad, volvé a ingresar y probá de nuevo.",
+    "auth/web-storage-unsupported": "Este navegador no permite ingresar. Abrí la página en Chrome o Safari.",
+    "auth/operation-not-supported-in-this-environment": "Este navegador no permite ingresar con Google. Abrí la página en Chrome o Safari, o ingresá con tu mail.",
     "permission-denied": "No tenés permiso para hacer esto.",
     "unavailable": "No hay conexión. Revisá tu internet y probá de nuevo.",
   };
@@ -185,6 +187,8 @@
     setStatus: run(async ({ fs, db }, id, estado) => { await fs.updateDoc(fs.doc(db, "pedidos", id), { estado, actualizado: fs.serverTimestamp() }); }),
     removeOrder: run(async ({ fs, db }, id) => { await fs.deleteDoc(fs.doc(db, "pedidos", id)); }),
     users: run(async ({ fs, db }) => (await fs.getDocs(fs.collection(db, "usuarios"))).docs.map((d) => ({ ...toObj(d), uid: d.id })).sort(byDate)),
+    // Borra los datos del cliente (deja de figurar en Clientes y en el Excel)
+    removeUser: run(async ({ fs, db }, uid) => { await fs.deleteDoc(fs.doc(db, "usuarios", uid)); }),
     admins: run(async ({ fs, db }) => (await fs.getDocs(fs.collection(db, "admins"))).docs.map((d) => d.id).sort()),
     addAdmin: run(async ({ fs, auth, db }, email) => {
       await fs.setDoc(fs.doc(db, "admins", lower(email)), { agregadoPor: auth.currentUser.email, creado: fs.serverTimestamp() });

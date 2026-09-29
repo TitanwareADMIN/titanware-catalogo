@@ -30,6 +30,7 @@ service cloud.firestore {
         && request.resource.data.nombre is string && request.resource.data.nombre.size() <= 80
         && request.resource.data.telefono is string && request.resource.data.telefono.size() <= 30
         && request.resource.data.ofertas is bool;
+      allow delete: if isAdmin();
     }
 
     // Pedidos: el cliente crea los suyos y los ve; el administrador ve todos y cambia el estado
