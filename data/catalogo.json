@@ -1435,15 +1435,15 @@
                   ]
     },
     {
-        "id":  "micro-amd-3000g-athlon-c-video-c-cooler-cpu-am4",
-        "nombre":  "AMD Athlon 3000G con video y cooler AM4",
+        "id":  "micro-amd-athlon-3000g-vega-3-box-am4",
+        "nombre":  "AMD Athlon 3000G con video y cooler Box AM4",
         "categoria":  "Procesadores",
         "sub":  "AMD AM4",
-        "precio":  64188,
+        "precio":  79283,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "img/productos/micro-amd-3000g-athlon-c-video-c-cooler-cpu-am4.webp",
-        "caja":  "img/productos/cajas/micro-amd-3000g-athlon-c-video-c-cooler-cpu-am4.webp",
+        "imagen":  "",
+        "caja":  "img/productos/cajas/micro-amd-athlon-3000g-vega-3-box-am4.webp",
         "attrs":  {
                       "socket":  "AM4",
                       "plataforma":  "AMD",
@@ -1453,7 +1453,7 @@
                       "nucleos":  2,
                       "hilos":  4
                   },
-        "origen":  "MICRO AMD 3000G ATHLON C/VIDEO C/COOLER CPU AM4",
+        "origen":  "MICRO AMD ATHLON 3000G VEGA 3 BOX AM4",
         "marca":  "AMD",
         "specs":  [
                       "2 núcleos / 4 hilos",
@@ -1495,24 +1495,6 @@
                           "Zen+ (Picasso)"
                       ]
                   ]
-    },
-    {
-        "id":  "micro-amd-athlon-3000g-vega-3-box-am4",
-        "nombre":  "MICRO AMD ATHLON 3000G VEGA 3 BOX AM4",
-        "categoria":  "Procesadores",
-        "sub":  "AMD AM4",
-        "precio":  79283,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "",
-        "caja":  "img/productos/cajas/micro-amd-athlon-3000g-vega-3-box-am4.webp",
-        "attrs":  {
-                      "socket":  "AM4",
-                      "tdp":  35,
-                      "cooler":  true,
-                      "video":  true
-                  },
-        "origen":  "MICRO AMD ATHLON 3000G VEGA 3 BOX AM4"
     },
     {
         "id":  "micro-amd-ryzen-5-3500x-s-video-c-cooler-cpu-am4",
@@ -19071,7 +19053,7 @@
     },
     {
         "id":  "amd-ryzen-5-5600x-sin-video-con-cooler-box-am4",
-        "nombre":  "AMD Ryzen 5 5600X sin video con cooler Box AM4",
+        "nombre":  "AMD Ryzen 5 5600XT sin video con cooler Box AM4",
         "origen":  "MICRO AMD RYZEN 5 5600XT S/VIDEO C/COOLER BOX AM4 SUPERIOR AL 5600",
         "marca":  "AMD",
         "categoria":  "Procesadores",
@@ -19080,10 +19062,10 @@
         "stock":  "disponible",
         "specs":  [
                       "6 núcleos / 12 hilos",
-                      "Sin gráficos integrados",
-                      "Superior al 5600"
+                      "Hasta 4,7 GHz",
+                      "Sin gráficos integrados · Cooler Wraith Stealth"
                   ],
-        "desc":  "Procesador de gama media-alta para AM4, con clocks más altos que el Ryzen 5 5600 estándar. Sin gráficos integrados, requiere placa de video dedicada. Buena opción para gaming con más margen de rendimiento que el 5600 base.",
+        "desc":  "El Ryzen 5 5600XT es la versión más rápida del Ryzen 5 5600 para AM4: 6 núcleos Zen 3 con boost de hasta 4,7 GHz, desbloqueado para overclock y con cooler Wraith Stealth en la caja. No trae gráficos integrados, así que necesita placa de video. Ideal para gaming en plataforma AM4.",
         "ficha":  [
                       [
                           "Socket",
@@ -19095,7 +19077,7 @@
                       ],
                       [
                           "Frecuencia base / boost",
-                          "3,7 / 4,6 GHz"
+                          "3,7 / 4,7 GHz"
                       ],
                       [
                           "Caché total",
@@ -20718,7 +20700,7 @@
     },
     {
         "id":  "amd-ryzen-9-9950x3d-con-video-y-cooler-box-am5",
-        "nombre":  "AMD Ryzen 9 9950X3D con video y cooler Box AM5",
+        "nombre":  "AMD Ryzen 9 9950X3D2 Dual Edition con video AM5",
         "origen":  "MICRO AMD RYZEN 9 9950X3D2 DUAL EDITION C/VIDEO C/COOLER BOX AM5",
         "marca":  "AMD",
         "categoria":  "Procesadores",
@@ -20727,10 +20709,10 @@
         "stock":  "disponible",
         "specs":  [
                       "16 núcleos / 32 hilos",
-                      "Caché 3D V-Cache",
-                      "Cooler incluido en este combo"
+                      "3D V-Cache en los dos chiplets · 208 MB de caché",
+                      "Hasta 5,6 GHz"
                   ],
-        "desc":  "Mismo Ryzen 9 9950X3D top de gama de AMD (16 núcleos, 3D V-Cache), aquí ofrecido en un combo del vendedor que suma un cooler, ya que AMD de fábrica no lo incluye.",
+        "desc":  "El Ryzen 9 9950X3D2 Dual Edition es el procesador más potente de AMD para AM5 y el primero con 3D V-Cache en los dos chiplets: 16 núcleos y 208 MB de caché total para lo máximo en gaming y en trabajo profesional al mismo tiempo. Es un modelo distinto y superior al 9950X3D, que tiene la caché extra en un solo chiplet.",
         "ficha":  [
                       [
                           "Socket",
@@ -20742,15 +20724,15 @@
                       ],
                       [
                           "Frecuencia base / boost",
-                          "4,3 / 5,7 GHz"
+                          "4,3 / 5,6 GHz"
                       ],
                       [
                           "Caché total",
-                          "144 MB (3D V-Cache)"
+                          "208 MB (192 MB L3 con 3D V-Cache en ambos chiplets + 16 MB L2)"
                       ],
                       [
                           "TDP",
-                          "170 W"
+                          "200 W"
                       ],
                       [
                           "Gráficos integrados",
@@ -20758,11 +20740,11 @@
                       ],
                       [
                           "Cooler incluido",
-                          "Sí, agregado por el vendedor (AMD lo vende sin cooler)"
+                          "No (AMD lo vende sin cooler; se recomienda watercooler de 360 mm)"
                       ],
                       [
                           "Arquitectura",
-                          "Zen 5 + 3D V-Cache (Granite Ridge)"
+                          "Zen 5 + 3D V-Cache doble (Granite Ridge)"
                       ]
                   ],
         "destacado":  false,
@@ -20771,8 +20753,8 @@
                       "socket":  "AM5",
                       "plataforma":  "AMD",
                       "video":  true,
-                      "cooler":  true,
-                      "tdp":  170,
+                      "cooler":  false,
+                      "tdp":  200,
                       "nucleos":  16,
                       "hilos":  32
                   }
@@ -22312,7 +22294,7 @@
     },
     {
         "id":  "intel-core-ultra-5-250kf-sin-video-sin-cooler-lga1851",
-        "nombre":  "Intel Core Ultra 5 250KF sin video sin cooler LGA1851",
+        "nombre":  "Intel Core Ultra 5 250KF Plus sin video sin cooler LGA1851",
         "origen":  "MICRO INTEL CORE ULTRA 5 250KF PLUS S/VIDEO S/COOLER S1851",
         "marca":  "Intel",
         "categoria":  "Procesadores",
@@ -22320,11 +22302,11 @@
         "precio":  490795,
         "stock":  "disponible",
         "specs":  [
-                      "14 núcleos (6P+8E) / 14 hilos",
+                      "18 núcleos (6P+12E) / 18 hilos",
                       "Sin gráficos integrados",
                       "Desbloqueado, sin cooler"
                   ],
-        "desc":  "El Core Ultra 5 250KF es una revisión del 245KF con clocks levemente más altos, desbloqueado para overclock y sin gráficos integrados. No incluye cooler, pensado para armados con placa de video dedicada y disipador propio.",
+        "desc":  "El Core Ultra 5 250KF Plus es la renovación de Arrow Lake: mantiene los 6 núcleos de rendimiento del 245KF pero sube a 12 núcleos de eficiencia (18 en total), con más caché y mejor comunicación interna para rendir más en juegos. Desbloqueado para overclock, sin gráficos integrados y sin cooler: se arma con placa de video y disipador propio.",
         "ficha":  [
                       [
                           "Socket",
@@ -22332,7 +22314,7 @@
                       ],
                       [
                           "Núcleos (P+E) / hilos",
-                          "6+8 = 14 / 14"
+                          "6+12 = 18 / 18"
                       ],
                       [
                           "Frecuencia base / turbo máx",
@@ -22340,7 +22322,7 @@
                       ],
                       [
                           "Caché total",
-                          "24 MB"
+                          "30 MB Intel Smart Cache"
                       ],
                       [
                           "TDP base / máximo",
@@ -22367,13 +22349,13 @@
                       "video":  false,
                       "cooler":  false,
                       "tdp":  125,
-                      "nucleos":  14,
-                      "hilos":  14
+                      "nucleos":  18,
+                      "hilos":  18
                   }
     },
     {
         "id":  "intel-core-ultra-5-250k-con-video-sin-cooler-lga1851",
-        "nombre":  "Intel Core Ultra 5 250K con video sin cooler LGA1851",
+        "nombre":  "Intel Core Ultra 5 250K Plus con video sin cooler LGA1851",
         "origen":  "MICRO INTEL CORE ULTRA 5 250K PLUS C/VIDEO S/COOLER S1851",
         "marca":  "Intel",
         "categoria":  "Procesadores",
@@ -22381,11 +22363,11 @@
         "precio":  510276,
         "stock":  "disponible",
         "specs":  [
-                      "14 núcleos (6P+8E) / 14 hilos",
-                      "Gráficos Intel Arc integrados",
+                      "18 núcleos (6P+12E) / 18 hilos",
+                      "Gráficos Intel integrados",
                       "Desbloqueado, sin cooler"
                   ],
-        "desc":  "El Core Ultra 5 250K suma gráficos Intel Arc integrados al mismo procesador de 14 núcleos desbloqueado que el 250KF. No incluye cooler, pensado para overclock con disipador propio.",
+        "desc":  "El Core Ultra 5 250K Plus es la renovación de Arrow Lake: mantiene los 6 núcleos de rendimiento del 245K pero sube a 12 núcleos de eficiencia (18 en total), con más caché y mejor comunicación interna para rendir más en juegos. Trae gráficos Intel integrados y viene desbloqueado para overclock. No incluye cooler.",
         "ficha":  [
                       [
                           "Socket",
@@ -22393,7 +22375,7 @@
                       ],
                       [
                           "Núcleos (P+E) / hilos",
-                          "6+8 = 14 / 14"
+                          "6+12 = 18 / 18"
                       ],
                       [
                           "Frecuencia base / turbo máx",
@@ -22401,7 +22383,7 @@
                       ],
                       [
                           "Caché total",
-                          "24 MB"
+                          "30 MB Intel Smart Cache"
                       ],
                       [
                           "TDP base / máximo",
@@ -22409,7 +22391,7 @@
                       ],
                       [
                           "Gráficos integrados",
-                          "Intel Arc (integrados)"
+                          "Intel Graphics (integrados)"
                       ],
                       [
                           "Cooler incluido",
@@ -22428,8 +22410,8 @@
                       "video":  true,
                       "cooler":  false,
                       "tdp":  125,
-                      "nucleos":  14,
-                      "hilos":  14
+                      "nucleos":  18,
+                      "hilos":  18
                   }
     },
     {
@@ -22678,7 +22660,7 @@
     },
     {
         "id":  "intel-core-ultra-7-270k-con-video-y-cooler-lga1851",
-        "nombre":  "Intel Core Ultra 7 270K con video y cooler LGA1851",
+        "nombre":  "Intel Core Ultra 7 270K Plus con video LGA1851",
         "origen":  "MICRO INTEL CORE ULTRA 7 270K PLUS C/VIDEO C/COOLER S1851",
         "marca":  "Intel",
         "categoria":  "Procesadores",
@@ -22686,11 +22668,11 @@
         "precio":  802128,
         "stock":  "disponible",
         "specs":  [
-                      "20 núcleos (8P+12E) / 20 hilos",
-                      "Gráficos Intel Arc integrados",
-                      "Desbloqueado"
+                      "24 núcleos (8P+16E) / 24 hilos",
+                      "Gráficos Intel integrados",
+                      "Desbloqueado, hasta 5,5 GHz"
                   ],
-        "desc":  "El Core Ultra 7 270K es una revisión con clocks más altos del 265K, desbloqueado para overclock, con gráficos Intel Arc integrados. Buena opción de alto rendimiento para gaming y creación de contenido.",
+        "desc":  "El Core Ultra 7 270K Plus es la renovación de Arrow Lake: mantiene los 8 núcleos de rendimiento del 265K y sube a 16 núcleos de eficiencia (24 en total), con más caché y mejor comunicación interna. Es el Intel más rápido para gaming de su generación. Trae gráficos Intel integrados y viene desbloqueado para overclock.",
         "ficha":  [
                       [
                           "Socket",
@@ -22698,15 +22680,15 @@
                       ],
                       [
                           "Núcleos (P+E) / hilos",
-                          "8+12 = 20 / 20"
+                          "8+16 = 24 / 24"
                       ],
                       [
                           "Frecuencia base / turbo máx",
-                          "3,9 / 5,6 GHz"
+                          "3,7 / 5,5 GHz"
                       ],
                       [
                           "Caché total",
-                          "30 MB"
+                          "36 MB Intel Smart Cache"
                       ],
                       [
                           "TDP base / máximo",
@@ -22714,7 +22696,7 @@
                       ],
                       [
                           "Gráficos integrados",
-                          "Intel Arc (integrados)"
+                          "Intel Graphics (integrados)"
                       ],
                       [
                           "Cooler incluido",
@@ -22733,8 +22715,8 @@
                       "video":  true,
                       "cooler":  false,
                       "tdp":  125,
-                      "nucleos":  20,
-                      "hilos":  20
+                      "nucleos":  24,
+                      "hilos":  24
                   }
     },
     {
