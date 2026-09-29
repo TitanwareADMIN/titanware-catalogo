@@ -929,6 +929,17 @@ dialog.auth-dlg { width: min(440px, 100% - 2rem); }
 .chk input { flex: none; width: 17px; height: 17px; margin: .05rem 0 0; accent-color: var(--violet); }
 .auth-err { margin: 0; padding: .6rem .8rem; border-radius: var(--radius-sm); font-size: .85rem; color: #ffb3bc; background: rgba(224, 113, 127, .1); border: 1px solid rgba(224, 113, 127, .35); }
 .auth-err[hidden] { display: none; }
+/* Armador: columna de pasos más ancha y en 3 columnas (12 pasos con los periféricos) */
+@media (min-width: 1001px) {
+  .bz { grid-template-columns: 380px minmax(0, 1fr); }
+  .bz-tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .55rem; }
+  .bz-tile { padding: .9rem .35rem .75rem; gap: .45rem; }
+  .bz-tile .ico { width: 70px; height: 56px; }
+  .bz-tile .ico > svg { width: 46px; height: 46px; }
+  .bz-tile .ico img { width: 70px; height: 56px; max-height: 56px; }
+  .bz .bz-tiles .bz-tile .lbl { font-size: .76rem; overflow-wrap: normal; word-break: normal; letter-spacing: -.01em; }
+  .bz-sum { padding: .75rem; font-size: .92rem; }
+}
 /* Armador: preguntas rápidas de cada paso */
 .bz-quick { display: flex; flex-wrap: wrap; gap: .7rem 1.6rem; margin: 0 0 1rem; padding: .85rem 1rem; border: 1px solid var(--line); border-radius: var(--radius-sm); background: var(--surface); }
 .bz-quick[hidden] { display: none; }
@@ -959,7 +970,6 @@ dialog.zoom .close { position: fixed; top: 1rem; right: 1rem; z-index: 2; }
 .bz-img, .mini { position: relative; }
 .bz-img img, .mini img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; object-fit: contain; }
 /* Celulares muy chicos (320 px): que nada se salga de la pantalla */
-.bz-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 1000px) { .bz-tiles { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
 .bz-tile { min-width: 0; }
 .bz-tile .lbl { max-width: 100%; overflow-wrap: anywhere; }
