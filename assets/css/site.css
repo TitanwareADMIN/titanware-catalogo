@@ -861,3 +861,9 @@ li.bad, li.bad strong { color: var(--off) !important; }
 .bz-step .qty { background: var(--bg-2); }
 .bz-foot { flex-wrap: wrap; }
 @media (max-width: 640px) { .bz-step .bz-ok { display: none; } }
+/* Quitar un componente elegido */
+.bz-unpick { display: inline-flex; align-items: center; gap: .25rem; padding: .2rem .55rem; border-radius: 999px; border: 1px solid var(--line-2); background: var(--bg-2); color: var(--text-2); font: inherit; font-size: .72rem; font-weight: 600; cursor: pointer; white-space: nowrap; }
+.bz-unpick svg { width: 11px; height: 11px; }
+.bz-unpick:hover { border-color: var(--off); color: #fff; background: rgba(224, 113, 127, .18); }
+.bz-opt.sel[role="group"] .bz-step { flex-wrap: wrap; justify-content: flex-end; }
+@media (max-width: 640px) { .bz-step .bz-ok { display: none; } }

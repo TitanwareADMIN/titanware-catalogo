@@ -408,8 +408,18 @@
   }
 
   // Tarjeta de una opción "sin costo" (cooler del procesador, video integrado)
-  const freeCard = (attr, on, img, name, spec) => `
-    <button class="bz-opt free${on ? " sel" : ""}" type="button" ${attr}>
+  const unpickBtn = (key) => `<button class="bz-unpick" type="button" data-unpick="${key}" aria-label="Quitar">${U.close} Quitar</button>`;
+  const freeCard = (attr, on, img, name, spec, key) => on ? `
+    <div class="bz-opt free sel" role="group" aria-label="${esc(name)}">
+      <span class="bz-rec">${U.check} Sin costo</span>
+      <span class="bz-img">${img}</span>
+      <span class="bz-info">
+        <span class="bz-name">${esc(name)}</span>
+        <span class="bz-spec">${esc(spec)}</span>
+        <span class="bz-foot"><span class="bz-price">$ 0</span><span class="bz-step"><span class="bz-ok">${U.check} Seleccionado</span>${unpickBtn(key)}</span></span>
+      </span>
+    </div>` : `
+    <button class="bz-opt free" type="button" ${attr}>
       <span class="bz-rec">${U.check} Sin costo</span>
       <span class="bz-img">${img}</span>
       <span class="bz-info">
@@ -452,9 +462,9 @@
     let free = "";
     const cpuBox = step.key === "cooler" && stockCooler();
     if (cpuBox) free = freeCard("data-stockcooler", usingStock(), `<img class="prod" src="${stockImg(cpuBox)}" alt="Cooler ${esc(cpuBox.attrs.plataforma)} de fábrica" loading="lazy">`,
-      `Usar el cooler incluido en el procesador ${cpuBox.attrs.plataforma}`, `Viene en la caja del ${cpuBox.titulo}`);
+      `Usar el cooler incluido en el procesador ${cpuBox.attrs.plataforma}`, `Viene en la caja del ${cpuBox.titulo}`, "cooler");
     const cpuVid = step.key === "gpu" && igpuCpu();
-    if (cpuVid) free = freeCard("data-igpu", usingIgpu(), TW.thumb(cpuVid), "Usar el video integrado del procesador", `Los gráficos del ${cpuVid.titulo}: ideal para oficina, estudio y multimedia`);
+    if (cpuVid) free = freeCard("data-igpu", usingIgpu(), TW.thumb(cpuVid), "Usar el video integrado del procesador", `Los gráficos del ${cpuVid.titulo}: ideal para oficina, estudio y multimedia`, "gpu");
     const card = (p) => {
       const q = qtyOf[p.id] || 0;
       const head = `
@@ -479,9 +489,14 @@
         <div class="bz-opt sel" role="group" aria-label="${esc(p.titulo)}">${head}${info(`
           <span class="bz-foot">${price}<span class="bz-step">
             <span class="qty"><button type="button" data-sq="${step.key}|${esc(p.id)}|-1" aria-label="Uno menos">${U.minus}</button><span>${q}</span><button type="button" data-sq="${step.key}|${esc(p.id)}|1" aria-label="Uno más"${more ? "" : " disabled"}>${U.plus}</button></span>
-            <span class="bz-ok">${U.check} Seleccionado</span></span></span>`)}
+            <button class="bz-unpick" type="button" data-sq="${step.key}|${esc(p.id)}|0" aria-label="Quitar ${esc(p.titulo)}">${U.close} Quitar</button></span></span>`)}
         </div>`;
       }
+      // Componente elegido: se puede quitar desde la tarjeta
+      if (q) return `
+        <div class="bz-opt sel" role="group" aria-label="${esc(p.titulo)}">${head}${info(`
+          <span class="bz-foot">${price}<span class="bz-step"><span class="bz-ok">${U.check} Seleccionado</span>${unpickBtn(step.key)}</span></span>`)}
+        </div>`;
       return `
         <button class="bz-opt${q ? " sel" : ""}" type="button" data-pick="${esc(p.id)}">${head}${info(`
           <span class="bz-foot">${price}<span class="bz-ok">${U.check} ${q ? (step.slots ? `Seleccionado${q > 1 ? ` x${q}` : ""}` : "Seleccionado") : "Compatible"}</span></span>`)}
@@ -725,6 +740,13 @@
       if ((x = el("[data-goto]"))) { B.step = Number(x.dataset.goto); B.q = ""; B.ask = null; saveBuild(); renderBuilder(); scrollTo({ top: $("#builder").offsetTop - 130, behavior: "smooth" }); return; }
       if ((x = el("[data-qty]"))) { const [id, n] = x.dataset.qty.split("|"); if (data.byId[id]) addQty(data.byId[id], Number(n)); return; }
       if ((x = el("[data-askclose]"))) { B.ask = null; B.replace = false; renderOptions(); return; }
+      if ((x = el("[data-unpick]"))) {
+        const k = x.dataset.unpick;
+        B.sel[k] = [];
+        if (k === "cooler") B.sel.coolerStock = false;
+        if (k === "gpu") B.sel.gpuInt = false;
+        afterChange(); saveBuild(); renderBuilder(); toast("Quitamos el componente. Elegí otro o salteá el paso."); return;
+      }
       if ((x = el("[data-pick]"))) { pick(x.dataset.pick); return; }
       if ((x = el("[data-stockcooler]"))) { B.sel.cooler = []; B.sel.coolerStock = true; afterChange(); advance(); return; }
       if ((x = el("[data-igpu]"))) { B.sel.gpu = []; B.sel.gpuInt = true; afterChange(); advance(); return; }
