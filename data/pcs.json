@@ -1,107 +1,224 @@
 [
-  {
-    "id": "pc-oficina-athlon",
-    "nombre": "PC Oficina Athlon",
-    "categoria": "Hogar / Oficina",
-    "descripcion": "Ideal para trabajo administrativo, navegación, clases online y facturación.",
-    "destacado": false,
-    "precio": null,
-    "imagen": "",
-    "componentes": [
-      { "id": "micro-amd-3000g-athlon-c-video-c-cooler-cpu-am4", "qty": 1 },
-      { "id": "mother-msi-a520m-a-pro-ddr4-am4", "qty": 1 },
-      { "id": "memoria-8gb-ddr4-3200-patriot-signature", "qty": 1 },
-      { "id": "hd-ssd-240gb-hiksemi-wave-sata-iii-2-5", "qty": 1 },
-      { "id": "gabinete-kit-performance-mate-c-fuente-500w", "qty": 1 }
-    ]
-  },
-  {
-    "id": "pc-hogar-ryzen-5600gt",
-    "nombre": "PC Hogar Ryzen 5 5600GT",
-    "categoria": "Hogar / Oficina",
-    "descripcion": "Rápida para el día a día, multitarea y juegos livianos gracias a su video integrado.",
-    "destacado": true,
-    "precio": null,
-    "imagen": "",
-    "componentes": [
-      { "id": "micro-amd-ryzen-5-5600gt-c-video-c-cooler-am4-simil-5600g", "qty": 1 },
-      { "id": "mother-gigabyte-b550m-k-ddr4-am4", "qty": 1 },
-      { "id": "memoria-16gb-ddr4-3200-lexar", "qty": 1 },
-      { "id": "hd-ssd-500gb-kingston-snvs-nv3-m-2-nvme-gen4", "qty": 1 },
-      { "id": "gabinete-sentey-h30-black-vidro-lateral-y-frontal", "qty": 1 },
-      { "id": "fuente-550w-msi-mag-a550bn-80-plus-bronze", "qty": 1 }
-    ]
-  },
-  {
-    "id": "pc-gamer-ryzen-5600-rtx-3050",
-    "nombre": "PC Gamer Ryzen 5 5600 + RTX 3050",
-    "categoria": "Gamer",
-    "descripcion": "Para jugar en 1080p títulos como Fortnite, Valorant, CS2 y GTA V con buenos FPS.",
-    "destacado": true,
-    "precio": null,
-    "imagen": "",
-    "componentes": [
-      { "id": "micro-amd-ryzen-5-5600-s-video-c-cooler-am4", "qty": 1 },
-      { "id": "mother-gigabyte-b550m-k-ddr4-am4", "qty": 1 },
-      { "id": "memoria-8gb-ddr4-3200-kingston-fury-beast-rgb", "qty": 2 },
-      { "id": "hd-ssd-500gb-kingston-snvs-nv3-m-2-nvme-gen4", "qty": 1 },
-      { "id": "placa-de-video-geforce-rtx-3050-6gb-msi-ventus-2x-oc", "qty": 1 },
-      { "id": "gabinete-raptor-infinity-mesh-tg-4fan-rgb", "qty": 1 },
-      { "id": "fuente-650w-evolabs-supreme-series-80-plus-bronze", "qty": 1 }
-    ]
-  },
-  {
-    "id": "pc-gamer-i5-12400f-rx-7600",
-    "nombre": "PC Gamer Intel i5 12400F + RX 7600",
-    "categoria": "Gamer",
-    "descripcion": "Muy buen rendimiento en 1080p en calidad alta y apta para streaming.",
-    "destacado": true,
-    "precio": null,
-    "imagen": "",
-    "componentes": [
-      { "id": "micro-intel-core-i5-12400f-s-video-c-cooler-box-s1700", "qty": 1 },
-      { "id": "mother-msi-pro-h610m-a-ddr4-s1700", "qty": 1 },
-      { "id": "memoria-8gb-ddr4-3200-kingston-fury-beast-rgb", "qty": 2 },
-      { "id": "hd-ssd-500gb-kingston-snvs-nv3-m-2-nvme-gen4", "qty": 1 },
-      { "id": "placa-de-video-radeon-rx-7600-8gb-gigabyte-gaming-oc", "qty": 1 },
-      { "id": "gabinete-sentey-t5-black-tg-lateral-y-frontal-3fan-argb", "qty": 1 },
-      { "id": "fuente-650w-adata-xpg-pylon-80-plus-bronze", "qty": 1 }
-    ]
-  },
-  {
-    "id": "pc-gamer-am5-8400f-rtx-5050",
-    "nombre": "PC Gamer AM5 Ryzen 5 8400F + RTX 5050",
-    "categoria": "Gamer",
-    "descripcion": "Plataforma AM5 con DDR5 lista para actualizar, y placa de última generación con DLSS 4.",
-    "destacado": true,
-    "precio": null,
-    "imagen": "",
-    "componentes": [
-      { "id": "micro-amd-ryzen-5-8400f-s-video-c-cooler-box-am5", "qty": 1 },
-      { "id": "mother-gigabyte-a620m-h-ddr5-am5", "qty": 1 },
-      { "id": "memoria-8gb-ddr5-5600-patriot-signature", "qty": 2 },
-      { "id": "hd-ssd-1tb-wd-green-sn350-m-2-nvme-gen3", "qty": 1 },
-      { "id": "placa-de-video-geforce-rtx-5050-8gb-msi-ventus-2x-oc", "qty": 1 },
-      { "id": "gabinete-evolabs-duality-tg-4fan-argb", "qty": 1 },
-      { "id": "fuente-750w-sentey-mbp750-vm-atx-3-1-pcie-5-1-80-plus-bronze-semi-modu", "qty": 1 }
-    ]
-  },
-  {
-    "id": "pc-workstation-i5-12400",
-    "nombre": "PC Workstation Intel i5 12400 32GB",
-    "categoria": "Workstation",
-    "descripcion": "32 GB de RAM y mucho almacenamiento para diseño, programación, planillas pesadas y máquinas virtuales.",
-    "destacado": false,
-    "precio": null,
-    "imagen": "",
-    "componentes": [
-      { "id": "micro-intel-core-i5-12400-c-video-c-cooler-box-s1700", "qty": 1 },
-      { "id": "mother-asus-prime-h610m-k-d4-ddr4-s1700", "qty": 1 },
-      { "id": "memoria-16gb-ddr4-3200-kingston-value-ram-kvr", "qty": 2 },
-      { "id": "hd-ssd-1tb-wd-green-sn350-m-2-nvme-gen3", "qty": 1 },
-      { "id": "hd-hdd-2tb-wd-purple-sata-iii-3-5", "qty": 1 },
-      { "id": "gabinete-adata-xpg-lander-500-tg-4fan-argb", "qty": 1 },
-      { "id": "fuente-600w-adata-xpg-probe-80-plus-bronze", "qty": 1 }
-    ]
-  }
+    {
+        "id":  "pc-oficina-athlon",
+        "nombre":  "PC Oficina Athlon",
+        "categoria":  "Hogar / Oficina",
+        "descripcion":  "Ideal para trabajo administrativo, navegación, clases online y facturación.",
+        "destacado":  false,
+        "precio":  null,
+        "imagen":  "",
+        "componentes":  [
+                            {
+                                "id":  "micro-amd-3000g-athlon-c-video-c-cooler-cpu-am4",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "mother-msi-a520m-a-pro-ddr4-am4",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "memoria-8gb-ddr4-3200-adata-premier",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "hd-ssd-240gb-hiksemi-wave-sata-iii-2-5",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "gabinete-kit-performance-mate-c-fuente-500w",
+                                "qty":  1
+                            }
+                        ]
+    },
+    {
+        "id":  "pc-hogar-ryzen-5600gt",
+        "nombre":  "PC Hogar Ryzen 5 5600GT",
+        "categoria":  "Hogar / Oficina",
+        "descripcion":  "Rápida para el día a día, multitarea y juegos livianos gracias a su video integrado.",
+        "destacado":  true,
+        "precio":  null,
+        "imagen":  "",
+        "componentes":  [
+                            {
+                                "id":  "micro-amd-ryzen-5-5600gt-c-video-c-cooler-am4-simil-5600g",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "mother-gigabyte-b550m-k-ddr4-am4",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "lexar-16gb-ddr4-3200mhz",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "hd-ssd-500gb-kingston-snvs-nv3-m-2-nvme-gen4",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "gabinete-sentey-h30-black-vidro-lateral-y-frontal",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "fuente-550w-msi-mag-a550bn-80-plus-bronze",
+                                "qty":  1
+                            }
+                        ]
+    },
+    {
+        "id":  "pc-gamer-ryzen-5600-rtx-3050",
+        "nombre":  "PC Gamer Ryzen 5 5600 + RTX 3050",
+        "categoria":  "Gamer",
+        "descripcion":  "Para jugar en 1080p títulos como Fortnite, Valorant, CS2 y GTA V con buenos FPS.",
+        "destacado":  true,
+        "precio":  null,
+        "imagen":  "",
+        "componentes":  [
+                            {
+                                "id":  "micro-amd-ryzen-5-5600-s-video-c-cooler-am4",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "mother-gigabyte-b550m-k-ddr4-am4",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "memoria-8gb-ddr4-3200-kingston-fury-beast",
+                                "qty":  2
+                            },
+                            {
+                                "id":  "hd-ssd-500gb-kingston-snvs-nv3-m-2-nvme-gen4",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "placa-de-video-geforce-rtx-3050-6gb-msi-ventus-2x-oc",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "gabinete-raptor-infinity-mesh-tg-4fan-rgb",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "fuente-650w-evolabs-supreme-series-80-plus-bronze",
+                                "qty":  1
+                            }
+                        ]
+    },
+    {
+        "id":  "pc-gamer-i5-12400f-rx-7600",
+        "nombre":  "PC Gamer Intel i5 12400F + RX 7600",
+        "categoria":  "Gamer",
+        "descripcion":  "Muy buen rendimiento en 1080p en calidad alta y apta para streaming.",
+        "destacado":  true,
+        "precio":  null,
+        "imagen":  "",
+        "componentes":  [
+                            {
+                                "id":  "micro-intel-core-i5-12400f-s-video-c-cooler-box-s1700",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "mother-msi-pro-h610m-a-ddr4-s1700",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "memoria-8gb-ddr4-3200-kingston-fury-beast",
+                                "qty":  2
+                            },
+                            {
+                                "id":  "hd-ssd-500gb-kingston-snvs-nv3-m-2-nvme-gen4",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "placa-de-video-radeon-rx-7600-8gb-gigabyte-gaming-oc",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "gabinete-sentey-t5-black-tg-lateral-y-frontal-3fan-argb",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "cooler-master-mwe-650w-v3-80-plus-bronze",
+                                "qty":  1
+                            }
+                        ]
+    },
+    {
+        "id":  "pc-gamer-am5-8400f-rtx-5050",
+        "nombre":  "PC Gamer AM5 Ryzen 5 8400F + RTX 5050",
+        "categoria":  "Gamer",
+        "descripcion":  "Plataforma AM5 con DDR5 lista para actualizar, y placa de última generación con DLSS 4.",
+        "destacado":  true,
+        "precio":  null,
+        "imagen":  "",
+        "componentes":  [
+                            {
+                                "id":  "amd-ryzen-5-8400f-sin-video-con-cooler-box-am5",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "mother-gigabyte-a620m-h-ddr5-am5",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "memoria-8gb-ddr5-5600-patriot-signature",
+                                "qty":  2
+                            },
+                            {
+                                "id":  "hd-ssd-1tb-wd-green-sn350-m-2-nvme-gen3",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "placa-de-video-geforce-rtx-5050-8gb-msi-ventus-2x-oc",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "gabinete-evolabs-duality-tg-4fan-argb",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "fuente-750w-sentey-mbp750-vm-atx-3-1-pcie-5-1-80-plus-bronze-semi-modu",
+                                "qty":  1
+                            }
+                        ]
+    },
+    {
+        "id":  "pc-workstation-i5-12400",
+        "nombre":  "PC Workstation Intel i5 12400 32GB",
+        "categoria":  "Workstation",
+        "descripcion":  "32 GB de RAM y mucho almacenamiento para diseño, programación, planillas pesadas y máquinas virtuales.",
+        "destacado":  false,
+        "precio":  null,
+        "imagen":  "",
+        "componentes":  [
+                            {
+                                "id":  "micro-intel-core-i5-12400-c-video-c-cooler-box-s1700",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "mother-asus-prime-h610m-k-d4-ddr4-s1700",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "memoria-16gb-ddr4-3200-kingston-value-ram-kvr",
+                                "qty":  2
+                            },
+                            {
+                                "id":  "hd-ssd-1tb-wd-green-sn350-m-2-nvme-gen3",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "hd-hdd-2tb-wd-purple-sata-iii-3-5",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "gabinete-adata-xpg-lander-500-tg-4fan-argb",
+                                "qty":  1
+                            },
+                            {
+                                "id":  "fuente-600w-adata-xpg-probe-80-plus-bronze",
+                                "qty":  1
+                            }
+                        ]
+    }
 ]

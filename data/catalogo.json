@@ -1070,22 +1070,6 @@
                   ]
     },
     {
-        "id":  "mother-gigabyte-h610m-k-ddr4-gen5-s1700",
-        "nombre":  "MOTHER GIGABYTE H610M K DDR4 GEN5 S1700",
-        "categoria":  "Motherboards",
-        "sub":  "Intel",
-        "precio":  134619,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/mother-gigabyte-h610m-k-ddr4-gen5-s1700.webp",
-        "attrs":  {
-                      "m2":  1,
-                      "slots":  2,
-                      "formato":  "Micro-ATX",
-                      "ddr":  "DDR4"
-                  }
-    },
-    {
         "id":  "mother-gigabyte-h610m-k-v2-ddr5-s1700",
         "nombre":  "Gigabyte H610M K V2 DDR5 S1700",
         "categoria":  "Motherboards",
@@ -1451,22 +1435,6 @@
                   ]
     },
     {
-        "id":  "micro-amd-athlon-3000g-c-video-s-cooler-cpu-am4",
-        "nombre":  "MICRO AMD ATHLON 3000G C/VIDEO S/COOLER CPU AM4",
-        "categoria":  "Procesadores",
-        "sub":  "AMD AM4",
-        "precio":  52187,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "",
-        "attrs":  {
-                      "socket":  "AM4",
-                      "tdp":  35,
-                      "cooler":  false,
-                      "video":  true
-                  }
-    },
-    {
         "id":  "micro-amd-3000g-athlon-c-video-c-cooler-cpu-am4",
         "nombre":  "AMD Athlon 3000G con video y cooler AM4",
         "categoria":  "Procesadores",
@@ -1533,7 +1501,7 @@
         "nombre":  "MICRO AMD ATHLON 3000G VEGA 3 BOX AM4",
         "categoria":  "Procesadores",
         "sub":  "AMD AM4",
-        "precio":  75486,
+        "precio":  79283,
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "",
@@ -1543,73 +1511,8 @@
                       "tdp":  35,
                       "cooler":  true,
                       "video":  true
-                  }
-    },
-    {
-        "id":  "micro-amd-ryzen-3-3200g-c-video-s-cooler-cpu-am4",
-        "nombre":  "MICRO AMD RYZEN 3 3200G C/VIDEO S/COOLER CPU AM4",
-        "categoria":  "Procesadores",
-        "sub":  "AMD AM4",
-        "precio":  97187,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "",
-        "attrs":  {
-                      "socket":  "AM4",
-                      "tdp":  65,
-                      "cooler":  false,
-                      "video":  true
-                  }
-    },
-    {
-        "id":  "micro-amd-ryzen-3-3200g-c-video-c-cooler-cpu-am4",
-        "nombre":  "MICRO AMD RYZEN 3 3200G C/VIDEO C/COOLER CPU AM4",
-        "categoria":  "Procesadores",
-        "sub":  "AMD AM4",
-        "precio":  107053,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "",
-        "caja":  "img/productos/cajas/micro-amd-ryzen-3-3200g-c-video-c-cooler-cpu-am4.webp",
-        "attrs":  {
-                      "socket":  "AM4",
-                      "tdp":  65,
-                      "cooler":  true,
-                      "video":  true
-                  }
-    },
-    {
-        "id":  "micro-amd-ryzen-5-3500x-s-video-s-cooler-cpu-am4",
-        "nombre":  "MICRO AMD RYZEN 5 3500X S/VIDEO S/COOLER CPU AM4",
-        "categoria":  "Procesadores",
-        "sub":  "AMD AM4",
-        "precio":  115402,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "",
-        "attrs":  {
-                      "socket":  "AM4",
-                      "tdp":  65,
-                      "cooler":  false,
-                      "video":  false
-                  }
-    },
-    {
-        "id":  "micro-amd-ryzen-3-3200g-c-video-c-cooler-amd-cpu-am4",
-        "nombre":  "MICRO AMD RYZEN 3 3200G C/VIDEO C/COOLER AMD CPU AM4",
-        "categoria":  "Procesadores",
-        "sub":  "AMD AM4",
-        "precio":  116507,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "",
-        "caja":  "img/productos/cajas/micro-amd-ryzen-3-3200g-c-video-c-cooler-amd-cpu-am4.webp",
-        "attrs":  {
-                      "socket":  "AM4",
-                      "tdp":  65,
-                      "cooler":  true,
-                      "video":  true
-                  }
+                  },
+        "origen":  "MICRO AMD ATHLON 3000G VEGA 3 BOX AM4"
     },
     {
         "id":  "micro-amd-ryzen-5-3500x-s-video-c-cooler-cpu-am4",
@@ -1734,39 +1637,6 @@
                           "Zen+ (Picasso)"
                       ]
                   ]
-    },
-    {
-        "id":  "micro-amd-ryzen-5-3400g-c-video-s-cooler-cpu-am4",
-        "nombre":  "MICRO AMD RYZEN 5 3400G C/VIDEO S/COOLER CPU AM4",
-        "categoria":  "Procesadores",
-        "sub":  "AMD AM4",
-        "precio":  137425,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "",
-        "attrs":  {
-                      "socket":  "AM4",
-                      "tdp":  65,
-                      "cooler":  false,
-                      "video":  true
-                  }
-    },
-    {
-        "id":  "micro-amd-ryzen-5-3400g-c-video-c-cooler-cpu-am4",
-        "nombre":  "MICRO AMD RYZEN 5 3400G C/VIDEO C/COOLER CPU AM4",
-        "categoria":  "Procesadores",
-        "sub":  "AMD AM4",
-        "precio":  147292,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "",
-        "caja":  "img/productos/cajas/micro-amd-ryzen-5-3400g-c-video-c-cooler-cpu-am4.webp",
-        "attrs":  {
-                      "socket":  "AM4",
-                      "tdp":  65,
-                      "cooler":  true,
-                      "video":  true
-                  }
     },
     {
         "id":  "micro-amd-ryzen-5-5600-s-video-c-cooler-am4",
@@ -2013,135 +1883,6 @@
                   ]
     },
     {
-        "id":  "micro-amd-ryzen-5-8400f-s-video-s-cooler-cpu-am5",
-        "nombre":  "MICRO AMD RYZEN 5 8400F S/VIDEO S/COOLER CPU AM5",
-        "categoria":  "Procesadores",
-        "sub":  "AMD AM5",
-        "precio":  236923,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/amd-ryzen-8000-chip.webp",
-        "attrs":  {
-                      "socket":  "AM5",
-                      "tdp":  65,
-                      "cooler":  false,
-                      "video":  false
-                  }
-    },
-    {
-        "id":  "micro-amd-ryzen-5-8500g-c-video-s-cooler-cpu-am5",
-        "nombre":  "MICRO AMD RYZEN 5 8500G C/VIDEO S/COOLER CPU AM5",
-        "categoria":  "Procesadores",
-        "sub":  "AMD AM5",
-        "precio":  280128,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/amd-ryzen-5-8500g-box.webp",
-        "attrs":  {
-                      "socket":  "AM5",
-                      "tdp":  65,
-                      "cooler":  false,
-                      "video":  true
-                  }
-    },
-    {
-        "id":  "micro-amd-ryzen-5-8500g-c-video-c-cooler-box-am5",
-        "nombre":  "MICRO AMD RYZEN 5 8500G C/VIDEO C/COOLER BOX AM5",
-        "categoria":  "Procesadores",
-        "sub":  "AMD AM5",
-        "precio":  284050,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/amd-ryzen-5-8500g-box.webp",
-        "attrs":  {
-                      "socket":  "AM5",
-                      "tdp":  65,
-                      "cooler":  true,
-                      "video":  true
-                  }
-    },
-    {
-        "id":  "micro-amd-ryzen-5-8400f-s-video-c-cooler-box-am5",
-        "nombre":  "MICRO AMD RYZEN 5 8400F S/VIDEO C/COOLER BOX AM5",
-        "categoria":  "Procesadores",
-        "sub":  "AMD AM5",
-        "precio":  307420,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/amd-ryzen-8000-chip.webp",
-        "attrs":  {
-                      "socket":  "AM5",
-                      "tdp":  65,
-                      "cooler":  true,
-                      "video":  false
-                  }
-    },
-    {
-        "id":  "micro-amd-ryzen-5-8600g-c-video-c-cooler-box-am5",
-        "nombre":  "MICRO AMD RYZEN 5 8600G C/VIDEO C/COOLER BOX AM5",
-        "categoria":  "Procesadores",
-        "sub":  "AMD AM5",
-        "precio":  358800,
-        "destacado":  true,
-        "stock":  "consultar",
-        "imagen":  "img/productos/amd-ryzen-5-8600g-box.webp",
-        "attrs":  {
-                      "socket":  "AM5",
-                      "tdp":  65,
-                      "cooler":  true,
-                      "video":  true
-                  }
-    },
-    {
-        "id":  "micro-amd-ryzen-5-7600x-c-video-s-cooler-cpu-am5",
-        "nombre":  "MICRO AMD RYZEN 5 7600X C/VIDEO S/COOLER CPU AM5",
-        "categoria":  "Procesadores",
-        "sub":  "AMD AM5",
-        "precio":  390379,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/amd-ryzen-5-7600x-box.webp",
-        "attrs":  {
-                      "socket":  "AM5",
-                      "tdp":  105,
-                      "cooler":  false,
-                      "video":  true
-                  }
-    },
-    {
-        "id":  "micro-intel-celeron-g5925-s1200-ideal-pc-oficina-q-g5905",
-        "nombre":  "MICRO INTEL CELERON G5925 S1200 IDEAL PC OFICINA +Q G5905",
-        "categoria":  "Procesadores",
-        "sub":  "Intel LGA 1200",
-        "precio":  114183,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "",
-        "caja":  "img/productos/cajas/micro-intel-celeron-g5925-s1200-ideal-pc-oficina-q-g5905.webp",
-        "attrs":  {
-                      "socket":  "LGA 1200",
-                      "tdp":  58,
-                      "video":  true
-                  }
-    },
-    {
-        "id":  "micro-intel-core-i3-10105f-s-video-c-cooler-box-s1200",
-        "nombre":  "MICRO INTEL CORE I3 10105F S/VIDEO C/COOLER BOX S1200",
-        "categoria":  "Procesadores",
-        "sub":  "Intel LGA 1200",
-        "precio":  152904,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "",
-        "caja":  "img/productos/cajas/micro-intel-core-i3-10105f-s-video-c-cooler-box-s1200.webp",
-        "attrs":  {
-                      "socket":  "LGA 1200",
-                      "tdp":  65,
-                      "cooler":  true,
-                      "video":  false
-                  }
-    },
-    {
         "id":  "micro-intel-core-i3-13100f-s-video-c-cooler-box-s1700",
         "nombre":  "Intel Core i3-13100F Sin Video, Con Cooler BOX - Socket LGA1700",
         "categoria":  "Procesadores",
@@ -2386,23 +2127,6 @@
                   ]
     },
     {
-        "id":  "micro-intel-core-i3-14100f-s-video-c-cooler-s1700",
-        "nombre":  "MICRO INTEL CORE I3 14100F S/VIDEO C/COOLER S1700",
-        "categoria":  "Procesadores",
-        "sub":  "Intel LGA 1700",
-        "precio":  226895,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/intel-core-13th-gen-chip.webp",
-        "caja":  "img/productos/cajas/micro-intel-core-i3-14100f-s-video-c-cooler-s1700.webp",
-        "attrs":  {
-                      "socket":  "LGA 1700",
-                      "tdp":  58,
-                      "cooler":  true,
-                      "video":  false
-                  }
-    },
-    {
         "id":  "micro-intel-core-i3-12100-c-video-c-cooler-box-s1700",
         "nombre":  "Intel Core i3-12100 Con Video, Con Cooler BOX - Socket LGA1700",
         "categoria":  "Procesadores",
@@ -2589,55 +2313,6 @@
                   ]
     },
     {
-        "id":  "micro-intel-core-i5-14400f-s-video-s-cooler-s1700",
-        "nombre":  "MICRO INTEL CORE I5 14400F S/VIDEO S/COOLER S1700",
-        "categoria":  "Procesadores",
-        "sub":  "Intel LGA 1700",
-        "precio":  330901,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/intel-core-13th-gen-chip.webp",
-        "attrs":  {
-                      "socket":  "LGA 1700",
-                      "tdp":  65,
-                      "cooler":  false,
-                      "video":  false
-                  }
-    },
-    {
-        "id":  "micro-intel-core-i5-12400f-s-video-c-cooler-s1700",
-        "nombre":  "MICRO INTEL CORE I5 12400F S/VIDEO C/COOLER S1700",
-        "categoria":  "Procesadores",
-        "sub":  "Intel LGA 1700",
-        "precio":  332132,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "",
-        "caja":  "img/productos/cajas/micro-intel-core-i5-12400f-s-video-c-cooler-s1700.webp",
-        "attrs":  {
-                      "socket":  "LGA 1700",
-                      "tdp":  65,
-                      "cooler":  true,
-                      "video":  false
-                  }
-    },
-    {
-        "id":  "micro-intel-core-i5-14400f-tray-s-video-s-cooler-s1700",
-        "nombre":  "MICRO INTEL CORE I5 14400F TRAY S/VIDEO S/COOLER S1700",
-        "categoria":  "Procesadores",
-        "sub":  "Intel LGA 1700",
-        "precio":  343505,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/intel-core-13th-gen-chip.webp",
-        "attrs":  {
-                      "socket":  "LGA 1700",
-                      "tdp":  65,
-                      "cooler":  false,
-                      "video":  false
-                  }
-    },
-    {
         "id":  "micro-intel-core-i5-12400-c-video-c-cooler-box-s1700",
         "nombre":  "Intel Core i5-12400 Con Video, Con Cooler BOX - Socket LGA1700",
         "categoria":  "Procesadores",
@@ -2700,22 +2375,6 @@
                   ]
     },
     {
-        "id":  "micro-intel-core-i5-12400-c-video-s-cooler-s1700",
-        "nombre":  "MICRO INTEL CORE I5 12400 C/VIDEO S/COOLER S1700",
-        "categoria":  "Procesadores",
-        "sub":  "Intel LGA 1700",
-        "precio":  392253,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "",
-        "attrs":  {
-                      "socket":  "LGA 1700",
-                      "tdp":  65,
-                      "cooler":  false,
-                      "video":  true
-                  }
-    },
-    {
         "id":  "micro-intel-core-i5-14400f-s-video-c-cooler-box-s1700",
         "nombre":  "Intel Core i5-14400F Sin Video, Con Cooler BOX - Socket LGA1700",
         "categoria":  "Procesadores",
@@ -2776,23 +2435,6 @@
                           "Sí (BOX)"
                       ]
                   ]
-    },
-    {
-        "id":  "cpu-cooler-intel-performance-s1700",
-        "nombre":  "CPU COOLER INTEL PERFORMANCE S1700",
-        "categoria":  "Coolers",
-        "sub":  "Coolers CPU",
-        "precio":  15199,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "",
-        "attrs":  {
-                      "altura":  69,
-                      "sockets":  [
-                                      "LGA 1700"
-                                  ],
-                      "maxTdp":  65
-                  }
     },
     {
         "id":  "cpu-cooler-kelyx-potencia-maxima-95w-p-amd-intel",
@@ -3672,27 +3314,6 @@
                   ]
     },
     {
-        "id":  "cpu-cooler-thermaltake-astria-600-argb-white-cl-p139-ca12sw-a",
-        "nombre":  "CPU COOLER THERMALTAKE ASTRIA 600 ARGB WHITE CL-P139-CA12SW-A",
-        "categoria":  "Coolers",
-        "sub":  "Coolers CPU",
-        "precio":  135275,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/cpu-cooler-thermaltake-astria-600-argb-white-cl-p139-ca12sw-a.webp",
-        "attrs":  {
-                      "altura":  160,
-                      "sockets":  [
-                                      "AM4",
-                                      "AM5",
-                                      "LGA 1200",
-                                      "LGA 1700",
-                                      "LGA 1851"
-                                  ],
-                      "maxTdp":  265
-                  }
-    },
-    {
         "id":  "cpu-cooler-coolermaster-hyper-212-rgb-black-edition-s1700",
         "nombre":  "Cooler Master Hyper 212 RGB Black Edition S1700",
         "categoria":  "Coolers",
@@ -3871,70 +3492,6 @@
                           "MAM-D6PN-120PA-R1"
                       ]
                   ]
-    },
-    {
-        "id":  "memoria-sodimm-4gb-ddr3-1600-hiksemi-hiker",
-        "nombre":  "MEMORIA SODIMM 4GB DDR3 1600 HIKSEMI HIKER",
-        "categoria":  "Memorias RAM",
-        "sub":  "DDR3",
-        "precio":  26703,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/hiksemi-hiker-sodimm.webp",
-        "caja":  "img/productos/cajas/memoria-sodimm-4gb-ddr3-1600-hiksemi-hiker.webp"
-    },
-    {
-        "id":  "memoria-4gb-ddr3-1600-hikvision-hiksemi",
-        "nombre":  "MEMORIA 4GB DDR3 1600 HIKVISION / HIKSEMI",
-        "categoria":  "Memorias RAM",
-        "sub":  "DDR3",
-        "precio":  27485,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/hiksemi-hiker-udimm.webp",
-        "caja":  "img/productos/cajas/memoria-4gb-ddr3-1600-hikvision-hiksemi.webp"
-    },
-    {
-        "id":  "memoria-8gb-ddr3-1600-hiksemi-hikvision",
-        "nombre":  "MEMORIA 8GB DDR3 1600 HIKSEMI / HIKVISION",
-        "categoria":  "Memorias RAM",
-        "sub":  "DDR3",
-        "precio":  42861,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/hiksemi-hiker-udimm.webp",
-        "caja":  "img/productos/cajas/memoria-8gb-ddr3-1600-hiksemi-hikvision.webp"
-    },
-    {
-        "id":  "memoria-sodimm-8gb-ddr3-1600-hiksemi-hiker-hsc308s16z1",
-        "nombre":  "MEMORIA SODIMM 8GB DDR3 1600 HIKSEMI HIKER HSC308S16Z1",
-        "categoria":  "Memorias RAM",
-        "sub":  "DDR3",
-        "precio":  45805,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/hiksemi-hiker-sodimm.webp",
-        "caja":  "img/productos/cajas/memoria-sodimm-8gb-ddr3-1600-hiksemi-hiker-hsc308s16z1.webp"
-    },
-    {
-        "id":  "memoria-8gb-ddr4-3200-patriot-signature",
-        "nombre":  "MEMORIA 8GB DDR4 3200 PATRIOT SIGNATURE",
-        "categoria":  "Memorias RAM",
-        "sub":  "DDR4",
-        "precio":  78683,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/patriot-signature-ddr4.webp"
-    },
-    {
-        "id":  "memoria-8gb-ddr4-3200-wicgtyp",
-        "nombre":  "MEMORIA 8GB DDR4 3200 WICGTYP",
-        "categoria":  "Memorias RAM",
-        "sub":  "DDR4",
-        "precio":  123625,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  ""
     },
     {
         "id":  "memoria-sodimm-8gb-ddr4-3200-patriot-signature",
@@ -4357,46 +3914,6 @@
                   }
     },
     {
-        "id":  "memoria-8gb-ddr4-3200-hiksemi-armor-white-c-disipador",
-        "nombre":  "MEMORIA 8GB DDR4 3200 HIKSEMI ARMOR WHITE C/DISIPADOR",
-        "categoria":  "Memorias RAM",
-        "sub":  "DDR4",
-        "precio":  158930,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/hiksemi-armor-white-ddr4.webp"
-    },
-    {
-        "id":  "memoria-8gb-ddr4-3200-hiksemi-future-rgb",
-        "nombre":  "MEMORIA 8GB DDR4 3200 HIKSEMI FUTURE RGB",
-        "categoria":  "Memorias RAM",
-        "sub":  "DDR4",
-        "precio":  162265,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/hiksemi-future-rgb-ddr4.webp"
-    },
-    {
-        "id":  "memoria-8gb-ddr4-3200-adata-xpg-gammix-d35",
-        "nombre":  "MEMORIA 8GB DDR4 3200 ADATA XPG GAMMIX D35",
-        "categoria":  "Memorias RAM",
-        "sub":  "DDR4",
-        "precio":  163116,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/xpg-gammix-d35-ddr4.webp"
-    },
-    {
-        "id":  "memoria-sodimm-8gb-ddr4-3200-kingston-no-ecc-kcp432ss8-8",
-        "nombre":  "MEMORIA SODIMM 8GB DDR4 3200 KINGSTON NO-ECC KCP432SS8/8",
-        "categoria":  "Memorias RAM",
-        "sub":  "DDR4",
-        "precio":  165514,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/kingston-kcp432ss8-sodimm-ddr4.webp"
-    },
-    {
         "id":  "memoria-8gb-ddr4-3200-adata-xpg-spectrix-d35g-rgb",
         "nombre":  "ADATA XPG Spectrix D35G RGB 8GB DDR4 3200MHz",
         "categoria":  "Memorias RAM",
@@ -4568,26 +4085,6 @@
                   }
     },
     {
-        "id":  "memoria-8gb-ddr4-3200-kingston-fury-beast-rgb",
-        "nombre":  "MEMORIA 8GB DDR4 3200 KINGSTON FURY BEAST RGB",
-        "categoria":  "Memorias RAM",
-        "sub":  "DDR4",
-        "precio":  195040,
-        "destacado":  true,
-        "stock":  "consultar",
-        "imagen":  "img/productos/kingston-fury-beast-rgb-ddr4.webp"
-    },
-    {
-        "id":  "memoria-sodimm-8gb-ddr4-3200-crucial",
-        "nombre":  "MEMORIA SODIMM 8GB DDR4 3200 CRUCIAL",
-        "categoria":  "Memorias RAM",
-        "sub":  "DDR4",
-        "precio":  201250,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/crucial-ddr4-sodimm.webp"
-    },
-    {
         "id":  "memoria-8gb-ddr4-3200-kingston-fury-beast",
         "nombre":  "Kingston Fury Beast 8GB DDR4 3200MHz",
         "categoria":  "Memorias RAM",
@@ -4640,26 +4137,6 @@
                       "mhz":  3200,
                       "sodimm":  false
                   }
-    },
-    {
-        "id":  "memoria-8gb-ddr4-3600-kingston-fury-beast-rgb",
-        "nombre":  "MEMORIA 8GB DDR4 3600 KINGSTON FURY BEAST RGB",
-        "categoria":  "Memorias RAM",
-        "sub":  "DDR4",
-        "precio":  219016,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/kingston-fury-beast-rgb-ddr4.webp"
-    },
-    {
-        "id":  "memoria-16gb-ddr4-3200-c-disipador-termico-starmemory",
-        "nombre":  "MEMORIA 16GB DDR4 3200 C/DISIPADOR TERMICO STARMEMORY",
-        "categoria":  "Memorias RAM",
-        "sub":  "DDR4",
-        "precio":  224008,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  ""
     },
     {
         "id":  "memoria-sodimm-16gb-ddr4-3200-hiksemi-hiker",
@@ -4761,16 +4238,6 @@
                       "mhz":  3200,
                       "sodimm":  false
                   }
-    },
-    {
-        "id":  "memoria-16gb-ddr4-3200-lexar",
-        "nombre":  "MEMORIA 16GB DDR4 3200 LEXAR",
-        "categoria":  "Memorias RAM",
-        "sub":  "DDR4",
-        "precio":  253529,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/lexar-ddr4-3200-udimm.webp"
     },
     {
         "id":  "memoria-16gb-ddr4-3200-kingston-value-ram-kvr",
@@ -4923,16 +4390,6 @@
                   }
     },
     {
-        "id":  "hd-ssd-120gb-memox-sata-iii-2-5",
-        "nombre":  "HD SSD 120GB MEMOX SATA III 2.5\"",
-        "categoria":  "Almacenamientos",
-        "sub":  "SSD",
-        "precio":  52647,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  ""
-    },
-    {
         "id":  "hd-ssd-120gb-hiksemi-wave-sata-iii-2-5",
         "nombre":  "SSD Hiksemi Wave 120GB SATA III 2.5\"",
         "categoria":  "Almacenamientos",
@@ -5013,16 +4470,6 @@
                       "interfaz":  "M.2 NVMe",
                       "gb":  128
                   }
-    },
-    {
-        "id":  "hd-ssd-240gb-raptor-legacy-sata-iii-2-5",
-        "nombre":  "HD SSD 240GB RAPTOR LEGACY SATA III 2.5\"",
-        "categoria":  "Almacenamientos",
-        "sub":  "SSD",
-        "precio":  72103,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/raptor-legacy-sata.webp"
     },
     {
         "id":  "hd-ssd-256gb-lexar-nq100-sata-iii-2-5",
@@ -5229,16 +4676,6 @@
                   }
     },
     {
-        "id":  "hd-ssd-256gb-memox-m-2-nvme-gen3",
-        "nombre":  "HD SSD 256GB MEMOX M.2 NVME GEN3",
-        "categoria":  "Almacenamientos",
-        "sub":  "SSD",
-        "precio":  104945,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  ""
-    },
-    {
         "id":  "hd-ssd-256gb-patriot-p300-m-2-nvme-gen3",
         "nombre":  "SSD Patriot P300 256GB M.2 NVMe PCIe Gen3 2100MB/s",
         "categoria":  "Almacenamientos",
@@ -5284,16 +4721,6 @@
                   }
     },
     {
-        "id":  "hd-ssd-512gb-lexar-nq100-sata-iii-2-5",
-        "nombre":  "HD SSD 512GB LEXAR NQ100 SATA III 2.5\"",
-        "categoria":  "Almacenamientos",
-        "sub":  "SSD",
-        "precio":  135482,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/lexar-nq100.webp"
-    },
-    {
         "id":  "hd-ssd-480gb-patriot-burst-elite-sata-iii-2-5",
         "nombre":  "SSD Patriot Burst Elite 480GB SATA III 2.5\"",
         "categoria":  "Almacenamientos",
@@ -5332,16 +4759,6 @@
                       "interfaz":  "SATA",
                       "gb":  480
                   }
-    },
-    {
-        "id":  "hd-ssd-480gb-memox-sata-iii-2-5",
-        "nombre":  "HD SSD 480GB MEMOX SATA III 2.5\"",
-        "categoria":  "Almacenamientos",
-        "sub":  "SSD",
-        "precio":  152053,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  ""
     },
     {
         "id":  "hd-ssd-480gb-msi-spatium-s270-sata-iii-2-5",
@@ -6340,19 +5757,6 @@
                           "30 W aprox."
                       ]
                   ]
-    },
-    {
-        "id":  "placa-de-video-geforce-gt-210-1gb-ddr3-vga-hdmi-dvi-bulk",
-        "nombre":  "PLACA DE VIDEO GEFORCE GT 210 1GB DDR3 VGA HDMI DVI BULK",
-        "categoria":  "Placas de video",
-        "sub":  "",
-        "precio":  90850,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "",
-        "attrs":  {
-                      "tdp":  31
-                  }
     },
     {
         "id":  "placa-de-video-geforce-gt-710-2gb-msi-lp",
@@ -7655,11 +7059,12 @@
         "nombre":  "FUENTE 550W MSI MAG A550BN 80 PLUS BRONZE",
         "categoria":  "Fuentes de poder",
         "sub":  "",
-        "precio":  82581,
+        "precio":  88680,
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "img/productos/msi-mag-a550bn.webp",
-        "caja":  "img/productos/cajas/fuente-550w-msi-mag-a550bn-80-plus-bronze.webp"
+        "caja":  "img/productos/cajas/fuente-550w-msi-mag-a550bn-80-plus-bronze.webp",
+        "origen":  "FUENTE 550W MSI MAG A550BN 80 PLUS BRONZE"
     },
     {
         "id":  "fuente-500w-thermaltake-smart-80-plus-white",
@@ -7969,11 +7374,12 @@
         "nombre":  "FUENTE 650W GIGABYTE GP-P650SS ICE 80 PLUS SILVER BLANCA",
         "categoria":  "Fuentes de poder",
         "sub":  "",
-        "precio":  101901,
+        "precio":  107486,
         "destacado":  false,
         "stock":  "consultar",
         "imagen":  "img/productos/gigabyte-p650ss-ice.webp",
-        "caja":  "img/productos/cajas/fuente-650w-gigabyte-gp-p650ss-ice-80-plus-silver-blanca.webp"
+        "caja":  "img/productos/cajas/fuente-650w-gigabyte-gp-p650ss-ice-80-plus-silver-blanca.webp",
+        "origen":  "FUENTE 650W GIGABYTE GP-P650SS ICE 80 PLUS SILVER BLANCA"
     },
     {
         "id":  "fuente-750w-evolabs-supreme-series-80-plus-silver",
@@ -8277,17 +7683,6 @@
                       "modular":  "Semi",
                       "formato":  "ATX"
                   }
-    },
-    {
-        "id":  "fuente-650w-adata-xpg-pylon-80-plus-bronze",
-        "nombre":  "FUENTE 650W ADATA XPG PYLON 80 PLUS BRONZE",
-        "categoria":  "Fuentes de poder",
-        "sub":  "",
-        "precio":  116265,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/xpg-pylon.webp",
-        "caja":  "img/productos/cajas/fuente-650w-adata-xpg-pylon-80-plus-bronze.webp"
     },
     {
         "id":  "gabinete-nova-cm-04q1-micro-atx-p-mother-a520m-b550m-h510m-a620m",
@@ -8676,20 +8071,6 @@
                           "ATX"
                       ]
                   ]
-    },
-    {
-        "id":  "gabinete-teros-te-1036s-mid-tower-c-fuente-250w",
-        "nombre":  "GABINETE TEROS TE-1036S MID TOWER C/FUENTE 250W",
-        "categoria":  "Gabinetes",
-        "sub":  "",
-        "precio":  50863,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "img/productos/gabinete-teros-te-1036s-mid-tower-c-fuente-250w.webp",
-        "attrs":  {
-                      "fuente":  250,
-                      "formato":  "ATX"
-                  }
     },
     {
         "id":  "gabinete-kit-con-teclado-mouse-y-parlante",
@@ -9258,22 +8639,6 @@
                           "2 ARGB"
                       ]
                   ]
-    },
-    {
-        "id":  "gabinete-arkham-vorus-tg-4fan-argb",
-        "nombre":  "GABINETE ARKHAM VORUS TG 4FAN ARGB",
-        "categoria":  "Gabinetes",
-        "sub":  "",
-        "precio":  66757,
-        "destacado":  false,
-        "stock":  "consultar",
-        "imagen":  "",
-        "attrs":  {
-                      "fuente":  0,
-                      "formato":  "ATX",
-                      "maxGpu":  295,
-                      "maxCooler":  158
-                  }
     },
     {
         "id":  "gabinete-performance-slim-kit-5836-fuente-600w-teclado-mouse",
@@ -54127,7 +53492,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-logitech-m90-dark-midnight-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -54205,7 +53570,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-qbox-gamer-m993-rgb.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -54338,7 +53703,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-trust-gxt-930-jacx-rgb.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -54639,7 +54004,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-genius-nx-7015-inalambrico-negro.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
                   }
@@ -54901,7 +54266,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-gamer-msi-forge-gm300-rgb.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -55018,7 +54383,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-aula-s12-pro-rgb-blanco.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -55053,7 +54418,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-aula-s12-pro-rgb-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -55088,7 +54453,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-logitech-m196-bluetooth-grafito.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
                   }
@@ -55123,7 +54488,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-logitech-m196-bluetooth-blanco-crudo.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
                   }
@@ -55201,7 +54566,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-logitech-m280-inalambrico-azul.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
                   }
@@ -55302,7 +54667,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-trust-gxt-900-qudos-rgb.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -56139,7 +55504,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-gamer-evga-x17-cableado.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -56221,7 +55586,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-adata-xpg-primer-rgb.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -56518,7 +55883,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-logitech-m650-bluetooth-grafito.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
                   }
@@ -56561,7 +55926,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-gamer-zowie-za11-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -56596,7 +55961,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-gamer-logitech-g305-lightspeed-lila.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
                   }
@@ -58035,7 +57400,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-logitech-mx-anywhere-3s-negro.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
                   }
@@ -59376,7 +58741,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-raptor-fireclaw-m1-membrana-rainbow-7-colores.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -59427,7 +58792,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-aureox-endurance-gk200.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -59478,7 +58843,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kit-teclado-y-mouse-genius-km-200-usb-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -59576,7 +58941,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-aureox-battletag-gk400.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -59682,7 +59047,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-logitech-k250-inalambrico-blanco.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
                   }
@@ -59737,7 +59102,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-logitech-k250-inalambrico-rosa.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
                   }
@@ -59788,7 +59153,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kit-teclado-y-mouse-genius-luxemate-q8100-wireless-negro.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
                   }
@@ -59894,7 +59259,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-logitech-k250-inalambrico-grafito.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
                   }
@@ -59949,7 +59314,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m68.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -60004,7 +59369,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kit-teclado-y-mouse-msi-forge-gk100-rgb.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -60051,7 +59416,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-y-mouse-logitech-mk235-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
                   }
@@ -60106,7 +59471,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m87.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -60161,7 +59526,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m68-blanco.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -60208,7 +59573,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-y-mouse-logitech-mk270-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
                   }
@@ -60263,7 +59628,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m104.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -60306,7 +59671,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-y-mouse-logitech-mk250-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
                   }
@@ -60361,7 +59726,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-razer-blackwidow-v4-x-switch-verde.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -60416,7 +59781,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m104-blanco.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -60526,7 +59891,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-mecanico-raptor-fireclaw-m68-wireless.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -60577,7 +59942,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-horus-k622-tkl-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -60628,7 +59993,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-k630-dragonborn-negro-switch-rojo.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -60679,7 +60044,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-horus-mini-pro-k632-negro-switch-rojo.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -60730,7 +60095,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-k630-dragonborn-negro-switch-marron.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -60773,7 +60138,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-logitech-k400-plus-touch-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
                   }
@@ -60922,7 +60287,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-redragon-shiva-k512-rgb-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -60969,7 +60334,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-y-mouse-logitech-mk295-inalambrico-silent.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
                   }
@@ -61020,7 +60385,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-aureox-unrivailed-gk600.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -61067,7 +60432,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-y-mouse-logitech-mk345-inalambrico-comfort.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
                   }
@@ -61110,7 +60475,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-aula-s100-pro-blanco-azul-violeta.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico"
                   }
@@ -61161,7 +60526,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kit-teclado-y-mouse-thermaltake-ttesports-challenger-elite-rgb.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -61263,7 +60628,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-k630w-dragonborn-blanco-switch-marron.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -61361,7 +60726,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-aula-f75-wired-negro-naranja-azul-switch-rosa.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -61455,7 +60820,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-logitech-pebble-keys-2-k380s-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
                   }
@@ -61557,7 +60922,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-kumara-2-k552w-kr-blanco-switch-rojo.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -61608,7 +60973,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-aula-f2058-negro-switch-blue.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -61706,7 +61071,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-fizz-k617-rgb-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -61757,7 +61122,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-fizz-pro-k616-blanco-y-rosa.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -61906,7 +61271,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-corsair-k55-core-tkl-rgb.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -61957,7 +61322,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-aula-f75-max-negro-degrade-switch-reaper.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -62059,7 +61424,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-fizz-pro-k616-gris-y-blanco.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -62110,7 +61475,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-trust-gxt-834-callaz-tkl.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -62204,7 +61569,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-fizz-k617-rgb-gris-y-blanco.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -62302,7 +61667,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-ducky-one-2-pro-mini-negro-switch-plateado.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -62349,7 +61714,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-horus-mini-k632-negro-switch-rojo.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -62396,7 +61761,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-horus-mini-k632-blanco-switch-rojo.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -62447,7 +61812,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-ucal-pro-k673-crema-violeta-y-verde.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -62498,7 +61863,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-hyperx-alloy-origins-core-tkl.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -62545,7 +61910,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-hyperx-alloy-core-rgb.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -62596,7 +61961,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-aula-f2088-air-azul-degrade-switch-marron.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
                   }
@@ -62647,7 +62012,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-aula-f2088-air-gris-switch-rojo.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
                   }
@@ -62694,7 +62059,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-y-mouse-logitech-mk470-slim-inalambrico-rosa.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
                   }
@@ -62737,7 +62102,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-logitech-signature-k650-inalambrico-negro.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
                   }
@@ -62784,7 +62149,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-y-mouse-logitech-mk540-advanced-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
                   }
@@ -62831,7 +62196,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-y-mouse-logitech-mk470-slim-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
                   }
@@ -70454,7 +69819,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-redragon-lamia-2-rgb-h320.webp",
         "attrs":  {
 
                   }
@@ -70493,7 +69858,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-redragon-ire-pro-h848.webp",
         "attrs":  {
 
                   }
@@ -70536,7 +69901,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-redragon-vibecore-h610-blanco.webp",
         "attrs":  {
 
                   }
@@ -70579,7 +69944,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-redragon-vibecore-h610-negro.webp",
         "attrs":  {
 
                   }
@@ -70618,7 +69983,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-jbl-quantum-100p-console-playstation.webp",
         "attrs":  {
 
                   }
@@ -70657,7 +70022,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-redragon-h848-ire-pro-blanco-azul.webp",
         "attrs":  {
 
                   }
@@ -70696,7 +70061,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-redragon-h848-ire-pro-negro.webp",
         "attrs":  {
 
                   }
@@ -70743,7 +70108,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-corsair-hs35-v2-carbon.webp",
         "attrs":  {
 
                   }
@@ -70782,7 +70147,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-jbl-quantum-120-black.webp",
         "attrs":  {
 
                   }
@@ -70821,7 +70186,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-jbl-quantum-120-purple.webp",
         "attrs":  {
 
                   }
@@ -70864,7 +70229,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-aula-a600-blanco-inalambrico.webp",
         "attrs":  {
 
                   }
@@ -70907,7 +70272,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-jbl-quantum-100m2-negro.webp",
         "attrs":  {
 
                   }
@@ -70946,7 +70311,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-redragon-zeus-lite-h510-lit.webp",
         "attrs":  {
 
                   }
@@ -70985,7 +70350,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-redragon-cybill-h312.webp",
         "attrs":  {
 
                   }
@@ -71032,7 +70397,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-redragon-zeus-x-h510p-rgb-rosa.webp",
         "attrs":  {
 
                   }
@@ -71079,7 +70444,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-razer-blackshark-v2-x.webp",
         "attrs":  {
 
                   }
@@ -71165,7 +70530,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-razer-blackshark-v2-x-white.webp",
         "attrs":  {
 
                   }
@@ -71208,7 +70573,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-hyperx-cloud-stinger-2.webp",
         "attrs":  {
 
                   }
@@ -71247,7 +70612,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-aula-a700-negro-rojo-inalambrico.webp",
         "attrs":  {
 
                   }
@@ -71329,7 +70694,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-aula-a700-negro-gris-inalambrico.webp",
         "attrs":  {
 
                   }
@@ -71368,7 +70733,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-jbl-quantum-250-white.webp",
         "attrs":  {
 
                   }
@@ -71454,7 +70819,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-redragon-zeus-x-h510-rgb.webp",
         "attrs":  {
 
                   }
@@ -71501,7 +70866,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-redragon-zeus-x-h510-blanco-rgb.webp",
         "attrs":  {
 
                   }
@@ -71548,7 +70913,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-razer-blackshark-v2-x-licensed-for-ps5-white.webp",
         "attrs":  {
 
                   }
@@ -71946,7 +71311,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-cooler-master-ch351-carbon.webp",
         "attrs":  {
 
                   }
@@ -71989,7 +71354,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-corsair-hs65-surround-7-1-white.webp",
         "attrs":  {
 
                   }
@@ -72028,7 +71393,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-cooler-master-ch351-macaron.webp",
         "attrs":  {
 
                   }
@@ -72157,7 +71522,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-asus-tuf-h1-gen-ii-a303-hatsune-miku.webp",
         "attrs":  {
 
                   }
@@ -72200,7 +71565,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-jbl-quantum-360p-blanco.webp",
         "attrs":  {
 
                   }
@@ -72317,7 +71682,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-jbl-quantum-520-purple.webp",
         "attrs":  {
 
                   }
@@ -72360,7 +71725,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-jbl-quantum-520-black.webp",
         "attrs":  {
 
                   }
@@ -72450,7 +71815,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-corsair-hs80-rgb-wireless-white.webp",
         "attrs":  {
 
                   }
@@ -72493,7 +71858,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-jbl-quantum-650-blanco.webp",
         "attrs":  {
 
                   }
@@ -72614,7 +71979,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-corsair-void-wireless-v2-white.webp",
         "attrs":  {
 
                   }
@@ -72653,7 +72018,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-asus-rog-pelta-a501.webp",
         "attrs":  {
 
                   }
@@ -72735,7 +72100,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-razer-hammerhead-hyperspeed-playstation-inalambrico.webp",
         "attrs":  {
 
                   }
@@ -72778,7 +72143,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-corsair-void-wireless-v2-carbon.webp",
         "attrs":  {
 
                   }
@@ -72907,7 +72272,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-razer-barracuda-x-chroma-negro-inalambrico.webp",
         "attrs":  {
 
                   }
@@ -72950,7 +72315,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-corsair-hs80-rgb-wireless-carbon.webp",
         "attrs":  {
 
                   }
@@ -72993,7 +72358,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-razer-barracuda-x-chroma-white-inalambrico.webp",
         "attrs":  {
 
                   }
@@ -73212,7 +72577,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-razer-blackshark-v3-black.webp",
         "attrs":  {
 
                   }
@@ -73259,7 +72624,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-razer-blackshark-v2-pro-playstation-blanco.webp",
         "attrs":  {
 
                   }
@@ -73431,7 +72796,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-razer-blackshark-v2-pro-negro-inalambrico.webp",
         "attrs":  {
 
                   }
@@ -73474,7 +72839,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-razer-blackshark-v2-pro-white.webp",
         "attrs":  {
 
                   }
@@ -73693,7 +73058,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-razer-blackshark-v3-pro-white.webp",
         "attrs":  {
 
                   }
@@ -73779,7 +73144,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-gamer-razer-blackshark-v3-pro-cs2-edition.webp",
         "attrs":  {
 
                   }
@@ -73822,7 +73187,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-jbl-quantum-950-wireless-triple-conexion.webp",
         "attrs":  {
 
                   }
@@ -73955,7 +73320,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-corsair-virtuoso-max-wireless-carbon.webp",
         "attrs":  {
 
                   }
@@ -74037,7 +73402,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/microfono-trust-mantis-gxt232.webp",
         "attrs":  {
 
                   }
@@ -74076,7 +73441,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/microfono-redragon-gm300-blazar-streaming.webp",
         "attrs":  {
 
                   }
@@ -74115,7 +73480,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/microfono-razer-seiren-v3-mini-rosa.webp",
         "attrs":  {
 
                   }
@@ -74150,7 +73515,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/microfono-trust-emita-plus-gxt252.webp",
         "attrs":  {
 
                   }
@@ -74232,7 +73597,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/microfono-trust-exxo-streaming-gxt256.webp",
         "attrs":  {
 
                   }
@@ -74271,7 +73636,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/microfono-razer-seiren-v3-chroma-negro.webp",
         "attrs":  {
 
                   }
@@ -74314,7 +73679,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/microfono-hyperx-quadcast-2-negro.webp",
         "attrs":  {
 
                   }
@@ -74353,7 +73718,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/microfono-razer-seiren-v3-chroma-blanco.webp",
         "attrs":  {
 
                   }
@@ -74435,7 +73800,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/microfono-hyperx-quadcast-2-s-negro.webp",
         "attrs":  {
 
                   }
@@ -74474,7 +73839,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/microfono-asus-rog-carnyx-c501.webp",
         "attrs":  {
 
                   }
@@ -74513,7 +73878,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/microfono-asus-rog-carnyx-c501-blanco.webp",
         "attrs":  {
 
                   }
@@ -74552,7 +73917,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/microfono-elgato-wave-3-usb-c.webp",
         "attrs":  {
 
                   }
@@ -74591,7 +73956,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mousepad-raptor-ultra-glide-antideslizante-s-260x210x3mm.webp",
         "attrs":  {
 
                   }
@@ -74661,7 +74026,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/pad-mouse-redragon-p030-flick-mediano.webp",
         "attrs":  {
 
                   }
@@ -74696,7 +74061,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/pad-mouse-redragon-p029-flick-small.webp",
         "attrs":  {
 
                   }
@@ -74735,7 +74100,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mousepad-raptor-ultra-glide-antideslizante-m-450x400x3mm.webp",
         "attrs":  {
 
                   }
@@ -74770,7 +74135,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/pad-mouse-redragon-p031-flick-largo.webp",
         "attrs":  {
 
                   }
@@ -74809,7 +74174,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mousepad-raptor-ultra-glide-antideslizante-l-700x300x3mm.webp",
         "attrs":  {
 
                   }
@@ -74844,7 +74209,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/pad-mouse-redragon-p032-flick-extra-largo.webp",
         "attrs":  {
 
                   }
@@ -74926,7 +74291,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mousepad-raptor-ultra-glide-rgb-antideslizante-xl-900x400x3mm.webp",
         "attrs":  {
 
                   }
@@ -75004,7 +74369,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mousepad-trust-gxt-756-xl.webp",
         "attrs":  {
 
                   }
@@ -75117,7 +74482,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mousepad-razer-pro-glide-soft-medium.webp",
         "attrs":  {
 
                   }
@@ -75156,7 +74521,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/pad-mouse-redragon-p006-kunlun-large.webp",
         "attrs":  {
 
                   }
@@ -75191,7 +74556,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mousepad-trust-bigfoot-xl.webp",
         "attrs":  {
 
                   }
@@ -75265,7 +74630,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mousepad-razer-gigantus-v2-large.webp",
         "attrs":  {
 
                   }
@@ -75382,7 +74747,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mousepad-logitech-300x700mm-deskpad-xl-rose.webp",
         "attrs":  {
 
                   }
@@ -75456,7 +74821,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mousepad-razer-gigantus-v2-medium-hello-kitty-edition.webp",
         "attrs":  {
 
                   }
@@ -75526,7 +74891,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mousepad-razer-pro-glide-xxl-productivity.webp",
         "attrs":  {
 
                   }
@@ -75600,7 +74965,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mousepad-razer-gigantus-v2-3xl.webp",
         "attrs":  {
 
                   }
