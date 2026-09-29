@@ -1,0 +1,57 @@
+// Reglas de seguridad de Firestore para Titanware.
+// Se copian enteras en: Consola de Firebase → Firestore Database → Reglas → Publicar.
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() { return request.auth != null; }
+    function myEmail() { return request.auth.token.email.lower(); }
+    // Administrador = su mail está en la colección "admins" y está verificado
+    function isAdmin() {
+      return signedIn()
+        && request.auth.token.email_verified == true
+        && exists(/databases/$(database)/documents/admins/$(myEmail()));
+    }
+
+    // Administradores: los ve y los cambia solo otro administrador (nadie se puede sacar a sí mismo)
+    match /admins/{email} {
+      allow read: if isAdmin() || (signedIn() && myEmail() == email);
+      allow create: if isAdmin() && email == email.lower()
+        && request.resource.data.keys().hasOnly(['agregadoPor', 'creado']);
+      allow delete: if isAdmin() && email != myEmail();
+    }
+
+    // Perfil de cada cliente: lo edita solo el dueño; los administradores lo pueden ver
+    match /usuarios/{uid} {
+      allow read: if signedIn() && (request.auth.uid == uid || isAdmin());
+      allow create, update: if signedIn() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['nombre', 'email', 'telefono', 'ofertas', 'creado', 'actualizado'])
+        && request.resource.data.email == request.auth.token.email
+        && request.resource.data.nombre is string && request.resource.data.nombre.size() <= 80
+        && request.resource.data.telefono is string && request.resource.data.telefono.size() <= 30
+        && request.resource.data.ofertas is bool;
+    }
+
+    // Pedidos: el cliente crea los suyos y los ve; el administrador ve todos y cambia el estado
+    match /pedidos/{id} {
+      allow create: if signedIn()
+        && request.resource.data.keys().hasOnly(['uid', 'codigo', 'nombre', 'email', 'telefono', 'items', 'total', 'nota', 'origen', 'estado', 'creado'])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.estado == 'nuevo'
+        && request.resource.data.creado == request.time
+        && request.resource.data.items is list && request.resource.data.items.size() <= 100
+        && request.resource.data.total is number
+        && request.resource.data.nota is string && request.resource.data.nota.size() <= 1000;
+      allow read: if signedIn() && (resource.data.uid == request.auth.uid || isAdmin());
+      allow update: if isAdmin()
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['estado', 'actualizado'])
+        && request.resource.data.estado in ['nuevo', 'respondido', 'vendido', 'cancelado'];
+      allow delete: if isAdmin();
+    }
+
+    // Configuración del panel (por ejemplo, la conexión con GitHub para publicar)
+    match /ajustes/{clave} {
+      allow read, write: if isAdmin();
+    }
+  }
+}

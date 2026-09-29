@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20260928">
+<link rel="stylesheet" href="assets/css/site.css?v=20260929">
 </head>
 <body>
 
@@ -44,6 +44,13 @@
         <input id="q" type="search" placeholder="Buscá procesadores, placas de video, marcas…" autocomplete="off" aria-label="Buscar productos">
       </form>
       <div class="hactions">
+        <div class="acct" id="acct" hidden>
+          <button class="acct-btn" id="acctBtn" type="button" aria-haspopup="menu" aria-expanded="false" aria-label="Ingresar o crear cuenta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+            <span id="acctName">Ingresar</span>
+          </button>
+          <div class="acct-menu" id="acctMenu" role="menu" hidden></div>
+        </div>
         <button class="cart-btn" id="cartBtn" type="button" aria-label="Ver carrito">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a1 1 0 0 0 1 .8h9.6a1 1 0 0 0 1-.8L21 7H6"/></svg>
           <span class="cart-count" id="cartCount" hidden>0</span>
@@ -232,6 +239,17 @@
     </div>
   </section>
 
+  <!-- ================= MI CUENTA ================= -->
+  <section id="v-cuenta" data-view="cuenta" hidden>
+    <div class="wrap">
+      <div class="page-head">
+        <div class="crumbs"><a href="#/">Inicio</a> / Mi cuenta</div>
+        <h1>Mi cuenta</h1>
+      </div>
+      <div id="cuenta"></div>
+    </div>
+  </section>
+
   <!-- ================= INFO (todas las páginas) ================= -->
   <section class="info" id="servicios">
     <div class="wrap">
@@ -291,8 +309,11 @@
 <dialog id="modal" aria-labelledby="mTitle"></dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<script src="assets/js/config.js?v=20260928"></script>
-<script src="assets/js/core.js?v=20260928"></script>
-<script src="assets/js/app.js?v=20260928"></script>
+<script src="assets/js/config.js?v=20260929"></script>
+<script src="assets/js/firebase-config.js?v=20260929"></script>
+<script src="assets/js/core.js?v=20260929"></script>
+<script src="assets/js/auth.js?v=20260929"></script>
+<script src="assets/js/app.js?v=20260929"></script>
+<script src="assets/js/cuenta.js?v=20260929"></script>
 </body>
 </html>

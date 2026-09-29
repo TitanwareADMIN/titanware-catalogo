@@ -20,7 +20,11 @@
     tab: "productos",
     f: { q: "", cat: "" },
     imp: null,
+    // Cuentas (Firebase): pedidos, clientes y administradores
+    fb: { orders: null, users: null, admins: null, err: "", at: 0, f: { q: "", estado: "" }, uq: "" },
   };
+  const A = TW.auth;
+  const fbOn = () => !!(A && A.enabled && A.isAdmin);
   try { Object.assign(S.conn, JSON.parse(localStorage.getItem(AUTH_KEY)) || {}); } catch {}
 
   /* ---------- Utilidades ---------- */
@@ -73,6 +77,7 @@
   function disconnect() {
     localStorage.removeItem(AUTH_KEY);
     S.conn.token = ""; S.online = false;
+    if (fbOn()) A.admin.delSetting("github").catch(() => {});
     render();
   }
 
@@ -155,7 +160,9 @@
   function render() {
     const app = $("#app");
     if (!S.loaded) { app.innerHTML = connectView(); return; }
-    const tabs = [["productos", "Productos", S.cat.length], ["pcs", "PCs armadas", S.pcs.length], ["importar", "Actualizar precios", ""], ["ajustes", "Ajustes", ""]];
+    const tabs = [["productos", "Productos", S.cat.length], ["pcs", "PCs armadas", S.pcs.length],
+      ...(fbOn() ? [["pedidos", "Pedidos", S.fb.orders ? S.fb.orders.filter((o) => o.estado === "nuevo").length || "" : ""], ["clientes", "Clientes", S.fb.users ? S.fb.users.length : ""]] : []),
+      ["importar", "Actualizar precios", ""], ["ajustes", "Ajustes", ""]];
     app.innerHTML = `
       <div class="adm-tabs" role="tablist">${tabs.map(([k, l, n]) => `<button type="button" role="tab" data-tab="${k}" aria-selected="${S.tab === k}">${l}${n !== "" ? `<b>${n}</b>` : ""}</button>`).join("")}</div>
       <div id="tabBody"></div>`;
@@ -168,7 +175,11 @@
     if (S.tab === "pcs") body.innerHTML = pcsView();
     if (S.tab === "importar") body.innerHTML = importView();
     if (S.tab === "ajustes") body.innerHTML = settingsView();
+    if (S.tab === "pedidos") body.innerHTML = ordersView();
+    if (S.tab === "clientes") body.innerHTML = usersView();
     if (S.tab === "productos") renderProductRows();
+    if (S.tab === "pedidos") renderOrderRows();
+    if (S.tab === "clientes") renderUserRows();
   }
 
   /* ---------- Conexión ---------- */
@@ -195,7 +206,7 @@
           <div class="full row-actions" style="margin:0">
             <button class="btn" type="submit">Conectar y cargar productos</button>
             <button class="btn ghost" type="button" data-offline>Entrar sin conexión</button>
-            <span class="hint">Sin conexión podés editar todo y descargar los archivos para subirlos a mano.</span>
+            <span class="hint">${fbOn() ? "Se hace una sola vez: queda guardado en la cuenta para todos los administradores. Sin conexión igual podés ver pedidos y clientes." : "Sin conexión podés editar todo y descargar los archivos para subirlos a mano."}</span>
           </div>
         </form>
       </div>`;
@@ -203,10 +214,11 @@
 
   function settingsView() {
     return `
-      <div class="panel-card" style="max-width:820px">
-        <h2>Conexión</h2>
-        ${S.online ? `<p>Conectado a <strong>${esc(S.conn.owner)}/${esc(S.conn.repo)}</strong> (rama ${esc(S.conn.branch)}). Los cambios se publican directo en la tienda.</p>
-          <div class="row-actions"><button class="btn ghost" type="button" data-reload>Recargar desde GitHub</button><button class="btn ghost" type="button" data-disconnect>Desconectar este navegador</button></div>`
+      ${fbOn() ? adminsCard() : ""}
+      <div class="panel-card" style="max-width:820px${fbOn() ? ";margin-top:1rem" : ""}">
+        <h2>Conexión con GitHub</h2>
+        ${S.online ? `<p>Conectado a <strong>${esc(S.conn.owner)}/${esc(S.conn.repo)}</strong> (rama ${esc(S.conn.branch)}). Los cambios se publican directo en la tienda.${fbOn() ? " La conexión queda guardada en la cuenta: los demás administradores no tienen que volver a cargar el token." : ""}</p>
+          <div class="row-actions"><button class="btn ghost" type="button" data-reload>Recargar desde GitHub</button><button class="btn ghost" type="button" data-disconnect>${fbOn() ? "Desconectar GitHub" : "Desconectar este navegador"}</button></div>`
         : `<p>Estás trabajando sin conexión: podés editar y descargar los archivos, pero no publicar.</p><div class="row-actions"><button class="btn" type="button" data-goconnect>Conectar con GitHub</button></div>`}
       </div>
       <div class="panel-card" style="max-width:820px;margin-top:1rem">
@@ -670,7 +682,12 @@
     if (e.target.id === "connForm") {
       const fd = new FormData(e.target);
       const btn = e.target.querySelector("[type=submit]"); btn.disabled = true; btn.textContent = "Conectando…";
-      try { await connect(Object.fromEntries(fd)); toast("Conectado. Ya podés editar y publicar."); }
+      try {
+        await connect(Object.fromEntries(fd));
+        // Queda guardado en la cuenta para que cualquier administrador publique desde cualquier dispositivo
+        if (fbOn()) { const { owner, repo, branch, token } = S.conn; A.admin.setSetting("github", { owner, repo, branch, token }).catch((err) => console.warn(err)); }
+        toast("Conectado. Ya podés editar y publicar.");
+      }
       catch (err) { toast(err.status === 401 ? "El token no es válido o venció." : err.status === 404 ? "No encontramos el repositorio (revisá usuario, nombre y que el token tenga acceso)." : err.message, false); btn.disabled = false; btn.textContent = "Conectar y cargar productos"; }
     }
     if (e.target.id === "prodForm") saveProduct();
@@ -727,7 +744,7 @@
       try { await loadData(); toast("Datos recargados desde GitHub"); } catch (err) { toast(err.message, false); }
       return;
     }
-    if ((x = el("[data-disconnect]"))) { if (confirm("¿Desconectar? Se borra el token de este navegador.")) { disconnect(); S.loaded = false; render(); } return; }
+    if ((x = el("[data-disconnect]"))) { if (confirm(fbOn() ? "¿Desconectar GitHub? Se borra el token del panel y hay que volver a cargarlo para publicar." : "¿Desconectar? Se borra el token de este navegador.")) { disconnect(); S.loaded = false; render(); } return; }
     if ((x = el("[data-goconnect]"))) { S.loaded = false; render(); return; }
   });
 
@@ -809,9 +826,324 @@
     }
   });
 
+  /* =========================================================
+     CUENTAS: ingreso al panel, pedidos, clientes y administradores
+     ========================================================= */
+  const ESTADOS = [["nuevo", "Nuevo"], ["respondido", "Respondido"], ["vendido", "Vendido"], ["cancelado", "Cancelado"]];
+  const fdate = (d) => d.toLocaleDateString("es-AR", { day: "2-digit", month: "2-digit", year: "2-digit" });
+  const ftime = (d) => d.toLocaleTimeString("es-AR", { hour: "2-digit", minute: "2-digit" });
+  const G_ICON = '<svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>';
+
+  // Link de WhatsApp al teléfono que cargó el cliente (formato argentino)
+  function waTo(tel, text) {
+    let d = String(tel || "").replace(/\D/g, "");
+    if (!d) return "";
+    if (!d.startsWith("54")) { d = d.replace(/^0/, ""); if (d.length === 10) d = "549" + d; }
+    return `https://wa.me/${d}?text=${encodeURIComponent(text)}`;
+  }
+
+  /* ---------- Pantalla de ingreso ---------- */
+  function gateView() {
+    const u = A.user;
+    const card = (title, body, actions = "") => `
+      <div class="panel-card gate">
+        <img class="gate-logo" src="img/logo/emblema.png" alt="" width="65" height="34">
+        <h2>${title}</h2>${body}
+        ${actions ? `<div class="gate-actions">${actions}</div>` : ""}
+      </div>`;
+    if (A.failed) return card("No se pudo conectar", `<p>No pudimos conectar con el servidor de cuentas. Revisá tu internet y recargá la página.</p>`, `<button class="btn" type="button" onclick="location.reload()">Recargar</button>`);
+    if (!u) return card("Panel de administración", `<p>Ingresá con tu cuenta de administrador.</p>
+      <button class="gbtn" type="button" data-glogin>${G_ICON} Continuar con Google</button>
+      <div class="auth-or"><span>o con tu mail</span></div>
+      <form id="admLogin" class="auth-form" novalidate>
+        <label class="o-fld">Mail<input name="email" type="email" autocomplete="email" required></label>
+        <label class="o-fld">Contraseña<input name="pass" type="password" autocomplete="current-password" required></label>
+        <p class="auth-err" role="alert" hidden></p>
+        <button class="btn block" type="submit">Ingresar</button>
+        <button class="linkish" type="button" data-aforgot>¿Olvidaste tu contraseña?</button>
+      </form>`);
+    if (A.adminPending) return card("Verificá tu mail", `<p>Te mandamos un link a <strong>${esc(u.email)}</strong>. Abrilo, y después tocá <em>Ya lo verifiqué</em>. Revisá también la carpeta de spam.</p>`,
+      `<button class="btn" type="button" data-averified>Ya lo verifiqué</button><button class="btn ghost" type="button" data-aresend>Reenviar mail</button><button class="btn ghost" type="button" data-alogout>Salir</button>`);
+    return card("No tenés acceso al panel", `<p>La cuenta <strong>${esc(u.email)}</strong> no es administradora. Pedile a un administrador que agregue tu mail en <em>Ajustes → Administradores</em>.</p>`,
+      `<a class="btn" href="index.html">Ir a la tienda</a><button class="btn ghost" type="button" data-alogout>Ingresar con otra cuenta</button>`);
+  }
+
+  function lockPanel(locked) {
+    document.body.classList.toggle("locked", locked);
+    const pill = $("#userPill"), out = $("#logoutBtn");
+    if (pill) { pill.hidden = locked || !A.user; pill.querySelector("span").textContent = A.user ? A.user.email : ""; }
+    if (out) out.hidden = locked || !A.user;
+  }
+
+  let started = false;
+  async function startPanel() {
+    if (started) return;
+    started = true;
+    lockPanel(false);
+    loadFb();
+    // La conexión con GitHub guardada en la cuenta (así se publica desde cualquier dispositivo)
+    if (!S.conn.token) {
+      try { const g = await A.admin.getSetting("github"); if (g && g.token) Object.assign(S.conn, { owner: g.owner || S.conn.owner, repo: g.repo || S.conn.repo, branch: g.branch || S.conn.branch, token: g.token }); } catch (e) { console.warn(e); }
+    }
+    if (S.conn.token) {
+      try { await connect({}); return; } catch (err) { toast(`No se pudo conectar con GitHub: ${err.message}`, false); }
+    }
+    render();
+  }
+
+  function onAuthChange() {
+    if (A.isAdmin) { startPanel(); lockPanel(false); return; }
+    // Cerró sesión o dejó de ser administrador: se bloquea el panel
+    started = false; S.loaded = false; S.online = false;
+    S.fb.orders = S.fb.users = S.fb.admins = null;
+    lockPanel(true);
+    $("#app").innerHTML = gateView();
+  }
+
+  async function loadFb(msg) {
+    S.fb.err = "";
+    try {
+      const [orders, users, admins] = await Promise.all([A.admin.orders(), A.admin.users(), A.admin.admins()]);
+      Object.assign(S.fb, { orders, users, admins, at: Date.now() });
+      if (msg) toast(msg);
+    } catch (e) { S.fb.err = e.message; }
+    if (S.loaded) render();
+  }
+
+  /* ---------- Pedidos ---------- */
+  function ordersView() {
+    const F = S.fb;
+    if (F.err) return `<div class="empty-mini">${esc(F.err)}<div class="row-actions" style="justify-content:center"><button class="btn sm" type="button" data-fbreload>Reintentar</button></div></div>`;
+    if (!F.orders) return `<div class="empty-mini">Cargando pedidos…</div>`;
+    const now = new Date(), thisMonth = (d) => d.getMonth() === now.getMonth() && d.getFullYear() === now.getFullYear();
+    const mes = F.orders.filter((o) => thisMonth(o.fecha));
+    const count = (e) => F.orders.filter((o) => o.estado === e).length;
+    return `
+      <div class="stats">
+        <div class="stat hi"><small>Sin responder</small><strong>${count("nuevo")}</strong></div>
+        <div class="stat"><small>Pedidos este mes</small><strong>${mes.length}</strong></div>
+        <div class="stat"><small>Vendido este mes</small><strong>${TW.money(mes.filter((o) => o.estado === "vendido").reduce((t, o) => t + (o.total || 0), 0))}</strong></div>
+      </div>
+      <div class="bar">
+        <label class="hsearch">${U.search}<input id="oq" type="search" placeholder="Buscar pedido…" value="${esc(F.f.q)}" autocomplete="off"></label>
+        <div class="chips">${[["", "Todos", F.orders.length], ...ESTADOS.map(([k, l]) => [k, l + "s", count(k)])].map(([k, l, n]) =>
+          `<button class="chip" type="button" data-ofil="${k}" aria-pressed="${F.f.estado === k}">${l} <b>${n}</b></button>`).join("")}</div>
+        <span class="grow"></span>
+        <button class="btn ghost sm" type="button" data-fbreload>${U.redo} Actualizar</button>
+      </div>
+      <div class="tbl-wrap"><table class="tbl ords-tbl">
+        <thead><tr><th>Fecha</th><th>Cliente</th><th>Pedido</th><th style="text-align:right">Total</th><th>Estado</th><th></th></tr></thead>
+        <tbody id="ordRows"></tbody>
+      </table></div>
+      <p class="hint" style="margin-top:.75rem">Acá aparecen los pedidos que los clientes mandan por WhatsApp con su cuenta iniciada. El N° de pedido también figura en el mensaje de WhatsApp. El estado se guarda al instante (no hace falta publicar).</p>`;
+  }
+
+  function renderOrderRows() {
+    const rows = $("#ordRows"); if (!rows || !S.fb.orders) return;
+    const words = norm(S.fb.f.q).split(/\s+/).filter(Boolean);
+    const list = S.fb.orders.filter((o) => (!S.fb.f.estado || o.estado === S.fb.f.estado) &&
+      words.every((w) => norm([o.codigo, o.nombre, o.email, o.telefono, ...(o.items || []).map((i) => i.titulo)].join(" ")).includes(w)));
+    rows.innerHTML = list.map((o) => {
+      const items = o.items || [], first = items[0];
+      const wa = waTo(o.telefono, `Hola ${(o.nombre || "").split(" ")[0]}! Te escribimos de ${CFG.negocio.nombre} por tu pedido N° ${o.codigo}.`);
+      return `<tr data-oid="${esc(o.id)}">
+        <td class="nowrap"><strong>${fdate(o.fecha)}</strong><br><small class="muted">${ftime(o.fecha)} · N° ${esc(o.codigo || "")}</small></td>
+        <td class="name"><strong>${esc(o.nombre || "(sin nombre)")}</strong><small>${esc(o.email || "")}${o.telefono ? ` · ${esc(o.telefono)}` : ""}</small></td>
+        <td class="ord-sum">${first ? `<details><summary>${first.cant > 1 ? first.cant + "x " : ""}${esc(first.titulo)}${items.length > 1 ? ` <em>y ${items.length - 1} más</em>` : ""}</summary>
+          <ul>${items.map((i) => `<li><span>${i.cant > 1 ? i.cant + "x " : ""}${esc(i.titulo)}${(i.detalle || []).length ? `<small>${i.detalle.map(esc).join(" · ")}</small>` : ""}</span><b>${i.precio ? TW.money(i.precio * (i.cant || 1)) : "Consultar"}</b></li>`).join("")}</ul>
+          ${o.nota ? `<p class="ord-nota"><b>Nota:</b> ${esc(o.nota)}</p>` : ""}</details>` : "—"}
+          <small class="muted">${o.origen === "armador" ? "Desde el armador" : "Desde el carrito"}</small></td>
+        <td class="num"><strong>${TW.money(o.total)}</strong></td>
+        <td><select class="inp st-sel st-${esc(o.estado)}" data-ost="${esc(o.id)}" aria-label="Estado del pedido">${ESTADOS.map(([k, l]) => `<option value="${k}"${o.estado === k ? " selected" : ""}>${l}</option>`).join("")}</select></td>
+        <td><div class="acts">
+          ${wa ? `<a class="ibtn wa-ibtn" href="${wa}" target="_blank" rel="noopener" aria-label="Escribirle por WhatsApp" title="Escribirle por WhatsApp">${U.wa}</a>` : ""}
+          ${o.email ? `<a class="ibtn" href="mailto:${esc(o.email)}?subject=${encodeURIComponent(`Tu pedido N° ${o.codigo} en ${CFG.negocio.nombre}`)}" aria-label="Mandarle un mail" title="Mandarle un mail">${MAIL_ICON}</a>` : ""}
+          <button class="ibtn danger" type="button" data-odel="${esc(o.id)}" aria-label="Eliminar pedido" title="Eliminar pedido">${U.trash}</button>
+        </div></td>
+      </tr>`;
+    }).join("") || `<tr><td colspan="6"><div class="empty-mini">${S.fb.orders.length ? "No hay pedidos con ese filtro." : "Todavía no hay pedidos. Cuando un cliente con cuenta mande un pedido por WhatsApp, aparece acá."}</div></td></tr>`;
+  }
+  const MAIL_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>';
+
+  /* ---------- Clientes ---------- */
+  function usersView() {
+    const F = S.fb;
+    if (F.err) return `<div class="empty-mini">${esc(F.err)}<div class="row-actions" style="justify-content:center"><button class="btn sm" type="button" data-fbreload>Reintentar</button></div></div>`;
+    if (!F.users) return `<div class="empty-mini">Cargando clientes…</div>`;
+    const nOf = F.users.filter((u) => u.ofertas).length;
+    return `
+      <div class="stats">
+        <div class="stat"><small>Clientes registrados</small><strong>${F.users.length}</strong></div>
+        <div class="stat hi"><small>Aceptan recibir ofertas</small><strong>${nOf}</strong></div>
+        <div class="stat"><small>Con al menos un pedido</small><strong>${F.users.filter((u) => ordersOf(u).length).length}</strong></div>
+      </div>
+      <div class="bar">
+        <label class="hsearch">${U.search}<input id="uq" type="search" placeholder="Buscar por nombre, mail o teléfono…" value="${esc(F.uq)}" autocomplete="off"></label>
+        <span class="count" id="ucount"></span>
+        <span class="grow"></span>
+        <button class="btn sm" type="button" data-csv="ofertas"${nOf ? "" : " disabled"}>Descargar mails para ofertas (${nOf})</button>
+        <button class="btn ghost sm" type="button" data-csv="todos"${F.users.length ? "" : " disabled"}>Descargar todos</button>
+      </div>
+      <div class="tbl-wrap"><table class="tbl">
+        <thead><tr><th>Cliente</th><th>Teléfono</th><th>Ofertas por mail</th><th>Pedidos</th><th>Registrado</th></tr></thead>
+        <tbody id="userRows"></tbody>
+      </table></div>
+      <p class="hint" style="margin-top:.75rem">Los archivos se abren con Excel. Para mandar promociones usá solo <strong>“mails para ofertas”</strong>: son los clientes que aceptaron recibirlas.</p>`;
+  }
+  const ordersOf = (u) => (S.fb.orders || []).filter((o) => o.uid === u.uid);
+
+  function renderUserRows() {
+    const rows = $("#userRows"); if (!rows || !S.fb.users) return;
+    const words = norm(S.fb.uq).split(/\s+/).filter(Boolean);
+    const list = S.fb.users.filter((u) => words.every((w) => norm([u.nombre, u.email, u.telefono].join(" ")).includes(w)));
+    $("#ucount").textContent = `${list.length} de ${S.fb.users.length}`;
+    rows.innerHTML = list.map((u) => {
+      const n = ordersOf(u).length;
+      const wa = waTo(u.telefono, `Hola ${(u.nombre || "").split(" ")[0]}! Te escribimos de ${CFG.negocio.nombre}.`);
+      return `<tr>
+        <td class="name"><strong>${esc(u.nombre || "(sin nombre)")}</strong><small>${esc(u.email || "")}</small></td>
+        <td class="nowrap">${u.telefono ? (wa ? `<a href="${wa}" target="_blank" rel="noopener">${esc(u.telefono)}</a>` : esc(u.telefono)) : '<span class="muted">—</span>'}</td>
+        <td>${u.ofertas ? '<span class="tag ok">Sí</span>' : '<span class="muted">No</span>'}</td>
+        <td>${n ? `<button class="linkish lk" type="button" data-uorders="${esc(u.email || "")}">${n} ${n === 1 ? "pedido" : "pedidos"}</button>` : '<span class="muted">—</span>'}</td>
+        <td class="nowrap">${fdate(u.fecha)}</td>
+      </tr>`;
+    }).join("") || `<tr><td colspan="5"><div class="empty-mini">${S.fb.users.length ? "No hay clientes con esa búsqueda." : "Todavía no se registró ningún cliente."}</div></td></tr>`;
+  }
+
+  // Planilla para Excel (separada con punto y coma, como la usa Excel en castellano)
+  function downloadCsv(kind) {
+    const list = (S.fb.users || []).filter((u) => kind === "todos" || u.ofertas);
+    const cell = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+    const rows = [["Nombre", "Mail", "Teléfono", "Acepta ofertas", "Pedidos", "Registrado"],
+      ...list.map((u) => [u.nombre, u.email, u.telefono, u.ofertas ? "Sí" : "No", ordersOf(u).length, fdate(u.fecha)])];
+    const csv = "﻿" + rows.map((r) => r.map(cell).join(";")).join("\r\n");
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
+    a.download = `titanware-clientes-${kind === "todos" ? "todos" : "ofertas"}-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+  }
+
+  /* ---------- Administradores (en Ajustes) ---------- */
+  function adminsCard() {
+    const me = (A.user.email || "").toLowerCase(), list = S.fb.admins;
+    return `
+      <div class="panel-card" style="max-width:820px">
+        <h2>Administradores</h2>
+        <p>Estas cuentas pueden entrar al panel y ver los pedidos y los clientes. Cada uno ingresa desde la tienda con ese mismo mail (con Google, o con mail y contraseña) y le aparece el botón <em>Panel de administración</em>.</p>
+        ${list ? `<ul class="adm-list">${list.map((e) => `
+          <li><span class="acc-av">${esc(e.charAt(0).toUpperCase())}</span><span class="grow">${esc(e)}${e === me ? ' <small class="muted">(vos)</small>' : ""}</span>
+          ${e === me ? "" : `<button class="ibtn danger" type="button" data-admdel="${esc(e)}" aria-label="Quitar a ${esc(e)}" title="Quitar">${U.trash}</button>`}</li>`).join("")}</ul>`
+        : `<div class="empty-mini">Cargando…</div>`}
+        <form id="admAdd" class="adm-add" novalidate>
+          <input class="inp" name="email" type="email" placeholder="mail@ejemplo.com" autocomplete="off" aria-label="Mail del nuevo administrador" required>
+          <button class="btn" type="submit">${U.plus} Agregar administrador</button>
+        </form>
+      </div>
+      <div class="panel-card" style="max-width:820px;margin-top:1rem">
+        <h2>Tu cuenta</h2>
+        <p>Ingresaste como <strong>${esc(A.user.email)}</strong>.</p>
+        <div class="row-actions"><button class="btn ghost" type="button" data-alogout>Cerrar sesión</button></div>
+      </div>`;
+  }
+
+  async function logout() {
+    if ((S.dirty.catalogo || S.dirty.pcs) && !confirm("Tenés cambios sin publicar. Si salís se pierden. ¿Salir igual?")) return;
+    S.dirty = { catalogo: false, pcs: false };
+    try { await A.logout(); } catch (err) { toast(err.message, false); }
+  }
+
+  document.addEventListener("click", async (e) => {
+    const el = (s) => e.target.closest(s);
+    let x;
+    if ((x = el("[data-glogin]"))) {
+      const err = $("#admLogin .auth-err");
+      try { await A.loginGoogle(); } catch (ex) { if (!ex.silent && err) { err.textContent = ex.message; err.hidden = false; } }
+      return;
+    }
+    if ((x = el("[data-aforgot]"))) {
+      const email = ($("#admLogin [name=email]").value || "").trim(), err = $("#admLogin .auth-err");
+      if (!/^\S+@\S+\.\S+$/.test(email)) { err.textContent = "Escribí tu mail arriba y tocá de nuevo “¿Olvidaste tu contraseña?”."; err.hidden = false; return; }
+      try { await A.resetPassword(email); toast("Te mandamos un mail para crear una contraseña nueva"); } catch (ex) { err.textContent = ex.message; err.hidden = false; }
+      return;
+    }
+    if ((x = el("[data-averified]"))) {
+      try { if (!(await A.checkVerified())) toast("Todavía no aparece verificado. Tocá el link del mail y probá de nuevo.", false); } catch (ex) { toast(ex.message, false); }
+      return;
+    }
+    if ((x = el("[data-aresend]"))) { try { await A.resendVerification(); toast("Te mandamos el mail de nuevo"); } catch (ex) { toast(ex.message, false); } return; }
+    if ((x = el("[data-alogout]")) || (x = el("#logoutBtn"))) { logout(); return; }
+    if ((x = el("[data-fbreload]"))) { S.fb.orders = S.fb.users = null; renderTab(); loadFb("Datos actualizados"); return; }
+    if ((x = el("[data-ofil]"))) { S.fb.f.estado = x.dataset.ofil; renderTab(); return; }
+    if ((x = el("[data-uorders]"))) { S.fb.f = { q: x.dataset.uorders, estado: "" }; S.tab = "pedidos"; render(); return; }
+    if ((x = el("[data-csv]"))) { downloadCsv(x.dataset.csv); return; }
+    if ((x = el("[data-odel]"))) {
+      const o = S.fb.orders.find((y) => y.id === x.dataset.odel);
+      if (!o || !confirm(`¿Eliminar el pedido N° ${o.codigo} de ${o.nombre || o.email}? El cliente tampoco lo va a ver en su cuenta.`)) return;
+      try { await A.admin.removeOrder(o.id); S.fb.orders = S.fb.orders.filter((y) => y !== o); render(); toast("Pedido eliminado"); } catch (ex) { toast(ex.message, false); }
+      return;
+    }
+    if ((x = el("[data-admdel]"))) {
+      const email = x.dataset.admdel;
+      if (!confirm(`¿Quitar a ${email} de los administradores? Ya no va a poder entrar al panel.`)) return;
+      try { await A.admin.removeAdmin(email); S.fb.admins = S.fb.admins.filter((y) => y !== email); renderTab(); toast("Administrador quitado"); } catch (ex) { toast(ex.message, false); }
+      return;
+    }
+    // Al volver a Pedidos o Clientes, se traen los datos nuevos si pasó más de un minuto
+    if ((x = el('[data-tab="pedidos"], [data-tab="clientes"]')) && Date.now() - S.fb.at > 60000) loadFb();
+  });
+
+  document.addEventListener("submit", async (e) => {
+    const f = e.target;
+    if (f.id === "admLogin") {
+      const v = Object.fromEntries(new FormData(f)), err = f.querySelector(".auth-err"), btn = f.querySelector("[type=submit]");
+      err.hidden = true;
+      if (!/^\S+@\S+\.\S+$/.test((v.email || "").trim()) || !v.pass) { err.textContent = "Escribí tu mail y tu contraseña."; err.hidden = false; return; }
+      btn.disabled = true; btn.textContent = "Ingresando…";
+      try { await A.loginEmail(v.email, v.pass); }
+      catch (ex) { err.textContent = ex.message; err.hidden = false; }
+      if (btn.isConnected) { btn.disabled = false; btn.textContent = "Ingresar"; }
+    }
+    if (f.id === "admAdd") {
+      const email = (f.email.value || "").trim().toLowerCase();
+      if (!/^\S+@\S+\.\S+$/.test(email)) { toast("Escribí un mail válido.", false); return; }
+      if ((S.fb.admins || []).includes(email)) { toast("Ese mail ya es administrador.", false); return; }
+      try { await A.admin.addAdmin(email); S.fb.admins = [...(S.fb.admins || []), email].sort(); renderTab(); toast(`Listo: ${email} ya puede entrar al panel`); }
+      catch (ex) { toast(ex.message, false); }
+    }
+  });
+
+  document.addEventListener("input", (e) => {
+    if (e.target.id === "oq") { S.fb.f.q = e.target.value; renderOrderRows(); }
+    if (e.target.id === "uq") { S.fb.uq = e.target.value; renderUserRows(); }
+  });
+
+  document.addEventListener("change", async (e) => {
+    const t = e.target;
+    if (!t.dataset.ost) return;
+    const o = S.fb.orders.find((y) => y.id === t.dataset.ost), prev = o.estado;
+    t.disabled = true;
+    try {
+      await A.admin.setStatus(o.id, t.value);
+      o.estado = t.value;
+      render(); // actualiza el contador de la pestaña y los totales
+      toast("Estado actualizado");
+    } catch (ex) { t.value = prev; toast(ex.message, false); }
+    t.disabled = false;
+  });
+
   /* ---------- Inicio ---------- */
   (async function init() {
     updatePublish();
+    // Con las cuentas activadas, el panel pide ingresar con un mail administrador
+    if (A && A.enabled) {
+      lockPanel(true);
+      $("#app").innerHTML = `<div class="empty-mini">Cargando…</div>`;
+      await A.ready;
+      document.addEventListener("tw:auth", onAuthChange);
+      onAuthChange();
+      return;
+    }
     if (S.conn.token) {
       try { await connect({}); return; }
       catch (err) { toast(`No se pudo conectar: ${err.message}`, false); }

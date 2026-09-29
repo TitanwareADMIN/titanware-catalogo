@@ -1,6 +1,6 @@
 /* =========================================================
    Titanware · tienda
-   Vistas: #/ (inicio) · #/armar · #/pcs · #/catalogo/<categoría> · #/pedido
+   Vistas: #/ (inicio) · #/armar · #/pcs · #/catalogo/<categoría> · #/pedido · #/cuenta
    ========================================================= */
 (function () {
   const CFG = window.TW_CONFIG, U = TW.UI, esc = TW.esc, norm = TW.norm;
@@ -45,7 +45,7 @@
   function parseHash() {
     const h = decodeURIComponent(location.hash.replace(/^#\/?/, ""));
     const [view = "", ...rest] = h.split("/");
-    return { view: ["armar", "pcs", "catalogo", "pedido"].includes(view) ? view : "home", arg: rest.join("/") };
+    return { view: ["armar", "pcs", "catalogo", "pedido", "cuenta"].includes(view) ? view : "home", arg: rest.join("/") };
   }
   function route() {
     const { view, arg } = parseHash();
@@ -68,7 +68,8 @@
     if (view === "armar") renderBuilder();
     if (view === "home") renderHome();
     if (view === "pedido") renderOrder();
-    const titles = { home: "Componentes y PCs armadas", armar: "Armá tu PC", pcs: "PC Armadas", pedido: "Tu pedido", catalogo: cat.cat === "Todos" ? "Catálogo" : cat.cat };
+    if (view === "cuenta" && TW.cuenta) TW.cuenta.render(arg);
+    const titles = { home: "Componentes y PCs armadas", armar: "Armá tu PC", pcs: "PC Armadas", pedido: "Tu pedido", cuenta: "Mi cuenta", catalogo: cat.cat === "Todos" ? "Catálogo" : cat.cat };
     document.title = `Titanware · ${titles[view]}`;
     if (currentView !== view || view === "catalogo" || view === "pcs") scrollTo({ top: 0 });
     currentView = view;
@@ -623,13 +624,19 @@
     advance();
   }
 
-  function buildMessage() {
+  function buildMessage(extra = "") {
     const lines = TW.buildLines(B.sel, data.byId), total = TW.linesTotal(lines);
     return `Hola ${NEG.nombre}! Armé esta PC en la web y quería consultarles:\n\n` +
       lines.map((l) => `• ${l.step.label}: ${l.qty > 1 ? l.qty + "x " : ""}${l.p.titulo} — ${l.p.precio ? TW.money(l.p.precio * l.qty) : "consultar"}`).join("\n") +
       (usingStock() ? "\n• Cooler: incluido con el procesador" : "") +
       (usingIgpu() ? "\n• Video: integrado del procesador" : "") +
-      `\n\nTotal estimado: ${TW.money(total)}\n¿Tienen stock de todo?`;
+      `\n\nTotal estimado: ${TW.money(total)}\n¿Tienen stock de todo?` +
+      (extra ? `\n\n${extra}` : "");
+  }
+  // La PC del armador como ítem del carrito
+  function buildItem() {
+    const lines = TW.buildLines(B.sel, data.byId);
+    return { type: "armado", nombre: `PC armada a medida (${B.sel.plataforma})`, comps: lines.map((l) => ({ id: l.p.id, qty: l.qty })), ...(usingStock() ? { coolerStock: true } : {}), ...(usingIgpu() ? { gpuInt: true } : {}) };
   }
 
   /* =========================================================
@@ -638,6 +645,47 @@
   const NKEY = "tw_pedido_nota";
   let orderNote = "";
   try { orderNote = localStorage.getItem(NKEY) || ""; } catch {}
+
+  /* ---------- Pedidos guardados en la cuenta del cliente ---------- */
+  // Con la cuenta iniciada, el pedido lleva un número y queda en "Mis pedidos" y en el panel
+  function accountTag() {
+    const A = TW.auth;
+    if (!A || !A.user) return null;
+    const p = A.profile || {};
+    return { codigo: A.newCode(), quien: [p.nombre || A.user.displayName, A.user.email, p.telefono].filter(Boolean).join(" · ") };
+  }
+  const tagText = (tag) => (tag ? `Pedido N° ${tag.codigo}\nA nombre de: ${tag.quien}` : "");
+  const refOf = (item) => { const { key, qty, ...ref } = item; return ref; };
+  function recordOrder(tag, origen, items, total, nota) {
+    if (!tag) return;
+    toast(`Pedido N° ${tag.codigo} guardado en Mis pedidos`);
+    TW.auth.saveOrder({ codigo: tag.codigo, origen, items, total, nota })
+      .then(() => TW.cuenta && TW.cuenta.invalidate())
+      .catch((e) => { console.warn(e); toast("El pedido se mandó por WhatsApp, pero no se pudo guardar en tu cuenta."); });
+  }
+  function sendOrder() {
+    const tag = accountTag(), nota = orderNote.trim(), lines = orderLines();
+    const extra = [nota ? `Nota: ${nota}` : "", tagText(tag)].filter(Boolean).join("\n\n");
+    window.open(TW.waLink(TW.cartMessage(data, extra)), "_blank", "noopener");
+    recordOrder(tag, "carrito",
+      lines.map((l) => ({ titulo: l.titulo, cant: l.item.qty, precio: l.unit, detalle: l.detalle, ref: refOf(l.item) })),
+      lines.reduce((t, l) => t + l.unit * l.item.qty, 0), nota);
+  }
+  function sendBuild() {
+    const tag = accountTag();
+    window.open(TW.waLink(buildMessage(tagText(tag))), "_blank", "noopener");
+    if (!tag) return;
+    const lines = TW.buildLines(B.sel, data.byId), total = TW.linesTotal(lines), item = buildItem();
+    const detalle = lines.map((l) => `${l.step.label}: ${l.qty > 1 ? l.qty + "x " : ""}${l.p.titulo}`)
+      .concat(usingStock() ? ["Cooler: incluido con el procesador"] : [], usingIgpu() ? ["Video: integrado del procesador"] : []);
+    recordOrder(tag, "armador", [{ titulo: item.nombre, cant: 1, precio: total, detalle, ref: item }], total, "");
+  }
+  function accountHint() {
+    const A = TW.auth;
+    if (!A || !A.enabled || A.failed) return "";
+    if (A.user) return `<p class="o-acct in">${U.check}<span>Pedido a nombre de <b>${esc(A.firstName())}</b>: queda guardado en <a href="#/cuenta/pedidos">Mis pedidos</a>.</span></p>`;
+    return `<p class="o-acct"><span><button class="linkish" type="button" data-auth-open="login" data-after="pedido">Ingresá a tu cuenta</button> para guardar este pedido y tener tus datos cargados.</span></p>`;
+  }
 
   function renderCartCount() {
     const n = TW.cart.count(), el = $("#cartCount");
@@ -681,6 +729,7 @@
           <div class="o-row"><span>Envío</span><span>A coordinar</span></div>
           <div class="o-total"><span>Total estimado</span><strong>${TW.money(total)}</strong></div>
           ${lines.length ? `<label class="o-fld">Nota <small>(opcional)</small><textarea id="oNota" placeholder="Tu nombre, localidad para el envío, dudas…">${esc(orderNote)}</textarea></label>` : ""}
+          ${lines.length ? accountHint() : ""}
           <button class="btn wa block o-send" type="button" data-send${lines.length ? "" : " disabled"}>${U.wa} Enviar pedido por WhatsApp</button>
           <p class="fine">${U.shield} No se cobra nada online. Te respondemos por WhatsApp para confirmar stock, envío y forma de pago.</p>
         </aside>
@@ -697,6 +746,7 @@
       const b = $("#cartBtn"); b.classList.remove("bump"); void b.offsetWidth; b.classList.add("bump");
       if (parseHash().view === "pedido") renderOrder();
     });
+    document.addEventListener("tw:auth", () => { if (parseHash().view === "pedido") renderOrder(); });
     $("#cartBtn").addEventListener("click", () => { location.hash = "#/pedido"; });
 
     // Buscador del header → catálogo
@@ -771,17 +821,16 @@
         return;
       }
       if ((x = el("[data-addbuild]"))) {
-        const lines = TW.buildLines(B.sel, data.byId);
-        TW.cart.add({ type: "armado", nombre: `PC armada a medida (${B.sel.plataforma})`, comps: lines.map((l) => ({ id: l.p.id, qty: l.qty })), ...(usingStock() ? { coolerStock: true } : {}), ...(usingIgpu() ? { gpuInt: true } : {}) });
+        TW.cart.add(buildItem());
         toast("Tu PC se agregó al carrito", true); return;
       }
-      if ((x = el("[data-wabuild]"))) { window.open(TW.waLink(buildMessage()), "_blank", "noopener"); return; }
+      if ((x = el("[data-wabuild]"))) { sendBuild(); return; }
 
       // Carrito
       if ((x = el("[data-cq]"))) { const [k, d] = x.dataset.cq.split("|"); const it = TW.cart.items.find((i) => i.key === k); if (it) TW.cart.setQty(k, it.qty + Number(d)); return; }
       if ((x = el("[data-crm]"))) { TW.cart.remove(x.dataset.crm); return; }
       if ((x = el("[data-clear]"))) { if (confirm("¿Vaciar el carrito?")) TW.cart.clear(); return; }
-      if ((x = el("[data-send]"))) { window.open(TW.waLink(TW.cartMessage(data, orderNote.trim() ? `Nota: ${orderNote.trim()}` : "")), "_blank", "noopener"); return; }
+      if ((x = el("[data-send]"))) { sendOrder(); return; }
 
       // Cerrar diálogos
       if ((x = el("[data-close]"))) { x.closest("dialog")?.close(); return; }
@@ -798,6 +847,7 @@
 
   /* ---------- Inicio ---------- */
   async function init() {
+    TW.shop = { toast };
     setupStatic();
     bindEvents();
     TW.cart.load(); renderCartCount();

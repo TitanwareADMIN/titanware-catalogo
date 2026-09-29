@@ -9,13 +9,19 @@ Sitio estático (sin servidor) pensado para GitHub Pages. Los clientes arman su 
 - **PC Armadas** (`#/pcs`): equipos listos, por categoría; se pueden personalizar en el armador.
 - **Catálogo** (`#/catalogo/<categoría>`): búsqueda, filtros por categoría, subcategoría y marca.
 - **Carrito**: productos, PCs armadas y PCs a medida; el pedido se envía completo por WhatsApp.
-- **Panel** (`admin.html`): productos, precios, stock, destacados, fotos, PCs armadas y actualización masiva pegando la lista del mayorista. Publica los cambios en el repositorio con un token de GitHub.
+- **Mi cuenta** (`#/cuenta`): los clientes se registran con mail y contraseña o con Google, guardan sus datos y ven sus pedidos. Comprar sin cuenta sigue funcionando igual.
+- **Panel** (`admin.html`): productos, precios, stock, destacados, fotos, PCs armadas y actualización masiva pegando la lista del mayorista. Publica los cambios en el repositorio con un token de GitHub. Con las cuentas activadas, solo entran los administradores y suma **Pedidos**, **Clientes** (con descarga de mails para Excel) y **Administradores** en Ajustes.
+
+Las cuentas usan Firebase y se activan una sola vez siguiendo [FIREBASE.md](FIREBASE.md).
 
 ## Archivos
 
 | Archivo | Para qué sirve |
 |---|---|
 | `assets/js/config.js` | WhatsApp, Instagram, ubicación, repositorio y categorías. **Lo único que se edita a mano.** |
+| `assets/js/firebase-config.js` | Datos del proyecto de Firebase (se pegan una vez, ver [FIREBASE.md](FIREBASE.md)). |
+| `firestore.rules` | Permisos de la base de datos (se pegan en la consola de Firebase). |
+| `assets/js/auth.js` · `assets/js/cuenta.js` | Cuentas y pedidos (Firebase) · Mi cuenta en la tienda. |
 | `data/catalogo.json` | Productos (se edita desde el panel). |
 | `data/pcs.json` | PCs armadas (se edita desde el panel). |
 | `assets/js/core.js` | Lectura de nombres, compatibilidad, carrito (compartido). |
