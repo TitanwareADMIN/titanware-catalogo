@@ -16,7 +16,7 @@
   /* ---------- Textos y links fijos ---------- */
   function setupStatic() {
     const general = TW.waLink(`Hola ${NEG.nombre}! Quería hacer una consulta.`);
-    ["#topWa", "#floatWa", "#footWa", "#socWa"].forEach((s) => ($(s).href = general));
+    ["#floatWa", "#footWa", "#socWa"].forEach((s) => ($(s).href = general));
     $$(".top-phone").forEach((a) => { a.href = general; a.textContent = NEG.whatsappVisible; });
     $("#footPlace").textContent = NEG.ubicacion;
     $("#bandWa").href = TW.waLink(`Hola ${NEG.nombre}! Quería asesoramiento para elegir mi PC.`);

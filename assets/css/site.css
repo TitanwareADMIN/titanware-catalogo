@@ -78,7 +78,9 @@ svg { flex: none; }
   -webkit-backdrop-filter: saturate(140%) blur(12px);
 }
 .top { height: 64px; border-bottom: 1px solid var(--line); }
-.top .wrap { height: 100%; display: flex; align-items: center; gap: 1.5rem; }
+.top .wrap { height: 100%; display: flex; align-items: center; gap: 1.5rem; max-width: none; padding-inline: 1.25rem; }
+/* La barra de categorías se alinea con el logo */
+.mainnav .wrap { max-width: none; padding-inline: 1.25rem; }
 .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--text); flex: none; }
 .brand-emblem { height: 38px; width: auto; }
 .brand-word { height: 17px; width: auto; }

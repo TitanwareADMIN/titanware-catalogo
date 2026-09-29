@@ -1442,7 +1442,7 @@
         "precio":  64188,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/micro-amd-3000g-athlon-c-video-c-cooler-cpu-am4.webp",
         "caja":  "img/productos/cajas/micro-amd-3000g-athlon-c-video-c-cooler-cpu-am4.webp",
         "attrs":  {
                       "socket":  "AM4",
@@ -7468,7 +7468,7 @@
         "precio":  111972,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/fuente-650w-arkham-coreshield-by-xpg-80-plus-gold-oem.webp",
         "origen":  "FUENTE 650W ARKHAM CORESHIELD BY XPG 80 PLUS GOLD OEM",
         "marca":  "XPG",
         "specs":  [
@@ -8832,7 +8832,7 @@
         "precio":  86240,
         "destacado":  false,
         "stock":  "disponible",
-        "imagen":  "",
+        "imagen":  "img/productos/gabinete-adata-xpg-valor-air-4fan-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -27028,7 +27028,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-spectrix-d35g-rgb-white-8gb-ddr4-3200mhz.webp",
         "attrs":  {
                       "ddr":  "DDR4",
                       "gb":  8,
@@ -30034,7 +30034,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-lancer-blade-rgb-white-8gb-ddr5-5600mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  8,
@@ -31048,7 +31048,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-lancer-blade-rgb-white-16gb-ddr5-6000mhz.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  16,
@@ -31878,7 +31878,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/memox-32gb-ddr5-5600mhz-sodimm.webp",
         "attrs":  {
                       "ddr":  "DDR5",
                       "gb":  32,
@@ -36115,7 +36115,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/geforce-gt-210-1gb-ddr3-performance-bulk.webp",
         "attrs":  {
                       "tdp":  30,
                       "psuRec":  300,
@@ -43200,7 +43200,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/xpg-arkham-coreshield-750w-80-plus-gold-oem.webp",
         "attrs":  {
                       "watts":  750,
                       "cert":  "80 Plus Gold",
@@ -48302,7 +48302,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-invader-x-mini-5-fan-argb-vidrio-templado-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -49127,7 +49127,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-valor-air-plus-4fan-argb-blanco.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -49186,7 +49186,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-valor-air-nano-1fan-argb-black.webp",
         "attrs":  {
                       "formato":  "Micro-ATX",
                       "fuente":  0,
@@ -49708,7 +49708,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/adata-xpg-starker-air-white-2-fan.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -50990,7 +50990,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/xpg-starker-air-btf-4fan-argb-white.webp",
         "attrs":  {
                       "formato":  "ATX",
                       "fuente":  0,
@@ -56172,7 +56172,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/mouse-logitech-m520-ambidiestro.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
                   }
@@ -58890,7 +58890,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-y-mouse-logitech-k120-m90.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -60189,7 +60189,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-redragon-eisa-max-k686-gris.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -60679,7 +60679,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-aula-f75-negro-degrade-switch-reaper.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
                   }
@@ -61373,7 +61373,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-aula-f2088-air-azul-switch-marron.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
                   }
@@ -61616,7 +61616,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-magnetico-redragon-kumara-k552-rgb-m.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -63180,7 +63180,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/kit-teclado-y-mouse-redragon-s146-trundle-k668-k1ng-m724.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -65878,7 +65878,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-ducky-one-2-sf-blanco-switch-cherry-mx-speed-si.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -66098,7 +66098,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/teclado-gamer-mecanico-ducky-one-3-tkl-matcha-cherry-mx-red-espanol.webp",
         "attrs":  {
                       "conexion":  "Cableado"
                   }
@@ -69596,7 +69596,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-redragon-vibecore-h610-gris.webp",
         "attrs":  {
 
                   }
@@ -70772,7 +70772,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-jbl-quantum-tws-air-negro.webp",
         "attrs":  {
 
                   }
@@ -70995,7 +70995,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-redragon-zeus-pro-h510-pro.webp",
         "attrs":  {
 
                   }
@@ -71077,7 +71077,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-inalambrico-redragon-zeus-pro-h510w-pro-blanco.webp",
         "attrs":  {
 
                   }
@@ -71604,7 +71604,7 @@
                       ]
                   ],
         "destacado":  false,
-        "imagen":  "",
+        "imagen":  "img/productos/auricular-jbl-quantum-360-wireless-bluetooth-negro.webp",
         "attrs":  {
 
                   }
