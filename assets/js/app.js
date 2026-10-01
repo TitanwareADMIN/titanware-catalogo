@@ -383,7 +383,6 @@
       { id: "tam", q: "Tamaño", val: kbSize, order: ["Completo", "96-99%", "TKL (80%)", "75%", "65%", "60%"] },
     ],
     audio: [
-      { id: "tipo", q: "Tipo", val: (p) => (/^micr[oó]fono/i.test(p.titulo) ? "Micrófono" : "Auriculares"), order: ["Auriculares", "Micrófono"] },
       { id: "con", q: "Conexión", val: conOf, order: ["Con cable", "Inalámbrico"] },
       { id: "uso", q: "Uso", val: (p) => (GAMER.test(full(p)) ? "Gamer" : "Oficina y hogar"), order: ["Gamer", "Oficina y hogar"] },
       { id: "col", q: "Color", val: colorOf, order: ["Negro u otros", "Blanco"] },

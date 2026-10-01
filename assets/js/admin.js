@@ -510,7 +510,7 @@
       let picker = "";
       if (open) {
         const words = norm(pcPick.q).split(/\s+/).filter(Boolean);
-        const list = data.products.filter((x) => x.categoria === step.cat && (!step.sub || x.sub === step.sub) && (pcPick.all || !TW.incompatibility(step.key, x, pcSel, data.byId))
+        const list = data.products.filter((x) => TW.inStep(step, x) && (pcPick.all || !TW.incompatibility(step.key, x, pcSel, data.byId))
           && words.every((w) => norm(`${x.titulo} ${x.marca}`).includes(w))).sort((a, b) => (a.precio || 1e12) - (b.precio || 1e12));
         picker = `<div class="picker">
           <div class="picker-bar"><input class="inp" id="slotQ" placeholder="Buscar ${esc(step.label.toLowerCase())}…" value="${esc(pcPick.q)}" autocomplete="off">

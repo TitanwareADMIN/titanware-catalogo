@@ -33,6 +33,7 @@
     "Mouse": svg('<rect x="20" y="8" width="24" height="44" rx="12"/><path d="M32 8v14M20 24h24"/>'),
     "Teclados": svg('<rect x="6" y="18" width="52" height="28" rx="4"/><path d="M13 26h4M21 26h4M29 26h4M37 26h4M45 26h4M13 33h4M21 33h4M29 33h4M37 33h4M45 33h4M20 40h24"/>'),
     "Auriculares y micrófonos": svg('<path d="M12 42v-8a20 20 0 0 1 40 0v8"/><rect x="8" y="38" width="10" height="16" rx="3"/><rect x="46" y="38" width="10" height="16" rx="3"/>'),
+    "Micrófono": svg('<rect x="24" y="6" width="16" height="30" rx="8"/><path d="M16 30a16 16 0 0 0 32 0M32 46v10M22 56h20"/>'),
     "Mousepads": svg('<rect x="6" y="14" width="52" height="36" rx="6"/><rect x="34" y="21" width="12" height="20" rx="6"/><path d="M40 21v6"/>'),
     "default": svg('<path d="M10 14h44v30H10zM24 50h16M32 44v6"/>'),
   };
@@ -407,12 +408,16 @@
     // Periféricos: opcionales, uno por tipo (subcategoría de "Periféricos")
     { key: "mouse", cat: "Periféricos", sub: "Mouse", icon: "Mouse", label: "Mouse", tip: "Opcional: sumá un mouse a tu PC o salteá el paso.", opcional: true },
     { key: "keyboard", cat: "Periféricos", sub: "Teclados", icon: "Teclados", label: "Teclado", tip: "Opcional: sumá un teclado, o un kit de teclado y mouse.", opcional: true },
-    { key: "audio", cat: "Periféricos", sub: "Auriculares y micrófonos", icon: "Auriculares y micrófonos", label: "Auriculares", titulo: "Elegí tus auriculares o micrófono", tip: "Opcional: auriculares o micrófono para jugar, estudiar o hacer videollamadas.", opcional: true },
+    { key: "audio", cat: "Periféricos", sub: "Auriculares y micrófonos", only: (p) => !TW.isMic(p), icon: "Auriculares y micrófonos", label: "Auriculares", titulo: "Elegí tus auriculares", tip: "Opcional: auriculares para jugar, estudiar o hacer videollamadas.", opcional: true },
+    { key: "mic", cat: "Periféricos", sub: "Auriculares y micrófonos", only: (p) => TW.isMic(p), icon: "Micrófono", label: "Micrófono", tip: "Opcional: un micrófono para streaming, videollamadas o grabar.", opcional: true },
     { key: "pad", cat: "Periféricos", sub: "Mousepads", icon: "Mousepads", label: "Mousepad", tip: "Opcional: el último detalle para tu escritorio.", opcional: true },
   ];
   TW.stepOf = (key) => TW.STEPS.find((s) => s.key === key);
   // Paso del armador al que pertenece un producto (los periféricos se separan por subcategoría)
-  TW.stepForProduct = (p) => TW.STEPS.find((s) => s.cat === p.categoria && (!s.sub || s.sub === p.sub)) || null;
+  TW.stepForProduct = (p) => TW.STEPS.find((s) => s.cat === p.categoria && TW.inStep(s, p)) || null;
+  TW.isMic = (p) => /^micr[oó]fono/i.test(p.nombre || "");
+  // El producto corresponde a ese paso del armador (categoría, subcategoría y filtro propio)
+  TW.inStep = (s, p) => p.categoria === s.cat && (!s.sub || p.sub === s.sub) && (!s.only || s.only(p));
   TW.stepForCategory = (cat) => TW.STEPS.find((s) => s.cat === cat);
   TW.emptyBuild = () => Object.fromEntries([["plataforma", ""], ...TW.STEPS.map((s) => [s.key, []])]);
 
@@ -526,7 +531,7 @@
 
   TW.options = function (key, sel, data) {
     const step = TW.stepOf(key);
-    return data.products.filter((p) => p.categoria === step.cat && (!step.sub || p.sub === step.sub) && !TW.incompatibility(key, p, sel, data.byId));
+    return data.products.filter((p) => TW.inStep(step, p) && !TW.incompatibility(key, p, sel, data.byId));
   };
 
   // Revisa una configuración completa: faltantes e incompatibilidades
