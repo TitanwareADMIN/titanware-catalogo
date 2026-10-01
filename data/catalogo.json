@@ -63,8 +63,12 @@
                           "Gigabit Ethernet (Realtek)"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ]
     },
@@ -132,8 +136,12 @@
                           "Realtek Gigabit Ethernet"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ]
     },
@@ -201,8 +209,12 @@
                           "Fast/Gigabit Ethernet (Realtek)"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 4x USB 2.0"
                       ]
                   ]
     },
@@ -270,8 +282,12 @@
                           "Realtek Gigabit Ethernet"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ]
     },
@@ -339,8 +355,12 @@
                           "GbE LAN"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 2x USB 2.0"
                       ]
                   ]
     },
@@ -408,8 +428,12 @@
                           "Realtek Gigabit Ethernet"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ]
     },
@@ -477,8 +501,12 @@
                           "Realtek Gigabit Ethernet"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ]
     },
@@ -546,12 +574,16 @@
                           "Realtek Gigabit Ethernet"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2"
-                      ],
-                      [
                           "Iluminación",
                           "1x conector ARGB 3-pin"
+                      ],
+                      [
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ]
     },
@@ -627,8 +659,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, conectores USB-C traseros"
+                          "USB traseros",
+                          "2x USB 3.2 Gen1 · 3x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 4x USB 2.0"
                       ]
                   ]
     },
@@ -704,8 +740,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ]
     },
@@ -764,16 +804,20 @@
                           "DisplayPort y HDMI"
                       ],
                       [
-                          "USB",
-                          "6 traseros y 6 frontales (por headers)"
-                      ],
-                      [
                           "Audio",
                           "Realtek ALC887/897"
                       ],
                       [
                           "WiFi",
                           "No incluye"
+                      ],
+                      [
+                          "USB traseros",
+                          "2x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 4x USB 2.0"
                       ]
                   ]
     },
@@ -845,8 +889,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "2x USB 5Gbps + 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "2x USB 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ]
     },
@@ -918,8 +966,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "2x USB 5Gbps + 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "2x USB 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ]
     },
@@ -991,8 +1043,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "2x USB 5Gbps + 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "2x USB 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ]
     },
@@ -1064,8 +1120,12 @@
                           "No incluye (slot M.2 Key E disponible)"
                       ],
                       [
-                          "USB",
-                          "2x USB 5Gbps + 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "2x USB 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ]
     },
@@ -1137,8 +1197,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "2x USB 5Gbps + 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "2x USB 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 2x USB 2.0"
                       ]
                   ]
     },
@@ -1210,8 +1274,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "1x USB 5Gbps + 4x USB 2.0 traseros, USB-C 5Gbps frontal"
+                          "USB traseros",
+                          "1x USB 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ]
     },
@@ -1283,8 +1351,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "2x USB 5Gbps + 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "2x USB 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ]
     },
@@ -1356,8 +1428,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "2x USB 5Gbps + 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "2x USB 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ]
     },
@@ -1429,8 +1505,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "2x USB 5Gbps + 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "2x USB 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 2x USB 2.0"
                       ]
                   ]
     },
@@ -9081,8 +9161,12 @@
                           "Realtek Gigabit LAN"
                       ],
                       [
-                          "USB",
-                          "8x USB 3.2 Gen1 + USB 2.0"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 3.2 Gen1 · 4x USB 2.0"
                       ]
                   ],
         "destacado":  false,
@@ -9154,8 +9238,12 @@
                           "WiFi 5 (802.11ac) + Bluetooth"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2"
+                          "USB traseros",
+                          "2x USB 3.2 Gen2 · 4x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -9227,8 +9315,12 @@
                           "WiFi 6E (802.11ax) + Bluetooth"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 2x USB 2.0"
                       ]
                   ],
         "destacado":  false,
@@ -9300,8 +9392,12 @@
                           "WiFi 5 (RTL8821CE) + Bluetooth 5.0"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 2x USB 2.0"
                       ]
                   ],
         "destacado":  false,
@@ -9377,8 +9473,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C frontal"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -9454,8 +9554,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -9531,8 +9635,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "2x USB 3.2 Gen1 · 3x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 4x USB 2.0"
                       ]
                   ],
         "destacado":  false,
@@ -9608,8 +9716,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "1x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 1x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 4x USB 2.0"
                       ]
                   ],
         "destacado":  false,
@@ -9685,8 +9797,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -9762,8 +9878,12 @@
                           "WiFi 6"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -9839,8 +9959,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -9916,8 +10040,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "3x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 1x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 4x USB 2.0"
                       ]
                   ],
         "destacado":  false,
@@ -9993,8 +10121,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "2x USB 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 4x USB 2.0"
                       ]
                   ],
         "destacado":  false,
@@ -10070,8 +10202,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "3x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -10147,8 +10283,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "2x USB 3.2 Gen2 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -10224,8 +10364,12 @@
                           "WiFi 6"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "3x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -10301,8 +10445,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "2x USB 3.2 Gen2 · 1x USB-C 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -10378,8 +10526,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "1x USB 3.2 Gen2 · 1x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 2x USB 2.0"
                       ]
                   ],
         "destacado":  false,
@@ -10455,8 +10607,12 @@
                           "WiFi 6E"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "1x USB 3.2 Gen2 · 1x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 2x USB 2.0"
                       ]
                   ],
         "destacado":  false,
@@ -10532,8 +10688,12 @@
                           "WiFi 6"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -10609,8 +10769,12 @@
                           "WiFi 6"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "2x USB 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 4x USB 2.0"
                       ]
                   ],
         "destacado":  false,
@@ -10686,8 +10850,12 @@
                           "WiFi 6"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "2x USB 3.2 Gen2 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -10763,8 +10931,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "2x USB 3.2 Gen2 · 2x USB 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -10840,8 +11012,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "2x USB 3.2 Gen2 · 2x USB 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -10917,8 +11093,12 @@
                           "WiFi 6E"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "2x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -10994,8 +11174,12 @@
                           "WiFi 6"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "3x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 1x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 4x USB 2.0"
                       ]
                   ],
         "destacado":  false,
@@ -11071,8 +11255,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "1x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 4x USB 2.0"
                       ]
                   ],
         "destacado":  false,
@@ -11148,8 +11336,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "3x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 2x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 4x USB 2.0"
                       ]
                   ],
         "destacado":  false,
@@ -11225,8 +11417,12 @@
                           "WiFi 6"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "2x USB 3.2 Gen2 · 2x USB 3.2 Gen1 · 4x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -11302,8 +11498,12 @@
                           "WiFi 6"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "3x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 1x USB 2.0"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 4x USB 2.0"
                       ]
                   ],
         "destacado":  false,
@@ -11379,8 +11579,12 @@
                           "WiFi 6E"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "2x USB 2.0 · 3x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -11456,8 +11660,12 @@
                           "WiFi 7"
                       ],
                       [
-                          "USB",
-                          "USB4 40Gbps, USB-C frontal y trasero"
+                          "USB traseros",
+                          "4x USB 2.0 · 3x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 2x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -11533,8 +11741,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 2x USB 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -11610,8 +11822,12 @@
                           "WiFi 6"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen2 · 1x USB-C 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -11687,8 +11903,12 @@
                           "WiFi 6E"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2x2 con USB-C trasero"
+                          "USB traseros",
+                          "2x USB 2.0 · 4x USB 3.2 Gen1 · 3x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -11764,8 +11984,12 @@
                           "WiFi 6"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -11841,8 +12065,12 @@
                           "WiFi 6"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 2x USB 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -11918,8 +12146,12 @@
                           "No"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 2x USB 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -11995,8 +12227,12 @@
                           "WiFi 6"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con USB-C trasero"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -12072,8 +12308,12 @@
                           "WiFi 6E"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, USB-C trasero"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -12149,8 +12389,12 @@
                           "WiFi 6 (802.11ax)"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, un puerto USB-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -12226,8 +12470,12 @@
                           "WiFi 6E (802.11ax)"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1, salida USB-C trasera"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -12303,8 +12551,12 @@
                           "WiFi 6 1x1 (802.11ax) + Bluetooth 5.3"
                       ],
                       [
-                          "USB",
-                          "USB 10Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 2x USB 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -12380,8 +12632,12 @@
                           "WiFi 6E 2x2 (802.11ax) + Bluetooth 5.3"
                       ],
                       [
-                          "USB",
-                          "USB 10Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 2x USB 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -12457,8 +12713,12 @@
                           "WiFi 7 (802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 2x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -12534,8 +12794,12 @@
                           "WiFi 6E (802.11ax)"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -12611,8 +12875,12 @@
                           "WiFi 6E (802.11ax)"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 3x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -12688,8 +12956,12 @@
                           "WiFi 6 1x1 (802.11ax) + Bluetooth 5.2"
                       ],
                       [
-                          "USB",
-                          "USB 10Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -12765,8 +13037,12 @@
                           "WiFi 6E (802.11ax)"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -12842,8 +13118,12 @@
                           "WiFi 6E 2x2 (802.11ax) + Bluetooth 5.3"
                       ],
                       [
-                          "USB",
-                          "USB 10Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -12919,8 +13199,12 @@
                           "WiFi 6E 2x2 (802.11ax) + Bluetooth 5.3"
                       ],
                       [
-                          "USB",
-                          "USB 10Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 1x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -12996,8 +13280,12 @@
                           "WiFi 6E (802.11ax)"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 5x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -13073,8 +13361,12 @@
                           "WiFi 6E 2x2 (802.11ax) + Bluetooth 5.3"
                       ],
                       [
-                          "USB",
-                          "USB 10Gbps con salida Type-C"
+                          "USB traseros",
+                          "3x USB 2.0 · 3x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -13150,8 +13442,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "USB 10Gbps con salida Type-C"
+                          "USB traseros",
+                          "2x USB 2.0 · 2x USB 3.2 Gen1 · 3x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -13227,8 +13523,12 @@
                           "WiFi 6E 2x2 (802.11ax) + Bluetooth 5.3"
                       ],
                       [
-                          "USB",
-                          "USB 10Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 3x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "3x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -13304,8 +13604,12 @@
                           "WiFi 6E (802.11ax)"
                       ],
                       [
-                          "USB",
-                          "USB 10Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 1x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 2x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -13381,8 +13685,12 @@
                           "WiFi 6E (802.11ax)"
                       ],
                       [
-                          "USB",
-                          "USB4 40Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "6x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -13458,8 +13766,12 @@
                           "WiFi 7 (802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 3x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 2x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -13535,8 +13847,12 @@
                           "WiFi 6E (802.11ax)"
                       ],
                       [
-                          "USB",
-                          "USB 10Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 1x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 2x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -13612,8 +13928,12 @@
                           "No incluye (slot para módulo M.2 Key E)"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2 con salida Type-C"
+                          "USB traseros",
+                          "2x USB 2.0 · 3x USB 3.2 Gen2 · 2x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -13689,12 +14009,16 @@
                           "WiFi 6E 2x2 (802.11ax) + Bluetooth 5.2"
                       ],
                       [
-                          "USB",
-                          "USB 10Gbps con salida Type-C"
-                      ],
-                      [
                           "RGB",
                           "Aura Sync RGB integrado"
+                      ],
+                      [
+                          "USB traseros",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2 · 1x USB-C 3.2 Gen2x2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -13770,8 +14094,12 @@
                           "WiFi 7 (802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB4 40Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "6x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -13847,8 +14175,12 @@
                           "WiFi 7 2x2 (802.11be) + Bluetooth 5.4"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
+                          "USB traseros",
+                          "1x USB 2.0 · 4x USB 3.2 Gen1 · 3x USB 3.2 Gen2 · 2x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -13924,8 +14256,12 @@
                           "WiFi 7 (802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -14001,12 +14337,16 @@
                           "WiFi 7 2x2 (802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
-                      ],
-                      [
                           "RGB",
                           "Aura Sync RGB integrado"
+                      ],
+                      [
+                          "USB traseros",
+                          "2x USB 2.0 · 4x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2 · 1x USB-C 3.2 Gen2x2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -14082,8 +14422,12 @@
                           "WiFi 7 (802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB4 40Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "6x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -14159,12 +14503,16 @@
                           "WiFi 7 2x2 (802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
-                      ],
-                      [
                           "RGB",
                           "Aura Sync RGB integrado"
+                      ],
+                      [
+                          "USB traseros",
+                          "2x USB 2.0 · 4x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2 · 1x USB-C 3.2 Gen2x2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -14240,12 +14588,16 @@
                           "WiFi 7 2x2 (802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
-                      ],
-                      [
                           "RGB",
                           "Aura Sync RGB integrado"
+                      ],
+                      [
+                          "USB traseros",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2 · 1x USB-C 3.2 Gen2x2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -14321,8 +14673,12 @@
                           "WiFi 6E (802.11ax)"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 3x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -14398,12 +14754,16 @@
                           "WiFi 7 2x2 (MediaTek MT7925, 802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
-                      ],
-                      [
                           "RGB",
                           "Aura Sync RGB integrado"
+                      ],
+                      [
+                          "USB traseros",
+                          "2x USB 2.0 · 6x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 2x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "6x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -14479,12 +14839,16 @@
                           "WiFi 7 2x2 (MediaTek MT7925, 802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
-                      ],
-                      [
                           "RGB",
                           "Aura Sync RGB integrado"
+                      ],
+                      [
+                          "USB traseros",
+                          "2x USB 2.0 · 5x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB-C 3.2 Gen1 · 2x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "6x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -14560,12 +14924,16 @@
                           "WiFi 7 2x2 (MediaTek MT7925, 802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
-                      ],
-                      [
                           "RGB",
                           "Aura Sync RGB integrado"
+                      ],
+                      [
+                          "USB traseros",
+                          "2x USB 2.0 · 5x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB-C 3.2 Gen1 · 2x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "6x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -14641,8 +15009,12 @@
                           "WiFi 7 2x2 (Realtek RTL8922AE, 802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen2 · 2x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -14718,12 +15090,16 @@
                           "WiFi 7 2x2 (802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
-                      ],
-                      [
                           "RGB",
                           "Aura Sync RGB integrado"
+                      ],
+                      [
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 5x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2 · 2x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -14799,12 +15175,16 @@
                           "WiFi 7 2x2, 320MHz (802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB 20Gbps con salida Type-C"
-                      ],
-                      [
                           "RGB",
                           "Aura Sync RGB integrado"
+                      ],
+                      [
+                          "USB traseros",
+                          "4x USB 2.0 · 6x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -14880,12 +15260,16 @@
                           "WiFi 7 2x2 (MediaTek MT7925, 802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB4 40Gbps con salida Type-C"
-                      ],
-                      [
                           "RGB",
                           "Aura Sync RGB integrado"
+                      ],
+                      [
+                          "USB traseros",
+                          "4x USB 3.2 Gen1 · 5x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2 · 2x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "6x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -14961,12 +15345,16 @@
                           "WiFi 7 2x2, 320MHz (MediaTek MT7927, 802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB4 40Gbps con salida Type-C"
-                      ],
-                      [
                           "RGB",
                           "Aura Sync RGB integrado"
+                      ],
+                      [
+                          "USB traseros",
+                          "9x USB 3.2 Gen2 · 2x USB-C 3.2 Gen2 · 2x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "6x USB 2.0 · 4x USB 3.2 Gen1 · 2x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -15042,12 +15430,16 @@
                           "WiFi 7 2x2, 320MHz (802.11be)"
                       ],
                       [
-                          "USB",
-                          "USB4 40Gbps con salida Type-C"
-                      ],
-                      [
                           "RGB",
                           "Aura Sync RGB integrado"
+                      ],
+                      [
+                          "USB traseros",
+                          "6x USB 3.2 Gen2 · 2x USB-C 3.2 Gen2 · 2x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 2x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -15119,8 +15511,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "2x USB 5Gbps + 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -15192,8 +15588,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "2x USB 5Gbps + 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -15261,8 +15661,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "2x USB 5Gbps + 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -15334,8 +15738,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "1x USB-C 10Gbps + 1x USB 5Gbps + 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 1x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -15407,8 +15815,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "4x USB 5Gbps + 2x USB 2.0 traseros"
+                          "USB traseros",
+                          "2x USB 2.0 · 4x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "3x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -15480,8 +15892,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "4x USB 5Gbps + 2x USB 2.0 traseros"
+                          "USB traseros",
+                          "2x USB 2.0 · 4x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "3x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -15553,8 +15969,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "4x USB 5Gbps + 2x USB 2.0 traseros"
+                          "USB traseros",
+                          "2x USB 2.0 · 4x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -15626,8 +16046,12 @@
                           "Intel Wi-Fi 6E + Bluetooth 5.3"
                       ],
                       [
-                          "USB",
-                          "USB-C 20Gbps, USB-A 10Gbps, 2x USB 5Gbps y 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -15699,8 +16123,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "2x USB 10Gbps + 4x USB 2.0 traseros, USB-C frontal"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "5x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -15772,8 +16200,12 @@
                           "No incluye (slot M.2 Key E disponible)"
                       ],
                       [
-                          "USB",
-                          "1x USB-C 5Gbps + 3x USB-A 5Gbps traseros"
+                          "USB traseros",
+                          "3x USB 3.2 Gen1 · 2x USB 2.0 · 1x USB-C 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "3x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -15845,8 +16277,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "3x USB 5Gbps + 2x USB 2.0 traseros, USB-C 5Gbps frontal"
+                          "USB traseros",
+                          "2x USB 2.0 · 3x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -15918,8 +16354,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "2x USB 10Gbps + 4x USB 2.0 traseros, USB-C frontal"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "5x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -15991,8 +16431,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "2x USB 10Gbps + 4x USB 2.0 traseros, USB-C frontal"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "5x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -16064,8 +16508,12 @@
                           "Realtek Wi-Fi 6 + Bluetooth 5.3"
                       ],
                       [
-                          "USB",
-                          "USB-C 20Gbps, USB-A 10Gbps y 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -16137,8 +16585,12 @@
                           "Intel Wi-Fi 6E + Bluetooth"
                       ],
                       [
-                          "USB",
-                          "USB-C 20Gbps, USB-A 10Gbps, 2x USB 5Gbps y 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -16210,8 +16662,12 @@
                           "Wi-Fi 6E + Bluetooth"
                       ],
                       [
-                          "USB",
-                          "USB-C 20Gbps, USB-A 10Gbps y 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -16283,8 +16739,12 @@
                           "Intel Wi-Fi 7 + Bluetooth"
                       ],
                       [
-                          "USB",
-                          "USB4 Type-C, 2x USB-A 10Gbps, 3x USB 5Gbps y 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 3x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -16356,8 +16816,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "2x USB 5Gbps + 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -16429,8 +16893,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "2x USB 5Gbps + 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -16502,8 +16970,12 @@
                           "Wi-Fi 6E + Bluetooth"
                       ],
                       [
-                          "USB",
-                          "USB4 Type-C, USB-A 10Gbps, 4x USB 5Gbps y 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -16575,8 +17047,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "4x USB 5Gbps + 2x USB 2.0 traseros"
+                          "USB traseros",
+                          "2x USB 2.0 · 4x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -16648,8 +17124,12 @@
                           "1x VGA, 1x HDMI (hasta 4K@60Hz)"
                       ],
                       [
-                          "USB",
-                          "2x USB 5Gbps + 4x USB 2.0 traseros, 1x USB 5Gbps Tipo-C frontal"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -16717,8 +17197,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "1x USB 10Gbps + 2x USB 5Gbps traseros, 1x USB 5Gbps Tipo-C frontal"
+                          "USB traseros",
+                          "3x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -16786,8 +17270,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "1x USB 10Gbps Tipo-C frontal, USB 5Gbps Tipo-A traseros y frontales"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -16855,8 +17343,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "6x USB 3.2 Gen1 (4 traseros) + 2x USB 2.0 traseros"
+                          "USB traseros",
+                          "2x USB 2.0 · 4x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -16924,8 +17416,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "1x USB 10Gbps Tipo-C frontal, USB 5Gbps Tipo-A traseros y frontales"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -16993,8 +17489,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "1x USB-C (header), 5x USB 3.2 Gen1 (3 traseros), 3x USB 2.0 traseros"
+                          "USB traseros",
+                          "3x USB 2.0 · 3x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -17062,8 +17562,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "6x USB 3.2 Gen1 (4 traseros) + 2x USB 2.0 traseros"
+                          "USB traseros",
+                          "2x USB 2.0 · 4x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -17131,8 +17635,12 @@
                           "WiFi 6 (Realtek RTL8851BE) + Bluetooth 5.3"
                       ],
                       [
-                          "USB",
-                          "1x USB-C (header), 3x USB 3.2 Gen1 (1 trasero), 5x USB 2.0 traseros"
+                          "USB traseros",
+                          "5x USB 2.0 · 1x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -17200,8 +17708,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "1x USB 20Gbps Tipo-C, 1x USB 10Gbps, 2x USB 5Gbps traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -17269,8 +17781,12 @@
                           "WiFi 6E + Bluetooth 5.3"
                       ],
                       [
-                          "USB",
-                          "1x USB 10Gbps Tipo-C frontal, USB 5Gbps Tipo-A traseros y frontales"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -17338,8 +17854,12 @@
                           "WiFi 7 + Bluetooth 5.4"
                       ],
                       [
-                          "USB",
-                          "1x USB 20Gbps Tipo-C, 2x USB 10Gbps, 3x USB 5Gbps traseros"
+                          "USB traseros",
+                          "2x USB 2.0 · 3x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -17407,8 +17927,12 @@
                           "WiFi 6 + Bluetooth 5.3"
                       ],
                       [
-                          "USB",
-                          "1x USB 10Gbps, 2x USB 5Gbps traseros"
+                          "USB traseros",
+                          "3x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -17480,8 +18004,12 @@
                           "Wi-Fi 6E + Bluetooth 5.3"
                       ],
                       [
-                          "USB",
-                          "USB-A 10Gbps, 2x USB 5Gbps y 3x USB 2.0 traseros"
+                          "USB traseros",
+                          "3x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB 3.2 Gen2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -17553,8 +18081,12 @@
                           "Realtek Wi-Fi 6 + Bluetooth"
                       ],
                       [
-                          "USB",
-                          "3x USB 5Gbps + 3x USB 2.0 traseros"
+                          "USB traseros",
+                          "3x USB 2.0 · 3x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -17622,8 +18154,12 @@
                           "WiFi 7 + Bluetooth 5.4"
                       ],
                       [
-                          "USB",
-                          "1x Thunderbolt 4 (40Gbps), 1x USB 20Gbps Tipo-C, 6x USB 5Gbps Tipo-A traseros"
+                          "USB traseros",
+                          "6x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -17691,8 +18227,12 @@
                           "WiFi 7 (Killer BE1750x) + Bluetooth 5.4"
                       ],
                       [
-                          "USB",
-                          "1x Thunderbolt 4 (40Gbps), 1x USB 10Gbps Tipo-C frontal, USB 5Gbps Tipo-A traseros y frontales"
+                          "USB traseros",
+                          "2x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen1 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -17760,12 +18300,16 @@
                           "Wi-Fi 6E + Bluetooth 5.3"
                       ],
                       [
-                          "USB",
-                          "1x USB4 Type-C, USB 3.2 Gen1, USB 2.0"
-                      ],
-                      [
                           "Formato",
                           "Micro-ATX, 24,4 x 24,4 cm"
+                      ],
+                      [
+                          "USB traseros",
+                          "5x USB 2.0 · 3x USB 3.2 Gen1 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -17833,12 +18377,16 @@
                           "Wi-Fi 6 (Realtek RTL8851BE) + Bluetooth 5.3"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen1 Type-C, USB 3.2 Gen1, USB 2.0"
-                      ],
-                      [
                           "Formato",
                           "Micro-ATX, 24,4 x 22,5 cm"
+                      ],
+                      [
+                          "USB traseros",
+                          "3x USB 2.0 · 3x USB 3.2 Gen1"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -17906,12 +18454,16 @@
                           "Wi-Fi 6E + Bluetooth 5.3/5.4"
                       ],
                       [
-                          "USB",
-                          "USB 3.2 Gen2x2 Type-C, USB 3.2 Gen2, USB 2.0"
-                      ],
-                      [
                           "Formato",
                           "ATX, 30,5 x 24,4 cm"
+                      ],
+                      [
+                          "USB traseros",
+                          "4x USB 2.0 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -17979,12 +18531,16 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "1x USB4 Type-C, USB 3.2 Gen2, USB 3.2 Gen1, USB 2.0"
-                      ],
-                      [
                           "Formato",
                           "ATX, 30,5 x 24,4 cm"
+                      ],
+                      [
+                          "USB traseros",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen1"
                       ]
                   ],
         "destacado":  false,
@@ -18056,8 +18612,12 @@
                           "Intel Killer Wi-Fi 7 + Bluetooth 5.4"
                       ],
                       [
-                          "USB",
-                          "Thunderbolt 4, 2x USB-A 10Gbps, 2x USB 5Gbps y 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -18129,8 +18689,12 @@
                           "No incluye"
                       ],
                       [
-                          "USB",
-                          "USB4 Type-C, 2x USB-A 10Gbps, 3x USB 5Gbps y 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 3x USB 3.2 Gen1 · 2x USB 3.2 Gen2 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -18202,12 +18766,16 @@
                           "Intel Wi-Fi 7 + Bluetooth 5.4"
                       ],
                       [
-                          "USB",
-                          "Thunderbolt 4, USB-C 20Gbps y 6x USB 5Gbps traseros"
-                      ],
-                      [
                           "Color",
                           "Blanco"
+                      ],
+                      [
+                          "USB traseros",
+                          "6x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -18279,8 +18847,12 @@
                           "Wi-Fi 7 2x2 + Bluetooth"
                       ],
                       [
-                          "USB",
-                          "Thunderbolt 4, USB-A 10Gbps, 2x USB 5Gbps y 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -18352,8 +18924,12 @@
                           "Wi-Fi 6 (2,4/5 GHz) + Bluetooth"
                       ],
                       [
-                          "USB",
-                          "USB-C 20Gbps, 3x USB-A 10Gbps y 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 3x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -18425,8 +19001,12 @@
                           "Intel Killer Wi-Fi 7 + Bluetooth 5.4"
                       ],
                       [
-                          "USB",
-                          "Thunderbolt 4, USB-C y USB-A 10Gbps, 2x USB 5Gbps y 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -18498,8 +19078,12 @@
                           "Wi-Fi 7 2x2 + Bluetooth"
                       ],
                       [
-                          "USB",
-                          "Thunderbolt 4, USB-C 20Gbps, 3x USB-A 10Gbps y 3x USB 5Gbps traseros"
+                          "USB traseros",
+                          "3x USB 3.2 Gen1 · 3x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2x2 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -18571,8 +19155,12 @@
                           "Intel Killer Wi-Fi 7 + Bluetooth 5.4"
                       ],
                       [
-                          "USB",
-                          "Thunderbolt 4, USB-C 10Gbps, 4x USB-A 10Gbps y 4x USB 2.0 traseros"
+                          "USB traseros",
+                          "4x USB 2.0 · 4x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2 · 1x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2"
                       ]
                   ],
         "destacado":  false,
@@ -18644,12 +19232,16 @@
                           "Wi-Fi 7 + Bluetooth 5.4"
                       ],
                       [
-                          "USB",
-                          "2x Thunderbolt 4 y 6x USB 10Gbps traseros"
-                      ],
-                      [
                           "Color",
                           "Blanco"
+                      ],
+                      [
+                          "USB traseros",
+                          "2x USB 3.2 Gen1 · 5x USB 3.2 Gen2 · 1x USB-C 3.2 Gen2 · 2x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "4x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -18721,8 +19313,12 @@
                           "Wi-Fi 7 + Bluetooth 5.4"
                       ],
                       [
-                          "USB",
-                          "2x Thunderbolt 4 y más USB traseros"
+                          "USB traseros",
+                          "3x USB 3.2 Gen1 · 7x USB 3.2 Gen2 · 2x USB-C 3.2 Gen2 · 2x USB4 Tipo C (40 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "6x USB 2.0 · 4x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
@@ -18794,8 +19390,12 @@
                           "Wi-Fi 7 2x2 + Bluetooth"
                       ],
                       [
-                          "USB",
-                          "2x Thunderbolt 5, 1x USB4, 6x USB 10Gbps y 1x USB 2.0 traseros"
+                          "USB traseros",
+                          "1x USB 2.0 · 6x USB 3.2 Gen2 · 1x USB4 Tipo C (40 Gbps) · 2x USB4 Tipo C (80 Gbps)"
+                      ],
+                      [
+                          "USB frontales (conectores internos)",
+                          "2x USB 2.0 · 2x USB 3.2 Gen1 · 1x USB-C 3.2 Gen2x2"
                       ]
                   ],
         "destacado":  false,
