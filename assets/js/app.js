@@ -381,7 +381,6 @@
       { id: "tipo", q: "Tipo", val: kbType, order: ["Mecánico", "Magnético", "Membrana", "Kit teclado + mouse"] },
       { id: "con", q: "Conexión", val: conOf, order: ["Con cable", "Inalámbrico"] },
       { id: "tam", q: "Tamaño", val: kbSize, order: ["Completo", "96-99%", "TKL (80%)", "75%", "65%", "60%"] },
-      { id: "idi", q: "Idioma", val: (p) => { const t = `${txt(p)} ${p.origen || ""} ${row(p, /idioma|layout|distrib|teclas/i)}`; return /espa[nñ]ol|spanish|\bsp\b|latam/i.test(t) ? "Español" : /ingl[eé]s|english|\bus\b/i.test(t) ? "Inglés" : null; }, order: ["Español", "Inglés"] },
     ],
     audio: [
       { id: "tipo", q: "Tipo", val: (p) => (/^micr[oó]fono/i.test(p.titulo) ? "Micrófono" : "Auriculares"), order: ["Auriculares", "Micrófono"] },
