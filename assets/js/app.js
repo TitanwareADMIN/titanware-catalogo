@@ -16,7 +16,7 @@
   /* ---------- Textos y links fijos ---------- */
   function setupStatic() {
     const general = TW.waLink(`Hola ${NEG.nombre}! Quería hacer una consulta.`);
-    ["#floatWa", "#footWa", "#socWa"].forEach((s) => ($(s).href = general));
+    ["#floatWa", "#footWa", "#socWa", "#howWa"].forEach((s) => ($(s).href = general));
     $$(".top-phone").forEach((a) => { a.href = general; a.textContent = NEG.whatsappVisible; });
     $("#footPlace").textContent = NEG.ubicacion;
     $("#bandWa").href = TW.waLink(`Hola ${NEG.nombre}! Quería asesoramiento para elegir mi PC.`);
@@ -69,6 +69,7 @@
   function parseHash() {
     const h = decodeURIComponent(location.hash.replace(/^#\/?/, ""));
     const [view = "", ...rest] = h.split("/");
+    if (view === "como-comprar") return { view: "home", arg: "", como: true };
     return { view: ["armar", "pcs", "catalogo", "pedido", "cuenta"].includes(view) ? view : "home", arg: rest.join("/") };
   }
   function route() {
@@ -95,7 +96,11 @@
     if (view === "cuenta" && TW.cuenta) TW.cuenta.render(arg);
     const titles = { home: "Componentes y PCs armadas", armar: "Armá tu PC", pcs: "PC Armadas", pedido: "Tu pedido", cuenta: "Mi cuenta", catalogo: cat.cat === "Todos" ? "Catálogo" : cat.cat };
     document.title = `Titanware · ${titles[view]}`;
-    if (currentView !== view || view === "catalogo" || view === "pcs") scrollTo({ top: 0 });
+    // #/como-comprar: el inicio, bajando hasta "¿Cómo comprar?"
+    const como = parseHash().como;
+    $$('#mainnav a[data-route="como"]').forEach((a) => a.toggleAttribute("aria-current", !!como));
+    if (como) requestAnimationFrame(() => $("#como-comprar").scrollIntoView({ behavior: currentView === "home" ? "smooth" : "auto", block: "start" }));
+    else if (currentView !== view || view === "catalogo" || view === "pcs") scrollTo({ top: 0 });
     currentView = view;
   }
 
@@ -861,7 +866,7 @@
           ${lines.length ? `<label class="o-fld">Nota <small>(opcional)</small><textarea id="oNota" placeholder="Tu nombre, localidad para el envío, dudas…">${esc(orderNote)}</textarea></label>` : ""}
           ${lines.length ? accountHint() : ""}
           <button class="btn wa block o-send" type="button" data-send${lines.length ? "" : " disabled"}>${U.wa} Enviar pedido por WhatsApp</button>
-          <p class="fine">${U.shield} No se cobra nada online. Te respondemos por WhatsApp para confirmar stock, envío y forma de pago.</p>
+          <p class="fine">${U.shield} No se cobra nada online. Te respondemos por WhatsApp para confirmar stock, envío y forma de pago. <a href="#/como-comprar">¿Cómo funciona la compra?</a></p>
         </aside>
       </div>`;
   }
