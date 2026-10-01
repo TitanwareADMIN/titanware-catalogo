@@ -930,7 +930,12 @@ dialog.auth-dlg { width: min(440px, 100% - 2rem); }
 .auth-err { margin: 0; padding: .6rem .8rem; border-radius: var(--radius-sm); font-size: .85rem; color: #ffb3bc; background: rgba(224, 113, 127, .1); border: 1px solid rgba(224, 113, 127, .35); }
 .auth-err[hidden] { display: none; }
 /* Inicio: ¿Cómo comprar? */
-.how { scroll-margin-top: calc(var(--header-h) + 1rem); }
+.how { scroll-margin-top: calc(var(--header-h) + 1rem); position: relative; isolation: isolate; }
+/* Emblema de Titanware de fondo, muy suave, detrás del título */
+.how::before { content: ""; position: absolute; z-index: -1; left: 50%; top: .5rem; width: min(760px, 92%); height: 400px; transform: translateX(-50%); pointer-events: none;
+  background: url("../../img/logo/emblema.png") center / contain no-repeat; opacity: .07; filter: drop-shadow(0 0 40px rgba(138, 0, 255, .9)); }
+.how::after { content: ""; position: absolute; z-index: -2; left: 50%; top: 0; width: min(900px, 100%); height: 360px; transform: translateX(-50%); pointer-events: none;
+  background: radial-gradient(ellipse at center, rgba(138, 0, 255, .14), transparent 65%); }
 .how-head { text-align: center; display: grid; justify-items: center; gap: .6rem; margin-bottom: 2rem; }
 .how-head h2 { margin: 0; font-size: clamp(1.8rem, 3.2vw, 2.5rem); letter-spacing: -.03em; }
 .how-head p { margin: 0; color: var(--text-2); max-width: 56ch; }
