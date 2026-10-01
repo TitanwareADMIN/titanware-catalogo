@@ -31,6 +31,30 @@
     $("#tileIcoCat").innerHTML = TW.ICONS["Placas de video"];
   }
 
+  /* ---------- Confirmación con el estilo de la tienda (en vez del cartel del navegador) ---------- */
+  function askConfirm({ title, text, ok, cancel = "Cancelar", icon = U.warn }) {
+    return new Promise((resolve) => {
+      const d = $("#askDlg");
+      let done = false;
+      const finish = (v) => { if (done) return; done = true; if (d.open) d.close(); resolve(v); };
+      d.innerHTML = `
+        <div class="ask-box">
+          <span class="ask-ico">${icon}</span>
+          <h2 id="askT">${esc(title)}</h2>
+          <p>${esc(text)}</p>
+          <div class="ask-btns">
+            <button class="btn block" type="button" data-askok>${esc(ok)}</button>
+            <button class="btn ghost block" type="button" data-askno>${esc(cancel)}</button>
+          </div>
+        </div>`;
+      d.querySelector("[data-askok]").onclick = () => finish(true);
+      d.querySelector("[data-askno]").onclick = () => finish(false);
+      d.onclose = () => finish(false); // Escape o clic afuera
+      d.showModal();
+      d.querySelector("[data-askno]").focus();
+    });
+  }
+
   /* ---------- Aviso flotante ---------- */
   let toastTimer;
   function toast(msg, withCart = false) {
@@ -86,11 +110,18 @@
       <div class="card-body">
         <div class="meta"><span>${esc(p.marca)}</span><span>${esc(p.sub || p.categoria)}</span></div>
         <h3>${esc(p.titulo)}</h3>
-        <p class="specs-short">${esc(p.specs.slice(0, 2).join(", "))}</p>
+        <p class="specs-short">${esc(TW.cardSpecs(p).join(", "))}</p>
         <div class="card-foot">${TW.productPrice(p)}<span class="stock ${p.stock.replace(" ", "-")}">${TW.STOCK[p.stock]}</span></div>
         <div class="card-cta">Ver detalle ${U.arrow}</div>
       </div>
     </button>`;
+  }
+
+  // Abierto desde el armador: se puede elegir directo para el paso actual
+  function canPick(p) {
+    if (currentView !== "armar" || !STEPS[B.step]) return false;
+    const key = STEPS[B.step].key;
+    return TW.options(key, B.sel, data).some((x) => x.id === p.id) && !chosen(key).some((c) => c.id === p.id);
   }
 
   function openProduct(id) {
@@ -111,7 +142,7 @@
           ${p.specs.length ? `<p class="spec-title">Características</p><ul class="spec-list">${p.specs.map((s) => `<li>${U.check}<span>${esc(s)}</span></li>`).join("")}</ul>` : ""}
           <div class="modal-actions">
             <button class="btn" type="button" data-add="${esc(p.id)}"${p.stock === "sin stock" ? " disabled" : ""}>${U.cart} Agregar al carrito</button>
-            <a class="btn ghost" href="#/armar" data-close>${U.wrench} Armá tu PC</a>
+            ${canPick(p) ? `<button class="btn ghost" type="button" data-pickm="${esc(p.id)}">${U.check} Elegir para mi PC</button>` : `<a class="btn ghost" href="#/armar" data-close>${U.wrench} Armá tu PC</a>`}
             <a class="btn wa" href="${TW.waLink(msg)}" target="_blank" rel="noopener">${U.wa} Consultar por WhatsApp</a>
           </div>
           <p class="note">Precios y stock sujetos a cambios. Te los confirmamos por WhatsApp antes de tu compra.</p>
@@ -322,46 +353,24 @@
   };
   const GAMER = /gamer|gaming|\bg\d{3}\b|\bg ?pro\b|razer|hyperx|redragon|pulsefire|superlight|rog\b|tuf\b|corsair|steelseries|astro|quantum|blackshark|kraken|barracuda/i;
   const QUICK = {
-    cpu: [
-      { id: "sk", q: "Socket", val: (p) => p.attrs.socket || null },
-      { id: "vid", q: "Video integrado", val: (p) => (p.attrs.video ? "Con video" : "Sin video"), order: ["Con video", "Sin video"] },
-      { id: "cool", q: "Cooler", val: (p) => (p.attrs.cooler ? "Trae cooler" : "Sin cooler"), order: ["Trae cooler", "Sin cooler"] },
-    ],
+    // Pedido del cliente: pocas preguntas. Procesador: solo AMD / Intel (los botones de marca);
+    // memorias y fuentes: ninguna. El resto de los datos (socket, cables, capacidad…) va en la ficha del producto.
     mobo: [
-      { id: "fmt", q: "Formato", val: (p) => p.attrs.formato || null, order: ["ATX", "Micro-ATX", "Mini-ITX"] },
-      { id: "ddr", q: "Memoria", val: (p) => p.attrs.ddr || null },
       { id: "wifi", q: "Wi-Fi", val: (p) => (p.attrs.wifi === true ? "Con Wi-Fi" : p.attrs.wifi === false ? "Sin Wi-Fi" : null), order: ["Con Wi-Fi", "Sin Wi-Fi"] },
-      { id: "chip", q: "Chipset", val: (p) => ((txt(p).match(/\b([ABHXZ]\d{3})[A-Z]?\b/) || [])[1] || null) },
     ],
     cooler: [
-      { id: "tipo", q: "Tipo", val: (p) => (p.attrs.tipo === "Watercooler" ? "Watercooler" : p.attrs.tipo ? "Cooler de aire" : null), order: ["Cooler de aire", "Watercooler"] },
-      { id: "rad", q: "Radiador", val: (p) => (p.attrs.radiador ? `${p.attrs.radiador} mm` : null) },
       { id: "col", q: "Color", val: colorOf, order: ["Negro u otros", "Blanco"] },
-    ],
-    ram: [
-      { id: "gb", q: "Capacidad", val: (p) => (p.attrs.gb ? `${p.attrs.gb} GB` : null) },
-      { id: "mhz", q: "Velocidad", val: (p) => (p.attrs.mhz ? `${p.attrs.mhz} MHz` : null) },
     ],
     storage: [
       { id: "tipo", q: "Tipo de disco", order: ["SSD M.2", "SSD SATA", "Disco rígido (HDD)", "Disco externo"],
         val: (p) => { const a = p.attrs; if (a.interfaz === "Externo") return "Disco externo"; if (a.tipo === "HDD") return "Disco rígido (HDD)"; if (/M\.2/.test(a.interfaz || "")) return "SSD M.2"; return a.tipo === "SSD" ? "SSD SATA" : null; } },
-      { id: "gb", q: "Capacidad", order: ["Hasta 256 GB", "480 a 512 GB", "1 TB", "2 TB", "4 TB o más"],
-        val: (p) => { const g = p.attrs.gb; if (!g) return null; return g <= 256 ? "Hasta 256 GB" : g < 900 ? "480 a 512 GB" : g < 1900 ? "1 TB" : g < 3500 ? "2 TB" : "4 TB o más"; } },
     ],
     gpu: [
       { id: "chip", q: "Marca del chip", val: (p) => (["NVIDIA", "AMD", "Intel"].includes(p.sub) ? p.sub : null), order: ["NVIDIA", "AMD", "Intel"] },
-      { id: "gb", q: "Memoria", val: (p) => (p.attrs.gb ? `${p.attrs.gb} GB` : null) },
-    ],
-    psu: [
-      { id: "w", q: "Potencia", order: ["Hasta 600 W", "650 a 750 W", "800 a 1000 W", "Más de 1000 W"],
-        val: (p) => { const w = p.attrs.watts; if (!w) return null; return w <= 600 ? "Hasta 600 W" : w <= 750 ? "650 a 750 W" : w <= 1000 ? "800 a 1000 W" : "Más de 1000 W"; } },
-      { id: "cert", q: "Certificación", val: (p) => ((p.attrs.cert || "").replace(/^80 Plus ?/i, "") || null), order: ["White", "Bronze", "Silver", "Gold", "Platinum", "Titanium"] },
-      { id: "mod", q: "Cables", val: (p) => ({ Full: "Full modular", Semi: "Semi modular", No: "No modular" })[p.attrs.modular] || null, order: ["Full modular", "Semi modular", "No modular"] },
     ],
     case: [
-      { id: "fmt", q: "Mother que entra", val: (p) => ({ ATX: "Hasta ATX", "Micro-ATX": "Hasta Micro-ATX", "Mini-ITX": "Solo Mini-ITX" })[p.attrs.formato] || null, order: ["Hasta ATX", "Hasta Micro-ATX", "Solo Mini-ITX"] },
+      { id: "fmt", q: "Formato", val: (p) => (["ATX", "Micro-ATX", "Mini-ITX"].includes(p.attrs.formato) ? p.attrs.formato : null), order: ["ATX", "Micro-ATX", "Mini-ITX"] },
       { id: "col", q: "Color", val: colorOf, order: ["Negro u otros", "Blanco"] },
-      { id: "psu", q: "Fuente", val: (p) => (p.attrs.fuente > 0 ? "Trae fuente" : "Sin fuente"), order: ["Sin fuente", "Trae fuente"] },
     ],
     mouse: [
       { id: "con", q: "Conexión", val: conOf, order: ["Con cable", "Inalámbrico"] },
@@ -581,7 +590,8 @@
     if (count) count.textContent = `${opts.length} ${opts.length === 1 ? "opción compatible" : "opciones compatibles"}`;
     const qtyOf = Object.fromEntries(chosen(step.key).map((c) => [c.id, c.qty]));
     const rec = TW.power(B.sel, data.byId).rec;
-    const isRec = (p) => step.key === "psu" && p.attrs.watts >= rec && /80 PLUS/i.test(p.nombre + " " + (p.attrs.cert || ""));
+    const isRec = (p) => step.key === "psu" && p.attrs.watts >= rec && TW.is80(p);
+    const isGen = (p) => step.key === "psu" && !TW.is80(p);
     let free = "";
     const cpuBox = step.key === "cooler" && stockCooler();
     if (cpuBox) free = freeCard("data-stockcooler", usingStock(), `<img class="prod" src="${stockImg(cpuBox)}" alt="Cooler ${esc(cpuBox.attrs.plataforma)} de fábrica" loading="lazy">`,
@@ -591,12 +601,12 @@
     const card = (p) => {
       const q = qtyOf[p.id] || 0;
       const head = `
-        ${p.oferta ? `<span class="bz-off">Oferta${p.descuento ? ` -${p.descuento}%` : ""}</span>` : isRec(p) ? `<span class="bz-rec">${U.bolt} Recomendada</span>` : ""}
-        <span class="bz-img">${TW.thumb(p)}</span>`;
+        ${p.oferta ? `<span class="bz-off">Oferta${p.descuento ? ` -${p.descuento}%` : ""}</span>` : isRec(p) ? `<span class="bz-rec">${U.bolt} Recomendada</span>` : isGen(p) ? `<span class="bz-gen">Genérica</span>` : ""}
+        <span class="bz-img" data-product="${esc(p.id)}" title="Ver el producto de cerca">${TW.thumb(p)}<span class="bz-look" aria-hidden="true">${U.search}</span></span>`;
       const info = (foot) => `
         <span class="bz-info">
           <span class="bz-name">${esc(p.titulo)}</span>
-          <span class="bz-spec">${esc(p.specs.slice(0, 2).join(" · "))}</span>
+          <span class="bz-spec">${esc(TW.cardSpecs(p).join(" · "))}</span>
           ${foot}
         </span>`;
       const price = `<span class="bz-price">${p.oferta && p.precioLista ? `<s>${TW.money(p.precioLista)}</s>` : ""}${p.precio ? TW.money(p.precio) : "Consultar"}</span>`;
@@ -896,6 +906,7 @@
       let x;
       if ((x = el("[data-opencart]"))) { location.hash = "#/pedido"; $("#toast").classList.remove("show"); if ($("#modal").open) $("#modal").close(); return; }
       if ((x = el("[data-product]"))) { openProduct(x.dataset.product); return; }
+      if ((x = el("[data-pickm]"))) { $("#modal").close(); pick(x.dataset.pickm); return; }
       if ((x = el("[data-add]"))) { TW.cart.add({ type: "producto", id: x.dataset.add }); toast("Producto agregado al carrito", true); $("#modal").close(); return; }
       if ((x = el("[data-addpc]"))) { TW.cart.add({ type: "pc", id: x.dataset.addpc }); toast("PC agregada al carrito", true); if ($("#modal").open) $("#modal").close(); return; }
       if ((x = el("[data-pc]"))) { openPc(x.dataset.pc); return; }
@@ -944,7 +955,8 @@
         B.ask = null; afterChange(); saveBuild(); renderOptions(); refreshPanel(); return;
       }
       if ((x = el("[data-reset]"))) {
-        if (confirm("¿Rehacer el armado? Se borran todos los componentes elegidos.")) { B.sel = TW.emptyBuild(); B.step = 0; B.brand = ""; B.ask = null; B.qf = {}; saveBuild(); renderBuilder(); }
+        askConfirm({ title: "¿Rehacer el armado?", text: "Se borran todos los componentes que elegiste y empezás de nuevo desde el procesador.", ok: "Sí, rehacer armado", icon: U.redo })
+          .then((ok) => { if (ok) { B.sel = TW.emptyBuild(); B.step = 0; B.brand = ""; B.ask = null; B.qf = {}; saveBuild(); renderBuilder(); toast("Empezamos de nuevo"); } });
         return;
       }
       if ((x = el("[data-addbuild]"))) {
@@ -956,7 +968,11 @@
       // Carrito
       if ((x = el("[data-cq]"))) { const [k, d] = x.dataset.cq.split("|"); const it = TW.cart.items.find((i) => i.key === k); if (it) TW.cart.setQty(k, it.qty + Number(d)); return; }
       if ((x = el("[data-crm]"))) { TW.cart.remove(x.dataset.crm); return; }
-      if ((x = el("[data-clear]"))) { if (confirm("¿Vaciar el carrito?")) TW.cart.clear(); return; }
+      if ((x = el("[data-clear]"))) {
+        askConfirm({ title: "¿Vaciar el carrito?", text: "Se sacan todos los productos y PCs que agregaste al carrito.", ok: "Sí, vaciar carrito", icon: U.trash })
+          .then((ok) => { if (ok) TW.cart.clear(); });
+        return;
+      }
       if ((x = el("[data-send]"))) { sendOrder(); return; }
 
       // Cerrar diálogos

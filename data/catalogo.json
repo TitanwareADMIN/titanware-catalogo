@@ -6643,6 +6643,10 @@
                       [
                           "Formato",
                           "ATX"
+                      ],
+                      [
+                          "Certificación",
+                          "Sin certificación 80 Plus (genérica)"
                       ]
                   ],
         "attrs":  {
@@ -6682,6 +6686,10 @@
                       [
                           "Formato",
                           "ATX"
+                      ],
+                      [
+                          "Certificación",
+                          "Sin certificación 80 Plus (genérica)"
                       ]
                   ],
         "attrs":  {
@@ -6718,6 +6726,14 @@
                       [
                           "Conector principal",
                           "20+4 pines"
+                      ],
+                      [
+                          "Cables",
+                          "No modular"
+                      ],
+                      [
+                          "Certificación",
+                          "Sin certificación 80 Plus (genérica)"
                       ]
                   ],
         "attrs":  {
@@ -6758,6 +6774,10 @@
                       [
                           "Formato",
                           "ATX"
+                      ],
+                      [
+                          "Certificación",
+                          "Sin certificación 80 Plus (genérica)"
                       ]
                   ],
         "attrs":  {
@@ -6794,6 +6814,14 @@
                       [
                           "Formato",
                           "ATX"
+                      ],
+                      [
+                          "Cables",
+                          "No modular"
+                      ],
+                      [
+                          "Certificación",
+                          "Sin certificación 80 Plus (genérica)"
                       ]
                   ],
         "attrs":  {
@@ -6834,6 +6862,10 @@
                       [
                           "Formato",
                           "ATX"
+                      ],
+                      [
+                          "Certificación",
+                          "Sin certificación 80 Plus (genérica)"
                       ]
                   ],
         "attrs":  {
@@ -6873,6 +6905,10 @@
                       [
                           "Formato",
                           "ATX"
+                      ],
+                      [
+                          "Certificación",
+                          "Sin certificación 80 Plus (genérica)"
                       ]
                   ],
         "attrs":  {
@@ -6913,6 +6949,10 @@
                       [
                           "Formato",
                           "ATX"
+                      ],
+                      [
+                          "Certificación",
+                          "Sin certificación 80 Plus (genérica)"
                       ]
                   ],
         "attrs":  {
@@ -6953,6 +6993,10 @@
                       [
                           "Formato",
                           "ATX"
+                      ],
+                      [
+                          "Certificación",
+                          "Sin certificación 80 Plus (genérica)"
                       ]
                   ],
         "attrs":  {
@@ -7029,6 +7073,10 @@
                       [
                           "Formato",
                           "ATX"
+                      ],
+                      [
+                          "Certificación",
+                          "Sin certificación 80 Plus (genérica)"
                       ]
                   ],
         "attrs":  {
@@ -7046,7 +7094,13 @@
         "stock":  "consultar",
         "imagen":  "img/productos/msi-mag-a550bn.webp",
         "caja":  "img/productos/cajas/fuente-550w-msi-mag-a550bn-80-plus-bronze.webp",
-        "origen":  "FUENTE 550W MSI MAG A550BN 80 PLUS BRONZE"
+        "origen":  "FUENTE 550W MSI MAG A550BN 80 PLUS BRONZE",
+        "ficha":  [
+                      [
+                          "Certificación",
+                          "Sin certificación 80 Plus (genérica)"
+                      ]
+                  ]
     },
     {
         "id":  "fuente-500w-thermaltake-smart-80-plus-white",
@@ -7082,6 +7136,10 @@
                       [
                           "Formato",
                           "ATX"
+                      ],
+                      [
+                          "Cables",
+                          "No modular"
                       ]
                   ],
         "attrs":  {
@@ -7361,7 +7419,13 @@
         "stock":  "consultar",
         "imagen":  "img/productos/gigabyte-p650ss-ice.webp",
         "caja":  "img/productos/cajas/fuente-650w-gigabyte-gp-p650ss-ice-80-plus-silver-blanca.webp",
-        "origen":  "FUENTE 650W GIGABYTE GP-P650SS ICE 80 PLUS SILVER BLANCA"
+        "origen":  "FUENTE 650W GIGABYTE GP-P650SS ICE 80 PLUS SILVER BLANCA",
+        "ficha":  [
+                      [
+                          "Certificación",
+                          "Sin certificación 80 Plus (genérica)"
+                      ]
+                  ]
     },
     {
         "id":  "fuente-750w-evolabs-supreme-series-80-plus-silver",
@@ -42549,6 +42613,10 @@
                       [
                           "Formato",
                           "ATX"
+                      ],
+                      [
+                          "Certificación",
+                          "Sin certificación 80 Plus (genérica)"
                       ]
                   ],
         "destacado":  false,
@@ -42589,6 +42657,14 @@
                       [
                           "Formato",
                           "ATX"
+                      ],
+                      [
+                          "Cables",
+                          "No modular"
+                      ],
+                      [
+                          "Certificación",
+                          "Sin certificación 80 Plus (genérica)"
                       ]
                   ],
         "destacado":  false,
@@ -42629,6 +42705,10 @@
                       [
                           "Formato",
                           "ATX"
+                      ],
+                      [
+                          "Certificación",
+                          "Sin certificación 80 Plus (genérica)"
                       ]
                   ],
         "destacado":  false,
@@ -43164,6 +43244,10 @@
                       [
                           "Color",
                           "Blanco"
+                      ],
+                      [
+                          "Cables",
+                          "No modular"
                       ]
                   ],
         "destacado":  false,
@@ -43276,6 +43360,10 @@
                       [
                           "Color",
                           "Negro"
+                      ],
+                      [
+                          "Cables",
+                          "No modular"
                       ]
                   ],
         "destacado":  false,

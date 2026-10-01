@@ -79,6 +79,34 @@
     if (p.marca === "Genérico") return bg.replace("t-bg", "t-bg solo");
     return bg + TW.logoHtml(p.marca, TW.logoFor(p));
   };
+  // Fuente con certificación 80 Plus (las que no la tienen se muestran como "genéricas")
+  TW.is80 = (p) => {
+    const cert = (p.ficha || []).filter((f) => /certif/i.test(f[0])).map((f) => f[1]).join(" ");
+    if (/sin certif|gen[eé]ric|no especif|no tiene/i.test(cert) && !p.attrs.cert) return false;
+    return /80 ?plus/i.test(`${p.attrs.cert || ""} ${p.nombre} ${p.origen || ""} ${cert}`);
+  };
+  // Coolers (ventiladores) que trae un gabinete: el dato del armador o, si falta, la ficha
+  TW.caseFans = (p) => {
+    const n = p.attrs.fans;
+    if (n === 0 || n) return Number(n);
+    const row = (p.ficha || []).find((f) => /ventilador|cooler|fans?\b/i.test(f[0]) && /incluid|trae|preinstal/i.test(`${f[0]} ${f[1]}`));
+    const m = row && row[1].match(/(\d+)\s*(x|ventilador|cooler|fan)/i);
+    return m ? Number(m[1]) : /sin ventilador|no incluye/i.test(row ? row[1] : "") ? 0 : null;
+  };
+  // Las 2 líneas cortas que se ven en las tarjetas (catálogo y armador)
+  TW.cardSpecs = function (p) {
+    if (p.categoria === "Gabinetes") {
+      const fmt = { ATX: "ATX / Micro-ATX / Mini-ITX", "Micro-ATX": "Micro-ATX / Mini-ITX", "Mini-ITX": "Mini-ITX" }[p.attrs.formato];
+      const n = TW.caseFans(p);
+      const fans = n > 0 ? `${n} ${n === 1 ? "cooler incluido" : "coolers incluidos"}` : n === 0 ? "Sin coolers incluidos" : "";
+      return [fmt || p.specs[0], fans].filter(Boolean);
+    }
+    if (p.categoria === "Fuentes de poder") {
+      const w = p.attrs.watts ? `${p.attrs.watts} W` : p.specs[0];
+      return [w, TW.is80(p) ? (p.attrs.cert || "80 Plus") : "Genérica (sin certificación 80 Plus)"].filter(Boolean);
+    }
+    return p.specs.slice(0, 2);
+  };
   TW.priceHtml = (precio) => precio ? `<span class="price">${TW.money(precio)}</span>` : `<span class="price ask">Consultar precio</span>`;
   // Precio de un producto: si está en oferta muestra también el precio anterior tachado
   TW.productPrice = (p) => p.oferta && p.precioLista
