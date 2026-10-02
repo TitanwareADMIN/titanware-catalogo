@@ -714,9 +714,9 @@
     saveBuild(); renderBuilder();
     toBuilder();
   }
-  // En el celular sube justo hasta las opciones del paso (la barra de pasos queda fija arriba)
+  // En el celular deja directo los productos del paso (con su aviso, si hay); la barra de pasos queda fija arriba
   function toBuilder() {
-    const m = matchMedia("(max-width: 760px)").matches, el = m ? $("#bMain") : $("#builder");
+    const m = matchMedia("(max-width: 760px)").matches, el = m ? $("#bMain .b-note, #slotBar, #optGrid") || $("#bMain") : $("#builder");
     const off = m ? $("#bSide").offsetHeight + 8 : 130;
     scrollTo({ top: Math.max(0, el.getBoundingClientRect().top + scrollY - off), behavior: m ? "instant" : "smooth" });
   }
