@@ -718,11 +718,11 @@
   function toBuilder() {
     const m = matchMedia("(max-width: 760px)").matches, el = m ? $("#bMain") : $("#builder");
     const off = m ? $("#bSide").offsetHeight + 8 : 130;
-    scrollTo({ top: Math.max(0, el.getBoundingClientRect().top + scrollY - off), behavior: "smooth" });
+    scrollTo({ top: Math.max(0, el.getBoundingClientRect().top + scrollY - off), behavior: m ? "instant" : "smooth" });
   }
   // Deja el paso actual a la vista dentro de la barra de pasos
   function centerRail() {
-    const card = $("#bSide .bz-card"), c = card && card.querySelector("[aria-current]");
+    const card = $("#bSide .bz-tiles"), c = card && card.querySelector("[aria-current]");
     if (c && card.scrollWidth > card.clientWidth) card.scrollLeft = c.offsetLeft - (card.clientWidth - c.offsetWidth) / 2;
   }
   function afterChange() {

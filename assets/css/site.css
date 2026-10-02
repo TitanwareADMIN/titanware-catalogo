@@ -1116,12 +1116,13 @@ dialog.zoom .close { position: fixed; top: 1rem; right: 1rem; z-index: 2; }
 /* ---------- Celular: armador con la barra de pasos fija arriba ---------- */
 @media (max-width: 760px) {
   body.building .site-head { position: relative; }
-  .bz { gap: .9rem; }
+  .bz { gap: .9rem; grid-template-columns: minmax(0, 1fr); }
+  .bz-side, .bz-side > .bz-card { min-width: 0; }
   .bz-side { position: sticky; top: 0; z-index: 15; padding-top: .5rem; margin-top: -.5rem; background: linear-gradient(var(--bg) 75%, transparent); }
-  .bz-side > .bz-card:first-child { display: flex; align-items: center; gap: .4rem; overflow-x: auto; scrollbar-width: none; position: relative;
-    padding: .5rem; border-radius: 14px; border-color: var(--line-2); box-shadow: 0 8px 20px rgba(0, 0, 0, .45); scroll-behavior: smooth; }
-  .bz-side > .bz-card:first-child::-webkit-scrollbar { display: none; }
-  .bz-side .bz-tiles { display: contents; }
+  .bz-side > .bz-card:first-child { display: flex; align-items: center; gap: .3rem; padding: .4rem; border-radius: 14px; border-color: var(--line-2); box-shadow: 0 8px 20px rgba(0, 0, 0, .45); }
+  /* los pasos se deslizan; resumen y rehacer quedan siempre a mano a la derecha */
+  .bz-side .bz-tiles { flex: 1; min-width: 0; display: flex; gap: .4rem; overflow-x: auto; scrollbar-width: none; position: relative; padding: .2rem .1rem; }
+  .bz-side .bz-tiles::-webkit-scrollbar { display: none; }
   .bz-side .bz-tile { flex: none; display: flex; align-items: center; gap: .4rem; padding: .3rem .75rem .3rem .35rem; border-radius: 999px; border-color: var(--line-2); }
   .bz-side .bz-tile .ico, .bz-side .bz-tile .ico img { width: 30px; height: 30px; max-height: 30px; border-radius: 50%; }
   .bz-side .bz-tile .ico > svg { width: 19px; height: 19px; }
@@ -1131,8 +1132,10 @@ dialog.zoom .close { position: fixed; top: 1rem; right: 1rem; z-index: 2; }
   .bz-side .bz-tile .n { display: none; }
   .bz-side .bz-tile.done { border-color: rgba(79, 201, 142, .45); }
   .bz-side .bz-tile[aria-current="step"] { border-color: var(--violet); }
-  .bz-side .bz-sum { flex: none; white-space: nowrap; border-radius: 999px; padding: .55rem .9rem; font-size: .78rem; }
-  .bz-side .bz-card .redo { flex: none; white-space: nowrap; font-size: .76rem; padding: 0 .5rem; }
+  .bz-side .bz-sum, .bz-side .bz-card .redo { flex: none; width: 54px; display: grid; justify-items: center; gap: .15rem; padding: .35rem .1rem; border-radius: 10px; font-size: .6rem; line-height: 1.1; text-align: center; text-decoration: none; }
+  .bz-side .bz-sum { border-left: 1px solid var(--line-2); }
+  .bz-side .bz-card .redo { border: 1px solid var(--line-2); background: var(--bg-2); color: var(--text-2); }
+  .bz-side .bz-sum svg, .bz-side .bz-card .redo svg { width: 17px; height: 17px; }
 }
 @media (max-width: 640px) {
   .top .wrap { gap: .55rem .5rem; padding-inline: 1rem; }
