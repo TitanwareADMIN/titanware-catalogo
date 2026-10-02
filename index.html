@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/site.css?v=20261008">
+<link rel="stylesheet" href="assets/css/site.css?v=20261009">
 </head>
 <body>
 
@@ -35,6 +35,7 @@
   </div>
   <header class="top">
     <div class="wrap">
+      <button class="nav-btn" id="navBtn" type="button" aria-label="Abrir menú" aria-controls="mainnavBox" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       <a class="brand" href="#/" aria-label="Titanware, inicio">
         <img class="brand-emblem" src="img/logo/emblema.png" alt="" width="65" height="34">
         <img class="brand-word" src="img/logo/wordmark.png" alt="Titanware" width="170" height="18">
@@ -58,7 +59,9 @@
       </div>
     </div>
   </header>
-  <nav class="mainnav" aria-label="Principal">
+  <div class="nav-shade" id="navShade" hidden></div>
+  <nav class="mainnav" id="mainnavBox" aria-label="Principal">
+    <div class="nav-head"><img src="img/logo/emblema.png" alt="" width="65" height="34"><img src="img/logo/wordmark.png" alt="Titanware" width="170" height="18"><button class="nav-x" id="navX" type="button" aria-label="Cerrar menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
     <div class="wrap" id="mainnav">
       <a class="hi" href="#/armar" data-route="armar">Armá tu PC</a>
       <a href="#/pcs" data-route="pcs">PC Armadas</a>
@@ -352,11 +355,11 @@
 <dialog id="askDlg" class="ask-dlg" aria-labelledby="askT"></dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<script src="assets/js/config.js?v=20261008"></script>
-<script src="assets/js/firebase-config.js?v=20261008"></script>
-<script src="assets/js/core.js?v=20261008"></script>
-<script src="assets/js/auth.js?v=20261008"></script>
-<script src="assets/js/app.js?v=20261008"></script>
-<script src="assets/js/cuenta.js?v=20261008"></script>
+<script src="assets/js/config.js?v=20261009"></script>
+<script src="assets/js/firebase-config.js?v=20261009"></script>
+<script src="assets/js/core.js?v=20261009"></script>
+<script src="assets/js/auth.js?v=20261009"></script>
+<script src="assets/js/app.js?v=20261009"></script>
+<script src="assets/js/cuenta.js?v=20261009"></script>
 </body>
 </html>

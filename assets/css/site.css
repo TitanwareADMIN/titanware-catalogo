@@ -1086,3 +1086,62 @@ dialog.zoom .close { position: fixed; top: 1rem; right: 1rem; z-index: 2; }
   .ord footer { flex-direction: column; align-items: stretch; }
   .ord footer .btns .btn { flex: 1; }
 }
+
+/* ---------- Celular: menú lateral con hamburguesa (como CompraGamer) ---------- */
+.nav-btn, .nav-head, .nav-shade { display: none; }
+@media (max-width: 760px) {
+  .nav-btn { display: grid; place-items: center; flex: none; width: 42px; height: 42px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line-2); color: var(--text); cursor: pointer; }
+  .nav-btn svg { width: 22px; height: 22px; }
+  .top .wrap { gap: .6rem .7rem; }
+  /* sin el desenfoque: si no, el panel fijo queda atrapado dentro de la cabecera */
+  .site-head { backdrop-filter: none; -webkit-backdrop-filter: none; background: rgba(5, 5, 9, .97); }
+  body.nav-open { overflow: hidden; }
+  body.nav-open .site-head { z-index: 60; }
+  .nav-shade:not([hidden]) { display: block; position: fixed; inset: 0; z-index: 1; background: rgba(0, 0, 0, .6); }
+  .mainnav { position: fixed; top: 0; left: 0; bottom: 0; z-index: 2; width: min(320px, 86vw); display: flex; flex-direction: column; overflow-y: auto;
+    background: var(--surface); border: 0; border-right: 1px solid var(--line-2); box-shadow: 10px 0 40px rgba(0, 0, 0, .5);
+    transform: translateX(-105%); visibility: hidden; transition: transform .25s ease, visibility .25s; }
+  body.nav-open .mainnav { transform: none; visibility: visible; }
+  .nav-head { display: flex; align-items: center; gap: .5rem; padding: 1rem .8rem 1rem 1.2rem; border-bottom: 1px solid var(--line); }
+  .nav-head img:first-child { height: 30px; width: auto; }
+  .nav-head img:nth-child(2) { height: 13px; width: auto; }
+  .nav-x { margin-left: auto; width: 38px; height: 38px; display: grid; place-items: center; border-radius: 10px; border: 1px solid var(--line-2); background: none; color: var(--text); cursor: pointer; }
+  .nav-x svg { width: 18px; height: 18px; }
+  .mainnav .wrap { flex-direction: column; align-items: stretch; height: auto; overflow: visible; gap: .15rem; padding: .7rem .8rem 2rem; }
+  .mainnav a { padding: .8rem 1rem; font-size: 1rem; border-radius: 10px; }
+  .mainnav .sep { width: auto; height: 1px; margin: .6rem .3rem; }
+  :root { --header-h: 110px; }
+}
+
+/* ---------- Celular: armador con la barra de pasos fija arriba ---------- */
+@media (max-width: 760px) {
+  body.building .site-head { position: relative; }
+  .bz { gap: .9rem; }
+  .bz-side { position: sticky; top: 0; z-index: 15; padding-top: .5rem; margin-top: -.5rem; background: linear-gradient(var(--bg) 75%, transparent); }
+  .bz-side > .bz-card:first-child { display: flex; align-items: center; gap: .4rem; overflow-x: auto; scrollbar-width: none; position: relative;
+    padding: .5rem; border-radius: 14px; border-color: var(--line-2); box-shadow: 0 8px 20px rgba(0, 0, 0, .45); scroll-behavior: smooth; }
+  .bz-side > .bz-card:first-child::-webkit-scrollbar { display: none; }
+  .bz-side .bz-tiles { display: contents; }
+  .bz-side .bz-tile { flex: none; display: flex; align-items: center; gap: .4rem; padding: .3rem .75rem .3rem .35rem; border-radius: 999px; border-color: var(--line-2); }
+  .bz-side .bz-tile .ico, .bz-side .bz-tile .ico img { width: 30px; height: 30px; max-height: 30px; border-radius: 50%; }
+  .bz-side .bz-tile .ico > svg { width: 19px; height: 19px; }
+  .bz-side .bz-tile .lbl { font-size: .78rem; white-space: nowrap; overflow-wrap: normal; }
+  .bz-side .bz-tile .ok { top: -3px; right: -3px; width: 15px; height: 15px; }
+  .bz-side .bz-tile .ok svg { width: 9px; height: 9px; }
+  .bz-side .bz-tile .n { display: none; }
+  .bz-side .bz-tile.done { border-color: rgba(79, 201, 142, .45); }
+  .bz-side .bz-tile[aria-current="step"] { border-color: var(--violet); }
+  .bz-side .bz-sum { flex: none; white-space: nowrap; border-radius: 999px; padding: .55rem .9rem; font-size: .78rem; }
+  .bz-side .bz-card .redo { flex: none; white-space: nowrap; font-size: .76rem; padding: 0 .5rem; }
+}
+@media (max-width: 640px) {
+  .top .wrap { gap: .55rem .5rem; padding-inline: 1rem; }
+  .nav-btn, .hactions .cart-btn, .hactions .acct-btn { width: 40px; height: 40px; }
+  .hactions { gap: .4rem; }
+  .brand { gap: .4rem; }
+  .brand-emblem { height: 28px; }
+  .brand-word { height: 12px; }
+}
+/* En el celular el botón de seguir ya está en la barra de abajo: las opciones quedan más arriba */
+@media (max-width: 760px) { #bNext { display: none; } }
+@media (max-width: 640px) { :root { --header-h: 160px; } }

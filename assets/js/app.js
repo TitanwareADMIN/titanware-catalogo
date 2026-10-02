@@ -26,6 +26,12 @@
     $("#year").textContent = new Date().getFullYear();
     $("#mainnav").insertAdjacentHTML("beforeend", CFG.categorias.map((c) =>
       `<a href="#/catalogo/${encodeURIComponent(c)}" data-route="catalogo" data-cat="${esc(c)}">${esc(c)}</a>`).join(""));
+    // Celular: el menú es un panel lateral que se abre con la hamburguesa
+    const navOpen = (on) => { document.body.classList.toggle("nav-open", on); $("#navShade").hidden = !on; $("#navBtn").setAttribute("aria-expanded", on); };
+    $("#navBtn").onclick = () => navOpen(true);
+    $("#navX").onclick = $("#navShade").onclick = () => navOpen(false);
+    $("#mainnav").addEventListener("click", (e) => { if (e.target.closest("a")) navOpen(false); });
+    addEventListener("keydown", (e) => { if (e.key === "Escape" && document.body.classList.contains("nav-open")) navOpen(false); });
     $("#tileIcoBuild").innerHTML = TW.ICONS.Procesadores;
     $("#tileIcoPcs").innerHTML = TW.ICONS.Gabinetes;
     $("#tileIcoCat").innerHTML = TW.ICONS["Placas de video"];
@@ -437,6 +443,7 @@
         <div class="bz-main" id="bMain">${B.step < n ? stepView(STEPS[B.step]) : summaryView()}</div>
       </div>`;
     if (B.step < n) renderOptions();
+    centerRail();
   }
 
   // Panel izquierdo: grilla de componentes + consumo, total y botones
@@ -469,7 +476,7 @@
         </div>
       </div>`;
   }
-  function refreshPanel() { const s = $("#bSide"); if (s) s.innerHTML = panelHtml(); const h = $("#bNext"); if (h) h.innerHTML = nextBtn("lg"); }
+  function refreshPanel() { const s = $("#bSide"); if (s) s.innerHTML = panelHtml(); centerRail(); const h = $("#bNext"); if (h) h.innerHTML = nextBtn("lg"); }
 
   // Chequeos de compatibilidad, uno por uno: ok · wait (falta elegir) · bad
   function compatChecks() {
@@ -705,7 +712,18 @@
   function advance() {
     B.step++; B.q = ""; B.ask = null;
     saveBuild(); renderBuilder();
-    scrollTo({ top: $("#builder").offsetTop - 130, behavior: "smooth" });
+    toBuilder();
+  }
+  // En el celular sube justo hasta las opciones del paso (la barra de pasos queda fija arriba)
+  function toBuilder() {
+    const m = matchMedia("(max-width: 760px)").matches, el = m ? $("#bMain") : $("#builder");
+    const off = m ? $("#bSide").offsetHeight + 8 : 130;
+    scrollTo({ top: Math.max(0, el.getBoundingClientRect().top + scrollY - off), behavior: "smooth" });
+  }
+  // Deja el paso actual a la vista dentro de la barra de pasos
+  function centerRail() {
+    const card = $("#bSide .bz-card"), c = card && card.querySelector("[aria-current]");
+    if (c && card.scrollWidth > card.clientWidth) card.scrollLeft = c.offsetLeft - (card.clientWidth - c.offsetWidth) / 2;
   }
   function afterChange() {
     const removed = TW.pruneBuild(B.sel, data.byId);
@@ -928,7 +946,7 @@
         renderOptions(); return;
       }
       if ((x = el("[data-brand]"))) { B.brand = B.brand === x.dataset.brand ? "" : x.dataset.brand; $$("[data-brand]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.brand === B.brand)); renderOptions(); return; }
-      if ((x = el("[data-goto]"))) { B.step = Number(x.dataset.goto); B.q = ""; B.ask = null; saveBuild(); renderBuilder(); scrollTo({ top: $("#builder").offsetTop - 130, behavior: "smooth" }); return; }
+      if ((x = el("[data-goto]"))) { B.step = Number(x.dataset.goto); B.q = ""; B.ask = null; saveBuild(); renderBuilder(); toBuilder(); return; }
       if ((x = el("[data-qty]"))) { const [id, n] = x.dataset.qty.split("|"); if (data.byId[id]) addQty(data.byId[id], Number(n)); return; }
       if ((x = el("[data-askclose]"))) { B.ask = null; B.replace = false; renderOptions(); return; }
       if ((x = el("[data-unpick]"))) {
