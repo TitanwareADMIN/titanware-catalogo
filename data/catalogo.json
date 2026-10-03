@@ -5045,7 +5045,6 @@
         "destacado":  false,
         "stock":  "disponible",
         "imagen":  "img/productos/wd-green-sata.webp",
-        "caja":  "img/productos/cajas/hd-ssd-500gb-wd-green-sata-iii-2-5.webp",
         "origen":  "HD SSD 500GB WD GREEN SATA III 2.5\" +Q 480GB",
         "marca":  "Western Digital",
         "specs":  [
@@ -5178,7 +5177,6 @@
         "destacado":  true,
         "stock":  "disponible",
         "imagen":  "img/productos/kingston-nv3.webp",
-        "caja":  "img/productos/cajas/hd-ssd-500gb-kingston-snvs-nv3-m-2-nvme-gen4.webp",
         "origen":  "Disco Solido Ssd M2 Pci-E Nvme 500Gb Kingston Nv3",
         "marca":  "Kingston",
         "specs":  [
@@ -5314,7 +5312,6 @@
         "destacado":  false,
         "stock":  "disponible",
         "imagen":  "img/productos/kingston-xs2000.webp",
-        "caja":  "img/productos/cajas/hd-ssd-externo-500gb-kingston-xs2000-usb-3-2-gen2x2.webp",
         "origen":  "HD SSD EXTERNO 500GB KINGSTON XS2000 USB 3.2 GEN2X2 GRIS",
         "marca":  "Kingston",
         "specs":  [
