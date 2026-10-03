@@ -7168,7 +7168,7 @@
         "id":  "fuente-550w-msi-mag-a550bn-80-plus-bronze",
         "nombre":  "FUENTE 550W MSI MAG A550BN 80 PLUS BRONZE",
         "categoria":  "Fuentes de poder",
-        "sub":  "",
+        "sub":  "Fuentes de poder",
         "precio":  88680,
         "destacado":  false,
         "stock":  "consultar",
@@ -7177,10 +7177,24 @@
         "origen":  "FUENTE 550W MSI MAG A550BN 80 PLUS BRONZE",
         "ficha":  [
                       [
+                          "Potencia",
+                          "550W"
+                      ],
+                      [
                           "Certificación",
-                          "Sin certificación 80 Plus (genérica)"
+                          "80 Plus Bronze"
+                      ],
+                      [
+                          "Formato",
+                          "ATX"
                       ]
-                  ]
+                  ],
+        "marca":  "MSI",
+        "specs":  [
+                      "550W",
+                      "80 Plus Bronze"
+                  ],
+        "desc":  "Fuente MSI de la serie MAG de 550W con certificación 80 Plus Bronze, orientada a PCs gamer de gama de entrada a media. Garantiza una eficiencia energética mínima del 85% en cargas típicas y es una marca con respaldo internacional. El nombre en la lista de precios no incluye el modelo exacto, por lo que no se completan datos adicionales de ficha para evitar inventar."
     },
     {
         "id":  "fuente-500w-thermaltake-smart-80-plus-white",
@@ -7493,7 +7507,7 @@
         "id":  "fuente-650w-gigabyte-gp-p650ss-ice-80-plus-silver-blanca",
         "nombre":  "FUENTE 650W GIGABYTE GP-P650SS ICE 80 PLUS SILVER BLANCA",
         "categoria":  "Fuentes de poder",
-        "sub":  "",
+        "sub":  "Fuentes de poder",
         "precio":  107486,
         "destacado":  false,
         "stock":  "consultar",
@@ -7502,10 +7516,45 @@
         "origen":  "FUENTE 650W GIGABYTE GP-P650SS ICE 80 PLUS SILVER BLANCA",
         "ficha":  [
                       [
+                          "Potencia",
+                          "650W"
+                      ],
+                      [
                           "Certificación",
-                          "Sin certificación 80 Plus (genérica)"
+                          "80 Plus Silver"
+                      ],
+                      [
+                          "Formato",
+                          "ATX (ATX12V v3.0/3.1)"
+                      ],
+                      [
+                          "Ventilador",
+                          "120mm FDB"
+                      ],
+                      [
+                          "Conectores",
+                          "1x 20+4 pines, 2x CPU/EPS 4+4, 2x PCIe 6+2"
+                      ],
+                      [
+                          "Protecciones",
+                          "OVP, OPP, SCP, UVP, OCP, OTP"
+                      ],
+                      [
+                          "Color",
+                          "Blanco"
+                      ],
+                      [
+                          "Cables",
+                          "No modular"
                       ]
-                  ]
+                  ],
+        "marca":  "Gigabyte",
+        "specs":  [
+                      "650W",
+                      "80 Plus Silver",
+                      "Blanca (ICE)"
+                  ],
+        "desc":  "Fuente Gigabyte P650SS ICE, versión blanca con certificación 80 Plus Silver, formato ATX12V compatible con ATX 3.0/3.1 y ventilador de 120mm de rodamiento hidrodinámico. Ideal para gabinetes con estética blanca que buscan una fuente confiable de gama media."
     },
     {
         "id":  "fuente-750w-evolabs-supreme-series-80-plus-silver",

@@ -82,6 +82,8 @@
   };
   // Fuente con certificación 80 Plus (las que no la tienen se muestran como "genéricas")
   TW.is80 = (p) => {
+    // si el nombre dice 80 Plus, manda el nombre (evita que una ficha mal cargada la marque como genérica)
+    if (/80 ?plus/i.test(`${p.nombre} ${p.origen || ""}`)) return true;
     const cert = (p.ficha || []).filter((f) => /certif/i.test(f[0])).map((f) => f[1]).join(" ");
     if (/sin certif|gen[eé]ric|no especif|no tiene/i.test(cert) && !p.attrs.cert) return false;
     return /80 ?plus/i.test(`${p.attrs.cert || ""} ${p.nombre} ${p.origen || ""} ${cert}`);
