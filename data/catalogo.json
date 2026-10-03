@@ -1574,6 +1574,9 @@
                           "Arquitectura",
                           "Zen+ (Picasso)"
                       ]
+                  ],
+        "alias":  [
+                      "MICRO AMD 3000G ATHLON C/VIDEO C/COOLER CPU AM4"
                   ]
     },
     {
@@ -2695,6 +2698,9 @@
                           "Part number",
                           "RR-S4NA-17PA-R1"
                       ]
+                  ],
+        "alias":  [
+                      "Cooler Cpu Cooler Master Hyper 212 Spectrum V3 150W"
                   ]
     },
     {
@@ -2798,6 +2804,9 @@
                           "Ventilador",
                           "ARGB"
                       ]
+                  ],
+        "alias":  [
+                      "Cooler Cpu Msi Mag Corefrozr AA13 Argb 200W"
                   ]
     },
     {
@@ -2854,6 +2863,9 @@
                           "Part number",
                           "CL-P116-AL12SW-A"
                       ]
+                  ],
+        "alias":  [
+                      "Cooler Cpu Thermaltake UX200 SE Argb 130W Blanco"
                   ]
     },
     {
@@ -2906,6 +2918,9 @@
                           "Part number",
                           "CL-P105-AL12SW-A"
                       ]
+                  ],
+        "alias":  [
+                      "Cooler Cpu Thermaltake UX200 SE Argb 130W"
                   ]
     },
     {
@@ -3109,6 +3124,9 @@
                           "Part number",
                           "MAY-T2HP-217PK-R1"
                       ]
+                  ],
+        "alias":  [
+                      "Cooler Cpu Cooler Master Hyper 212 3HDP Argb Negro150W"
                   ]
     },
     {
@@ -3161,6 +3179,9 @@
                           "Part number",
                           "CL-P119-AL12SW-A"
                       ]
+                  ],
+        "alias":  [
+                      "Cooler Cpu Thermaltake Astria 200 Argb 130W"
                   ]
     },
     {
@@ -3217,6 +3238,9 @@
                           "Part number",
                           "CL-P137-AL12SW-A"
                       ]
+                  ],
+        "alias":  [
+                      "Cooler Cpu Thermaltake Astria 200 Argb 130W Blanco"
                   ]
     },
     {
@@ -3317,6 +3341,9 @@
                           "Part number",
                           "CL-P120-CA12SW-A"
                       ]
+                  ],
+        "alias":  [
+                      "Cooler Cpu Thermaltake Astria 400 Argb 230W"
                   ]
     },
     {
@@ -3373,6 +3400,9 @@
                           "Part number",
                           "CL-P138-CA12SW-A"
                       ]
+                  ],
+        "alias":  [
+                      "Cooler Cpu Thermaltake Astria 400 Argb 130W Blanco"
                   ]
     },
     {
@@ -4031,7 +4061,10 @@
                       "modulos":  1,
                       "mhz":  3200,
                       "sodimm":  false
-                  }
+                  },
+        "alias":  [
+                      "Memoria Ram DDR4 - 8Gb 3200 Mhz XPG D35G Rgb Negro"
+                  ]
     },
     {
         "id":  "memoria-8gb-ddr4-3200-corsair-vengeance-rgb-rs",
@@ -4089,7 +4122,10 @@
                       "modulos":  1,
                       "mhz":  3200,
                       "sodimm":  false
-                  }
+                  },
+        "alias":  [
+                      "MEMORIA 8GB DDR4 3200 CORSAIR VENGEANCE RGB RS"
+                  ]
     },
     {
         "id":  "memoria-8gb-ddr4-3200-corsair-vengeance-lpx",
@@ -4531,7 +4567,10 @@
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
                       "gb":  128
-                  }
+                  },
+        "alias":  [
+                      "HD SSD 128GB HIKSEMI WAVE M.2 NVME GEN3 2280 +Q 120GB"
+                  ]
     },
     {
         "id":  "hd-ssd-256gb-lexar-nq100-sata-iii-2-5",
@@ -4735,7 +4774,10 @@
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
                       "gb":  256
-                  }
+                  },
+        "alias":  [
+                      "Disco Solido Ssd M2 Pci-E 256Gb Hiksemi Wave"
+                  ]
     },
     {
         "id":  "hd-ssd-256gb-patriot-p300-m-2-nvme-gen3",
@@ -4989,7 +5031,10 @@
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
                       "gb":  500
-                  }
+                  },
+        "alias":  [
+                      "Disco Solido Ssd M2 Pci-E 512Gb Hiksemi Wave"
+                  ]
     },
     {
         "id":  "hd-ssd-512gb-patriot-p300-m-2-nvme-gen3",
@@ -5206,7 +5251,10 @@
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
                       "gb":  500
-                  }
+                  },
+        "alias":  [
+                      "HD SSD 500GB KINGSTON SNVS NV3 M.2 NVME GEN4 5000MB/S 2280"
+                  ]
     },
     {
         "id":  "hd-ssd-512gb-patriot-p320-m-2-nvme-gen3",
@@ -5432,7 +5480,10 @@
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
                       "gb":  1000
-                  }
+                  },
+        "alias":  [
+                      "Disco Solido Ssd M2 Pci-E 1Tb Western Digital WD SN350 Green"
+                  ]
     },
     {
         "id":  "hd-ssd-1tb-wd-green-sata-iii-2-5",
@@ -5513,7 +5564,10 @@
                       "tipo":  "HDD",
                       "interfaz":  "SATA",
                       "gb":  1000
-                  }
+                  },
+        "alias":  [
+                      "Disco Rigido 1Tb Seagate Skyhawk"
+                  ]
     },
     {
         "id":  "hd-hdd-externo-1tb-wd-elements-usb-3-0",
@@ -5553,7 +5607,10 @@
                       "tipo":  "HDD",
                       "interfaz":  "Externo",
                       "gb":  1000
-                  }
+                  },
+        "alias":  [
+                      "Disco Externo 1Tb Western Digital WD Elements"
+                  ]
     },
     {
         "id":  "hd-hdd-externo-2tb-seagate-portable-usb-3-0",
@@ -5675,7 +5732,10 @@
                       "tipo":  "HDD",
                       "interfaz":  "SATA",
                       "gb":  1000
-                  }
+                  },
+        "alias":  [
+                      "Disco Rigido 1Tb Western Digital WD Purple"
+                  ]
     },
     {
         "id":  "hd-hdd-2tb-wd-purple-sata-iii-3-5",
@@ -5716,7 +5776,10 @@
                       "tipo":  "HDD",
                       "interfaz":  "SATA",
                       "gb":  2000
-                  }
+                  },
+        "alias":  [
+                      "HD HDD 2TB WD PURPLE SATA III 3.5\" VIDEOVIGILANCIA DVR NVR"
+                  ]
     },
     {
         "id":  "hd-hdd-externo-2tb-wd-elements-usb-3-0",
@@ -5756,7 +5819,10 @@
                       "tipo":  "HDD",
                       "interfaz":  "Externo",
                       "gb":  2000
-                  }
+                  },
+        "alias":  [
+                      "HD HDD EXTERNO 2TB WD ELEMENTS USB 3.0"
+                  ]
     },
     {
         "id":  "placa-de-video-geforce-gt-210-1gb-msi-n210-md1g-d3-low-profile",
@@ -5934,6 +6000,9 @@
                           "TDP",
                           "20 W aprox."
                       ]
+                  ],
+        "alias":  [
+                      "PLACA DE VIDEO GeForce GT 1030 4GB MSI 4DG4 LOW PROFILE"
                   ]
     },
     {
@@ -6686,7 +6755,10 @@
                       "psuRec":  550,
                       "gb":  8,
                       "lowProfile":  false
-                  }
+                  },
+        "alias":  [
+                      "Placa De Video GeForce RTX 5050 8Gb Asus Dual Oc"
+                  ]
     },
     {
         "id":  "fuente-500w-lnz-bx550-ss",
@@ -7079,7 +7151,10 @@
         "attrs":  {
                       "watts":  500,
                       "formato":  "ATX"
-                  }
+                  },
+        "alias":  [
+                      "FUENTE 500W EVOLABS POWER SERIES"
+                  ]
     },
     {
         "id":  "fuente-500w-raptor-volt-80-plus-silver",
@@ -7159,7 +7234,10 @@
         "attrs":  {
                       "watts":  600,
                       "formato":  "ATX"
-                  }
+                  },
+        "alias":  [
+                      "FUENTE 600W EVOLABS POWER SERIES"
+                  ]
     },
     {
         "id":  "fuente-550w-msi-mag-a550bn-80-plus-bronze",
@@ -7331,7 +7409,10 @@
                       "watts":  550,
                       "cert":  "80 Plus Silver",
                       "formato":  "ATX"
-                  }
+                  },
+        "alias":  [
+                      "Fuente Gigabyte 550W 80 Plus Silver Plus Blanca"
+                  ]
     },
     {
         "id":  "fuente-650w-evolabs-supreme-series-80-plus-bronze",
@@ -7409,7 +7490,10 @@
                       "watts":  550,
                       "cert":  "80 Plus Silver",
                       "formato":  "ATX"
-                  }
+                  },
+        "alias":  [
+                      "Fuente Gigabyte 550W 80 Plus Silver Plus"
+                  ]
     },
     {
         "id":  "fuente-550w-80-plus-bronze-corsair-cx550",
@@ -8615,6 +8699,9 @@
                           "Formato de fuente",
                           "ATX"
                       ]
+                  ],
+        "alias":  [
+                      "Gabinete Mid Tower Evolabs Sophystix 3 Fan Frgb"
                   ]
     },
     {
@@ -8810,6 +8897,9 @@
                           "Ventiladores incluidos",
                           "2 ARGB"
                       ]
+                  ],
+        "alias":  [
+                      "Gabinete Mid Tower Evolabs Artist 2 Fan Argb"
                   ]
     },
     {
@@ -8895,6 +8985,9 @@
                           "Ventiladores incluidos",
                           "4 ARGB"
                       ]
+                  ],
+        "alias":  [
+                      "Gabinete Mid Tower Evolabs Duality 4 Fan Argb"
                   ]
     },
     {
@@ -9046,6 +9139,9 @@
                           "Formato de fuente",
                           "ATX"
                       ]
+                  ],
+        "alias":  [
+                      "Gabinete Mid Tower Xpg Valor Air White 4 Fan Vidrio Templado"
                   ]
     },
     {
@@ -15575,7 +15671,10 @@
                       "m2":  1,
                       "sata":  4,
                       "wifi":  false
-                  }
+                  },
+        "alias":  [
+                      "Motherboard 1700 14°Gen - Msi B760M-E PRO DDR5"
+                  ]
     },
     {
         "id":  "gigabyte-h610m-k-ddr4-s1700",
@@ -17034,7 +17133,10 @@
                       "m2":  3,
                       "sata":  4,
                       "wifi":  true
-                  }
+                  },
+        "alias":  [
+                      "MOTHER GIGABYTE Z890 UD WIFI6E DDR5 S1851"
+                  ]
     },
     {
         "id":  "gigabyte-b860m-k-ddr5-s1851",
@@ -24046,7 +24148,10 @@
                                       "LGA 1851"
                                   ],
                       "radiador":  240
-                  }
+                  },
+        "alias":  [
+                      "Cooler Cpu Watercooler Cooler Master MasterLiquid 240 Core II Argb 200W Bla"
+                  ]
     },
     {
         "id":  "raptor-aqua-core-360",
@@ -24204,7 +24309,10 @@
                       "tipo":  "Watercooler",
                       "maxTdp":  250,
                       "radiador":  240
-                  }
+                  },
+        "alias":  [
+                      "Cooler Cpu Watercooler Evolabs Cryogene Pro 240 Argb 250W"
+                  ]
     },
     {
         "id":  "msi-mag-coreliquid-a12-240-argb-black",
@@ -24250,7 +24358,10 @@
                                       "LGA 1851"
                                   ],
                       "radiador":  240
-                  }
+                  },
+        "alias":  [
+                      "Cooler Cpu Watercooler Msi Mag Coreliquid A12 240 Argb 200W"
+                  ]
     },
     {
         "id":  "raptor-aqua-pro-360-display",
@@ -24336,7 +24447,10 @@
                                       "LGA 1851"
                                   ],
                       "radiador":  240
-                  }
+                  },
+        "alias":  [
+                      "Cooler Cpu Watercooler Msi Mag Coreliquid A13 240 Argb 200W"
+                  ]
     },
     {
         "id":  "msi-mag-coreliquid-a13-240-white",
@@ -24382,7 +24496,10 @@
                                       "LGA 1851"
                                   ],
                       "radiador":  240
-                  }
+                  },
+        "alias":  [
+                      "WATERCOOLER 240MM MSI MAG CORELIQUID A13 240 WHITE"
+                  ]
     },
     {
         "id":  "thermaltake-th420-v2-argb-sync-snow-edition",
@@ -24479,7 +24596,10 @@
                                       "LGA 1700"
                                   ],
                       "radiador":  240
-                  }
+                  },
+        "alias":  [
+                      "WATERCOOLER 240MM THERMALTAKE LA240 ARGB SYNC AIO CL-W457-PL12SW-A"
+                  ]
     },
     {
         "id":  "cooler-master-masterliquid-core-nex-digital-240-argb",
@@ -25203,7 +25323,10 @@
                                       "LGA 1851"
                                   ],
                       "radiador":  360
-                  }
+                  },
+        "alias":  [
+                      "Cooler Cpu Watercooler Asus Liquid Prime LC 360 Argb 200W"
+                  ]
     },
     {
         "id":  "asus-prime-lc-360-argb-white-edition",
@@ -25321,7 +25444,10 @@
                                       "LGA 1851"
                                   ],
                       "radiador":  360
-                  }
+                  },
+        "alias":  [
+                      "Cooler Cpu Watercooler Cooler Master MasterLiquid 360 CoreII Argb 250W Whit"
+                  ]
     },
     {
         "id":  "corsair-nautilus-240-rs",
@@ -25534,7 +25660,10 @@
                       "tipo":  "Watercooler",
                       "maxTdp":  250,
                       "radiador":  240
-                  }
+                  },
+        "alias":  [
+                      "WATERCOOLER 240MM EVOLABS CRYOGENE SUPREME 240 C/ DISPLAY"
+                  ]
     },
     {
         "id":  "corsair-nautilus-240-rs-argb",
@@ -25903,7 +26032,10 @@
                       "tipo":  "Watercooler",
                       "maxTdp":  300,
                       "radiador":  360
-                  }
+                  },
+        "alias":  [
+                      "Cooler Cpu Watercooler Evolabs Cryogene Supreme 360 Argb 300W"
+                  ]
     },
     {
         "id":  "corsair-nautilus-360-rs-argb",
@@ -25995,7 +26127,10 @@
                                       "LGA 1851"
                                   ],
                       "radiador":  360
-                  }
+                  },
+        "alias":  [
+                      "Cooler Cpu Watercooler Msi Mag Coreliquid E360 Rgb 250W"
+                  ]
     },
     {
         "id":  "corsair-icue-link-titan-240-rx-rgb-white",
@@ -27365,7 +27500,10 @@
                                       "LGA 1851"
                                   ],
                       "radiador":  360
-                  }
+                  },
+        "alias":  [
+                      "WATERCOOLER 360MM CORSAIR ICUE TITAN 360 RX RGB CW-9061018-WW"
+                  ]
     },
     {
         "id":  "asus-rog-strix-lc-iii-360-argb-lcd-white",
@@ -27623,7 +27761,10 @@
                                       "LGA 1851"
                                   ],
                       "radiador":  360
-                  }
+                  },
+        "alias":  [
+                      "Cooler Cpu Watercooler Asus Rog Ryujin III 360 Extreme Argb 300W Blanco"
+                  ]
     },
     {
         "id":  "asus-rog-ryuo-iv-slc-360-argb-white-edition",
@@ -32718,7 +32859,10 @@
                       "modulos":  1,
                       "mhz":  5600,
                       "sodimm":  false
-                  }
+                  },
+        "alias":  [
+                      "MEMORIA 16GB DDR5 5600 KINGSTON FURY BEAST RGB"
+                  ]
     },
     {
         "id":  "kingston-fury-beast-rgb-expo-16gb-ddr5-6400mhz",
@@ -32830,7 +32974,10 @@
                       "modulos":  1,
                       "mhz":  6800,
                       "sodimm":  false
-                  }
+                  },
+        "alias":  [
+                      "Memoria Ram DDR5 - 16Gb 6800 Mhz Kingston Fury Beast"
+                  ]
     },
     {
         "id":  "patriot-viper-elite-5-ultra-rgb-16gb-ddr5-6000mhz-expo",
@@ -33562,7 +33709,10 @@
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
                       "gb":  256
-                  }
+                  },
+        "alias":  [
+                      "HD SSD 256GB ADATA LEGEND 710 M.2 NVME GEN3 2400MB/S +Q 250GB"
+                  ]
     },
     {
         "id":  "ssd-kingston-a400-240gb-sata-iii-2-5",
@@ -33883,7 +34033,10 @@
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
                       "gb":  1000
-                  }
+                  },
+        "alias":  [
+                      "HD SSD 1TB KINGSTON FURY RENEGADE M.2 NVME GEN4 7300MB/S 2280"
+                  ]
     },
     {
         "id":  "ssd-wd-green-sn3000-500gb-m-2-nvme-pcie-gen4",
@@ -34485,7 +34638,10 @@
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
                       "gb":  1000
-                  }
+                  },
+        "alias":  [
+                      "HD SSD 1TB ADATA LEGEND 710 M.2 NVME GEN3 2400MB/S"
+                  ]
     },
     {
         "id":  "ssd-aimerican-agility-1tb-m-2-nvme",
@@ -34566,7 +34722,10 @@
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
                       "gb":  512
-                  }
+                  },
+        "alias":  [
+                      "Disco Solido Ssd M2 Pci-E 512Gb Kingston KC3000"
+                  ]
     },
     {
         "id":  "ssd-wd-black-sn770m-500gb-m-2-nvme-pcie-gen4-2230",
@@ -34767,7 +34926,10 @@
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
                       "gb":  1000
-                  }
+                  },
+        "alias":  [
+                      "HD SSD 1TB KINGSTON SNVS NV3 M.2 NVME GEN4 6000MB/S 2280 +Q NV2"
+                  ]
     },
     {
         "id":  "ssd-wd-green-sn3000-1tb-m-2-nvme-pcie-gen4",
@@ -35730,7 +35892,10 @@
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
                       "gb":  2000
-                  }
+                  },
+        "alias":  [
+                      "Disco Solido Ssd M2 Pci-E Nvme 2Tb Kingston NV3"
+                  ]
     },
     {
         "id":  "ssd-externo-kingston-xs2000-2tb-usb-3-2-gen2x2-gris",
@@ -35990,7 +36155,10 @@
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
                       "gb":  2000
-                  }
+                  },
+        "alias":  [
+                      "HD SSD 2TB ADATA LEGEND 710 M.2 NVME GEN3 2400MB/S 2280"
+                  ]
     },
     {
         "id":  "ssd-wd-black-sn8100-1tb-m-2-nvme-pcie-gen5-14900mb-s",
@@ -36210,7 +36378,10 @@
                       "tipo":  "SSD",
                       "interfaz":  "M.2 NVMe",
                       "gb":  2000
-                  }
+                  },
+        "alias":  [
+                      "Disco Solido Ssd M2 Pci-E 2Tb Kingston KC3000"
+                  ]
     },
     {
         "id":  "ssd-adata-legend-900-2tb-m-2-nvme-pcie-gen4-7000mb-s",
@@ -36981,7 +37152,10 @@
                       "tipo":  "HDD",
                       "interfaz":  "SATA",
                       "gb":  4000
-                  }
+                  },
+        "alias":  [
+                      "Disco Rigido 4Tb Western Digital Blue"
+                  ]
     },
     {
         "id":  "disco-externo-wd-my-passport-4tb-usb-3-2-rojo",
@@ -38833,7 +39007,10 @@
                       "psuRec":  550,
                       "gb":  8,
                       "lowProfile":  false
-                  }
+                  },
+        "alias":  [
+                      "PLACA DE VIDEO GeForce RTX 5060 8GB ASUS DUAL EVO OC EDITION"
+                  ]
     },
     {
         "id":  "msi-geforce-rtx-5060-8gb-ventus-2x-oc",
@@ -39701,7 +39878,10 @@
                       "psuRec":  600,
                       "gb":  8,
                       "lowProfile":  false
-                  }
+                  },
+        "alias":  [
+                      "PLACA DE VIDEO GeForce RTX 5060 TI 8GB ASUS DUAL OC EDITION"
+                  ]
     },
     {
         "id":  "gigabyte-geforce-rtx-5060-ti-8gb-windforce-oc",
@@ -40701,7 +40881,10 @@
                       "psuRec":  600,
                       "gb":  8,
                       "lowProfile":  false
-                  }
+                  },
+        "alias":  [
+                      "PLACA DE VIDEO GeForce RTX 5060 TI 8GB ASUS T1 OC EDITION"
+                  ]
     },
     {
         "id":  "asus-prime-radeon-rx-9070-gre-12gb-oc-edition",
@@ -40759,7 +40942,10 @@
                       "psuRec":  650,
                       "gb":  12,
                       "lowProfile":  false
-                  }
+                  },
+        "alias":  [
+                      "Placa De Video Radeon RX 9070 12Gb Asus Prime GRE Oc"
+                  ]
     },
     {
         "id":  "asus-tuf-gaming-geforce-rtx-5060-ti-8gb-oc",
@@ -41623,7 +41809,10 @@
                       "psuRec":  600,
                       "gb":  16,
                       "lowProfile":  false
-                  }
+                  },
+        "alias":  [
+                      "Placa De Video GeForce RTX 5060 Ti 16Gb Asus Prime Oc"
+                  ]
     },
     {
         "id":  "asus-prime-radeon-rx-9070-xt-16gb-oc-edition",
@@ -42603,7 +42792,10 @@
                       "psuRec":  750,
                       "gb":  16,
                       "lowProfile":  false
-                  }
+                  },
+        "alias":  [
+                      "Placa De Video GeForce RTX 5070Ti 16Gb Gigabyte Gaming Oc"
+                  ]
     },
     {
         "id":  "gigabyte-geforce-rtx-5070-ti-16gb-aero-oc",
@@ -44019,7 +44211,10 @@
                       "cert":  "80 Plus Silver",
                       "modular":  "No",
                       "formato":  "ATX"
-                  }
+                  },
+        "alias":  [
+                      "Fuente Gigabyte 650W 80 Plus Silver Plus"
+                  ]
     },
     {
         "id":  "aerocool-cylon-700w-rgb-80-plus-bronze",
@@ -45242,7 +45437,10 @@
                       "cert":  "80 Plus Bronze",
                       "modular":  "Semi",
                       "formato":  "ATX"
-                  }
+                  },
+        "alias":  [
+                      "FUENTE 650W CORSAIR CX650M ATX 3.1 PCIE 5.1 CYBENETICS BRONZE SEMI MODULAR CP-9020310-AR"
+                  ]
     },
     {
         "id":  "corsair-cx750-750w-80-plus-bronze",
@@ -45971,7 +46169,10 @@
                       "cert":  "80 Plus Bronze",
                       "modular":  "Semi",
                       "formato":  "ATX"
-                  }
+                  },
+        "alias":  [
+                      "FUENTE 750W CORSAIR CX750M ATX 3.1 PCIE 5.1 CYBENETICS BRONZE SEMI MODULAR CP-9020311-AR"
+                  ]
     },
     {
         "id":  "gigabyte-gp-ud850gm-pg5-850w-80-plus-gold",
@@ -46506,7 +46707,10 @@
                       "cert":  "80 Plus Gold",
                       "modular":  "Full",
                       "formato":  "ATX"
-                  }
+                  },
+        "alias":  [
+                      "Fuente Adata Xpg Core Reactor II VE 850W Full Modular 80 Plus Gold ATX 3.1"
+                  ]
     },
     {
         "id":  "asus-tuf-gaming-750g-750w-80-plus-gold",
@@ -47367,7 +47571,10 @@
                       "cert":  "80 Plus Gold",
                       "modular":  "Full",
                       "formato":  "ATX"
-                  }
+                  },
+        "alias":  [
+                      "FUENTE 1000W ASUS TUF GAMING 1000G GOLD EVO 80 PLUS GOLD"
+                  ]
     },
     {
         "id":  "cooler-master-elite-gold-1200-1200w-80-plus-gold-full-modular",
@@ -47657,7 +47864,10 @@
                       "cert":  "80 Plus Gold",
                       "modular":  "Full",
                       "formato":  "ATX"
-                  }
+                  },
+        "alias":  [
+                      "FUENTE 1250W COOLERMASTER GX3 80 PLUS GOLD FULL MODULAR"
+                  ]
     },
     {
         "id":  "gamemax-gx-1300-1300w-80-plus-platinum-modular",
@@ -49601,7 +49811,10 @@
                       "maxCooler":  163,
                       "radiador":  360,
                       "fans":  3
-                  }
+                  },
+        "alias":  [
+                      "GABINETE COOLERMASTER ELITE 302 TG 3FAN ARGB BLACK E302-KGNN-S00"
+                  ]
     },
     {
         "id":  "gamemax-storm-2-ab-tg-6fan-argb",
@@ -49905,7 +50118,10 @@
                       "maxCooler":  160,
                       "radiador":  240,
                       "fans":  4
-                  }
+                  },
+        "alias":  [
+                      "GABINETE MSI MAG FORGE M100A ACRILICO 4FAN RGB"
+                  ]
     },
     {
         "id":  "gamemax-starlight-2-ab-6fan-argb",
@@ -49961,7 +50177,10 @@
                       "maxCooler":  155,
                       "radiador":  360,
                       "fans":  6
-                  }
+                  },
+        "alias":  [
+                      "Gabinete Mid Tower Gamemax Starlight 2 AB 6 Fan Argb Vidrio Templado"
+                  ]
     },
     {
         "id":  "cooler-master-elite-302-tg-3fan-argb-white",
@@ -50207,7 +50426,10 @@
                       "maxCooler":  160,
                       "radiador":  280,
                       "fans":  3
-                  }
+                  },
+        "alias":  [
+                      "Gabinete Mini Tower Thermaltake View 170TG Vidrio Templado 3 Fan Argb Blanc"
+                  ]
     },
     {
         "id":  "evolabs-luma-tg-panoramico-3fan-argb",
@@ -50365,7 +50587,10 @@
                       "maxGpu":  340,
                       "radiador":  360,
                       "fans":  4
-                  }
+                  },
+        "alias":  [
+                      "Gabinete Mid Tower Xpg Valor Air Plus White 4 Fan Vidrio Templado"
+                  ]
     },
     {
         "id":  "adata-xpg-valor-air-nano-1fan-argb-black",
@@ -50489,7 +50714,10 @@
                       "maxCooler":  160,
                       "radiador":  280,
                       "fans":  3
-                  }
+                  },
+        "alias":  [
+                      "Gabinete Mini Tower Thermaltake View 170TG Vidrio Templado 3 Fan Argb Negro"
+                  ]
     },
     {
         "id":  "evolabs-progression-white-tg-4fan-argb",
@@ -51011,7 +51239,10 @@
                       "maxCooler":  165,
                       "radiador":  280,
                       "fans":  3
-                  }
+                  },
+        "alias":  [
+                      "Gabinete Mid Tower Gamemax Prism 3 Fan Argb Vidrio Templado Negro"
+                  ]
     },
     {
         "id":  "thermaltake-s200-tg-4fan-argb-snow-white",
@@ -51071,7 +51302,10 @@
                       "maxCooler":  166,
                       "radiador":  360,
                       "fans":  4
-                  }
+                  },
+        "alias":  [
+                      "Gabinete Mid Tower Thermaltake S200 Vidrio Templado Argb Blanco"
+                  ]
     },
     {
         "id":  "thermaltake-s200-tg-4fan-argb-black",
@@ -51131,7 +51365,10 @@
                       "maxCooler":  166,
                       "radiador":  360,
                       "fans":  4
-                  }
+                  },
+        "alias":  [
+                      "Gabinete Mid Tower Thermaltake S200 Vidrio Templado Argb Negro"
+                  ]
     },
     {
         "id":  "cooler-master-elite-681-4-fan-argb-negro",
@@ -51456,7 +51693,10 @@
                       "maxCooler":  169,
                       "radiador":  360,
                       "fans":  4
-                  }
+                  },
+        "alias":  [
+                      "Gabinete Mid Tower Gamemax F46 4 Fan Argb Vidrio Templado Negro"
+                  ]
     },
     {
         "id":  "xpg-lander-501-tg-4fan-argb",
@@ -51755,7 +51995,10 @@
                       "maxCooler":  168,
                       "radiador":  360,
                       "fans":  7
-                  }
+                  },
+        "alias":  [
+                      "GABINETE SENTEY A40 7FAN ARGB"
+                  ]
     },
     {
         "id":  "thermaltake-view-270-plus-tg-argb",
@@ -51819,7 +52062,10 @@
                       "maxCooler":  180,
                       "radiador":  360,
                       "fans":  3
-                  }
+                  },
+        "alias":  [
+                      "Gabinete Mid Tower Thermaltake 270 Plus Argb Vidrio Templado Argb Negro"
+                  ]
     },
     {
         "id":  "thermaltake-view-270-plus-tg-argb-snow-white",
@@ -52285,7 +52531,10 @@
                       "maxCooler":  185,
                       "radiador":  360,
                       "fans":  3
-                  }
+                  },
+        "alias":  [
+                      "Gabinete Mid Tower Thermaltake Ceres 300TG Vidrio Templado 3 Fan Argb Negro"
+                  ]
     },
     {
         "id":  "thermaltake-ceres-300-tg-argb-white",
@@ -52341,7 +52590,10 @@
                       "maxCooler":  185,
                       "radiador":  360,
                       "fans":  3
-                  }
+                  },
+        "alias":  [
+                      "Gabinete Mid Tower Thermaltake Ceres 300TG Vidrio Templado 3 Fan Argb Blanc"
+                  ]
     },
     {
         "id":  "x-micro-invictus-pro-9-16-lcd-4-fan-argb",
@@ -53602,7 +53854,10 @@
                       "maxCooler":  170,
                       "radiador":  360,
                       "fans":  4
-                  }
+                  },
+        "alias":  [
+                      "Gabinete Mid Tower Corsair Frame 4000D Rs Wood Blanco Madera"
+                  ]
     },
     {
         "id":  "corsair-2500x-rgb-icue-link-white",
@@ -53835,7 +54090,10 @@
                       "maxGpu":  400,
                       "radiador":  420,
                       "fans":  2
-                  }
+                  },
+        "alias":  [
+                      "Gabinete Mid Tower Thermaltake Tower 300 Vidrio Templado 2 Fan Negro"
+                  ]
     },
     {
         "id":  "thermaltake-the-tower-300-tg-snow-white",
@@ -54726,7 +54984,10 @@
         "imagen":  "img/productos/mouse-logitech-m90-dark-midnight-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE LOGITECH M90 USB 910-004053"
+                  ]
     },
     {
         "id":  "mouse-raptor-storm-grip-4-botones-rgb",
@@ -54984,7 +55245,10 @@
         "imagen":  "img/productos/mouse-logitech-m170-inalambrico-azul.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE LOGITECH WIRELESS M170 BLUE BLISTER 910-004800"
+                  ]
     },
     {
         "id":  "mouse-logitech-m170-inalambrico-blanco",
@@ -55031,7 +55295,10 @@
         "imagen":  "img/productos/mouse-logitech-m170-inalambrico-blanco.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE LOGITECH WIRELESS M170 WHITE BLISTER 910-006864"
+                  ]
     },
     {
         "id":  "mouse-logitech-m170-inalambrico-rojo",
@@ -55078,7 +55345,10 @@
         "imagen":  "img/productos/mouse-logitech-m170-inalambrico-rojo.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE LOGITECH WIRELESS M170 RED BLISTER 910-004941"
+                  ]
     },
     {
         "id":  "mouse-logitech-m170-inalambrico-negro",
@@ -55129,7 +55399,10 @@
         "imagen":  "img/productos/mouse-logitech-m170-inalambrico-negro.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE LOGITECH WIRELESS M170 BLACK BLISTER 910-004940"
+                  ]
     },
     {
         "id":  "mouse-logitech-m170-inalambrico-rosa",
@@ -55285,7 +55558,10 @@
         "imagen":  "img/productos/mouse-logitech-m190-inalambrico-negro.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE WIRELESS LOGITECH M190 BLACK/GREY 910-005902"
+                  ]
     },
     {
         "id":  "mouse-logitech-m196-inalambrico-blanco",
@@ -55866,7 +56142,10 @@
         "imagen":  "img/productos/mouse-logitech-m280-inalambrico-negro.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE WIRELESS LOGITECH M280 910-004284"
+                  ]
     },
     {
         "id":  "mouse-trust-gxt-900-qudos-rgb",
@@ -56073,7 +56352,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g203-lightsync-azul.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE LOGITECH G203 GAMING LIGHTSYNC BLUE 910-005795"
+                  ]
     },
     {
         "id":  "mouse-gamer-logitech-g203-lightsync-negro",
@@ -56124,7 +56406,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g203-lightsync-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE LOGITECH G203 GAMING LIGHTSYNC BLACK 910-005793"
+                  ]
     },
     {
         "id":  "mouse-gamer-logitech-g203-lightsync-blanco",
@@ -56171,7 +56456,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g203-lightsync-blanco.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE LOGITECH G203 LIGHTSYNC WHITE 910-005794"
+                  ]
     },
     {
         "id":  "mouse-gamer-logitech-g-pro-x-superlight-2-se-negro",
@@ -56218,7 +56506,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g-pro-x-superlight-2-se-negro.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE WIRELESS LOGITECH G PRO X SUPERLIGHT 2 SE 910-007648"
+                  ]
     },
     {
         "id":  "mouse-raptor-storm-grip-inalambrico-24000-dpi-rgb",
@@ -56558,7 +56849,10 @@
         "imagen":  "img/productos/mouse-logitech-m650-largo-bluetooth-blanco.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE LOGITECH WIRELESS M650 LARGE WHITE 910-006233"
+                  ]
     },
     {
         "id":  "mouse-gamer-logitech-g305-lightspeed-inalambrico-azul",
@@ -56605,7 +56899,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g305-lightspeed-inalambrico-azul.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE LOGITECH G305 LIGHTSPEED WIRELESS BLUE 910-006013"
+                  ]
     },
     {
         "id":  "mouse-gamer-logitech-g305-lightspeed-violeta",
@@ -56695,7 +56992,10 @@
         "imagen":  "img/productos/mouse-logitech-m650-bluetooth-blanco.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE WIRELESS LOGITECH M650 WHITE 910-006252"
+                  ]
     },
     {
         "id":  "mouse-gamer-evga-x17-cableado",
@@ -56867,7 +57167,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g305-lightspeed-negro.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE LOGITECH G305 LIGHTSPEED WIRELESS BLACK 910-005281"
+                  ]
     },
     {
         "id":  "mouse-gamer-logitech-g305-lightspeed-blanco",
@@ -56914,7 +57217,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g305-lightspeed-blanco.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE LOGITECH G305 LIGHTSPEED WIRELESS WHITE 910-005290"
+                  ]
     },
     {
         "id":  "mouse-gamer-logitech-g305-lightspeed-menta",
@@ -57234,7 +57540,10 @@
         "imagen":  "img/productos/mouse-redragon-king-ultra-m999-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE WIRELESS REDRAGON K1NG ULTRA M999"
+                  ]
     },
     {
         "id":  "mouse-redragon-m916-k1ng-pro-inalambrico",
@@ -57320,7 +57629,10 @@
         "imagen":  "img/productos/mouse-logitech-m720-triathlon-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE WIRELESS LOGITECH M720 TRIATHLON 910-004790"
+                  ]
     },
     {
         "id":  "mouse-gamer-hyperx-pulsefire-haste-2-negro",
@@ -57359,7 +57671,10 @@
         "imagen":  "img/productos/mouse-gamer-hyperx-pulsefire-haste-2-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE HYPERX PULSEFIRE HASTE 2 BLACK 6N0A7AA"
+                  ]
     },
     {
         "id":  "mouse-logitech-m520-ambidiestro",
@@ -57715,7 +58030,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g502-lightspeed-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE WIRELESS LOGITECH G502 LIGHTSPEED 910-005566"
+                  ]
     },
     {
         "id":  "mouse-gamer-logitech-g502-hero-negro",
@@ -57762,7 +58080,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g502-hero-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE LOGITECH G502 GAMING HERO 910-005550"
+                  ]
     },
     {
         "id":  "mouse-redragon-m916-k1ng-pro-4k-blanco",
@@ -57930,7 +58251,10 @@
         "imagen":  "img/productos/mouse-logitech-lift-ergo-inalambrico-rosa.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE WIRELESS LOGITECH LIFT ERGONOMICO ROSA 910-006472"
+                  ]
     },
     {
         "id":  "mouse-logitech-lift-ergo-inalambrico-blanco",
@@ -57965,7 +58289,10 @@
         "imagen":  "img/productos/mouse-logitech-lift-ergo-inalambrico-blanco.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE WIRELESS LOGITECH LIFT ERGONOMICO BLANCO 910-006469"
+                  ]
     },
     {
         "id":  "mouse-gamer-logitech-g502x-plus-negro-inalambrico",
@@ -58012,7 +58339,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g502x-plus-negro-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE WIRELESS LOGITECH GAMING G502X PLUS BLACK 910-006161"
+                  ]
     },
     {
         "id":  "mouse-gamer-logitech-g309-inalambrico-negro",
@@ -58200,7 +58530,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g703-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE LOGITECH G703 LIGHTSPEED WIRELESS 910-005639"
+                  ]
     },
     {
         "id":  "mouse-gamer-razer-orochi-v2-quartz-portatil",
@@ -58294,7 +58627,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g502x-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE GAMER LOGITECH G502 X GAMING BLACK 910-006137 G502X"
+                  ]
     },
     {
         "id":  "mouse-gamer-razer-basilisk-v3-cableado",
@@ -58384,7 +58720,10 @@
         "imagen":  "img/productos/mouse-logitech-mx-vertical-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE WIRELESS LOGITECH MX VERTICAL ADVANCED ERGONOMICO 910-005449"
+                  ]
     },
     {
         "id":  "mouse-logitech-mx-anywhere-3s-rosa",
@@ -58431,7 +58770,10 @@
         "imagen":  "img/productos/mouse-logitech-mx-anywhere-3s-rosa.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE LOGITECH MX ANYWHERE 3S ROSE 910-006934"
+                  ]
     },
     {
         "id":  "mouse-gamer-razer-deathadder-v3",
@@ -58556,7 +58898,10 @@
         "imagen":  "img/productos/mouse-logitech-mx-anywhere-3s-gris-palido.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE WIRELESS LOGITECH MX ANYWHERE 3S GRIS 910-006933"
+                  ]
     },
     {
         "id":  "mouse-gamer-hyperx-pulsefire-saga",
@@ -59107,7 +59452,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g-pro-x-superlight-2-blanco.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE GAMER WIRELESS LOGITECH G PRO X SUPERLIGHT 2 WHITE 910-006637"
+                  ]
     },
     {
         "id":  "mouse-gamer-logitech-g-pro-x-superlight-2-se-blanco",
@@ -59154,7 +59502,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g-pro-x-superlight-2-se-blanco.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE WIRELESS LOGITECH G PRO X SUPERLIGHT 2 SE BLANCO 910-007656"
+                  ]
     },
     {
         "id":  "mouse-gamer-logitech-g-pro-2-inalambrico-magenta",
@@ -59197,7 +59548,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g-pro-2-inalambrico-magenta.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE GAMER WIRELESS LOGITECH G PRO 2 LIGHTSPEED MAGENTA 910-007308"
+                  ]
     },
     {
         "id":  "mouse-gamer-logitech-g-pro-2-inalambrico-negro",
@@ -59240,7 +59594,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g-pro-2-inalambrico-negro.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE GAMER WIRELESS LOGITECH G PRO 2 LIGHTSPEED 910-007294"
+                  ]
     },
     {
         "id":  "mouse-gamer-logitech-g-pro-2-lightspeed-inalambrico-blanco",
@@ -59475,7 +59832,10 @@
         "imagen":  "img/productos/mouse-logitech-mx-master-4-bluetooth-gris.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE WIRELESS LOGITECH MX MASTER 4 GRIS PALIDO BLUETOOTH 910-007566"
+                  ]
     },
     {
         "id":  "mouse-logitech-mx-master-4-bluetooth-negro",
@@ -59514,7 +59874,10 @@
         "imagen":  "img/productos/mouse-logitech-mx-master-4-bluetooth-negro.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE WIRELESS LOGITECH MX MASTER 4 NEGRO BLUETOOTH 910-007565"
+                  ]
     },
     {
         "id":  "mouse-gamer-razer-cobra-pro-inalambrico-blanco",
@@ -59721,7 +60084,10 @@
         "imagen":  "img/productos/mouse-gamer-logitech-g-pro-x-2-superstrike-negro-y-blanco.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "MOUSE WIRELESS LOGITECH PRO X2 SUPERSTRIKE 910-007775"
+                  ]
     },
     {
         "id":  "mouse-gamer-logitech-g-pro-x-superlight-2-lightspeed-magenta",
@@ -59803,7 +60169,10 @@
         "imagen":  "img/productos/mouse-gamer-razer-basilisk-v3-pro-35k-blanco.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "Mouse Gamer Razer Basilisk V3 Pro 35k Inalámbrico Ergonomico Blanco"
+                  ]
     },
     {
         "id":  "mouse-gamer-logitech-g502-x-plus-blanco",
@@ -59987,7 +60356,10 @@
         "imagen":  "img/productos/teclado-logitech-k120.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO LOGITECH K120 USB 920-004422"
+                  ]
     },
     {
         "id":  "teclado-raptor-fireclaw-m1-membrana-rainbow-7-colores",
@@ -60289,7 +60661,10 @@
         "imagen":  "img/productos/teclado-y-mouse-logitech-mk120.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "KIT TECLADO Y MOUSE LOGITECH MK120 920-004428"
+                  ]
     },
     {
         "id":  "teclado-logitech-k250-inalambrico-blanco",
@@ -60344,7 +60719,10 @@
         "imagen":  "img/productos/teclado-logitech-k250-inalambrico-blanco.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO BLUETOOTH LOGITECH K250 WHITE 920-013446"
+                  ]
     },
     {
         "id":  "teclado-logitech-k250-inalambrico-rosa",
@@ -60399,7 +60777,10 @@
         "imagen":  "img/productos/teclado-logitech-k250-inalambrico-rosa.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO BLUETOOTH LOGITECH K250 ROSE 920-013447"
+                  ]
     },
     {
         "id":  "kit-teclado-y-mouse-genius-luxemate-q8100-wireless-negro",
@@ -60501,7 +60882,10 @@
         "imagen":  "img/productos/teclado-logitech-k270-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO WIRELESS LOGITECH K270 BLACK 920-004426"
+                  ]
     },
     {
         "id":  "teclado-logitech-k250-inalambrico-grafito",
@@ -60713,7 +61097,10 @@
         "imagen":  "img/productos/teclado-y-mouse-logitech-mk235-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "Teclado y Mouse Logitech MK235 Inalámbrico Graphite"
+                  ]
     },
     {
         "id":  "teclado-mecanico-raptor-fireclaw-m87-switch-rojo-outemu",
@@ -60870,7 +61257,10 @@
         "imagen":  "img/productos/teclado-y-mouse-logitech-mk270-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "KIT TECLADO Y MOUSE WIRELESS LOGITECH MK270 920-004432"
+                  ]
     },
     {
         "id":  "teclado-mecanico-raptor-fireclaw-m104-switch-rojo-outemu",
@@ -60968,7 +61358,10 @@
         "imagen":  "img/productos/teclado-y-mouse-logitech-mk250-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "KIT TECLADO Y MOUSE BLUETOOTH LOGITECH MK250 920-013513"
+                  ]
     },
     {
         "id":  "teclado-gamer-razer-blackwidow-v4-x-switch-verde",
@@ -61133,7 +61526,10 @@
         "imagen":  "img/productos/teclado-gamer-redragon-volcano-k526-pro-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "Teclado Gamer Membrana Redragon Volcano K526-PRO"
+                  ]
     },
     {
         "id":  "teclado-mecanico-raptor-fireclaw-m68-wireless-switch-rojo-outemu",
@@ -61631,7 +62027,10 @@
         "imagen":  "img/productos/teclado-y-mouse-logitech-mk295-inalambrico-silent.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO Y MOUSE LOGITECH WIRELESS MK295 SILENT BLACK 920-009792"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-aureox-unrivailed-gk600",
@@ -61729,7 +62128,10 @@
         "imagen":  "img/productos/teclado-y-mouse-logitech-mk345-inalambrico-comfort.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO Y MOUSE WIRELESS LOGITECH MK345 COMFORT 920-007820"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-aula-s100-pro-blanco-azul-violeta",
@@ -62070,7 +62472,10 @@
         "imagen":  "img/productos/teclado-logitech-pebble-keys-2-k380s-inalambrico-blanco.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO LOGITECH PEBBLE KEYS 2 K380 WHITE 920-011784"
+                  ]
     },
     {
         "id":  "teclado-logitech-pebble-keys-2-k380s-inalambrico",
@@ -62168,7 +62573,10 @@
         "imagen":  "img/productos/teclado-gamer-mecanico-redragon-kumara-k552-negro-switch-red.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "Teclado Gamer Mecánico Redragon K552 Kumara Rgb Switch Rojo"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-redragon-kumara-k552-rgb-negro-switch-red-espanol",
@@ -62384,7 +62792,11 @@
         "imagen":  "img/productos/teclado-gamer-mecanico-redragon-kumara-k552w-blanco-switch-rojo.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO GAMER REDRAGON KUMARA K552W RAINBOW WHITE - RED SWITCH",
+                      "TECLADO GAMER REDRAGON KUMARA K552 RGB WHITE - SWITCH RED ESPAÑOL"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-redragon-fizz-k617-rgb-negro",
@@ -62882,7 +63294,10 @@
         "imagen":  "img/productos/teclado-logitech-pebble-keys-2-k380s-inalambrico-rosa.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "Teclado Logitech Pebble Keys 2 K380S Inalámbrico Rosa"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-redragon-fizz-k617-rgb-gris-y-blanco-switch-roj",
@@ -63270,7 +63685,10 @@
         "imagen":  "img/productos/teclado-gamer-hyperx-alloy-core-rgb.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO HYPERX ALLOY CORE RGB 4P4F5AI"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-aula-f2088-air-azul-degrade-switch-marron",
@@ -63419,7 +63837,10 @@
         "imagen":  "img/productos/teclado-y-mouse-logitech-mk470-slim-inalambrico-rosa.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO Y MOUSE SLIM WIRELESS LOGITECH MK470 ROSE 920-011312"
+                  ]
     },
     {
         "id":  "teclado-logitech-signature-k650-inalambrico-negro",
@@ -63462,7 +63883,10 @@
         "imagen":  "img/productos/teclado-logitech-signature-k650-inalambrico-negro.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO LOGITECH WIRELESS K650 GRAPHITE 920-010910"
+                  ]
     },
     {
         "id":  "teclado-y-mouse-logitech-mk540-advanced-inalambrico",
@@ -63509,7 +63933,10 @@
         "imagen":  "img/productos/teclado-y-mouse-logitech-mk540-advanced-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "KIT TECLADO Y MOUSE LOGITECH MK540 920-008673"
+                  ]
     },
     {
         "id":  "teclado-y-mouse-logitech-mk470-slim-inalambrico",
@@ -63556,7 +63983,10 @@
         "imagen":  "img/productos/teclado-y-mouse-logitech-mk470-slim-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO Y MOUSE LOGITECH MK470 920-009266"
+                  ]
     },
     {
         "id":  "teclado-gamer-magnetico-redragon-fizz-k617-rgb-negro",
@@ -63607,7 +64037,10 @@
         "imagen":  "img/productos/teclado-gamer-magnetico-redragon-fizz-k617-rgb-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "Teclado Gamer Redragon K617 Fizz Rgb Mp Magnetic Negro"
+                  ]
     },
     {
         "id":  "teclado-gamer-magnetico-aula-mini60-he-pro-blanco-switch-mistcloud",
@@ -63764,7 +64197,10 @@
         "imagen":  "img/productos/teclado-gamer-magnetico-aula-win68-he-max-negro-gris-amarillo-switch-g.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO MECANICO AULA WIN68HE MAX BLACK-GREY-YELLOW SWITCH WING CHUN"
+                  ]
     },
     {
         "id":  "teclado-gamer-magnetico-aula-win68-he-negro-switch-greywood",
@@ -63866,7 +64302,10 @@
         "imagen":  "img/productos/teclado-gamer-logitech-g213-prodigy.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "Teclado Gamer Logitech G213 Prodigy Español"
+                  ]
     },
     {
         "id":  "teclado-gamer-logitech-g213-prodigy-espanol-latinoamerica",
@@ -64219,7 +64658,10 @@
         "imagen":  "img/productos/teclado-gamer-mecanico-redragon-trundle-k668-multicolor.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO MECANICO REDRAGON TRUNDLE K668 RGB - SWITCH RED ESPAÑOL"
+                  ]
     },
     {
         "id":  "teclado-gamer-magnetico-redragon-fidd-k683-multicolor",
@@ -64423,7 +64865,10 @@
         "imagen":  "img/productos/teclado-gamer-magnetico-redragon-ucal-k673-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO MAGNETICO REDRAGON UCAL K673 RGB ESPAÑOL"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-aula-f75-azul-blanco-azul-oscuro-switch-reaper",
@@ -64717,7 +65162,10 @@
         "imagen":  "img/productos/teclado-gamer-mecanico-redragon-eisa-pro-k686-blanco-y-azul.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO GAMER REDRAGON K686 EISA PRO RGB WHITE/BLUE"
+                  ]
     },
     {
         "id":  "teclado-gamer-magnetico-redragon-eisa-k686-he-negro",
@@ -64937,7 +65385,10 @@
         "imagen":  "img/productos/teclado-gamer-mecanico-aula-f75-negro-degrade-switch-reaper.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO MECANICO AULA F75 BLACK DEGRADE WIRELESS 75% RGB SWITCH REAPER ESPAÑOL"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-redragon-uranus-k737-pro-negro",
@@ -65750,7 +66201,10 @@
         "imagen":  "img/productos/teclado-logitech-signature-slim-k950-inalambrico-blanco.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO WIRELESS LOGITECH K950 SIGNATURE SLIM WHITE 920-012593"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-aula-f75-max-negro-y-naranja-switch-star-vector",
@@ -66017,7 +66471,10 @@
         "imagen":  "img/productos/teclado-y-mouse-logitech-mk850-performance-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO Y MOUSE WIRELESS LOGITECH MK850 920-008659"
+                  ]
     },
     {
         "id":  "teclado-logitech-k780-multidispositivo-inalambrico",
@@ -66068,7 +66525,10 @@
         "imagen":  "img/productos/teclado-logitech-k780-multidispositivo-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO LOGITECH MULTIDISPOSITIVO K780 920-008026"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-logitech-g515-tkl-blanco-ingles",
@@ -66445,7 +66905,10 @@
         "imagen":  "img/productos/teclado-gamer-mecanico-asus-rog-falchion-ace-hfx-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO ASUS M605 ROG FALCHION ACE HFX 65%"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-asus-tuf-gaming-k3-gen-ii-negro",
@@ -66775,7 +67238,10 @@
         "imagen":  "img/productos/teclado-gamer-mecanico-logitech-g512-x-75-rgb-blanco.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO MECANICO LOGITECH G512 X 75 RGB WHITE TACTILE INGLES 920-013948"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-logitech-g413-tkl-se-ingles",
@@ -66830,7 +67296,10 @@
         "imagen":  "img/productos/teclado-gamer-mecanico-logitech-g413-tkl-se-ingles.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO LOGITECH G413 TKL SE MECHANICAL US 920-010442"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-logitech-g515-lightspeed-tkl-blanco-inalambrico",
@@ -66885,7 +67354,10 @@
         "imagen":  "img/productos/teclado-gamer-mecanico-logitech-g515-lightspeed-tkl-blanco-inalambrico.webp",
         "attrs":  {
                       "conexion":  "Inalámbrico"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO MECANICO WIRELESS LOGITECH G515 LIGHTSPEED TKL WHITE 920-012535 INGLES"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-ducky-one-2-pro-mini-60-negro-switch-rojo",
@@ -67160,7 +67632,10 @@
         "imagen":  "img/productos/teclado-gamer-mecanico-hyperx-alloy-rise-75-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO HP HYPERX ALLOY RISE 75% RGB 7G7A4AA"
+                  ]
     },
     {
         "id":  "teclado-y-mouse-logitech-mk880-signature-comfort-plus-inalambrico-graf",
@@ -67211,7 +67686,10 @@
         "imagen":  "img/productos/teclado-y-mouse-logitech-mk880-signature-comfort-plus-inalambrico-graf.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "KIT TECLADO Y MOUSE LOGITECH SIGNATURE COMFORT PLUS MK880 GRAFITO 920-014019"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-hyperx-alloy-origins-core-tkl-switch-rojo-ingle",
@@ -67647,7 +68125,10 @@
         "imagen":  "img/productos/teclado-logitech-mx-keys-mini-inalambrico-rosa.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO WIRELESS LOGITECH MX KEYS MINI ROSE RETROILUMINADO 920-010478"
+                  ]
     },
     {
         "id":  "teclado-logitech-mx-keys-mini-inalambrico-gris",
@@ -67804,7 +68285,10 @@
         "imagen":  "img/productos/teclado-logitech-mx-keys-mini-inalambrico-negro.webp",
         "attrs":  {
                       "conexion":  "Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO LOGITECH WIRELESS MX KEYS MINI NEGRO GRAFITO 920-010476"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-ducky-one-3-mini-rgb-hotswap-cherry-mx-red",
@@ -67961,7 +68445,10 @@
         "imagen":  "img/productos/teclado-gamer-mecanico-logitech-g316-x-98-negro.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO MECANICO LOGITECH G316 X 98 BLACK SWITCH TACTIL 920-014183 INGLES"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-razer-blackwidow-v4-75-phantom-white-edition",
@@ -68071,7 +68558,10 @@
         "imagen":  "img/productos/teclado-gamer-mecanico-logitech-g316-x-98-blanco.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO MECANICO LOGITECH G316 X 98 WHITE SWITCH TACTIL 920-014226 INGLES"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-logitech-g515-lightspeed-tkl-negro-inalambrico",
@@ -68236,7 +68726,10 @@
         "imagen":  "img/productos/teclado-gamer-mecanico-asus-rog-strix-scope-ii-96-wireless-switch-nx.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "Teclado Gamer Asus X901 Strix Scope ll 96 Wireless"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-razer-blackwidow-v4-x-switch-amarillo-espanol",
@@ -68778,7 +69271,10 @@
         "imagen":  "img/productos/teclado-gamer-magnetico-aula-ag60-pro-metallic-gris-y-negro-frosted.webp",
         "attrs":  {
                       "conexion":  "Cableado"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO MECANICO AULA AG60 PRO METALLIC GRAY CASE +BLACK FROSTED KEYCAPS SWITCH AETHER"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-aula-l99-blanco-switch-caramel-latte",
@@ -69155,7 +69651,10 @@
         "imagen":  "img/productos/teclado-gamer-mecanico-asus-rog-azoth-m701-blanco-con-pantalla-oled.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO ASUS M701 ROG AZOTH WHITE PANTALLA OLED"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-aula-l99-purpura-y-blanco-semitransparente-inal",
@@ -69540,7 +70039,10 @@
         "imagen":  "img/productos/teclado-gamer-mecanico-asus-rog-azoth-m701-negro-con-pantalla-oled.webp",
         "attrs":  {
                       "conexion":  "Cableado / Inalámbrico 2.4G / Bluetooth"
-                  }
+                  },
+        "alias":  [
+                      "TECLADO ASUS M701 ROG AZOTH BLACK PANTALLA OLED"
+                  ]
     },
     {
         "id":  "teclado-gamer-mecanico-logitech-g512-x-75-rgb-negro-ingles",
@@ -70344,7 +70846,10 @@
         "imagen":  "img/productos/auricular-logitech-h111.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULARES LOGITECH H111 981-000612"
+                  ]
     },
     {
         "id":  "auricular-aula-s605-negro-rgb",
@@ -70387,7 +70892,10 @@
         "imagen":  "img/productos/auricular-aula-s605-negro-rgb.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "Auricular Gamer Aula S605 Cableado Usb Rgb Negro"
+                  ]
     },
     {
         "id":  "auricular-gamer-redragon-cronus-h211-rgb-blanco",
@@ -70473,7 +70981,10 @@
         "imagen":  "img/productos/auriculares-logitech-h151-negro.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "Auricular Chat Logitech H151"
+                  ]
     },
     {
         "id":  "auricular-raptor-shadow-core-rgb-7-1",
@@ -71012,7 +71523,10 @@
         "imagen":  "img/productos/auricular-logitech-h390-rosa.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR LOGITECH H390 USB ROSA 981-001280"
+                  ]
     },
     {
         "id":  "auriculares-logitech-h390",
@@ -71727,7 +72241,10 @@
         "imagen":  "img/productos/auricular-aula-a600-blanco-inalambrico.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR C/MICROFONO WIRELESS AULA A600 BLANCO USB 2.4GHZ BLUETOOTH"
+                  ]
     },
     {
         "id":  "auricular-jbl-quantum-100m2-negro",
@@ -71848,7 +72365,10 @@
         "imagen":  "img/productos/auricular-gamer-redragon-cybill-h312.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR C/MICROFONO REDRAGON CYBILL H312 RGB USB"
+                  ]
     },
     {
         "id":  "auricular-gamer-redragon-zeus-x-h510p-rgb-rosa",
@@ -72052,7 +72572,10 @@
         "imagen":  "img/productos/auricular-gamer-logitech-g335-blanco.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR C/MICROFONO LOGITECH G335 WHITE 981-001017"
+                  ]
     },
     {
         "id":  "auricular-gamer-razer-blackshark-v2-x-white",
@@ -72177,7 +72700,10 @@
         "imagen":  "img/productos/auricular-aula-a700-negro-rojo-inalambrico.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR C/MICROFONO WIRELESS AULA A700 NEGRO-ROJO USB 2.4GHZ BLUETOOTH"
+                  ]
     },
     {
         "id":  "auricular-logitech-g335-negro",
@@ -72259,7 +72785,10 @@
         "imagen":  "img/productos/auricular-aula-a700-negro-gris-inalambrico.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "Auricular Gamer Aula A700 Negro Gris Usb Inalámbrico"
+                  ]
     },
     {
         "id":  "auricular-jbl-quantum-250-white",
@@ -73001,7 +73530,10 @@
         "imagen":  "img/productos/auricular-gamer-logitech-g325-inalambrico-blanco.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR WIRELESS C/MIC LOGITECH G325 LIGHTSPEED WHITE 981-001530"
+                  ]
     },
     {
         "id":  "auricular-gamer-logitech-g325-inalambrico-lila",
@@ -73044,7 +73576,10 @@
         "imagen":  "img/productos/auricular-gamer-logitech-g325-inalambrico-lila.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR WIRELESS C/MIC LOGITECH G325 LIGHTSPEED LILA 981-001537"
+                  ]
     },
     {
         "id":  "auricular-gamer-asus-tuf-h1-gen-ii-a303-hatsune-miku",
@@ -73502,7 +74037,10 @@
         "imagen":  "img/productos/auricular-gamer-jbl-quantum-650-blanco.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR C/MICROFONO JBL QUANTUM 650 WIRELESS WHITE"
+                  ]
     },
     {
         "id":  "auricular-logitech-zone-vibe-100-rose",
@@ -73873,7 +74411,10 @@
         "imagen":  "img/productos/auricular-gamer-logitech-g522-negro.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR WIRELESS LOGITECH G522 LIGHTSPEED BLACK 981-001543"
+                  ]
     },
     {
         "id":  "auricular-gamer-razer-barracuda-x-chroma-negro-inalambrico",
@@ -73916,7 +74457,10 @@
         "imagen":  "img/productos/auricular-gamer-razer-barracuda-x-chroma-negro-inalambrico.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR GAMER WIRELESS RAZER BARRACUDA X CHROMA RZ04-05220100-R3U1"
+                  ]
     },
     {
         "id":  "auricular-corsair-hs80-rgb-wireless-carbon",
@@ -74045,7 +74589,10 @@
         "imagen":  "img/productos/auricular-gamer-logitech-g522-blanco.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR WIRELESS LOGITECH G522 LIGHTSPEED WHITE 981-001549"
+                  ]
     },
     {
         "id":  "auricular-logitech-astro-a20-x-lightspeed-inalambrico-negro",
@@ -74088,7 +74635,10 @@
         "imagen":  "img/productos/auricular-logitech-astro-a20-x-lightspeed-inalambrico-negro.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR WIRELESS LOGITECH ASTRO A20 X NEGRO 939-002246"
+                  ]
     },
     {
         "id":  "auricular-logitech-astro-a20-x-lightspeed-inalambrico-blanco",
@@ -74131,7 +74681,10 @@
         "imagen":  "img/productos/auricular-logitech-astro-a20-x-lightspeed-inalambrico-blanco.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR WIRELESS LOGITECH ASTRO A20 X BLANCO 939-002252"
+                  ]
     },
     {
         "id":  "auricular-inalambrico-logitech-g-pro-x-lightspeed-negro",
@@ -74178,7 +74731,10 @@
         "imagen":  "img/productos/auricular-inalambrico-logitech-g-pro-x-lightspeed-negro.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR WIRELESS C/MICROFONO LOGITECH G PRO X WIRELESS 981-000906"
+                  ]
     },
     {
         "id":  "auricular-razer-blackshark-v3-black",
@@ -74311,7 +74867,10 @@
         "imagen":  "img/productos/auricular-inalambrico-logitech-zone-wireless-2-blanco.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR C/MICROFONO LOGITECH ZONE WIRELESS 2 WHITE 981-001596"
+                  ]
     },
     {
         "id":  "auricular-inalambrico-logitech-zone-wireless-2-negro",
@@ -74354,7 +74913,10 @@
         "imagen":  "img/productos/auricular-inalambrico-logitech-zone-wireless-2-negro.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR C/MICROFONO LOGITECH ZONE WIRELESS 2 BLACK 981-001504"
+                  ]
     },
     {
         "id":  "auricular-inalambrico-logitech-zone-wireless-2-rosa",
@@ -74397,7 +74959,10 @@
         "imagen":  "img/productos/auricular-inalambrico-logitech-zone-wireless-2-rosa.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR C/MICROFONO LOGITECH ZONE WIRELESS 2 ROSA 981-001597"
+                  ]
     },
     {
         "id":  "auricular-gamer-razer-blackshark-v2-pro-negro-inalambrico",
@@ -74440,7 +75005,10 @@
         "imagen":  "img/productos/auricular-gamer-razer-blackshark-v2-pro-negro-inalambrico.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR C/MIC WIRELESS RAZER BLACKSHARK V2 PRO RZ04-04530100-R3U1"
+                  ]
     },
     {
         "id":  "auricular-inalambrico-razer-blackshark-v2-pro-white",
@@ -74996,7 +75564,10 @@
         "imagen":  "img/productos/auricular-inalambrico-gamer-logitech-astro-a50-x.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "AURICULAR WIRELESS C/MIC LOGITECH G ASTRO A50X BLACK PC/PS5/XBOX/MAC 939-002126"
+                  ]
     },
     {
         "id":  "auricular-corsair-virtuoso-max-wireless-carbon",
@@ -75422,7 +75993,10 @@
         "imagen":  "img/productos/microfono-razer-seiren-v3-chroma-negro.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "MICROFONO RAZER SEIREN V3 CHROMA RGB USB BLACK RZ19-05060100-R3U1"
+                  ]
     },
     {
         "id":  "microfono-hyperx-quadcast-2-negro",
@@ -75465,7 +76039,10 @@
         "imagen":  "img/productos/microfono-hyperx-quadcast-2-negro.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "MICROFONO HYPERX QUADCAST 2 NEGRO 872V1AA"
+                  ]
     },
     {
         "id":  "microfono-razer-seiren-v3-chroma-blanco",
@@ -75504,7 +76081,10 @@
         "imagen":  "img/productos/microfono-razer-seiren-v3-chroma-blanco.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "MICROFONO RAZER SEIREN V3 CHROMA RGB USB WHITE RZ19-05060200-R3U1"
+                  ]
     },
     {
         "id":  "microfono-logitech-yeti-gx-rgb-lightsync-negro",
@@ -75543,7 +76123,10 @@
         "imagen":  "img/productos/microfono-logitech-yeti-gx-rgb-lightsync-negro.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "MICROFONO LOGITECH YETI GX RGB LIGHTSYNC 988-000568"
+                  ]
     },
     {
         "id":  "microfono-hyperx-quadcast-2-s-negro",
@@ -75625,7 +76208,10 @@
         "imagen":  "img/productos/microfono-asus-rog-carnyx-c501.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "MICROFONO ASUS ROG C501 CARNYX BLACK"
+                  ]
     },
     {
         "id":  "microfono-asus-rog-carnyx-c501-blanco",
@@ -75777,7 +76363,10 @@
         "imagen":  "img/productos/pad-mouse-logitech-g240-mediano.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "MOUSEPAD LOGITECH G240 GAMING 943-000093"
+                  ]
     },
     {
         "id":  "pad-mouse-redragon-p030-flick-mediano",
@@ -76494,7 +77083,10 @@
         "imagen":  "img/productos/pad-mouse-logitech-extra-largo-lila.webp",
         "attrs":  {
 
-                  }
+                  },
+        "alias":  [
+                      "MOUSEPAD LOGITECH DESKPAD XL LILA 956-000148"
+                  ]
     },
     {
         "id":  "mousepad-logitech-300x700mm-deskpad-xl-rose",

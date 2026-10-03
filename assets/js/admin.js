@@ -396,14 +396,14 @@
     if (editing) {
       const i = S.cat.findIndex((x) => x.id === editing);
       const prev = S.cat[i];
-      if (prev.attrs && !d.attrs) d.attrs = prev.attrs;
+      if (prev.attrs) d.attrs = { ...prev.attrs, ...(d.attrs || {}) };
       // Se conservan los datos que el formulario no edita (ej. el nombre original de la lista de precios)
       const keep = Object.fromEntries(Object.entries(prev).filter(([k]) => !["precioOferta", "marca", "specs", "desc", "ficha"].includes(k)));
       S.cat[i] = { ...keep, ...d, id: prev.id };
       S.changedIds.add(prev.id);
     } else {
       const id = uniqueId(TW.slug(d.nombre), new Set(S.cat.map((x) => x.id)));
-      S.cat.push({ id, ...d });
+      S.cat.push({ id, origen: d.nombre, ...d });
       S.changedIds.add(id);
     }
     markDirty("catalogo");
@@ -596,8 +596,9 @@
     return `
       <div class="panel-card">
         <h2>Actualizar precios pegando la lista</h2>
-        <p>Pegá la lista del mayorista (una línea por producto: <code>NOMBRE — $precio</code>). Podés agregar líneas <code># Categoría | Subcategoría</code> para indicar dónde van los productos nuevos. Antes de aplicar te mostramos qué cambia.</p>
+        <p>Subí el PDF del mayorista o pegá la lista (una línea por producto: <code>NOMBRE — $precio</code>). Podés agregar líneas <code># Categoría | Subcategoría</code> para indicar dónde van los productos nuevos. Antes de aplicar te mostramos qué cambia.</p>
         <textarea class="inp" id="impText" style="min-height:180px;font-family:ui-monospace,Consolas,monospace;font-size:.82rem" placeholder="MICRO AMD RYZEN 5 5600 S/VIDEO C/COOLER AM4 — $250.574&#10;MOTHER GIGABYTE B550M K DDR4 AM4 — $142.991">${esc(r ? r.text : "")}</textarea>
+        <div class="row-actions"><label class="btn ghost" style="cursor:pointer">${U.upload || ""}Subir el PDF del mayorista<input type="file" accept="application/pdf,.pdf" id="impPdf" hidden></label><span class="hint">Lee cada producto con el precio que se ve en el PDF.</span></div>
         <div class="row-actions"><button class="btn" type="button" data-analyze>Analizar lista</button>${r ? '<button class="btn ghost" type="button" data-impclear>Limpiar</button>' : ""}</div>
       </div>
       ${r ? `
@@ -624,23 +625,72 @@
       <div class="row-actions" style="margin-top:1.5rem"><button class="btn" type="button" data-apply>Aplicar cambios</button><span class="hint">Después revisá y tocá “Publicar cambios”.</span></div>` : ""}`;
   }
 
+  // PDF del mayorista: cada fila trae el precio original y, encima, el precio que se ve (dibujado después).
+  // Se toma el nombre de la izquierda y el último precio dibujado en esa misma fila.
+  document.addEventListener("change", (e) => {
+    if (e.target.id !== "impPdf") return;
+    const f = e.target.files[0]; e.target.value = "";
+    if (f) readPdf(f).catch((err) => toast(err.message || "No se pudo leer el PDF.", false));
+  });
+  async function readPdf(file) {
+    toast("Leyendo el PDF…");
+    if (!window.pdfjsLib) await new Promise((ok, bad) => { const s = document.createElement("script"); s.src = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"; s.onload = ok; s.onerror = () => bad(new Error("No se pudo cargar el lector de PDF (revisá la conexión).")); document.head.append(s); });
+    pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+    const doc = await pdfjsLib.getDocument({ data: await file.arrayBuffer() }).promise;
+    const cats = [...new Set([...CFG.categorias, ...S.cat.map((p) => p.categoria)])];
+    const out = [];
+    for (let n = 1; n <= doc.numPages; n++) {
+      const items = (await (await doc.getPage(n)).getTextContent()).items
+        .map((i, k) => ({ k, s: i.str.trim(), x: i.transform[4], y: i.transform[5], h: i.height })).filter((i) => i.s);
+      const prices = items.filter((i) => /^\$\s*[\d.,]+$/.test(i.s));
+      const maxX = prices.length ? Math.min(...prices.map((p) => p.x)) : Infinity;
+      let prev = null; // renglón sin precio justo arriba: es la primera parte de un nombre largo
+      for (const t of items) {
+        if (t.x >= maxX || /^\$/.test(t.s)) continue;
+        const ps = prices.filter((p) => Math.abs(p.y - t.y) <= 5);
+        if (ps.length) {
+          const name = prev && prev.y - t.y > 0 && prev.y - t.y < 14 && Math.abs(prev.x - t.x) < 3 ? `${prev.s} ${t.s}` : t.s;
+          out.push(`${name} — ${ps.reduce((a, b) => (b.k > a.k ? b : a)).s}`); prev = null; continue;
+        }
+        prev = t;
+        // Títulos de sección ("Motherboards AMD AM4") → categoría para los productos nuevos
+        const c = t.h > 11 && cats.find((c) => norm(t.s).startsWith(norm(c)));
+        if (c) out.push(`# ${c} | ${t.s.slice(c.length).replace(/\s+-\s+/g, " ").trim()}`);
+      }
+    }
+    if (!out.some((l) => !l.startsWith("#"))) { toast("No encontramos productos con precio en ese PDF.", false); return; }
+    $("#impText").value = out.join("\n");
+    analyze(out.join("\n"));
+  }
+
   function analyze(text) {
     const lines = TW.parseList(text);
     if (!lines.length) { toast("No encontramos líneas con el formato “NOMBRE — $precio”.", false); return; }
-    // Se busca por el nombre prolijo y también por el nombre original del mayorista (origen)
-    const byName = new Map();
-    for (const d of S.cat) for (const n of [d.origen, d.nombre]) if (n && !byName.has(cleanName(n))) byName.set(cleanName(n), d);
-    const seen = new Set(), changes = [], nuevos = [];
+    // Se busca por el nombre prolijo, por el nombre original del mayorista (origen) y por sus otros nombres (alias).
+    // Un alias solo cambia el precio si en la lista no está el nombre principal del producto.
+    const byName = new Map(), byAlias = new Map();
+    for (const d of S.cat) {
+      for (const n of [d.origen, d.nombre]) if (n && !byName.has(cleanName(n))) byName.set(cleanName(n), d);
+      for (const n of d.alias || []) if (n && !byAlias.has(cleanName(n))) byAlias.set(cleanName(n), d);
+    }
+    const seen = new Set(), changes = [], nuevos = [], porAlias = [];
     for (const l of lines) {
       const key = cleanName(l.nombre);
       const d = byName.get(key);
       if (d) {
+        if (seen.has(d.id)) continue;
         seen.add(d.id);
         if (Number(d.precio) !== l.precio) changes.push({ d, old: Number(d.precio) || 0, precio: l.precio, on: true });
-      } else if (!nuevos.some((n) => cleanName(n.nombre) === key)) {
+      } else if (byAlias.has(key)) porAlias.push([byAlias.get(key), l]);
+      else if (!nuevos.some((n) => cleanName(n.nombre) === key)) {
         const g = TW.guessCategory(l.nombre);
         nuevos.push({ nombre: l.nombre, precio: l.precio, categoria: l.categoria || g.categoria, sub: l.sub || g.sub, on: !!(l.categoria || g.categoria) });
       }
+    }
+    for (const [d, l] of porAlias) {
+      if (seen.has(d.id)) continue;
+      seen.add(d.id);
+      if (Number(d.precio) !== l.precio) changes.push({ d, old: Number(d.precio) || 0, precio: l.precio, on: true });
     }
     const faltan = S.cat.filter((d) => !seen.has(d.id)).map((d) => ({ d, act: "keep" }));
     S.imp = { text, changes, nuevos, faltan };

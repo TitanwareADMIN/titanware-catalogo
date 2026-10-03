@@ -363,7 +363,11 @@
   };
 
   // Precio "$95.013" o "$44.851,11" → pesos enteros (se descartan los centavos)
-  TW.parsePrice = (s) => Number(String(s).replace(/[^\d.,]/g, "").replace(/,\d{1,2}$/, "").replace(/[.,]/g, "")) || 0;
+  // "$132.198,37" → 132198 (los centavos se redondean, igual que en el catálogo)
+  TW.parsePrice = (s) => {
+    const t = String(s).replace(/[^\d.,]/g, ""), m = t.match(/^(.*),(\d{1,2})$/);
+    return Math.round(Number((m ? m[1] : t).replace(/[.,]/g, "")) + (m ? Number("0." + m[2]) : 0)) || 0;
+  };
   // Línea "NOMBRE — $precio" (acepta también guion común)
   TW.parseLine = function (line) {
     const m = String(line).trim().match(/^(.*?)\s*[—–-]\s*\$\s*([\d.,]+)\s*$/);
