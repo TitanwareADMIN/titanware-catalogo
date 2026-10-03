@@ -627,7 +627,9 @@
   function analyze(text) {
     const lines = TW.parseList(text);
     if (!lines.length) { toast("No encontramos líneas con el formato “NOMBRE — $precio”.", false); return; }
-    const byName = new Map(S.cat.map((d) => [cleanName(d.nombre), d]));
+    // Se busca por el nombre prolijo y también por el nombre original del mayorista (origen)
+    const byName = new Map();
+    for (const d of S.cat) for (const n of [d.origen, d.nombre]) if (n && !byName.has(cleanName(n))) byName.set(cleanName(n), d);
     const seen = new Set(), changes = [], nuevos = [];
     for (const l of lines) {
       const key = cleanName(l.nombre);
@@ -654,7 +656,7 @@
       if (!n.on) continue;
       if (!n.categoria) { toast(`Elegí la categoría de “${n.nombre}” o destildalo.`, false); return; }
       const id = uniqueId(TW.slug(n.nombre), taken); taken.add(id);
-      S.cat.push({ id, nombre: n.nombre, categoria: n.categoria, sub: n.sub, precio: n.precio, destacado: false, stock: "disponible", imagen: "" });
+      S.cat.push({ id, nombre: n.nombre, origen: n.nombre, categoria: n.categoria, sub: n.sub, precio: n.precio, destacado: false, stock: "disponible", imagen: "" });
       S.changedIds.add(id); nN++;
     }
     const del = new Set();
