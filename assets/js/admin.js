@@ -60,8 +60,16 @@
     return body;
   }
   const getFile = async (path) => {
-    const f = await gh(`/contents/${path}?ref=${encodeURIComponent(S.conn.branch)}&t=${Date.now()}`);
-    return { text: fromB64(f.content), sha: f.sha };
+    const q = `/contents/${path}?ref=${encodeURIComponent(S.conn.branch)}&t=${Date.now()}`;
+    const f = await gh(q);
+    if (f.content) return { text: fromB64(f.content), sha: f.sha };
+    // Archivos de más de 1 MB (el catálogo): GitHub no manda el contenido, se pide en formato crudo
+    const { owner, repo, token } = S.conn;
+    const res = await fetch(`https://api.github.com/repos/${owner}/${repo}${q}`, {
+      headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github.raw+json", "X-GitHub-Api-Version": "2022-11-28" },
+    });
+    if (!res.ok) { const e = new Error(`No se pudo leer ${path} (${res.status})`); e.status = res.status; throw e; }
+    return { text: await res.text(), sha: f.sha };
   };
   const putFile = (path, b64, sha, message) =>
     gh(`/contents/${path}`, { method: "PUT", body: JSON.stringify({ message, content: b64, branch: S.conn.branch, ...(sha ? { sha } : {}) }) });
