@@ -37,6 +37,19 @@
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => t.classList.remove("show"), 4200);
   }
+  // Confirmación con el estilo de la tienda (en vez del cartel gris del navegador)
+  function ask(title, text, ok = "Sí, seguir", icon = U.warn) {
+    return new Promise((resolve) => {
+      const d = $("#askDlg"); let done = false;
+      const finish = (v) => { if (done) return; done = true; if (d.open) d.close(); resolve(v); };
+      d.innerHTML = `<div class="ask-box"><span class="ask-ico">${icon}</span><h2 id="askT">${esc(title)}</h2>${text ? `<p>${esc(text)}</p>` : ""}
+        <div class="ask-btns"><button class="btn block" type="button" data-askok>${esc(ok)}</button><button class="btn ghost block" type="button" data-askno>Cancelar</button></div></div>`;
+      d.querySelector("[data-askok]").onclick = () => finish(true);
+      d.querySelector("[data-askno]").onclick = () => finish(false);
+      d.onclose = () => finish(false);
+      d.showModal(); d.querySelector("[data-askno]").focus();
+    });
+  }
   const toB64 = (str) => {
     const bytes = new TextEncoder().encode(str); let bin = "";
     for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
@@ -433,11 +446,11 @@
     toast(editing ? "Producto guardado" : "Producto agregado");
   }
 
-  function deleteProduct(id) {
+  async function deleteProduct(id) {
     const d = S.cat.find((x) => x.id === id); if (!d) return;
     const inPcs = S.pcs.filter((pc) => (pc.componentes || []).some((c) => c.id === id));
     const warn = inPcs.length ? `\n\nEstá en ${inPcs.length} PC(s) armada(s): ${inPcs.map((p) => p.nombre).join(", ")}. Se va a quitar de ellas.` : "";
-    if (!confirm(`¿Eliminar "${TW.buildProduct(d).titulo}"?${warn}`)) return;
+    if (!(await ask(`¿Eliminar "${TW.buildProduct(d).titulo}"?`, warn.trim(), "Sí, eliminar", U.trash))) return;
     S.cat = S.cat.filter((x) => x.id !== id);
     if (inPcs.length) { inPcs.forEach((pc) => (pc.componentes = pc.componentes.filter((c) => c.id !== id))); markDirty("pcs"); }
     markDirty("catalogo");
@@ -800,7 +813,7 @@
     }
     if ((x = el("[data-delpc]"))) {
       const pc = S.pcs.find((p) => p.id === x.dataset.delpc);
-      if (confirm(`¿Eliminar la PC "${pc.nombre}"?`)) { S.pcs = S.pcs.filter((p) => p !== pc); markDirty("pcs"); render(); }
+      if (await ask(`¿Eliminar la PC "${pc.nombre}"?`, "Deja de aparecer en la tienda.", "Sí, eliminar", U.trash)) { S.pcs = S.pcs.filter((p) => p !== pc); markDirty("pcs"); render(); }
       return;
     }
     if ((x = el("[data-mvpc]"))) {
@@ -813,11 +826,11 @@
     if ((x = el("[data-apply]"))) { applyImport(); return; }
     if ((x = el("[data-allmiss]"))) { S.imp.faltan.forEach((m) => (m.act = x.dataset.allmiss)); renderTab(); return; }
     if ((x = el("[data-reload]"))) {
-      if ((S.dirty.catalogo || S.dirty.pcs) && !confirm("Tenés cambios sin publicar. Si recargás se pierden. ¿Seguir?")) return;
+      if ((S.dirty.catalogo || S.dirty.pcs) && !(await ask("¿Recargar sin publicar?", "Tenés cambios sin publicar. Si recargás se pierden.", "Sí, recargar"))) return;
       try { await loadData(); toast("Datos recargados desde GitHub"); } catch (err) { toast(err.message, false); }
       return;
     }
-    if ((x = el("[data-disconnect]"))) { if (confirm(fbOn() ? "¿Desconectar GitHub? Se borra el token del panel y hay que volver a cargarlo para publicar." : "¿Desconectar? Se borra el token de este navegador.")) { disconnect(); S.loaded = false; render(); } return; }
+    if ((x = el("[data-disconnect]"))) { if (await ask("¿Desconectar GitHub?", fbOn() ? "Se borra el token del panel y hay que volver a cargarlo para publicar." : "Se borra el token de este navegador.", "Sí, desconectar")) { disconnect(); S.loaded = false; render(); } return; }
     if ((x = el("[data-goconnect]"))) { S.loaded = false; render(); return; }
   });
 
@@ -1030,7 +1043,7 @@
         <td><select class="inp st-sel st-${esc(o.estado)}" data-ost="${esc(o.id)}" aria-label="Estado del pedido">${ESTADOS.map(([k, l]) => `<option value="${k}"${o.estado === k ? " selected" : ""}>${l}</option>`).join("")}</select></td>
         <td><div class="acts">
           ${wa ? `<a class="ibtn wa-ibtn" href="${wa}" target="_blank" rel="noopener" aria-label="Escribirle por WhatsApp" title="Escribirle por WhatsApp">${U.wa}</a>` : ""}
-          ${o.email ? `<a class="ibtn" href="mailto:${esc(o.email)}?subject=${encodeURIComponent(`Tu pedido N° ${o.codigo} en ${CFG.negocio.nombre}`)}" aria-label="Mandarle un mail" title="Mandarle un mail">${MAIL_ICON}</a>` : ""}
+          ${o.email ? `<a class="ibtn" href="https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(o.email)}&su=${encodeURIComponent(`Tu pedido N° ${o.codigo} en ${CFG.negocio.nombre}`)}" target="_blank" rel="noopener" aria-label="Mandarle un mail" title="Mandarle un mail">${MAIL_ICON}</a>` : ""}
           <button class="ibtn danger" type="button" data-odel="${esc(o.id)}" aria-label="Eliminar pedido" title="Eliminar pedido">${U.trash}</button>
         </div></td>
       </tr>`;
@@ -1122,7 +1135,7 @@
   }
 
   async function logout() {
-    if ((S.dirty.catalogo || S.dirty.pcs) && !confirm("Tenés cambios sin publicar. Si salís se pierden. ¿Salir igual?")) return;
+    if ((S.dirty.catalogo || S.dirty.pcs) && !(await ask("¿Salir sin publicar?", "Tenés cambios sin publicar. Si salís se pierden.", "Sí, salir"))) return;
     S.dirty = { catalogo: false, pcs: false };
     try { await A.logout(); } catch (err) { toast(err.message, false); }
   }
@@ -1153,19 +1166,19 @@
     if ((x = el("[data-csv]"))) { downloadCsv(x.dataset.csv); return; }
     if ((x = el("[data-odel]"))) {
       const o = S.fb.orders.find((y) => y.id === x.dataset.odel);
-      if (!o || !confirm(`¿Eliminar el pedido N° ${o.codigo} de ${o.nombre || o.email}? El cliente tampoco lo va a ver en su cuenta.`)) return;
+      if (!o || !(await ask(`¿Eliminar el pedido N° ${o.codigo}?`, `Es de ${o.nombre || o.email}. El cliente tampoco lo va a ver en su cuenta.`, "Sí, eliminar", U.trash))) return;
       try { await A.admin.removeOrder(o.id); S.fb.orders = S.fb.orders.filter((y) => y !== o); render(); toast("Pedido eliminado"); } catch (ex) { toast(ex.message, false); }
       return;
     }
     if ((x = el("[data-udel]"))) {
       const u = S.fb.users.find((y) => y.uid === x.dataset.udel);
-      if (!u || !confirm(`¿Borrar los datos de ${u.nombre || u.email}? Deja de aparecer en Clientes y en el Excel de ofertas. Sus pedidos quedan en la pestaña Pedidos.`)) return;
+      if (!u || !(await ask(`¿Borrar los datos de ${u.nombre || u.email}?`, "Deja de aparecer en Clientes y en el Excel de ofertas. Sus pedidos quedan en la pestaña Pedidos.", "Sí, borrar", U.trash))) return;
       try { await A.admin.removeUser(u.uid); S.fb.users = S.fb.users.filter((y) => y !== u); render(); toast("Datos del cliente borrados"); } catch (ex) { toast(ex.message, false); }
       return;
     }
     if ((x = el("[data-admdel]"))) {
       const email = x.dataset.admdel;
-      if (!confirm(`¿Quitar a ${email} de los administradores? Ya no va a poder entrar al panel.`)) return;
+      if (!(await ask(`¿Quitar a ${email} de los administradores?`, "Ya no va a poder entrar al panel.", "Sí, quitar"))) return;
       try { await A.admin.removeAdmin(email); S.fb.admins = S.fb.admins.filter((y) => y !== email); renderTab(); toast("Administrador quitado"); } catch (ex) { toast(ex.message, false); }
       return;
     }
