@@ -65,7 +65,8 @@
     if (f.content) return { text: fromB64(f.content), sha: f.sha };
     // Archivos de más de 1 MB (el catálogo): GitHub no manda el contenido, se pide en formato crudo
     const { owner, repo, token } = S.conn;
-    const res = await fetch(`https://api.github.com/repos/${owner}/${repo}${q}`, {
+    const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=${encodeURIComponent(S.conn.branch)}&raw=${Date.now()}`, {
+      cache: "no-store",
       headers: { Authorization: `Bearer ${token}`, Accept: "application/vnd.github.raw+json", "X-GitHub-Api-Version": "2022-11-28" },
     });
     if (!res.ok) { const e = new Error(`No se pudo leer ${path} (${res.status})`); e.status = res.status; throw e; }
@@ -78,9 +79,16 @@
     S.conn = { ...S.conn, ...conn };
     const repo = await gh("");
     if (!repo.permissions || !repo.permissions.push) throw new Error("El token no tiene permiso para escribir en el repositorio.");
-    localStorage.setItem(AUTH_KEY, JSON.stringify(S.conn));
     S.online = true;
-    await loadData();
+    try { await loadData(); }
+    catch (err) {
+      // Si no se pudieron leer los productos, se vuelve al formulario (nada queda a medio cargar)
+      S.online = false; S.loaded = false; S.cat = []; S.pcs = [];
+      localStorage.removeItem(AUTH_KEY);
+      render();
+      throw err;
+    }
+    localStorage.setItem(AUTH_KEY, JSON.stringify(S.conn));
   }
   function disconnect() {
     localStorage.removeItem(AUTH_KEY);
@@ -93,6 +101,7 @@
     if (S.online) {
       const [c, p] = await Promise.all([getFile(FILES.catalogo), getFile(FILES.pcs).catch(() => ({ text: "[]", sha: null }))]);
       S.cat = JSON.parse(c.text); S.pcs = JSON.parse(p.text);
+      if (!Array.isArray(S.cat) || !Array.isArray(S.pcs)) throw new Error("GitHub no devolvió los productos. Recargá la página e intentá de nuevo.");
       S.sha = { catalogo: c.sha, pcs: p.sha };
     } else {
       const v = Date.now();
