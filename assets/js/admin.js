@@ -1067,14 +1067,15 @@
         <label class="hsearch">${U.search}<input id="uq" type="search" placeholder="Buscar por nombre, mail o teléfono…" value="${esc(F.uq)}" autocomplete="off"></label>
         <span class="count" id="ucount"></span>
         <span class="grow"></span>
-        <button class="btn sm" type="button" data-csv="ofertas"${nOf ? "" : " disabled"}>Descargar mails para ofertas (${nOf})</button>
-        <button class="btn ghost sm" type="button" data-csv="todos"${F.users.length ? "" : " disabled"}>Descargar todos</button>
+        <button class="btn sm" type="button" data-promo${nOf ? "" : " disabled"}>Mandar promo por Gmail (${nOf})</button>
+        <button class="btn ghost sm" type="button" data-copymails${nOf ? "" : " disabled"}>Copiar mails (${nOf})</button>
+        <button class="btn ghost sm" type="button" data-csv="todos"${F.users.length ? "" : " disabled"}>Descargar planilla</button>
       </div>
       <div class="tbl-wrap"><table class="tbl">
         <thead><tr><th>Cliente</th><th>Teléfono</th><th>Ofertas por mail</th><th>Pedidos</th><th>Registrado</th><th></th></tr></thead>
         <tbody id="userRows"></tbody>
       </table></div>
-      <p class="hint" style="margin-top:.75rem">Los archivos se abren con Excel. Para mandar promociones usá solo <strong>“mails para ofertas”</strong>: son los clientes que aceptaron recibirlas.</p>`;
+      <p class="hint" style="margin-top:.75rem"><strong>Mandar promo por Gmail</strong> abre un mail nuevo con los clientes que aceptaron ofertas en copia oculta (CCO): nadie ve los mails de los demás. <strong>Copiar mails</strong> los copia para pegarlos donde quieras. La planilla tiene todos los clientes y se abre con Excel o Google Sheets.</p>`;
   }
   const ordersOf = (u) => (S.fb.orders || []).filter((o) => o.uid === u.uid);
 
@@ -1098,6 +1099,20 @@
   }
 
   // Planilla para Excel (separada con punto y coma, como la usa Excel en castellano)
+  // Mails de los clientes que aceptaron recibir ofertas, separados por coma
+  const offerMails = () => [...new Set((S.fb.users || []).filter((u) => u.ofertas && u.email).map((u) => u.email.toLowerCase()))];
+  async function copyMails(silent) {
+    const m = offerMails().join(", ");
+    try { await navigator.clipboard.writeText(m); } catch { const t = document.createElement("textarea"); t.value = m; document.body.append(t); t.select(); document.execCommand("copy"); t.remove(); }
+    if (!silent) toast(`Copiamos ${offerMails().length} mails. Pegalos en el campo CCO de tu mail.`);
+  }
+  async function sendPromo() {
+    const m = offerMails(), su = encodeURIComponent(`Ofertas de ${CFG.negocio.nombre}`);
+    let url = `https://mail.google.com/mail/?view=cm&fs=1&su=${su}&bcc=${encodeURIComponent(m.join(","))}`;
+    // Si son muchos, el link quedaría demasiado largo: se copian y se pegan en CCO
+    if (url.length > 1800) { await copyMails(true); url = `https://mail.google.com/mail/?view=cm&fs=1&su=${su}`; toast(`Son ${m.length} mails: los copiamos. En Gmail tocá "CCO" y pegalos (Ctrl+V).`); }
+    window.open(url, "_blank", "noopener");
+  }
   function downloadCsv(kind) {
     const list = (S.fb.users || []).filter((u) => kind === "todos" || u.ofertas);
     const cell = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
@@ -1164,6 +1179,8 @@
     if ((x = el("[data-ofil]"))) { S.fb.f.estado = x.dataset.ofil; renderTab(); return; }
     if ((x = el("[data-uorders]"))) { S.fb.f = { q: x.dataset.uorders, estado: "" }; S.tab = "pedidos"; render(); return; }
     if ((x = el("[data-csv]"))) { downloadCsv(x.dataset.csv); return; }
+    if ((x = el("[data-promo]"))) { sendPromo(); return; }
+    if ((x = el("[data-copymails]"))) { copyMails(); return; }
     if ((x = el("[data-odel]"))) {
       const o = S.fb.orders.find((y) => y.id === x.dataset.odel);
       if (!o || !(await ask(`¿Eliminar el pedido N° ${o.codigo}?`, `Es de ${o.nombre || o.email}. El cliente tampoco lo va a ver en su cuenta.`, "Sí, eliminar", U.trash))) return;
