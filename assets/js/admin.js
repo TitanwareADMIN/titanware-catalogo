@@ -47,6 +47,9 @@
   const markDirty = (file) => { S.dirty[file] = true; updatePublish(); };
   const uniqueId = (base, taken) => { let id = base || "item", n = 2; while (taken.has(id)) id = `${base}-${n++}`; return id; };
   const cleanName = (s) => norm(s).replace(/\s+/g, " ").trim();
+  // Oferta en porcentaje: se guarda el precio final (precioOferta) y se muestra el % de descuento
+  const pctOf = (d) => (d.precio > 0 && d.precioOferta > 0 && d.precioOferta < d.precio ? Math.round((1 - d.precioOferta / d.precio) * 100) : "");
+  const setPct = (d, v) => { const n = Number(v); if (!v || !(n > 0) || n >= 100 || !(d.precio > 0)) delete d.precioOferta; else d.precioOferta = Math.round(d.precio * (1 - n / 100)); };
 
   /* ---------- GitHub ---------- */
   async function gh(path, opts = {}) {
@@ -259,7 +262,7 @@
         <button class="btn" type="button" data-newprod>${U.plus} Agregar producto</button>
       </div>
       <div class="tbl-wrap"><table class="tbl">
-        <thead><tr><th></th><th>Producto</th><th>Categoría</th><th>Precio</th><th>Oferta</th><th>Destacado</th><th>Stock</th><th></th></tr></thead>
+        <thead><tr><th></th><th>Producto</th><th>Categoría</th><th>Precio</th><th>Oferta %</th><th>Destacado</th><th>Stock</th><th></th></tr></thead>
         <tbody id="prodRows"></tbody>
       </table></div>
       <p class="hint" style="margin-top:.75rem">Los cambios de precio, destacado y stock se guardan al instante en el panel. Acordate de tocar <strong>Publicar cambios</strong> para que se vean en la tienda.</p>`;
@@ -277,7 +280,7 @@
         <td class="name"><strong>${esc(p.titulo)}</strong><small>${esc(d.nombre)}${d.imagen || d.caja ? "" : ' · <b style="color:var(--warn)">Sin foto: no se ve en la tienda</b>'}</small></td>
         <td><span style="white-space:nowrap">${esc(d.categoria)}</span><br><small style="color:var(--muted)">${esc(d.sub || "")}</small></td>
         <td><input class="inp price-in" type="number" min="0" step="1" value="${d.precio ?? ""}" data-f="precio" placeholder="Consultar" aria-label="Precio"></td>
-        <td><input class="inp price-in offer-in${p.oferta ? " on" : ""}" type="number" min="0" step="1" value="${d.precioOferta ?? ""}" data-f="precioOferta" placeholder="—" aria-label="Precio de oferta" title="Precio de oferta: dejalo vacío si no está en oferta"></td>
+        <td><input class="inp price-in offer-in${p.oferta ? " on" : ""}" type="number" min="0" max="99" step="1" value="${pctOf(d)}" data-f="pct" placeholder="—" aria-label="Descuento en %" title="${d.precioOferta ? "Precio con descuento: " + TW.money(d.precioOferta) : "Porcentaje de descuento (ej. 10). Vacío o 0 = sin oferta"}"></td>
         <td style="text-align:center"><input type="checkbox" data-f="destacado"${d.destacado ? " checked" : ""} aria-label="Destacado" style="accent-color:var(--violet);width:17px;height:17px"></td>
         <td><select class="inp stock-in" data-f="stock" aria-label="Stock">
           ${["disponible", "sin stock"].map((s) => `<option value="${s}"${(/^sin/i.test(d.stock || "") ? "sin stock" : "disponible") === s ? " selected" : ""}>${TW.STOCK[s]}</option>`).join("")}
@@ -322,7 +325,7 @@
               <datalist id="subList">${subs.map((s) => `<option value="${esc(s)}">`).join("")}</datalist>
             </label>
             <label class="fld">Precio (vacío = “Consultar precio”)<input name="precio" type="number" min="0" step="1" value="${d.precio ?? ""}"></label>
-            <label class="fld">Precio de oferta <span class="hint" style="display:inline">(opcional: menor al precio, muestra el cartel de oferta)</span><input name="precioOferta" type="number" min="0" step="1" value="${d.precioOferta ?? ""}" placeholder="Sin oferta"></label>
+            <label class="fld">Oferta (% de descuento) <span class="hint" style="display:inline">(opcional: ej. 10 = 10% off, muestra el cartel de oferta)</span><input name="pct" type="number" min="0" max="99" step="1" value="${pctOf(d)}" placeholder="Sin oferta"></label>
             <label class="fld">Stock<select name="stock">${["disponible", "sin stock"].map((s) => `<option value="${s}"${(/^sin/i.test(d.stock || "") ? "sin stock" : "disponible") === s ? " selected" : ""}>${TW.STOCK[s]}</option>`).join("")}</select></label>
             <label class="check full"><input type="checkbox" name="destacado"${d.destacado ? " checked" : ""}> Mostrar como destacado (aparece primero y en el inicio)</label>
             <div class="fld full">Foto (opcional: si no hay, se muestra el logo de la marca)
@@ -361,7 +364,7 @@
     const d = {
       nombre: String(fd.get("nombre") || "").trim(), categoria: fd.get("categoria"), sub: String(fd.get("sub") || "").trim(),
       precio: fd.get("precio") === "" ? null : Number(fd.get("precio")), stock: fd.get("stock"), destacado: !!fd.get("destacado"),
-      ...(fd.get("precioOferta") ? { precioOferta: Number(fd.get("precioOferta")) } : {}),
+      __pct: fd.get("pct"),
       imagen: String(fd.get("imagen") || "").trim(),
       caja: String(fd.get("caja") || "").trim(),
     };
@@ -379,6 +382,7 @@
         : el.dataset.kind === "list" ? el.value.split(",").map((s) => s.trim()).filter(Boolean) : el.value;
     });
     if (Object.keys(attrs).length) d.attrs = attrs;
+    const pct = d.__pct; delete d.__pct; setPct(d, pct);
     return d;
   }
   function refreshDetect() {
@@ -854,8 +858,8 @@
     const row = t.closest("#prodRows tr[data-id]");
     if (row && t.dataset.f) {
       const d = S.cat.find((x) => x.id === row.dataset.id);
-      if (t.dataset.f === "precio") d.precio = t.value === "" ? null : Number(t.value);
-      if (t.dataset.f === "precioOferta") { if (t.value === "") delete d.precioOferta; else d.precioOferta = Number(t.value); }
+      if (t.dataset.f === "precio") { const pct = pctOf(d); d.precio = t.value === "" ? null : Number(t.value); setPct(d, pct); const o = row.querySelector("[data-f=pct]"); if (o) { o.value = pctOf(d); o.title = d.precioOferta ? "Precio con descuento: " + TW.money(d.precioOferta) : ""; } }
+      if (t.dataset.f === "pct") { setPct(d, t.value); t.classList.toggle("on", !!d.precioOferta); t.value = pctOf(d); t.title = d.precioOferta ? "Precio con descuento: " + TW.money(d.precioOferta) : ""; }
       if (t.dataset.f === "destacado") d.destacado = t.checked;
       if (t.dataset.f === "stock") d.stock = t.value;
       S.changedIds.add(d.id); row.classList.add("changed");
