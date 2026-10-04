@@ -15,7 +15,7 @@ window.TW_CONFIG = {
 
   // Repositorio de GitHub donde vive la página (lo usa el panel admin para publicar cambios)
   github: {
-    owner: "valentinmz",
+    owner: "TitanwareADMIN",
     repo: "titanware-catalogo",
     branch: "main",
   },
