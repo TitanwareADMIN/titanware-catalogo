@@ -535,11 +535,18 @@
   }
   const pcAutoCat = () => (pcSel.gpu.length ? "Gamer" : CFG.categoriasPC.find((c) => /hogar|oficina/i.test(c)) || CFG.categoriasPC[0]);
 
+  // Memorias y discos: varios distintos, cada uno con su cantidad, hasta llenar la mother (igual que en la tienda)
+  const slotMax = (key, c) => { const byId = built().byId, p = byId[c.id]; return Math.max(1, Math.min(16, c.qty + (p ? TW.room(key, p, pcSel, byId) : 0))); };
+  function slotCount(key) {
+    const byId = built().byId, cap = TW.capacity(pcSel, byId), used = TW.usage(pcSel, byId), n = (pcSel[key] || []).length;
+    const room = key === "ram" ? cap.ram - used.ram : cap.m2 + cap.sata - used.m2 - used.sata;
+    return Math.max(1, Math.min(8, n + (room > 0 ? 1 : 0)));
+  }
   function renderSlots() {
     const data = built(), box = $("#slots"); if (!box) return;
     const slotHtml = (step, idx) => {
       const cur = (pcSel[step.key] || [])[idx], p = cur && data.byId[cur.id];
-      const label = step.multi ? `${step.label} ${idx + 1}` : step.label;
+      const label = step.slots && idx > 0 ? `${step.label} ${idx + 1}` : step.label;
       const open = pcPick && pcPick.key === step.key && pcPick.idx === idx;
       let picker = "";
       if (open) {
@@ -561,13 +568,13 @@
           <span class="slot-txt"><small>${esc(label)}</small>${p ? esc(p.titulo) : `<em>Elegir ${esc(step.label.toLowerCase())}…</em>`}</span>
           <b>${p ? (p.precio ? TW.money(p.precio * (cur.qty || 1)) : "Consultar") : ""}</b>
         </button>
-        ${p && step.maxQty ? `<label class="slot-qty">Cant.<input class="inp" type="number" min="1" max="${TW.maxQty(step.key, pcSel, data.byId)}" value="${cur.qty}" data-slotqty="${step.key}|${idx}"></label>` : ""}
+        ${p && step.slots ? `<label class="slot-qty">Cant.<input class="inp" type="number" min="1" max="${slotMax(step.key, cur)}" value="${cur.qty}" data-slotqty="${step.key}|${idx}"></label>` : ""}
         ${p ? `<button type="button" class="ibtn danger" data-slotclear="${step.key}|${idx}" aria-label="Quitar">${U.trash}</button>` : ""}
         ${picker}
       </div>`;
     };
     box.innerHTML = TW.STEPS.map((s) => {
-      const n = s.multi ? Math.min(s.multi, (pcSel[s.key] || []).length + 1) : 1;
+      const n = s.slots ? slotCount(s.key) : 1;
       return Array.from({ length: n }, (_, i) => slotHtml(s, i)).join("");
     }).join("");
     const issues = TW.checkBuild(pcSel, data.byId);
@@ -859,7 +866,7 @@
     if (t.id === "slotQ" && pcPick) { pcPick.q = t.value; renderSlots(); return; }
     if (t.dataset.slotqty) {
       const [key, idx] = t.dataset.slotqty.split("|"); const c = pcSel[key][Number(idx)];
-      if (c) c.qty = Math.max(1, Math.min(TW.maxQty(key, pcSel, built().byId), Number(t.value) || 1));
+      if (c) c.qty = Math.max(1, Math.min(slotMax(key, c), Number(t.value) || 1));
       return;
     }
   });
